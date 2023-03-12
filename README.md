@@ -36,10 +36,10 @@ We do not have dreams, we have goals
 **Simulation**
 - alrgorithm will be written in ```run``` method of the ```Trader``` class
 - every iteration of the simulation will execute the ```run``` method and be provided with  the ```TradingState``` object.
-- ```TradingState`` contains: 
+- ```TradingState``` contains: 
     - Contains overview of the trades of last iteration (of both alforithm and other participants)
     - Per product overview of outstanding buy/sell orders from bots
-- 
+- **To Do:"finish info here**
 
 ## code snippets
 **Trader class**
@@ -120,7 +120,7 @@ class OrderDepth:
         self.sell_orders: Dict[int, int] = {}
 ```
 
-**Order class
+**Order class**
 ```python
 Symbol = str
 
