@@ -2,7 +2,6 @@ from typing import Dict, List
 from datamodel import OrderDepth, TradingState, Order
 
 
-<<<<<<< HEAD
 class Trader:
 
     def run(self, state: TradingState) -> Dict[str, List[Order]]:
@@ -66,6 +65,3 @@ class Trader:
                 # These possibly contain buy or sell orders for PEARLS
                 # Depending on the logic above
         return result
-=======
-print("harro noob")
->>>>>>> d6e0888b7adf55995aac9790fa649c15b65b7703
