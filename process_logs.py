@@ -1,7 +1,9 @@
 import os
 import csv
+import json
 
-def process_log_file(log_file):
+
+def split_log(log_file):
     """Processes a single log file and saves output in a 'processed' subdirectory."""
     with open(log_file, 'r', encoding='utf-8') as file:
         lines = file.readlines()
@@ -73,16 +75,52 @@ def process_log_file(log_file):
     print(f"Processed: {log_file} → {processed_dir}/")
 
 
-def process_all_logs(base_dir):
+def trade_history_txt_to_csv(input_file):
+    # Step 1: Read the content from the input .txt file
+    with open(input_file, 'r', encoding='utf-8') as file:
+        # Load the content into a Python list (assuming the content is in JSON format)
+        trade_history = json.loads(file.read())
+    
+    # Step 2: Generate the output file name with the same name as input file but with .csv extension
+    output_file = os.path.splitext(input_file)[0] + '.csv'
+    
+    # Step 3: Write the data to the CSV file
+    with open(output_file, 'w', newline='', encoding='utf-8') as csv_file:
+        # Define the header for the CSV file
+        fieldnames = ['timestamp', 'buyer', 'seller', 'symbol', 'currency', 'price', 'quantity']
+        
+        # Create a CSV writer object
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        
+        # Write the header row
+        writer.writeheader()
+        
+        # Write all trade history rows to the CSV file
+        writer.writerows(trade_history)
+
+    print(f"Data has been successfully converted to {output_file}")
+
+def split_all_logs(base_dir):
     """Finds and processes all .log files in base_dir and its subdirectories."""
     for root, _, files in os.walk(base_dir):
         for file in files:
             if file.endswith(".log"):
                 log_file_path = os.path.join(root, file)
-                process_log_file(log_file_path)
+                split_log(log_file_path)
+
+def process_all_tradehistory(base_dir):
+    """Finds and processes all .log files in base_dir and its subdirectories."""
+    for root, _, files in os.walk(base_dir):
+        for file in files:
+            if file.endswith("tradehistory.txt"):
+                trade_file_path = os.path.join(root, file)
+                trade_history_txt_to_csv(trade_file_path)
 
 
 if __name__ == "__main__":
-    logs_directory = os.path.join(os.path.dirname(__file__), "logs")
-    process_all_logs(logs_directory)
-    print("Processing complete.")
+    log_dir = os.path.join(os.path.dirname(__file__), "logs")
+    split_all_logs(log_dir)
+    print("splitting complete.")
+    process_all_tradehistory(log_dir)
+    print("processing complete")
+
