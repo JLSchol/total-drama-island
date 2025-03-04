@@ -167,7 +167,7 @@ class Order:
         return "(" + self.symbol + ", " + str(self.price) + ", " + str(self.quantity) + ")"
 ```
 
-## example:
+## example trader class:
 ```python
 from datamodel import OrderDepth, UserId, TradingState, Order
 from typing import List
