@@ -1,0 +1,76 @@
+{
+    "listings": {
+        "PRODUCT1": {
+            "denomination": "SEASHELLS",
+            "product": "PRODUCT1",
+            "symbol": "PRODUCT1"
+        },
+        "PRODUCT2": {
+            "denomination": "SEASHELLS",
+            "product": "PRODUCT2",
+            "symbol": "PRODUCT2"
+        }
+    },
+    "market_trades": {
+        "PRODUCT1": [
+            {
+                "buyer": "buyerid",
+                "price": 11,
+                "quantity": 4,
+                "seller": "sellerid",
+                "symbol": "PRODUCT1",
+                "timestamp": "900"
+            }
+        ],
+        "PRODUCT2": [
+            {
+                "buyer": "buyerid",
+                "price": 8,
+                "quantity": 1,
+                "seller": "sellerid",
+                "symbol": "PRODUCT2",
+                "timestamp": "1"
+            }
+        ]
+    },
+    "observations": {
+        "conversionObservations": {
+            "PRODUCT2": 2
+        },
+        "plainValueObservations": {
+            "PRODUCT1": 6
+        }
+    },
+    "order_depths": {
+        "PRODUCT1": {
+            "buy_orders": {
+                "9": 5,
+                "10": 7
+            },
+            "sell_orders": {
+                "11": -4,
+                "12": -8
+            }
+        },
+        "PRODUCT2": {
+            "buy_orders": {
+                "141": 5,
+                "142": 3
+            },
+            "sell_orders": {
+                "144": -5,
+                "145": -8
+            }
+        }
+    },
+    "own_trades": {
+        "PRODUCT1": [],
+        "PRODUCT2": []
+    },
+    "position": {
+        "PRODUCT1": 3,
+        "PRODUCT2": -5
+    },
+    "timestamp": 0,
+    "traderData": ""
+}
