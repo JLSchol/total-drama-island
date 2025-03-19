@@ -1,5 +1,7 @@
-from datamodel import TradingState, Listing, OrderDepth, Trade, Observation, Order
+import json
+from datamodel import TradingState, Listing, OrderDepth, Trade, Observation, Order, ConversionObservation
 from typing import List
+import os
 
 """ example
 For the following example we assume a situation with two products:
@@ -51,9 +53,31 @@ trade2 = Trade(
     timestamp="1"
 )
 
+conversion_observation1 = ConversionObservation(
+    bidPrice=120,
+    askPrice=100,
+    transportFees=0.1,
+    exportTariff=0.2,
+    importTariff=0.3,
+    sugarPrice=1,
+    sunlightIndex=10
+)
+
+conversion_observation2 = ConversionObservation(
+    bidPrice=220,
+    askPrice=200,
+    transportFees=1,
+    exportTariff=2,
+    importTariff=3,
+    sugarPrice=10,
+    sunlightIndex=50
+)
+
 observation = Observation( 
-    plainValueObservations={"PRODUCT1": 6},
-    conversionObservations={"PRODUCT2": 2}
+    plainValueObservations={"PRODUCT1": 11,
+                            "PRODUCT2":8},
+    conversionObservations={"PRODUCT1": conversion_observation1,
+                            "PRODUCT2": conversion_observation2}
 )
 
 state = TradingState(
@@ -71,42 +95,56 @@ state = TradingState(
               "PRODUCT2": -5},
     observations= observation
 )
+def get_mock_file_dir():
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))  # Go up to root/
+    return os.path.join(root_dir, "mockfiles") # go down to mockfiles
 
-def write_mock_to_json(filename):
-    with open(filename + '.json', 'w') as f:
+def write_mock_to_json(file_name):
+    file_path = os.path.join(get_mock_file_dir(), file_name)
+    with open(file_path, 'w') as f:
         f.write(state.toJSON())
 
-def load_mock_tradingstate(filename):
+def load_tradingstate_json(file_name):
+    file_path = os.path.join(get_mock_file_dir(), file_name)
+    with open(file_path, "r") as file:
+     return json.load(file)
 
 if __name__ == '__main__':
-    # write_mock_to_json("mock_trading_state")
+    # # write to mockfiles dir
+    # write_mock_to_json("mock_trading_state.json") 
+
+    # # load a mockfile
+    # tradingstate = load_tradingstate_json("mock_trading_state.json") 
+
+
 
     # analyze what to buy and/or sell based on outstanding buy and sell orders
         # output order
 
     # check position limit?
-
+    result = {}
     for product in state.order_depths:
-        print(product) #product names: PRODUCT1, PRODUCT2
         order_depth: OrderDepth = state.order_depths[product]
         orders: List[Order] = []
-        result = {}
+
 
         if len(order_depth.sell_orders) != 0: # sell order exists
             best_ask, best_ask_amount = min(order_depth.sell_orders.items(), key=lambda x: x[0])
-            if (best_ask < 10):
-                orders.append(Order(product, best_ask, -1*best_ask_amount)) # append buy order
+            print(f"BUY {product}: for {best_ask}$ -- with size: {-1*best_ask_amount}")
+            orders.append(Order(product, best_ask, -1*best_ask_amount)) # append buy order
 
         if len(order_depth.buy_orders) != 0: # buy order exist
             best_bid, best_bid_amount = max(order_depth.buy_orders.items(), key=lambda x: x[0])
-            if int(best_bid) > 10:
-                # check position limit?
-                orders.append(Order(product, best_bid, -1*best_bid_amount)) # append sell order
+            print(f"SELL {product}: for {best_bid}$ -- with size: {-1*best_bid_amount}")
+            orders.append(Order(product, best_bid, -1*best_bid_amount)) # append sell order
 
         result[product] = orders
+        print(result)
+        print("-")
 
     traderData = "string value holding trader state data required for nex iteration"
     conversions = -1 #?
-
+    print("---")
+    print(result)
 
     

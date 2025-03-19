@@ -1,4 +1,4 @@
-from datamodel import OrderDepth, UserId, TradingState, Order
+from scripts.datamodel import OrderDepth, UserId, TradingState, Order
 from typing import List
 import string
 
@@ -33,5 +33,5 @@ class Trader:
     
         traderData = "SAMPLE" # String value holding Trader state data required. It will be delivered as TradingState.traderData on next execution.
         
-        conversions = 1
+        conversions = 1 #ifyou want, you can convert an integer amount of your long or short position into moes, but need to cover the fees and trifs, send an integer or 0 if you don't want any conversion to happen
         return result, conversions, traderData
