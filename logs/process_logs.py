@@ -1,7 +1,29 @@
 import os
 import csv
 import json
+def split_all_logs(base_dir):
+    """Finds and processes all .log files in base_dir and its subdirectories."""
+    for root, _, files in os.walk(base_dir):
+        for file in files:
+            if file.endswith(".log"):
+                log_file_path = os.path.join(root, file)
+                split_log(log_file_path)
 
+def process_all_tradehistory(base_dir):
+    """Finds and processes all .log files in base_dir and its subdirectories."""
+    for root, _, files in os.walk(base_dir):
+        for file in files:
+            if file.endswith("tradehistory.txt"):
+                trade_file_path = os.path.join(root, file)
+                trade_history_txt_to_csv(trade_file_path)
+
+def process_all_sandbox(base_dir):
+    """Finds and processes all .log files in base_dir and its subdirectories."""
+    for root, _, files in os.walk(base_dir):
+        for file in files:
+            if file.endswith("sandbox.txt"):
+                trade_file_path = os.path.join(root, file)
+                sandbox_txt_to_csv(trade_file_path)
 
 def split_log(log_file):
     """Processes a single log file and saves output in a 'processed' subdirectory."""
@@ -11,9 +33,7 @@ def split_log(log_file):
     sandbox_logs = []
     activities_data = []
     trade_history = []
-
     current_section = None
-
 
     for line in lines:
         line = line.strip()
@@ -83,7 +103,6 @@ def split_log(log_file):
 
     print(f"Processed: {log_file} → {processed_dir}/")
 
-
 def trade_history_txt_to_csv(input_file):
     # Step 1: Read the content from the input .txt file
     with open(input_file, 'r', encoding='utf-8') as file:
@@ -109,7 +128,6 @@ def trade_history_txt_to_csv(input_file):
 
     print(f"Data has been successfully converted to {output_file}")
 
-
 def sandbox_txt_to_csv(input_file):
     # Step 1: Read the content from the input .txt file
     with open(input_file, 'r', encoding='utf-8') as file:
@@ -133,32 +151,6 @@ def sandbox_txt_to_csv(input_file):
         writer.writerows(sand_box_logs)
 
     print(f"Data has been successfully converted to {output_file}")
-
-
-def split_all_logs(base_dir):
-    """Finds and processes all .log files in base_dir and its subdirectories."""
-    for root, _, files in os.walk(base_dir):
-        for file in files:
-            if file.endswith(".log"):
-                log_file_path = os.path.join(root, file)
-                split_log(log_file_path)
-
-def process_all_tradehistory(base_dir):
-    """Finds and processes all .log files in base_dir and its subdirectories."""
-    for root, _, files in os.walk(base_dir):
-        for file in files:
-            if file.endswith("tradehistory.txt"):
-                trade_file_path = os.path.join(root, file)
-                trade_history_txt_to_csv(trade_file_path)
-
-
-def process_all_sandbox(base_dir):
-    """Finds and processes all .log files in base_dir and its subdirectories."""
-    for root, _, files in os.walk(base_dir):
-        for file in files:
-            if file.endswith("sandbox.txt"):
-                trade_file_path = os.path.join(root, file)
-                sandbox_txt_to_csv(trade_file_path)
 
 
 if __name__ == "__main__":
