@@ -44,9 +44,9 @@ class Observation:
 class Order:
 
     def __init__(self, symbol: Symbol, price: int, quantity: int) -> None:
-        self.symbol = symbol
-        self.price = price
-        self.quantity = quantity
+        self.symbol = symbol # The symbol of the product for which the order is sent.
+        self.price = price # The price of the order: the maximum price at which the algorithm wants to buy in case of a BUY order, or the minimum price at which the algorithm wants to sell in case of a SELL order.
+        self.quantity = quantity # The quantity of the order: the maximum quantity that the algorithm wishes to buy or sell. If the sign of the quantity is positive, the order is a buy order, if the sign of the quantity is negative it is a sell order.
 
     def __str__(self) -> str:
         return "(" + self.symbol + ", " + str(self.price) + ", " + str(self.quantity) + ")"

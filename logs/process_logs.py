@@ -118,7 +118,7 @@ def process_all_tradehistory(base_dir):
 
 
 if __name__ == "__main__":
-    log_dir = os.path.join(os.path.dirname(__file__), "logs")
+    log_dir = os.path.dirname(__file__)
     split_all_logs(log_dir)
     print("splitting complete.")
     process_all_tradehistory(log_dir)
