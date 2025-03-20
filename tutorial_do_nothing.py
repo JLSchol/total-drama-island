@@ -8,9 +8,6 @@ class Trader:
         result = {}
         conversions = 0
         traderData = "string"
-        # prev_state = json.loads(state.traderData)
-
-        # print(f"prev state position: {prev_state.position}\ncurr state position: {state.position}")
 
         for product in state.order_depths:
             order_depth: OrderDepth = state.order_depths[product]
@@ -21,11 +18,7 @@ class Trader:
 
             if len(order_depth.buy_orders) != 0: # buy order exist
                 pass
-                # sell nothing
-
 
             result[product] = orders
-
-        # traderData = state.toJSON()
 
         return result, conversions, traderData

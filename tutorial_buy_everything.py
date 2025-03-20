@@ -30,14 +30,6 @@ class Trader:
         traderData = "string"
         position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}  # Position limits
 
-        print(f"{state.timestamp=}")
-        print("\n")
-        print(f"{state.own_trades=}")
-        print("\n")
-        print(f"{state.market_trades=}")
-        print("\n")
-        print(f"{state.position=}")
-
         for product in state.order_depths:
             order_depth: OrderDepth = state.order_depths[product]
             orders: List[Order] = []
