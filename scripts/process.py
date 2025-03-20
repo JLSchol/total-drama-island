@@ -156,24 +156,44 @@ def plot_product_data(df):
         axes[4].grid(True)
 
         plt.tight_layout()
-    plt.show()
 
 
-def get_trade_history(abs_file_path: str) -> dict:
-    pass
+def plot_profit_loss(df):
+    # List of unique products in the dataset
+    products = df['product'].unique()
 
-def get_sandbox(abs_csv_file_path: str) -> dict:
-    pass
+    # Create a figure
+    plt.figure(figsize=(12, 6))
+
+    # Plot Profit and Loss for each product
+    for product in products:
+        product_data = df[df['product'] == product]
+        
+        # Plot Profit and Loss for each product
+        plt.plot(product_data['timestamp'], product_data['profit_and_loss'], label=product, marker='o')
+
+    # Labels and Formatting
+    plt.xlabel("Timestamp")
+    plt.ylabel("Seashells earned")
+    plt.title("Profit and Loss for Each Product Over Time")
+    plt.legend(title="Product")
+    plt.grid(True)
+
+    # Show the plot
+    plt.tight_layout()
 
 if __name__ == "__main__":
-    activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\2503191644_do_nothing\processed\2503191644_do_nothing_activities.csv"
+    activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250319_ma\processed\250319_ma_activities.csv"
+    activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250320_ma\processed\250320_ma_activities.csv"
     # activities_dict = get_activities_dict(activity_csv)
     df = get_activities_df(activity_csv)
-    print(df.columns[0])
+    # print(df.columns[0])
 
     df = add_weighted_prices(df)  # Ensure weighted prices are calculated
     plot_product_data(df)
 
+    plot_profit_loss(df)
+    plt.show()
     # plot_weighted_prices(df)  # Plot weighted bid/ask prices
 
     # print(df.head())
