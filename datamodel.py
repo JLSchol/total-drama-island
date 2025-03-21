@@ -18,7 +18,7 @@ class Listing:
         self.product = product
         self.denomination = denomination
         
-                 
+# Based on logic defined inside Prosperity container it will convert positions acquired                
 class ConversionObservation:
 
     def __init__(self, bidPrice: float, askPrice: float, transportFees: float, exportTariff: float, importTariff: float, sugarPrice: float, sunlightIndex: float):
@@ -34,8 +34,8 @@ class ConversionObservation:
 class Observation:
 
     def __init__(self, plainValueObservations: Dict[Product, ObservationValue], conversionObservations: Dict[Product, ConversionObservation]) -> None:
-        self.plainValueObservations = plainValueObservations
-        self.conversionObservations = conversionObservations
+        self.plainValueObservations = plainValueObservations #Simple product to value dictionary inside plainValueObservations
+        self.conversionObservations = conversionObservations #Dictionary of complex ConversionObservation values for respective products. Used to place conversion requests from Trader class.
         
     def __str__(self) -> str:
         return "(plainValueObservations: " + jsonpickle.encode(self.plainValueObservations) + ", conversionObservations: " + jsonpickle.encode(self.conversionObservations) + ")"

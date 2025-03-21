@@ -136,6 +136,8 @@ def buy_all(order_depth, product, position_limits, position, orders):
 
     return orders
 
+def get_state():
+    return state
 
 def run(state: TradingState):
         result = {}
