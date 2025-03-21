@@ -7,26 +7,26 @@ class SMA:
         self.price_list = price_list
         self.length = length
 
-    def compute_ma(self) -> float:
+    def compute_sma(self) -> float:
         if len(self.price_list) == 0:
-            return None  # No default price specified
+            return float('nan')  # More explicit handling
         return sum(self.price_list) / len(self.price_list)
     
-    def update_ma(self, price: float):
+    def update_sma(self, price: float):
         self.price_list.append(price)
         if len(self.price_list) > self.length:
             self.price_list.pop(0)  # Maintain fixed size
 
     def get_sma(self, price: float):
-        self.update_ma(price)
-        return self.compute_ma()
+        self.update_sma(price)
+        return self.compute_sma()
 
 class Indicators:
     def __init__(self, order_depth):
         self.order_depth = order_depth
         self.best_bid, self.best_bid_amount = self.get_best_bid(order_depth)
         self.best_ask, self.best_ask_amount = self.get_best_ask(order_depth)
-        self.best_mid_price = self.get_best_mid_price(self.best_bid, self.best_ask, order_depth)
+        self.best_mid_price = self.get_best_mid_price()
         self.best_weigthed_mid_price = self.get_best_weigthed_mid_price(self.best_bid, 
                                                                         self.best_bid_amount,
                                                                         self.best_ask, 
@@ -38,10 +38,10 @@ class Indicators:
     def get_best_bid(self, order_depth):
         return max(order_depth.buy_orders.items(), key=lambda x: x[0]) if order_depth.buy_orders else (None, None)
 
-    def get_best_mid_price(self, best_bid, best_ask, order_depth):
-        if best_bid is None or best_ask is None:
+    def get_best_mid_price(self):
+        if self.best_bid is None or self.best_ask is None:
             return None
-        return (self.get_best_bid(order_depth)[0] + self.get_best_ask(order_depth)[0]) / 2
+        return (self.best_bid + self.best_ask) / 2
         
     def get_best_weigthed_mid_price(self, best_bid, best_bid_amount, best_ask, best_ask_amount):
         if best_bid is None or best_ask is None:
@@ -51,11 +51,8 @@ class Indicators:
         best_ask_amount = abs(best_ask_amount) # ask/sell quantities are denoted by (-) values
         return ( (best_bid*best_bid_amount) + (best_ask*best_ask_amount)) / (best_bid_amount+best_ask_amount)
 
-def is_avaiable(best, best_amount):
-    # Step 1: Check if the best bid is available
-    if best is None or best_amount is None:
-        return False  # Early return if the conditions are not met
-    return True
+def is_available(best, best_amount):
+    return best is not None and best_amount is not None
 
 def adjust_sell_quantity(proposed_sell_quantity, max_sell_limit, current_position):
 
@@ -85,7 +82,7 @@ def adjust_buy_quantity(proposed_buy_quantity, max_buy_limit, current_position):
 
 def get_best_ask_buy_order(product, best_ask, best_ask_amount, current_position, max_position, orders) -> List[Order]:
     # Step 1: Check if the best ask is available
-    if not is_avaiable(best_ask, best_ask_amount):
+    if not is_available(best_ask, best_ask_amount):
         return orders
 
     # Step 2: Calculate the buy quantity based on the best ask amount - flip signs: sell/ask is (-) and buy/bid is (+)
@@ -99,14 +96,13 @@ def get_best_ask_buy_order(product, best_ask, best_ask_amount, current_position,
 
     # step 4: append order to list of orders
     order = Order(product, best_ask, buy_quantity)
-    print(f"sell: {order}")
-    orders.append(Order(product, best_ask, buy_quantity))
+    orders.append(order)
 
     return orders
 
 def get_best_bid_sell_order(product, best_bid, best_bid_amount, current_position, max_position, orders) -> List[Order]:
     # Step 1: Check if the best bid is available
-    if not is_avaiable(best_bid, best_bid_amount):
+    if not is_available(best_bid, best_bid_amount):
         return orders
 
     # Step 2: Calculate the sell quantity based on the best bid amount
@@ -121,7 +117,6 @@ def get_best_bid_sell_order(product, best_bid, best_bid_amount, current_position
 
     # step 4: append order to list of orders
     order = Order(product, best_bid, sell_quantity)
-    print(f"buy: {order}")
     orders.append(order)
 
     return orders
