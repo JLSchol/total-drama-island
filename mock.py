@@ -95,6 +95,22 @@ state = TradingState(
               "KELP": -5},
     observations= observation
 )
+
+state2 = TradingState(
+    traderData="",
+    timestamp=100,
+    listings={"RAINFOREST_RESIN": listing1,
+              "KELP": listing2},
+    order_depths= {"RAINFOREST_RESIN": order_depth1,
+                   "KELP": order_depth2},
+    own_trades={"RAINFOREST_RESIN": [],
+                "KELP": []},
+    market_trades={"RAINFOREST_RESIN": [trade1],
+                   "KELP": [trade2]},
+    position={"RAINFOREST_RESIN": 3,
+              "KELP": -5},
+    observations= observation
+)
 def get_mock_file_dir():
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))  # Go up to root/
     return os.path.join(root_dir, "mockfiles") # go down to mockfiles

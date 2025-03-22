@@ -1,8 +1,7 @@
-import pandas as pd
+from datamodel import TradingState, Order
+from typing import List
 import json
-from typing import Dict, List, Optional
-from datamodel import TradingState
-
+import pandas as pd
 
 class TradingData:
     def __init__(self, state: TradingState, position_limits: dict[str,int], max_depth: int=3):
@@ -231,25 +230,165 @@ class TradingData:
         return self.df
 
 
-if __name__ == "__main__":
-    from mock import state, state2
-    pd.set_option('display.max_columns', None)  # Show all columns
-    pd.set_option('display.width', None)  # Auto-adjust width to fit the screen
+def is_available(best, best_amount):
+    return best is not None and best_amount is not None
 
-    state.traderData = ""
-    print(f"state: {state}")
-    td = TradingData(state, {"KELP": 50, "RAINFOREST_RESIN": 50},3) # create new df
-    print(td.get_df().head(5))
-    print("----")
-    new_trader_data = td.get_df_as_json_string()
-    print(f"{new_trader_data=}")
-    print()
-    print("----")
-    print("new iteration")
-    print("----")
-    print()
-    # new iteration
-    state2.traderData = new_trader_data
-    td = TradingData(state2, {"KELP": 50, "RAINFOREST_RESIN": 50},3)
-    print(td.get_df().head(5))
+def adjust_sell_quantity(proposed_sell_quantity, max_sell_limit, current_position):
 
+    max_allowed_sell_quantity = max_sell_limit - current_position
+
+    if proposed_sell_quantity < max_allowed_sell_quantity:
+        adjusted_sell_quantity = max(proposed_sell_quantity, max_allowed_sell_quantity)
+        remaining_sell_capacity = 0
+    else:
+        adjusted_sell_quantity = proposed_sell_quantity
+        remaining_sell_capacity = max_allowed_sell_quantity - proposed_sell_quantity
+
+    return adjusted_sell_quantity, remaining_sell_capacity
+
+def adjust_buy_quantity(proposed_buy_quantity, max_buy_limit, current_position):
+
+    max_allowed_buy_quantity = max_buy_limit - current_position
+
+    if proposed_buy_quantity > max_allowed_buy_quantity:
+        adjusted_buy_quantity = min(proposed_buy_quantity, max_allowed_buy_quantity)
+        remaining_buy_capacity = 0
+    else:
+        adjusted_buy_quantity = proposed_buy_quantity
+        remaining_buy_capacity = max_allowed_buy_quantity - proposed_buy_quantity
+
+    return adjusted_buy_quantity, remaining_buy_capacity
+
+def get_best_ask_buy_order(product, best_ask, best_ask_amount, current_position, max_position, orders) -> List[Order]:
+    # Step 1: Check if the best ask is available
+    if not is_available(best_ask, best_ask_amount):
+        return orders
+
+    # Step 2: Calculate the buy quantity based on the best ask amount - flip signs: sell/ask is (-) and buy/bid is (+)
+    buy_quantity = -1*best_ask_amount
+
+    # Step 3: potentially limit buy_quantity based on current position
+    buy_quantity, remaining_buy_capacity = adjust_buy_quantity(buy_quantity, max_position, current_position)
+
+    if buy_quantity <= 0: # 0 = no order, and - numbers are sells
+        return orders
+
+    # step 4: append order to list of orders
+    order = Order(product, best_ask, buy_quantity)
+    orders.append(order)
+
+    return orders
+
+def get_best_bid_sell_order(product, best_bid, best_bid_amount, current_position, max_position, orders) -> List[Order]:
+    # Step 1: Check if the best bid is available
+    if not is_available(best_bid, best_bid_amount):
+        return orders
+
+    # Step 2: Calculate the sell quantity based on the best bid amount
+    sell_quantity = -1*best_bid_amount
+
+    # Step 3: potentially limit sell_quantity based on current position
+    sell_quantity, remaining_sell_capacity = adjust_sell_quantity(sell_quantity, max_position, current_position)
+
+    if sell_quantity >= 0: # 0 = no order, and + numbers are buys
+        return orders
+
+    # step 4: append order to list of orders
+    order = Order(product, best_bid, sell_quantity)
+    orders.append(order)
+
+    return orders
+
+def sma_midprice_strategy(trading_data: TradingData, product, window, orders):
+    trading_data.df    # Filter the DataFrame for the specific product
+    product_df = trading_data.df[trading_data.df["product"] == product]
+
+    # Calculate the Simple Moving Average (SMA) for 'mid_price'
+    sma_values = product_df["mid_price"].rolling(window=window, min_periods=1).mean()
+
+    # Get the latest SMA value (this corresponds to the latest row for the product)
+    latest_sma = sma_values.iloc[-1]
+
+    # Use the apply_indicator method to update the 'sma_mid_price' column
+    trading_data.apply_indicator(product, "sma_mid_price", latest_sma)
+    print(f"Updated 'sma_mid_price' for product '{product}' with value: {latest_sma}")
+
+    fair_price = latest_sma
+    best_ask = product_df["best_ask"].iloc[-1]
+    best_ask_volume = product_df["best_ask_volume"].iloc[-1]
+    best_bid = product_df["best_bid"].iloc[-1]
+    best_bid_volume = product_df["best_bid_volume"].iloc[-1]
+    current_position = product_df["current_position"].iloc[-1]
+    max_buy_position = product_df["max_buy_position"].iloc[-1]
+    max_sell_position = product_df["max_sell_position"].iloc[-1]
+
+
+    if fair_price is None:
+        return  orders # Skip trading if no price data available
+    
+    # if the best/lowest ask is less what we find fair, then 
+    # try to only buy the best ask price and associated quantity
+    if best_ask < fair_price: 
+        print(f"best_ask is {best_ask} < fair price {fair_price} on product {product}")
+        orders = get_best_ask_buy_order(product, 
+                                    best_ask, best_ask_volume, 
+                                    current_position, max_buy_position, 
+                                    orders)
+    
+    # if the best/highest bid is more than what we find fair, then 
+    # try to only sell the best bid price and associated quantity
+    if best_bid > fair_price: 
+        print(f"best_bid is {best_bid} < fair price {fair_price} on product {product}")
+        orders = get_best_bid_sell_order(product, 
+                                    best_bid, best_bid_volume, 
+                                    current_position, max_sell_position, 
+                                    orders)
+    return orders
+
+def get_kelp_orders(trading_data: TradingData, product: str, orders):
+    sma_window = 5
+    return sma_midprice_strategy(trading_data, product, sma_window, orders)
+
+def get_rainforest_resin_orders(trading_data: TradingData, product: str, orders):
+    sma_window = 5
+    return sma_midprice_strategy(trading_data, product, sma_window, orders)
+
+
+class Trader:
+    
+    def run(self, state: TradingState):
+        result = {}
+        conversions = 0
+        position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}
+        max_depth = 3
+                       
+        # updates the current state and add to the dataframe
+        td = TradingData(state, position_limits, max_depth)
+
+        for product in state.order_depths:
+
+            orders: List[Order] = []
+
+            # Update with new mid prices
+            if product == "KELP":
+                orders = get_kelp_orders(td, product, orders)
+
+            if product == "RAINFOREST_RESIN":
+                orders = get_rainforest_resin_orders(td, product, orders)
+            
+            result[product] = orders
+        
+        # Store past prices in traderData for the next execution
+        print(td.df.head())
+        traderData = td.get_df_as_json_string()
+        
+        return result, conversions, traderData
+    
+# from mock import state
+# if __name__ == "__main__":
+#     pd.set_option('display.max_columns', None)  # Show all columns
+#     pd.set_option('display.width', None)  # Auto-adjust width to fit the screen
+
+#     trader = Trader()
+#     trader.run(state)
+    
