@@ -1,55 +1,172 @@
-from datamodel import OrderDepth, TradingState, Order
-from typing import List
+from datamodel import TradingState, Order
+from typing import Dict, List
 import json
 
-class SMA:
-    def __init__(self, price_list: List, length: int):
-        self.price_list = price_list
-        self.length = length
+class TradingData:
+    def __init__(self, state: TradingState, position_limits: Dict[str, int]):
+        self.position_limits = position_limits
+        self.data = self._initialize_data(state, position_limits)
 
-    def compute_sma(self) -> float:
-        if len(self.price_list) == 0:
-            return float('nan')  # More explicit handling
-        return sum(self.price_list) / len(self.price_list)
+    def _initialize_data(self, state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict]:
+        if state.traderData:
+            try:
+                data = json.loads(state.traderData)
+                if data:
+                    return self._update_new_state(data, state, position_limits)
+            except json.JSONDecodeError:
+                pass  
+        return self._from_empty_data(state, position_limits)
+
+    def _from_empty_data(self, state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict]:
+        return self._update_new_state({}, state, position_limits)
+
+    def _update_new_state(self, data: Dict[str, Dict[str, List]], state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict[str, List]]:
+        for product, order_depth in state.order_depths.items():
+            buy_orders = order_depth.buy_orders
+            sell_orders = order_depth.sell_orders
+            best_bid = max(buy_orders.keys(), default=None)
+            best_ask = min(sell_orders.keys(), default=None)
+            mid_price = (best_bid + best_ask) / 2 if best_bid is not None and best_ask is not None else None
+
+            # Ensure data structure is initialized
+            if product not in data:
+                data[product] = {
+                    "timestamp": [],
+                    "buy_orders": [],
+                    "sell_orders": [],
+                    "best_bid": [],
+                    "best_bid_volume": [],
+                    "best_ask": [],
+                    "best_ask_volume": [],
+                    "total_ask_volume": [],
+                    "total_bid_volume": [],
+                    "mid_price": [],
+                    "max_sell_position": [],
+                    "max_buy_position": [],
+                    "current_position": [],
+                    "observation_plain_value": [],
+                    "observation_bidPrice": [],
+                    "observation_askPrice": [],
+                    "observation_transportFees": [],
+                    "observation_exportTariff": [],
+                    "observation_importTariff": [],
+                    "observation_sugarPrice": [],
+                    "observation_sunlightIndex": [],
+                }
+
+            # Append new values to each field
+            data[product]["timestamp"].append(state.timestamp)
+            data[product]["buy_orders"].append(dict(buy_orders))
+            data[product]["sell_orders"].append(dict(sell_orders))
+            data[product]["best_bid"].append(best_bid)
+            data[product]["best_bid_volume"].append(buy_orders.get(best_bid, 0))
+            data[product]["best_ask"].append(best_ask)
+            data[product]["best_ask_volume"].append(sell_orders.get(best_ask, 0))
+            data[product]["total_ask_volume"].append(sum(sell_orders.values()))
+            data[product]["total_bid_volume"].append(sum(buy_orders.values()))
+            data[product]["mid_price"].append(mid_price)
+            data[product]["max_sell_position"].append(-position_limits[product])
+            data[product]["max_buy_position"].append(position_limits[product])
+            data[product]["current_position"].append(int(state.position.get(product, 0)))
+
+            if state.observations.plainValueObservations:
+                data[product]["observation_plain_value"].append(state.observations.plainValueObservations[product])
+
+            if state.observations.conversionObservations:
+                data[product]["observation_bidPrice"].append(state.observations.conversionObservations[product].bidPrice)
+                data[product]["observation_askPrice"].append(state.observations.conversionObservations[product].askPrice)
+                data[product]["observation_transportFees"].append(state.observations.conversionObservations[product].transportFees)
+                data[product]["observation_exportTariff"].append(state.observations.conversionObservations[product].exportTariff)
+                data[product]["observation_importTariff"].append(state.observations.conversionObservations[product].importTariff)
+                data[product]["observation_sugarPrice"].append(state.observations.conversionObservations[product].sugarPrice)
+                data[product]["observation_sunlightIndex"].append(state.observations.conversionObservations[product].sunlightIndex)
+
+        return data
+
+    def get_product_data(self, product: str) -> Dict:
+        return self.data.get(product, {})
+
+    def get_latest_entry(self, product: str) -> Dict[str, any]:
+        if product not in self.data:
+            return {}
+
+        latest_entry = {}
+        for key, values in self.data[product].items():
+            if values:  # Ensure there's data
+                # Get the most recent entry, This does not guarantee matching timestamp, 
+                # with data, it just grabs the latest from whatever iteraction that is..
+                latest_entry[key] = values[-1]  
+        return latest_entry
+
+    def get_last_product_field(self, product: str, field: str) -> any:
+        return self.get_value_by_index(product, field, -1)
     
-    def update_sma(self, price: float):
-        self.price_list.append(price)
-        if len(self.price_list) > self.length:
-            self.price_list.pop(0)  # Maintain fixed size
+    def get_values_by_range(self, product: str, field: str, start: int, length: int) -> list:
+        if product not in self.data:
+            return []  # Return an empty list if the product doesn't exist
 
-    def get_sma(self, price: float):
-        self.update_sma(price)
-        return self.compute_sma()
+        if field not in self.data[product]:
+            return []  # Return an empty list if the field doesn't exist
 
-class Indicators:
-    def __init__(self, order_depth):
-        self.order_depth = order_depth
-        self.best_bid, self.best_bid_amount = self.get_best_bid(order_depth)
-        self.best_ask, self.best_ask_amount = self.get_best_ask(order_depth)
-        self.best_mid_price = self.get_best_mid_price()
-        self.best_weigthed_mid_price = self.get_best_weigthed_mid_price(self.best_bid, 
-                                                                        self.best_bid_amount,
-                                                                        self.best_ask, 
-                                                                        self.best_ask_amount)
-    
-    def get_best_ask(self, order_depth):
-        return min(order_depth.sell_orders.items(), key=lambda x: x[0]) if order_depth.sell_orders else (None, None)
+        values = self.data[product][field]
 
-    def get_best_bid(self, order_depth):
-        return max(order_depth.buy_orders.items(), key=lambda x: x[0]) if order_depth.buy_orders else (None, None)
+        # Adjust negative indices correctly
+        if start < 0:
+            start = len(values) + start  # Convert to a positive index if negative
 
-    def get_best_mid_price(self):
-        if self.best_bid is None or self.best_ask is None:
-            return None
-        return (self.best_bid + self.best_ask) / 2
-        
-    def get_best_weigthed_mid_price(self, best_bid, best_bid_amount, best_ask, best_ask_amount):
-        if best_bid is None or best_ask is None:
-            return None
-        if best_bid_amount is None or best_ask_amount is None: 
-            return None
-        best_ask_amount = abs(best_ask_amount) # ask/sell quantities are denoted by (-) values
-        return ( (best_bid*best_bid_amount) + (best_ask*best_ask_amount)) / (best_bid_amount+best_ask_amount)
+        # Ensure we don't slice out of bounds
+        if start < 0:
+            start = 0  # If the start is still out of bounds, start from 0
+
+        # If length extends beyond the end of the list, limit it to the list size
+        end = min(start + length, len(values))
+
+        # Return the sliced range
+        return values[start:end]
+
+    def get_value_by_index(self, product: str, field: str, index: int) -> any:
+        if product not in self.data:
+            return None  # Or handle this as needed
+
+        if field not in self.data[product]:
+            return None  # Handle missing field gracefully
+
+        values = self.data[product][field]
+
+        # Check if the index is valid (both positive and negative indices)
+        if -len(values) <= index < len(values):
+            return values[index]  # Return the value at the specified index (positive or negative)
+
+        return None  # Return None if the index is out of bounds
+  
+    def get_value_by_timestamp(self, product: str, field: str, timestamp: int) -> any:
+        if product not in self.data:
+            return None  # Or handle this as needed
+
+        if field not in self.data[product]:
+            return None  # Handle missing field gracefully
+
+        timestamps = self.data[product]["timestamp"]
+        values = self.data[product][field]
+
+        # Find the index of the matching timestamp
+        if timestamp in timestamps:
+            index = timestamps.index(timestamp)
+            return values[index]  # Return the value at the matching timestamp index
+
+        return None  # Return None if timestamp is not found
+
+    def apply_indicator(self, product: str, indicator_name: str, value):
+        if product not in self.data:
+            self.data[product] = {}  # Ensure product exists
+
+        if indicator_name not in self.data[product]:
+            self.data[product][indicator_name] = []  # Initialize as list if missing
+
+        self.data[product][indicator_name].append(value)  # Append new value
+
+    def get_data_as_json(self) -> str:
+        return json.dumps(self.data)
 
 def is_available(best, best_amount):
     return best is not None and best_amount is not None
@@ -109,8 +226,7 @@ def get_best_bid_sell_order(product, best_bid, best_bid_amount, current_position
     sell_quantity = -1*best_bid_amount
 
     # Step 3: potentially limit sell_quantity based on current position
-    max_sell_limit = -1*max_position # max position is given by an positive number so flip sign
-    sell_quantity, remaining_sell_capacity = adjust_sell_quantity(sell_quantity, max_sell_limit, current_position)
+    sell_quantity, remaining_sell_capacity = adjust_sell_quantity(sell_quantity, max_position, current_position)
 
     if sell_quantity >= 0: # 0 = no order, and + numbers are buys
         return orders
@@ -121,104 +237,88 @@ def get_best_bid_sell_order(product, best_bid, best_bid_amount, current_position
 
     return orders
 
-def sma_midprice_strategy(product, price_list, sma_length, ind, current_position, max_position, orders) -> List[Order]:
-    """
-    This is the strategy for buying and selling a product based of 
-    the buying/selling if the ask/bid are below/above a fair price, which is calcuated by a sma of the best mid price
-        1. calculate fair price based on moving average of the mid prace. This is the perceived true value of the product
-        2. create buy order that:
-            - tries to matches the lowest ask price and quantity
-            - if the ask price is cheaper than the fair price -> $$$
-        3. create sell order that:
-            - tries to match highest bid price and quantity
-            - if the bid price is more expensive than the fair price -> $$$
-    """
-    # calc fair price using sma with mid price. next update state.trader_data
-    # print(f"OLD LIST: {price_list[product]}")
-    sma = SMA(price_list[product], sma_length) # need to retrieve since data between runs is not persistent
-    fair_price = sma.get_sma(ind.best_mid_price) # calc fair price based on sma of best_mid_price
-    price_list[product] = sma.price_list # update the state.trader_data["price_list"][product] for next iteration
-    # print(f"NEW LIST: {sma.price_list}")
+def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, orders: List[Order]):
+    # Retrieve the product's data from the dictionary
+    product_data = trading_data.get_product_data(product)
+    if not product_data:
+        return orders
+    
+    mid_price_values = product_data["mid_price"]
+    if len(mid_price_values) == 0:
+        return orders
 
-    if fair_price is None:
-        # print(f"fair_price is {fair_price} for {product}")
-        return  orders # Skip trading if no price data available
-    
-    # if the best/lowest ask is less what we find fair, then 
-    # try to only buy the best ask price and associated quantity
-    if ind.best_ask < fair_price: 
-        print(f"best_ask is {ind.best_ask} < fair price {fair_price} on product {product}")
-        orders = get_best_ask_buy_order(product, 
-                                    ind.best_ask, ind.best_ask_amount, 
-                                    current_position, max_position, 
-                                    orders)
-    
-    # if the best/highest bid is more than what we find fair, then 
-    # try to only sell the best bid price and associated quantity
-    if ind.best_bid > fair_price: 
-        print(f"best_bid is {ind.best_bid} < fair price {fair_price} on product {product}")
-        orders = get_best_bid_sell_order(product, 
-                                    ind.best_bid, ind.best_bid_amount, 
-                                    current_position, max_position, 
-                                    orders)
-    
+    # if window is larger than the list, adjust window length
+    window = window if window < len(mid_price_values) else len(mid_price_values)
+    # get the last x (window) amount of prices
+    prices = trading_data.get_values_by_range(product,"mid_price",-window,window)
+    assert len(prices) == window
+    # calculate 
+    latest_sma = sum(prices)/window
+
+    # Skip trading if no fair price (SMA) can be determined
+    if latest_sma is None:
+        return orders
+
+    # Use the apply_indicator method to update the 'sma_mid_price' field in the dictionary
+    trading_data.apply_indicator(product, "sma_mid_price", latest_sma)
+
+    # Get the latest entries for fields: best ask, best bid, volumes, and position data
+    best_ask = trading_data.get_last_product_field(product, "best_ask")
+    best_ask_volume = trading_data.get_last_product_field(product, "best_ask_volume")
+    best_bid = trading_data.get_last_product_field(product, "best_bid")
+    best_bid_volume = trading_data.get_last_product_field(product, "best_bid_volume")
+    current_position = trading_data.get_last_product_field(product, "current_position")
+    max_buy_position = trading_data.get_last_product_field(product, "max_buy_position")
+    max_sell_position = trading_data.get_last_product_field(product, "max_sell_position")
+
+
+    # If the best ask price is less than what we find fair, try to buy the best ask price and associated quantity
+    if best_ask is not None and best_ask < latest_sma:
+        orders = get_best_ask_buy_order(
+            product, best_ask, best_ask_volume, current_position, max_buy_position, orders
+        )
+
+    # If the best bid price is greater than what we find fair, try to sell the best bid price and associated quantity
+    if best_bid is not None and best_bid > latest_sma:
+        orders = get_best_bid_sell_order(
+            product, best_bid, best_bid_volume, current_position, max_sell_position, orders
+        )
+
     return orders
 
-def get_kelp_orders(product, price_list, ind, current_position, max_position, orders) -> List[Order]:
-    return sma_midprice_strategy(product, price_list, 5, ind, current_position, max_position, orders)
-
-def get_rainforest_resin_orders(product, price_list, ind, current_position, max_position, orders) -> List[Order]:
-    return sma_midprice_strategy(product, price_list, 10, ind, current_position, max_position, orders)
-
-
-
 class Trader:
-    
     def run(self, state: TradingState):
         result = {}
         conversions = 0
-                
-        # Load past prices from traderData
-        try:
-            trader_data = json.loads(state.traderData) if state.traderData else {"price_list": {}}
-        except json.JSONDecodeError:
-            trader_data = {"price_list": {}}
-        
-        # get old prices list from state.trader_data
-        price_list = trader_data.get("price_list", {}) # if pastprices not exists, create empty dict
-        
         position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}
+
+        td = TradingData(state, position_limits)
+        print(state.observations)
+        print(state.observations.conversionObservations)
+        print(state.observations.plainValueObservations)
+
         for product in state.order_depths:
-            if product not in price_list: # if product not exsits in price_list, add key in dictionairy with empty list
-                price_list[product] = []
-            
-            order_depth: OrderDepth = state.order_depths[product]
             orders: List[Order] = []
 
-            ind = Indicators(order_depth)
-
-            # Update with new mid prices
             if product == "KELP":
-                orders = get_kelp_orders(product, price_list, ind,
-                                         state.position.get(product, 0), position_limits[product],
-                                         orders,
-                                         )
+                orders = sma_midprice_strategy(td, product, 5, orders)
 
             if product == "RAINFOREST_RESIN":
-                orders = get_rainforest_resin_orders(product, price_list, ind,
-                                         state.position.get(product, 0), position_limits[product],
-                                         orders,
-                                         )
+                orders = sma_midprice_strategy(td, product, 10, orders)
             
             result[product] = orders
         
-        # Store past prices in traderData for the next execution
-        traderData = json.dumps(trader_data)
-        
+        traderData = td.get_data_as_json()
+
         return result, conversions, traderData
-    
-# from mock import state
+
+# from mock import state, state2
 # if __name__ == "__main__":
+
 #     trader = Trader()
-#     trader.run(state)
-    
+#     result,conversions, data = trader.run(state)
+#     print(data)
+#     print("--- NEW STEP ---") 
+#     state2.traderData = data
+#     result,conversions, data = trader.run(state2)
+#     print(data)

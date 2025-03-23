@@ -63,7 +63,7 @@ class TradingData:
                 else:
                     return self._from_empty_dataframe(max_depth, state, position_limits)
             except json.JSONDecodeError as e:
-                print(f"reinit dataframe because of JSON decoding error: {e}")
+                # print(f"reinit dataframe because of JSON decoding error: {e}")
                 return self._from_empty_dataframe(max_depth, state, position_limits)
         return self._from_empty_dataframe(max_depth, state, position_limits)
 
@@ -311,7 +311,7 @@ def sma_midprice_strategy(trading_data: TradingData, product, window, orders):
 
     # Use the apply_indicator method to update the 'sma_mid_price' column
     trading_data.apply_indicator(product, "sma_mid_price", latest_sma)
-    print(f"Updated 'sma_mid_price' for product '{product}' with value: {latest_sma}")
+    # print(f"Updated 'sma_mid_price' for product '{product}' with value: {latest_sma}")
 
     fair_price = latest_sma
     best_ask = product_df["best_ask"].iloc[-1]
@@ -329,7 +329,7 @@ def sma_midprice_strategy(trading_data: TradingData, product, window, orders):
     # if the best/lowest ask is less what we find fair, then 
     # try to only buy the best ask price and associated quantity
     if best_ask < fair_price: 
-        print(f"best_ask is {best_ask} < fair price {fair_price} on product {product}")
+        # print(f"best_ask is {best_ask} < fair price {fair_price} on product {product}")
         orders = get_best_ask_buy_order(product, 
                                     best_ask, best_ask_volume, 
                                     current_position, max_buy_position, 
@@ -338,7 +338,7 @@ def sma_midprice_strategy(trading_data: TradingData, product, window, orders):
     # if the best/highest bid is more than what we find fair, then 
     # try to only sell the best bid price and associated quantity
     if best_bid > fair_price: 
-        print(f"best_bid is {best_bid} < fair price {fair_price} on product {product}")
+        # print(f"best_bid is {best_bid} < fair price {fair_price} on product {product}")
         orders = get_best_bid_sell_order(product, 
                                     best_bid, best_bid_volume, 
                                     current_position, max_sell_position, 

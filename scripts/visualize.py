@@ -56,13 +56,16 @@ def plot_mid_price(df):
 
 
 if __name__ == '__main__':
-    # Load Data
-    csv_file1 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\2503041722_example_upload\processed\2503041722_example_upload_activities.csv"
-    csv_file2 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\2503191612_buy_everything\processed\2503191612_buy_everything_activities.csv"
-    csv_file3 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\2503191644_do_nothing\processed\2503191644_do_nothing_activities.csv"
-    csv_file4 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250319_ma\processed\250319_ma_activities.csv"
-    for file in [csv_file1,  csv_file2,  csv_file3,  csv_file4]:
-        df = get_activities_df(file)
-        plot_profit_loss(df)
-        # plot_mid_price(df)
+    # # Load Data
+    # csv_file1 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\2503041722_example_upload\processed\2503041722_example_upload_activities.csv"
+    # csv_file2 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\2503191612_buy_everything\processed\2503191612_buy_everything_activities.csv"
+    # csv_file3 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\2503191644_do_nothing\processed\2503191644_do_nothing_activities.csv"
+    # csv_file4 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma\processed\250323_ma_activities.csv"
+    # for file in [csv_file1,  csv_file2,  csv_file3,  csv_file4]:
+    #     df = get_activities_df(file)
+    #     plot_profit_loss(df)
+    #     # plot_mid_price(df)
+    csv_file4 = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma\processed\250323_ma_activities.csv"
+    df = get_activities_df(csv_file4)
+    plot_profit_loss(df)
     plt.show()
