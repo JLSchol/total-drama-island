@@ -22,8 +22,12 @@ class TradingData:
 
     def _update_new_state(self, data: Dict[str, Dict[str, List]], state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict[str, List]]:
         for product, order_depth in state.order_depths.items():
+            # Sort buy orders from highest to lowest price (best bid to worst bid)
             buy_orders = order_depth.buy_orders
             sell_orders = order_depth.sell_orders
+            buy_orders = {int(price): int(volume) for price, volume in sorted(buy_orders.items(), key=lambda x: -int(x[0]))}
+            sell_orders = {int(price): int(volume) for price, volume in sorted(sell_orders.items(), key=lambda x: int(x[0]))}
+
             best_bid = max(buy_orders.keys(), default=None)
             best_ask = min(sell_orders.keys(), default=None)
             mid_price = (best_bid + best_ask) / 2 if best_bid is not None and best_ask is not None else None
@@ -197,45 +201,78 @@ def adjust_buy_quantity(proposed_buy_quantity, max_buy_limit, current_position):
 
     return adjusted_buy_quantity, remaining_buy_capacity
 
-def get_best_ask_buy_order(product, best_ask, best_ask_amount, current_position, max_position, orders) -> List[Order]:
-    # Step 1: Check if the best ask is available
-    if not is_available(best_ask, best_ask_amount):
-        return orders
+# def get_best_ask_buy_order(product, best_ask, best_ask_amount, current_position, max_position, orders) -> List[Order]:
+#     # Step 1: Check if the best ask is available
+#     if not is_available(best_ask, best_ask_amount):
+#         return orders
 
-    # Step 2: Calculate the buy quantity based on the best ask amount - flip signs: sell/ask is (-) and buy/bid is (+)
-    buy_quantity = -1*best_ask_amount
+#     # Step 2: Calculate the buy quantity based on the best ask amount - flip signs: sell/ask is (-) and buy/bid is (+)
+#     buy_quantity = -1*best_ask_amount
 
-    # Step 3: potentially limit buy_quantity based on current position
-    buy_quantity, remaining_buy_capacity = adjust_buy_quantity(buy_quantity, max_position, current_position)
+#     # Step 3: potentially limit buy_quantity based on current position
+#     buy_quantity, remaining_buy_capacity = adjust_buy_quantity(buy_quantity, max_position, current_position)
 
-    if buy_quantity <= 0: # 0 = no order, and - numbers are sells
-        return orders
+#     if buy_quantity <= 0: # 0 = no order, and - numbers are sells
+#         return orders
 
-    # step 4: append order to list of orders
-    order = Order(product, best_ask, buy_quantity)
-    orders.append(order)
+#     # step 4: append order to list of orders
+#     order = Order(product, best_ask, buy_quantity)
+#     orders.append(order)
 
-    return orders
+#     return orders
 
-def get_best_bid_sell_order(product, best_bid, best_bid_amount, current_position, max_position, orders) -> List[Order]:
-    # Step 1: Check if the best bid is available
-    if not is_available(best_bid, best_bid_amount):
-        return orders
+# def get_best_bid_sell_order(product, best_bid, best_bid_amount, current_position, max_position, orders) -> List[Order]:
+#     # Step 1: Check if the best bid is available
+#     if not is_available(best_bid, best_bid_amount):
+#         return orders
 
-    # Step 2: Calculate the sell quantity based on the best bid amount
-    sell_quantity = -1*best_bid_amount
+#     # Step 2: Calculate the sell quantity based on the best bid amount
+#     sell_quantity = -1*best_bid_amount
 
-    # Step 3: potentially limit sell_quantity based on current position
-    sell_quantity, remaining_sell_capacity = adjust_sell_quantity(sell_quantity, max_position, current_position)
+#     # Step 3: potentially limit sell_quantity based on current position
+#     sell_quantity, remaining_sell_capacity = adjust_sell_quantity(sell_quantity, max_position, current_position)
 
-    if sell_quantity >= 0: # 0 = no order, and + numbers are buys
-        return orders
+#     if sell_quantity >= 0: # 0 = no order, and + numbers are buys
+#         return orders
 
-    # step 4: append order to list of orders
-    order = Order(product, best_bid, sell_quantity)
-    orders.append(order)
+#     # step 4: append order to list of orders
+#     order = Order(product, best_bid, sell_quantity)
+#     orders.append(order)
 
-    return orders
+#     return orders
+
+def get_best_order(order_type: str, product: str, price: float, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
+    """
+    Creates a buy or sell order based on the best available price and quantity.
+    
+    :param order_type: "buy" for buying, "sell" for selling
+    :param product: The product being traded
+    :param price: The best price available
+    :param amount: The quantity available (negative for sell, positive for buy)
+    :param current_position: The trader's current position
+    :param max_position: The trader's maximum allowable position
+    :param orders: The list of existing orders to append to
+    :return: The updated list of orders
+    """
+    if not is_available(price, amount):
+        return orders, None  # No valid price or quantity available
+
+    # Flip sign: ask/sell is negative, bid/buy is positive
+    order_quantity = -amount
+
+    # Adjust based on position limits
+    if order_type == "buy":
+        order_quantity, remaining_capacity = adjust_buy_quantity(order_quantity, max_position, current_position)
+        if order_quantity <= 0:
+            return orders, remaining_capacity  # No valid buy order
+    else:  # Sell order
+        order_quantity, remaining_capacity = adjust_sell_quantity(order_quantity, max_position, current_position)
+        if order_quantity >= 0:
+            return orders, remaining_capacity  # No valid sell order
+
+    # Append the order
+    orders.append(Order(product, price, order_quantity))
+    return orders, remaining_capacity
 
 def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, orders: List[Order]):
     # Retrieve the product's data from the dictionary
@@ -271,18 +308,41 @@ def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, 
     max_buy_position = trading_data.get_last_product_field(product, "max_buy_position")
     max_sell_position = trading_data.get_last_product_field(product, "max_sell_position")
 
+    asks = trading_data.get_last_product_field(product, "sell_orders")
+    asks = {int(price): int(volume) for price, volume in sorted(asks.items(), key=lambda x: int(x[0]))}
+    if len(asks.keys())>=2:
+        second_best_ask, second_best_ask_volume = list(asks.items())[1]
+    else:
+        second_best_ask, second_best_ask_volume = None, None
 
-    # If the best ask price is less than what we find fair, try to buy the best ask price and associated quantity
+    bids = trading_data.get_last_product_field(product, "buy_orders")
+    bids = {int(price): int(volume) for price, volume in sorted(bids.items(), key=lambda x: -int(x[0]))}
+    if len(bids.keys())>=2:
+        second_best_bid, second_best_bid_volume = list(bids.items())[1]
+    else:
+        second_best_bid, second_best_bid_volume = None, None
+
+    # Place buy order if best ask is lower than the fair price
+    reserved = 5 # amount of pisition I want to minimally reserve to be able to get best ask/bid in next iteration
     if best_ask is not None and best_ask < latest_sma:
-        orders = get_best_ask_buy_order(
-            product, best_ask, best_ask_volume, current_position, max_buy_position, orders
-        )
+        orders, remaining_capacity = get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
+        # print("buying best: {orders}")
 
-    # If the best bid price is greater than what we find fair, try to sell the best bid price and associated quantity
+        if abs(remaining_capacity) - reserved > 0 and second_best_ask < latest_sma:
+            max_buy_position = max_buy_position - reserved # shrink max buy since we want to have something reserved
+            # Now let's try to place a second best order if there's room    bids = trading_data.get_last_product_field(product, "buy_orders")
+            orders, _ = get_best_order("buy", product, second_best_ask, second_best_ask_volume, current_position, max_buy_position, orders)
+            # print("buying second best also: {orders}")
+
+        
+    # Place sell order if best bid is higher than the fair price
     if best_bid is not None and best_bid > latest_sma:
-        orders = get_best_bid_sell_order(
-            product, best_bid, best_bid_volume, current_position, max_sell_position, orders
-        )
+        orders, remaining_capacity = get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
+
+        if abs(remaining_capacity) - reserved > 0 and second_best_bid > latest_sma:
+            max_sell_position = max_sell_position + reserved # shrink max sell size since we want to have something reserved
+            # Now let's try to place a second best order if there's room    bids = trading_data.get_last_product_field(product, "sell_orders")
+            orders, _ = get_best_order("sell", product, second_best_bid, second_best_bid_volume, current_position, max_sell_position, orders)
 
     return orders
 
@@ -293,9 +353,9 @@ class Trader:
         position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}
 
         td = TradingData(state, position_limits)
-        print(state.observations)
-        print(state.observations.conversionObservations)
-        print(state.observations.plainValueObservations)
+        # print(state.observations)
+        # print(state.observations.conversionObservations)
+        # print(state.observations.plainValueObservations)
 
         for product in state.order_depths:
             orders: List[Order] = []

@@ -200,7 +200,8 @@ def plot_profit_loss(df):
 if __name__ == "__main__":
     # activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250319_ma\processed\250319_ma_activities.csv"
     # activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250320_ma\processed\250320_ma_activities.csv"
-    activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma\processed\250323_ma_activities.csv"
+    # activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma\processed\250323_ma_activities.csv"
+    activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma_second_best\processed\250323_ma_second_best_activities.csv"
 
     # activities_dict = get_activities_dict(activity_csv)
     df = get_activities_df(activity_csv)
