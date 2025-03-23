@@ -161,24 +161,39 @@ def plot_product_data(df):
 def plot_profit_loss(df):
     # List of unique products in the dataset
     products = df['product'].unique()
-
+    
     # Create a figure
     plt.figure(figsize=(12, 6))
-
+    
+    # Dictionary to store final profit/loss per product
+    final_profits = {}
+    
     # Plot Profit and Loss for each product
     for product in products:
         product_data = df[df['product'] == product]
         
         # Plot Profit and Loss for each product
         plt.plot(product_data['timestamp'], product_data['profit_and_loss'], label=product, marker='o')
-
+        
+        # Store the final profit/loss for each product
+        final_profits[product] = product_data['profit_and_loss'].iloc[-1]
+    
+    # Calculate total final profit/loss
+    total_profit = df[df['timestamp'] == df['timestamp'].iloc[-1]]['profit_and_loss'].sum()
+    
     # Labels and Formatting
     plt.xlabel("Timestamp")
     plt.ylabel("Seashells earned")
     plt.title("Profit and Loss for Each Product Over Time")
     plt.legend(title="Product")
     plt.grid(True)
-
+    
+    # Display final profits on the plot
+    text_y_position = min(df['profit_and_loss']) - 5  # Adjust position to avoid overlap
+    text = "\n".join([f"{product}: {profit:.2f} seashells" for product, profit in final_profits.items()])
+    text += f"\nTotal: {total_profit:.2f} seashells"
+    plt.text(df['timestamp'].iloc[-1], text_y_position, text, fontsize=10, bbox=dict(facecolor='white', alpha=0.5))
+    
     # Show the plot
     plt.tight_layout()
 
@@ -192,6 +207,9 @@ if __name__ == "__main__":
     # print(df.columns[0])
 
     df = add_weighted_prices(df)  # Ensure weighted prices are calculated
+
+    
+
     plot_product_data(df)
 
     plot_profit_loss(df)
