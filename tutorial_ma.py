@@ -300,8 +300,9 @@ def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, 
     if best_ask is not None and best_ask < latest_sma:
         orders, remaining_capacity = get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
         # print("buying best: {orders}")
+    
 
-        if abs(remaining_capacity) - reserved > 0 and second_best_ask < latest_sma:
+        if abs(remaining_capacity) - reserved > 0 and second_best_ask < latest_sma and second_best_ask is not None:
             max_buy_position = max_buy_position - reserved # shrink max buy since we want to have something reserved
             # Now let's try to place a second best order if there's room    bids = trading_data.get_last_product_field(product, "buy_orders")
             orders, _ = get_best_order("buy", product, second_best_ask, second_best_ask_volume, current_position, max_buy_position, orders)
@@ -312,7 +313,7 @@ def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, 
     if best_bid is not None and best_bid > latest_sma:
         orders, remaining_capacity = get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
 
-        if abs(remaining_capacity) - reserved > 0 and second_best_bid > latest_sma:
+        if abs(remaining_capacity) - reserved > 0 and second_best_bid > latest_sma and second_best_bid is not None:
             max_sell_position = max_sell_position + reserved # shrink max sell size since we want to have something reserved
             # Now let's try to place a second best order if there's room    bids = trading_data.get_last_product_field(product, "sell_orders")
             orders, _ = get_best_order("sell", product, second_best_bid, second_best_bid_volume, current_position, max_sell_position, orders)
