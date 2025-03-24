@@ -1,6523 +1,2001 @@
 sandboxLog,lambdaLog,timestamp
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",0
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",1200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",1900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",2000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",2100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",2200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",2300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",2400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",2500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",2600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",2700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",2800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",2900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",3600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",3900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}",4300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",4900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",5900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",6500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",6900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",7900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",8800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",8900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",9900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}",10600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",10900
-"
-Orders for product KELP exceeded limit of 50 set","(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",11700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",11900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",12900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",13700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",13900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",14600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",14900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",15000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",15100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",15200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",15300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",15400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",15500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",15600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",15700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",15800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",15900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",16000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",16100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",16200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",16300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",16400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",16500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",16600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",16700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",16800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",16900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",17900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",18900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",19200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",19900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",20000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",20100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",20200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",20300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",20400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",20500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",20600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",20700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",20800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",20900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",21200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",21900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",22000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",22100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",22200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",22300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",22400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",22500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",22600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",22700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",22800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",22900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",23200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",23900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",24600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",24900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",25000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",25100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",25200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",25300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",25400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",25500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",25600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",25700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",25800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",25900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",26000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",26100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",26200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",26300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",26400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",26500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",26600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",26700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",26800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",26900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",27900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",28000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",28100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",28200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",28300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",28400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",28500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",28600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",28700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",28800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",28900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",29600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",29900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",30800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",30900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",31400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",31900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",32900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",33200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",33900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",34000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",34100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",34200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",34300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",34400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",34500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",34600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",34700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",34800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",34900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",35900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",36000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",36100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",36200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",36300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",36400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",36500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",36600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",36700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",36800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",36900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",37300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",37900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",38000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",38100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",38200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",38300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",38400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",38500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",38600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",38700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",38800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",38900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",39500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",39900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",40300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",40900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",41000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",41100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",41200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",41300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying best: {orders}
-buying second best also: {orders}",41400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",41500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",41600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",41700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",41800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",41900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",42300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",42900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",43900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",44000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",44100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",44200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",44300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",44400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",44500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",44600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",44700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",44800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",44900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",45000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",45100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",45200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",45300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",45400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",45500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",45600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",45700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",45800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",45900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",46900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",47100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",47900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",48000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",48100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",48200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",48300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",48400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",48500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",48600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",48700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",48800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",48900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",49800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",49900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",50600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",50900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",51900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",52000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",52100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",52200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",52300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",52400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",52500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",52600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",52700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",52800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",52900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",53600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",53900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",54700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",54900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",55000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",55100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",55200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",55300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",55400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",55500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",55600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",55700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",55800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",55900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",56000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",56100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",56200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",56300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",56400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",56500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",56600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",56700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",56800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",56900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",57800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",57900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",58000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",58100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",58200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",58300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",58400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",58500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",58600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",58700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",58800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",58900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",59900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",60400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",60900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",61000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",61100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",61200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",61300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",61400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",61500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",61600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",61700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",61800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",61900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",62800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",62900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",63900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",64900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",65000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",65100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",65200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",65300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",65400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",65500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",65600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",65700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",65800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",65900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",66000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",66100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",66200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",66300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",66400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",66500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",66600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",66700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",66800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",66900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",67300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",67900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",68800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",68900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",69300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",69900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",70000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",70100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",70200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",70300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",70400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",70500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",70600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",70700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",70800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",70900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",71600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",71900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",72600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",72900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",73400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",73900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",74900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",75000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",75900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",76000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",76100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",76200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",76300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",76400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",76500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",76600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",76700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",76800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",76900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77100
-"
-Orders for product KELP exceeded limit of 50 set","(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",77200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",77900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",78000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",78100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",78200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",78300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",78400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",78500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",78600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",78700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",78800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",78900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",79200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",79900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80400
-"
-Orders for product KELP exceeded limit of 50 set","(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",80500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",80900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",81800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",81900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",82000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",82100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",82200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",82300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",82400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",82500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",82600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",82700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",82800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",82900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",83000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",83100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",83200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",83300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",83400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",83500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",83600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",83700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",83800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",83900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",84000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",84100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",84200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",84300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",84400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",84500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",84600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",84700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",84800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",84900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",85000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",85100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",85200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",85300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",85400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",85500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",85600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",85700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",85800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",85900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",86900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",87900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",88000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",88100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",88200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",88300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",88400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",88500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",88600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",88700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",88800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",88900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",89900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",90900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",91700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",91900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",92000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",92100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",92200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",92300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",92400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",92500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",92600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",92700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",92800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",92900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",93000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",93100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",93200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",93300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",93400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",93500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",93600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",93700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",93800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",93900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",94800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",94900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",95000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",95100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",95200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",95300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",95400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",95500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",95600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",95700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",95800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",95900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",96200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",96900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",97200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",97900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",98100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",98900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",99900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",100900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",101300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",101900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",102900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",103400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",103900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",104900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",105500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",105900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",106000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",106100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",106200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",106300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",106400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",106500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",106600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",106700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",106800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",106900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",107000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",107100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",107200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",107300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",107400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",107500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",107600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",107700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",107800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",107900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",108000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",108100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",108200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",108300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",108400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",108500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",108600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",108700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",108800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",108900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",109600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",109900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",110900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",111000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",111100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",111200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",111300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",111400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",111500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",111600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",111700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",111800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",111900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",112000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",112100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",112200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",112300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",112400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",112500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",112600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",112700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",112800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",112900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",113900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",114000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",114900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",115300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",115900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",116900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",117800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",117900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",118500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",118900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",119300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",119900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",120500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",120900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",121900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",122000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",122900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",123800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",123900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",124000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",124100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",124200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",124300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",124400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",124500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",124600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",124700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",124800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",124900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",125000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",125100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",125200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",125300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",125400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",125500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",125600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",125700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",125800
-"
-Orders for product KELP exceeded limit of 50 set","(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",125900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",126900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",127500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",127900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",128400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",128900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",129700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",129900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",130000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",130100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",130200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",130300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",130400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",130500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",130600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",130700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",130800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",130900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",131400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",131900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",132800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",132900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",133900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}
-buying second best also: {orders}",134000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",134100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",134200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",134300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",134400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",134500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",134600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",134700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",134800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",134900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",135900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",136000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",136100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",136200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",136300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",136400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",136500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",136600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",136700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",136800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",136900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",137000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",137100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",137200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",137300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",137400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",137500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",137600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying best: {orders}
-buying second best also: {orders}",137700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",137800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",137900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",138000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",138100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",138200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",138300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",138400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",138500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",138600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",138700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",138800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",138900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",139000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",139100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",139200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",139300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",139400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",139500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",139600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",139700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",139800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",139900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",140000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",140100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",140200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",140300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",140400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",140500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying best: {orders}
-buying second best also: {orders}",140600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",140700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",140800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",140900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",141900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",142800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",142900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",143800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",143900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",144100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",144900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",145000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",145100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",145200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",145300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",145400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",145500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying best: {orders}
-buying second best also: {orders}",145600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",145700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",145800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",145900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",146900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",147100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",147900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",148900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",149900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",150000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",150100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",150200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",150300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",150400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",150500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",150600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",150700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",150800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",150900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",151900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",152000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",152900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",153500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",153900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",154800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",154900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",155500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",155900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",156000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",156100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",156200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",156300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",156400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",156500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",156600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",156700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",156800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",156900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",157000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",157100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",157200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",157300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",157400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",157500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",157600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",157700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",157800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",157900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",158000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",158100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",158200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",158300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",158400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",158500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",158600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",158700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",158800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",158900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",159000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",159100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",159200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",159300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",159400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",159500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",159600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",159700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",159800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",159900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",160000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",160100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",160200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",160300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",160400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",160500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",160600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",160700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",160800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",160900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",161000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",161100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",161200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",161300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",161400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",161500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",161600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",161700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",161800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",161900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",162400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",162900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",163000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",163100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",163200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",163300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",163400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",163500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",163600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",163700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",163800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",163900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",164000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",164100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",164200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",164300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",164400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",164500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",164600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",164700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",164800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",164900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",165000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",165100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",165200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",165300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",165400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",165500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",165600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",165700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",165800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",165900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}
-buying best: {orders}",166200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",166900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",167000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",167100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",167200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",167300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",167400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",167500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",167600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",167700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",167800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",167900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",168100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",168900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",169900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170300
-"
-Orders for product KELP exceeded limit of 50 set","(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",170900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",171000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",171100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",171200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",171300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",171400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",171500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",171600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",171700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",171800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",171900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",172700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",172900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",173000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",173100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",173200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",173300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",173400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",173500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",173600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",173700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",173800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",173900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",174900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",175900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",176900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",177000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",177100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",177200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",177300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",177400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",177500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",177600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",177700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",177800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",177900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",178700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",178900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",179900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",180000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",180100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",180200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",180300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",180400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",180500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",180600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",180700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",180800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",180900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",181800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",181900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",182800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",182900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",183500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",183900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",184900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",185500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",185900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",186400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",186900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",187000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",187100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",187200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",187300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",187400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",187500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",187600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",187700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",187800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",187900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",188400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",188900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",189500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",189900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",190800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",190900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",191500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",191900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",192000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",192100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",192200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",192300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",192400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",192500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",192600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",192700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",192800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",192900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",193000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",193100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",193200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",193300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",193400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",193500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",193600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",193700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",193800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",193900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}",194100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",194900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",195800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",195900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",196900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",197900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",198000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",198100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",198200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",198300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",198400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",198500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",198600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",198700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",198800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",198900
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199000
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199100
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199200
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199300
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}
-buying best: {orders}
-buying second best also: {orders}",199400
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199500
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199600
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199700
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199800
-,"(plainValueObservations: {}, conversionObservations: {})
-{}
-{}",199900
+,,0
+,,100
+,,200
+,,300
+,,400
+,,500
+,,600
+,,700
+,,800
+,,900
+,,1000
+,,1100
+,,1200
+,,1300
+,,1400
+,,1500
+,,1600
+,,1700
+,,1800
+,,1900
+,,2000
+,,2100
+,,2200
+,,2300
+,,2400
+,,2500
+,,2600
+,,2700
+,,2800
+,,2900
+,,3000
+,,3100
+,,3200
+,,3300
+,,3400
+,,3500
+,,3600
+,,3700
+,,3800
+,,3900
+,,4000
+,,4100
+,,4200
+,,4300
+,,4400
+,,4500
+,,4600
+,,4700
+,,4800
+,,4900
+,,5000
+,,5100
+,,5200
+,,5300
+,,5400
+,,5500
+,,5600
+,,5700
+,,5800
+,,5900
+,,6000
+,,6100
+,,6200
+,,6300
+,,6400
+,,6500
+,,6600
+,,6700
+,,6800
+,,6900
+,,7000
+,,7100
+,,7200
+,,7300
+,,7400
+,,7500
+,,7600
+,,7700
+,,7800
+,,7900
+,,8000
+,,8100
+,,8200
+,,8300
+,,8400
+,,8500
+,,8600
+,,8700
+,,8800
+,,8900
+,,9000
+,,9100
+,,9200
+,,9300
+,,9400
+,,9500
+,,9600
+,,9700
+,,9800
+,,9900
+,,10000
+,,10100
+,,10200
+,,10300
+,,10400
+,,10500
+,,10600
+,,10700
+,,10800
+,,10900
+,,11000
+,,11100
+,,11200
+,,11300
+,,11400
+,,11500
+,,11600
+,,11700
+,,11800
+,,11900
+,,12000
+,,12100
+,,12200
+,,12300
+,,12400
+,,12500
+,,12600
+,,12700
+,,12800
+,,12900
+,,13000
+,,13100
+,,13200
+,,13300
+,,13400
+,,13500
+,,13600
+,,13700
+,,13800
+,,13900
+,,14000
+,,14100
+,,14200
+,,14300
+,,14400
+,,14500
+,,14600
+,,14700
+,,14800
+,,14900
+,,15000
+,,15100
+,,15200
+,,15300
+,,15400
+,,15500
+,,15600
+,,15700
+,,15800
+,,15900
+,,16000
+,,16100
+,,16200
+,,16300
+,,16400
+,,16500
+,,16600
+,,16700
+,,16800
+,,16900
+,,17000
+,,17100
+,,17200
+,,17300
+,,17400
+,,17500
+,,17600
+,,17700
+,,17800
+,,17900
+,,18000
+,,18100
+,,18200
+,,18300
+,,18400
+,,18500
+,,18600
+,,18700
+,,18800
+,,18900
+,,19000
+,,19100
+,,19200
+,,19300
+,,19400
+,,19500
+,,19600
+,,19700
+,,19800
+,,19900
+,,20000
+,,20100
+,,20200
+,,20300
+,,20400
+,,20500
+,,20600
+,,20700
+,,20800
+,,20900
+,,21000
+,,21100
+,,21200
+,,21300
+,,21400
+,,21500
+,,21600
+,,21700
+,,21800
+,,21900
+,,22000
+,,22100
+,,22200
+,,22300
+,,22400
+,,22500
+,,22600
+,,22700
+,,22800
+,,22900
+,,23000
+,,23100
+,,23200
+,,23300
+,,23400
+,,23500
+,,23600
+,,23700
+,,23800
+,,23900
+,,24000
+,,24100
+,,24200
+,,24300
+,,24400
+,,24500
+,,24600
+,,24700
+,,24800
+,,24900
+,,25000
+,,25100
+,,25200
+,,25300
+,,25400
+,,25500
+,,25600
+,,25700
+,,25800
+,,25900
+,,26000
+,,26100
+,,26200
+,,26300
+,,26400
+,,26500
+,,26600
+,,26700
+,,26800
+,,26900
+,,27000
+,,27100
+,,27200
+,,27300
+,,27400
+,,27500
+,,27600
+,,27700
+,,27800
+,,27900
+,,28000
+,,28100
+,,28200
+,,28300
+,,28400
+,,28500
+,,28600
+,,28700
+,,28800
+,,28900
+,,29000
+,,29100
+,,29200
+,,29300
+,,29400
+,,29500
+,,29600
+,,29700
+,,29800
+,,29900
+,,30000
+,,30100
+,,30200
+,,30300
+,,30400
+,,30500
+,,30600
+,,30700
+,,30800
+,,30900
+,,31000
+,,31100
+,,31200
+,,31300
+,,31400
+,,31500
+,,31600
+,,31700
+,,31800
+,,31900
+,,32000
+,,32100
+,,32200
+,,32300
+,,32400
+,,32500
+,,32600
+,,32700
+,,32800
+,,32900
+,,33000
+,,33100
+,,33200
+,,33300
+,,33400
+,,33500
+,,33600
+,,33700
+,,33800
+,,33900
+,,34000
+,,34100
+,,34200
+,,34300
+,,34400
+,,34500
+,,34600
+,,34700
+,,34800
+,,34900
+,,35000
+,,35100
+,,35200
+,,35300
+,,35400
+,,35500
+,,35600
+,,35700
+,,35800
+,,35900
+,,36000
+,,36100
+,,36200
+,,36300
+,,36400
+,,36500
+,,36600
+,,36700
+,,36800
+,,36900
+,,37000
+,,37100
+,,37200
+,,37300
+,,37400
+,,37500
+,,37600
+,,37700
+,,37800
+,,37900
+,,38000
+,,38100
+,,38200
+,,38300
+,,38400
+,,38500
+,,38600
+,,38700
+,,38800
+,,38900
+,,39000
+,,39100
+,,39200
+,,39300
+,,39400
+,,39500
+,,39600
+,,39700
+,,39800
+,,39900
+,,40000
+,,40100
+,,40200
+,,40300
+,,40400
+,,40500
+,,40600
+,,40700
+,,40800
+,,40900
+,,41000
+,,41100
+,,41200
+,,41300
+,,41400
+,,41500
+,,41600
+,,41700
+,,41800
+,,41900
+,,42000
+,,42100
+,,42200
+,,42300
+,,42400
+,,42500
+,,42600
+,,42700
+,,42800
+,,42900
+,,43000
+,,43100
+,,43200
+,,43300
+,,43400
+,,43500
+,,43600
+,,43700
+,,43800
+,,43900
+,,44000
+,,44100
+,,44200
+,,44300
+,,44400
+,,44500
+,,44600
+,,44700
+,,44800
+,,44900
+,,45000
+,,45100
+,,45200
+,,45300
+,,45400
+,,45500
+,,45600
+,,45700
+,,45800
+,,45900
+,,46000
+,,46100
+,,46200
+,,46300
+,,46400
+,,46500
+,,46600
+,,46700
+,,46800
+,,46900
+,,47000
+,,47100
+,,47200
+,,47300
+,,47400
+,,47500
+,,47600
+,,47700
+,,47800
+,,47900
+,,48000
+,,48100
+,,48200
+,,48300
+,,48400
+,,48500
+,,48600
+,,48700
+,,48800
+,,48900
+,,49000
+,,49100
+,,49200
+,,49300
+,,49400
+,,49500
+,,49600
+,,49700
+,,49800
+,,49900
+,,50000
+,,50100
+,,50200
+,,50300
+,,50400
+,,50500
+,,50600
+,,50700
+,,50800
+,,50900
+,,51000
+,,51100
+,,51200
+,,51300
+,,51400
+,,51500
+,,51600
+,,51700
+,,51800
+,,51900
+,,52000
+,,52100
+,,52200
+,,52300
+,,52400
+,,52500
+,,52600
+,,52700
+,,52800
+,,52900
+,,53000
+,,53100
+,,53200
+,,53300
+,,53400
+,,53500
+,,53600
+,,53700
+,,53800
+,,53900
+,,54000
+,,54100
+,,54200
+,,54300
+,,54400
+,,54500
+,,54600
+,,54700
+,,54800
+,,54900
+,,55000
+,,55100
+,,55200
+,,55300
+,,55400
+,,55500
+,,55600
+,,55700
+,,55800
+,,55900
+,,56000
+,,56100
+,,56200
+,,56300
+,,56400
+,,56500
+,,56600
+,,56700
+,,56800
+,,56900
+,,57000
+,,57100
+,,57200
+,,57300
+,,57400
+,,57500
+,,57600
+,,57700
+,,57800
+,,57900
+,,58000
+,,58100
+,,58200
+,,58300
+,,58400
+,,58500
+,,58600
+,,58700
+,,58800
+,,58900
+,,59000
+,,59100
+,,59200
+,,59300
+,,59400
+,,59500
+,,59600
+,,59700
+,,59800
+,,59900
+,,60000
+,,60100
+,,60200
+,,60300
+,,60400
+,,60500
+,,60600
+,,60700
+,,60800
+,,60900
+,,61000
+,,61100
+,,61200
+,,61300
+,,61400
+,,61500
+,,61600
+,,61700
+,,61800
+,,61900
+,,62000
+,,62100
+,,62200
+,,62300
+,,62400
+,,62500
+,,62600
+,,62700
+,,62800
+,,62900
+,,63000
+,,63100
+,,63200
+,,63300
+,,63400
+,,63500
+,,63600
+,,63700
+,,63800
+,,63900
+,,64000
+,,64100
+,,64200
+,,64300
+,,64400
+,,64500
+,,64600
+,,64700
+,,64800
+,,64900
+,,65000
+,,65100
+,,65200
+,,65300
+,,65400
+,,65500
+,,65600
+,,65700
+,,65800
+,,65900
+,,66000
+,,66100
+,,66200
+,,66300
+,,66400
+,,66500
+,,66600
+,,66700
+,,66800
+,,66900
+,,67000
+,,67100
+,,67200
+,,67300
+,,67400
+,,67500
+,,67600
+,,67700
+,,67800
+,,67900
+,,68000
+,,68100
+,,68200
+,,68300
+,,68400
+,,68500
+,,68600
+,,68700
+,,68800
+,,68900
+,,69000
+,,69100
+,,69200
+,,69300
+,,69400
+,,69500
+,,69600
+,,69700
+,,69800
+,,69900
+,,70000
+,,70100
+,,70200
+,,70300
+,,70400
+,,70500
+,,70600
+,,70700
+,,70800
+,,70900
+,,71000
+,,71100
+,,71200
+,,71300
+,,71400
+,,71500
+,,71600
+,,71700
+,,71800
+,,71900
+,,72000
+,,72100
+,,72200
+,,72300
+,,72400
+,,72500
+,,72600
+,,72700
+,,72800
+,,72900
+,,73000
+,,73100
+,,73200
+,,73300
+,,73400
+,,73500
+,,73600
+,,73700
+,,73800
+,,73900
+,,74000
+,,74100
+,,74200
+,,74300
+,,74400
+,,74500
+,,74600
+,,74700
+,,74800
+,,74900
+,,75000
+,,75100
+,,75200
+,,75300
+,,75400
+,,75500
+,,75600
+,,75700
+,,75800
+,,75900
+,,76000
+,,76100
+,,76200
+,,76300
+,,76400
+,,76500
+,,76600
+,,76700
+,,76800
+,,76900
+,,77000
+,,77100
+,,77200
+,,77300
+,,77400
+,,77500
+,,77600
+,,77700
+,,77800
+,,77900
+,,78000
+,,78100
+,,78200
+,,78300
+,,78400
+,,78500
+,,78600
+,,78700
+,,78800
+,,78900
+,,79000
+,,79100
+,,79200
+,,79300
+,,79400
+,,79500
+,,79600
+,,79700
+,,79800
+,,79900
+,,80000
+,,80100
+,,80200
+,,80300
+,,80400
+,,80500
+,,80600
+,,80700
+,,80800
+,,80900
+,,81000
+,,81100
+,,81200
+,,81300
+,,81400
+,,81500
+,,81600
+,,81700
+,,81800
+,,81900
+,,82000
+,,82100
+,,82200
+,,82300
+,,82400
+,,82500
+,,82600
+,,82700
+,,82800
+,,82900
+,,83000
+,,83100
+,,83200
+,,83300
+,,83400
+,,83500
+,,83600
+,,83700
+,,83800
+,,83900
+,,84000
+,,84100
+,,84200
+,,84300
+,,84400
+,,84500
+,,84600
+,,84700
+,,84800
+,,84900
+,,85000
+,,85100
+,,85200
+,,85300
+,,85400
+,,85500
+,,85600
+,,85700
+,,85800
+,,85900
+,,86000
+,,86100
+,,86200
+,,86300
+,,86400
+,,86500
+,,86600
+,,86700
+,,86800
+,,86900
+,,87000
+,,87100
+,,87200
+,,87300
+,,87400
+,,87500
+,,87600
+,,87700
+,,87800
+,,87900
+,,88000
+,,88100
+,,88200
+,,88300
+,,88400
+,,88500
+,,88600
+,,88700
+,,88800
+,,88900
+,,89000
+,,89100
+,,89200
+,,89300
+,,89400
+,,89500
+,,89600
+,,89700
+,,89800
+,,89900
+,,90000
+,,90100
+,,90200
+,,90300
+,,90400
+,,90500
+,,90600
+,,90700
+,,90800
+,,90900
+,,91000
+,,91100
+,,91200
+,,91300
+,,91400
+,,91500
+,,91600
+,,91700
+,,91800
+,,91900
+,,92000
+,,92100
+,,92200
+,,92300
+,,92400
+,,92500
+,,92600
+,,92700
+,,92800
+,,92900
+,,93000
+,,93100
+,,93200
+,,93300
+,,93400
+,,93500
+"{""errorMessage"": ""'>' not supported between instances of 'NoneType' and 'float'"", ""errorType"": ""TypeError"", ""requestId"": ""9ff406b1-1e2d-4567-9ccb-872448f7ea63"", ""stackTrace"": [""  File \""/var/task/app.py\"", line 31, in lambda_handler\n    orders, conversion, traderData = trader.run(trading_state)\n"", ""  File \""/var/task/trader.py\"", line 364, in run\n    orders = sma_midprice_strategy(td, product, 5, orders)\n"", ""  File \""/var/task/trader.py\"", line 342, in sma_midprice_strategy\n    if abs(remaining_capacity) - reserved > 0 and second_best_bid > latest_sma:\n""]}","{""errorMessage"": ""'>' not supported between instances of 'NoneType' and 'float'"", ""errorType"": ""TypeError"", ""requestId"": ""9ff406b1-1e2d-4567-9ccb-872448f7ea63"", ""stackTrace"": [""  File \""/var/task/app.py\"", line 31, in lambda_handler\n    orders, conversion, traderData = trader.run(trading_state)\n"", ""  File \""/var/task/trader.py\"", line 364, in run\n    orders = sma_midprice_strategy(td, product, 5, orders)\n"", ""  File \""/var/task/trader.py\"", line 342, in sma_midprice_strategy\n    if abs(remaining_capacity) - reserved > 0 and second_best_bid > latest_sma:\n""]}",93600
+,,93700
+,,93800
+,,93900
+,,94000
+,,94100
+,,94200
+,,94300
+,,94400
+,,94500
+,,94600
+,,94700
+,,94800
+,,94900
+,,95000
+,,95100
+,,95200
+,,95300
+,,95400
+,,95500
+,,95600
+,,95700
+,,95800
+,,95900
+,,96000
+,,96100
+,,96200
+,,96300
+,,96400
+,,96500
+,,96600
+,,96700
+,,96800
+,,96900
+,,97000
+,,97100
+,,97200
+,,97300
+,,97400
+,,97500
+,,97600
+,,97700
+,,97800
+,,97900
+,,98000
+,,98100
+,,98200
+,,98300
+,,98400
+,,98500
+,,98600
+,,98700
+,,98800
+,,98900
+,,99000
+,,99100
+,,99200
+,,99300
+,,99400
+,,99500
+,,99600
+,,99700
+,,99800
+,,99900
+,,100000
+,,100100
+,,100200
+,,100300
+,,100400
+,,100500
+,,100600
+,,100700
+,,100800
+,,100900
+,,101000
+,,101100
+,,101200
+,,101300
+,,101400
+,,101500
+,,101600
+,,101700
+,,101800
+,,101900
+,,102000
+,,102100
+,,102200
+,,102300
+,,102400
+,,102500
+,,102600
+,,102700
+,,102800
+,,102900
+,,103000
+,,103100
+,,103200
+,,103300
+,,103400
+,,103500
+,,103600
+,,103700
+,,103800
+,,103900
+,,104000
+,,104100
+,,104200
+,,104300
+,,104400
+,,104500
+,,104600
+,,104700
+,,104800
+,,104900
+,,105000
+,,105100
+,,105200
+,,105300
+,,105400
+,,105500
+,,105600
+,,105700
+,,105800
+,,105900
+,,106000
+,,106100
+,,106200
+,,106300
+,,106400
+,,106500
+,,106600
+,,106700
+,,106800
+,,106900
+,,107000
+,,107100
+,,107200
+,,107300
+,,107400
+,,107500
+,,107600
+,,107700
+,,107800
+,,107900
+,,108000
+,,108100
+,,108200
+,,108300
+,,108400
+,,108500
+,,108600
+,,108700
+,,108800
+,,108900
+,,109000
+,,109100
+,,109200
+,,109300
+,,109400
+,,109500
+,,109600
+,,109700
+,,109800
+,,109900
+,,110000
+,,110100
+,,110200
+,,110300
+,,110400
+,,110500
+,,110600
+,,110700
+,,110800
+,,110900
+,,111000
+,,111100
+,,111200
+,,111300
+,,111400
+,,111500
+,,111600
+,,111700
+,,111800
+,,111900
+,,112000
+,,112100
+,,112200
+,,112300
+,,112400
+,,112500
+,,112600
+,,112700
+,,112800
+,,112900
+,,113000
+,,113100
+,,113200
+,,113300
+,,113400
+,,113500
+,,113600
+,,113700
+,,113800
+,,113900
+,,114000
+,,114100
+,,114200
+,,114300
+,,114400
+,,114500
+,,114600
+,,114700
+,,114800
+,,114900
+,,115000
+,,115100
+,,115200
+,,115300
+,,115400
+,,115500
+,,115600
+,,115700
+,,115800
+,,115900
+,,116000
+,,116100
+,,116200
+,,116300
+,,116400
+,,116500
+,,116600
+,,116700
+,,116800
+,,116900
+,,117000
+,,117100
+,,117200
+,,117300
+,,117400
+,,117500
+,,117600
+,,117700
+,,117800
+,,117900
+,,118000
+,,118100
+,,118200
+,,118300
+,,118400
+,,118500
+,,118600
+,,118700
+,,118800
+,,118900
+,,119000
+,,119100
+,,119200
+,,119300
+,,119400
+,,119500
+,,119600
+,,119700
+,,119800
+,,119900
+,,120000
+,,120100
+,,120200
+,,120300
+,,120400
+,,120500
+,,120600
+,,120700
+,,120800
+,,120900
+,,121000
+,,121100
+,,121200
+,,121300
+,,121400
+,,121500
+,,121600
+,,121700
+,,121800
+,,121900
+,,122000
+,,122100
+,,122200
+,,122300
+,,122400
+,,122500
+,,122600
+,,122700
+,,122800
+,,122900
+,,123000
+,,123100
+,,123200
+,,123300
+,,123400
+,,123500
+,,123600
+,,123700
+,,123800
+,,123900
+,,124000
+,,124100
+,,124200
+,,124300
+,,124400
+,,124500
+,,124600
+,,124700
+,,124800
+,,124900
+,,125000
+,,125100
+,,125200
+,,125300
+,,125400
+,,125500
+,,125600
+,,125700
+,,125800
+,,125900
+,,126000
+,,126100
+,,126200
+,,126300
+,,126400
+,,126500
+,,126600
+,,126700
+,,126800
+,,126900
+,,127000
+,,127100
+,,127200
+,,127300
+,,127400
+,,127500
+,,127600
+,,127700
+,,127800
+,,127900
+,,128000
+,,128100
+,,128200
+,,128300
+,,128400
+,,128500
+,,128600
+,,128700
+,,128800
+,,128900
+,,129000
+,,129100
+,,129200
+,,129300
+,,129400
+,,129500
+,,129600
+,,129700
+,,129800
+,,129900
+,,130000
+,,130100
+,,130200
+,,130300
+,,130400
+,,130500
+,,130600
+,,130700
+,,130800
+,,130900
+,,131000
+,,131100
+,,131200
+,,131300
+,,131400
+,,131500
+,,131600
+,,131700
+,,131800
+,,131900
+,,132000
+,,132100
+,,132200
+,,132300
+,,132400
+,,132500
+,,132600
+,,132700
+,,132800
+,,132900
+,,133000
+,,133100
+,,133200
+,,133300
+,,133400
+,,133500
+,,133600
+,,133700
+,,133800
+,,133900
+,,134000
+,,134100
+,,134200
+,,134300
+,,134400
+,,134500
+,,134600
+,,134700
+,,134800
+,,134900
+,,135000
+,,135100
+,,135200
+,,135300
+,,135400
+,,135500
+,,135600
+,,135700
+,,135800
+,,135900
+,,136000
+,,136100
+,,136200
+,,136300
+,,136400
+,,136500
+,,136600
+,,136700
+,,136800
+,,136900
+,,137000
+,,137100
+,,137200
+,,137300
+,,137400
+,,137500
+,,137600
+,,137700
+,,137800
+,,137900
+,,138000
+,,138100
+,,138200
+,,138300
+,,138400
+,,138500
+,,138600
+,,138700
+,,138800
+,,138900
+,,139000
+,,139100
+,,139200
+,,139300
+,,139400
+,,139500
+,,139600
+,,139700
+,,139800
+,,139900
+,,140000
+,,140100
+,,140200
+,,140300
+,,140400
+,,140500
+,,140600
+,,140700
+,,140800
+,,140900
+,,141000
+,,141100
+,,141200
+,,141300
+,,141400
+,,141500
+,,141600
+,,141700
+,,141800
+,,141900
+,,142000
+,,142100
+,,142200
+,,142300
+,,142400
+,,142500
+,,142600
+,,142700
+,,142800
+,,142900
+,,143000
+,,143100
+,,143200
+,,143300
+,,143400
+,,143500
+,,143600
+,,143700
+,,143800
+,,143900
+,,144000
+,,144100
+,,144200
+,,144300
+,,144400
+,,144500
+,,144600
+,,144700
+,,144800
+,,144900
+,,145000
+,,145100
+,,145200
+,,145300
+,,145400
+,,145500
+,,145600
+,,145700
+,,145800
+,,145900
+,,146000
+,,146100
+,,146200
+,,146300
+,,146400
+,,146500
+,,146600
+,,146700
+,,146800
+,,146900
+,,147000
+,,147100
+,,147200
+,,147300
+,,147400
+,,147500
+,,147600
+,,147700
+,,147800
+,,147900
+,,148000
+,,148100
+,,148200
+,,148300
+,,148400
+,,148500
+,,148600
+,,148700
+,,148800
+,,148900
+,,149000
+,,149100
+,,149200
+,,149300
+,,149400
+,,149500
+,,149600
+,,149700
+,,149800
+,,149900
+,,150000
+,,150100
+,,150200
+,,150300
+,,150400
+,,150500
+,,150600
+,,150700
+,,150800
+,,150900
+,,151000
+,,151100
+,,151200
+,,151300
+,,151400
+,,151500
+,,151600
+,,151700
+,,151800
+,,151900
+,,152000
+,,152100
+,,152200
+,,152300
+,,152400
+,,152500
+,,152600
+,,152700
+,,152800
+,,152900
+,,153000
+,,153100
+,,153200
+,,153300
+,,153400
+,,153500
+,,153600
+,,153700
+,,153800
+,,153900
+,,154000
+,,154100
+,,154200
+,,154300
+,,154400
+,,154500
+,,154600
+,,154700
+,,154800
+,,154900
+,,155000
+,,155100
+,,155200
+,,155300
+,,155400
+,,155500
+,,155600
+,,155700
+,,155800
+,,155900
+,,156000
+,,156100
+,,156200
+,,156300
+,,156400
+,,156500
+,,156600
+,,156700
+,,156800
+,,156900
+,,157000
+,,157100
+,,157200
+,,157300
+,,157400
+,,157500
+,,157600
+,,157700
+,,157800
+,,157900
+,,158000
+,,158100
+,,158200
+,,158300
+,,158400
+,,158500
+,,158600
+,,158700
+,,158800
+,,158900
+,,159000
+,,159100
+,,159200
+,,159300
+,,159400
+,,159500
+,,159600
+,,159700
+,,159800
+,,159900
+,,160000
+,,160100
+,,160200
+,,160300
+,,160400
+,,160500
+,,160600
+,,160700
+,,160800
+,,160900
+,,161000
+,,161100
+,,161200
+,,161300
+,,161400
+,,161500
+,,161600
+,,161700
+,,161800
+,,161900
+,,162000
+,,162100
+,,162200
+,,162300
+,,162400
+,,162500
+,,162600
+,,162700
+,,162800
+,,162900
+,,163000
+,,163100
+,,163200
+,,163300
+,,163400
+,,163500
+,,163600
+,,163700
+,,163800
+,,163900
+,,164000
+,,164100
+,,164200
+,,164300
+,,164400
+,,164500
+,,164600
+,,164700
+,,164800
+,,164900
+,,165000
+,,165100
+,,165200
+,,165300
+,,165400
+,,165500
+,,165600
+,,165700
+,,165800
+,,165900
+,,166000
+,,166100
+,,166200
+,,166300
+,,166400
+,,166500
+,,166600
+,,166700
+,,166800
+,,166900
+,,167000
+,,167100
+,,167200
+,,167300
+,,167400
+,,167500
+,,167600
+,,167700
+,,167800
+,,167900
+,,168000
+,,168100
+,,168200
+,,168300
+,,168400
+,,168500
+,,168600
+,,168700
+,,168800
+,,168900
+,,169000
+,,169100
+,,169200
+,,169300
+,,169400
+,,169500
+,,169600
+,,169700
+,,169800
+,,169900
+,,170000
+,,170100
+,,170200
+,,170300
+,,170400
+,,170500
+,,170600
+,,170700
+,,170800
+,,170900
+,,171000
+,,171100
+,,171200
+,,171300
+,,171400
+,,171500
+,,171600
+,,171700
+,,171800
+,,171900
+,,172000
+,,172100
+,,172200
+,,172300
+,,172400
+,,172500
+,,172600
+,,172700
+,,172800
+,,172900
+,,173000
+,,173100
+,,173200
+,,173300
+,,173400
+,,173500
+,,173600
+,,173700
+,,173800
+,,173900
+,,174000
+,,174100
+,,174200
+,,174300
+,,174400
+,,174500
+,,174600
+,,174700
+,,174800
+,,174900
+,,175000
+,,175100
+,,175200
+,,175300
+,,175400
+,,175500
+,,175600
+,,175700
+,,175800
+,,175900
+,,176000
+,,176100
+,,176200
+,,176300
+,,176400
+,,176500
+,,176600
+,,176700
+,,176800
+,,176900
+,,177000
+,,177100
+,,177200
+,,177300
+,,177400
+,,177500
+,,177600
+,,177700
+,,177800
+,,177900
+,,178000
+,,178100
+,,178200
+,,178300
+,,178400
+,,178500
+,,178600
+,,178700
+,,178800
+,,178900
+,,179000
+,,179100
+,,179200
+,,179300
+,,179400
+,,179500
+,,179600
+,,179700
+,,179800
+,,179900
+,,180000
+,,180100
+,,180200
+,,180300
+,,180400
+,,180500
+,,180600
+,,180700
+,,180800
+,,180900
+,,181000
+,,181100
+,,181200
+,,181300
+,,181400
+,,181500
+,,181600
+,,181700
+,,181800
+,,181900
+,,182000
+,,182100
+,,182200
+,,182300
+,,182400
+,,182500
+,,182600
+,,182700
+,,182800
+,,182900
+,,183000
+,,183100
+,,183200
+,,183300
+,,183400
+,,183500
+,,183600
+,,183700
+,,183800
+,,183900
+,,184000
+,,184100
+,,184200
+,,184300
+,,184400
+,,184500
+,,184600
+,,184700
+,,184800
+,,184900
+,,185000
+,,185100
+,,185200
+,,185300
+,,185400
+,,185500
+,,185600
+,,185700
+,,185800
+,,185900
+,,186000
+,,186100
+,,186200
+,,186300
+,,186400
+,,186500
+,,186600
+,,186700
+,,186800
+,,186900
+,,187000
+,,187100
+,,187200
+,,187300
+,,187400
+,,187500
+,,187600
+,,187700
+,,187800
+,,187900
+,,188000
+,,188100
+,,188200
+,,188300
+,,188400
+,,188500
+,,188600
+,,188700
+,,188800
+,,188900
+,,189000
+,,189100
+,,189200
+,,189300
+,,189400
+,,189500
+,,189600
+,,189700
+,,189800
+,,189900
+,,190000
+,,190100
+,,190200
+,,190300
+,,190400
+,,190500
+,,190600
+,,190700
+,,190800
+,,190900
+,,191000
+,,191100
+,,191200
+,,191300
+,,191400
+,,191500
+,,191600
+,,191700
+,,191800
+,,191900
+,,192000
+,,192100
+,,192200
+,,192300
+,,192400
+,,192500
+,,192600
+,,192700
+,,192800
+,,192900
+,,193000
+,,193100
+,,193200
+,,193300
+,,193400
+,,193500
+,,193600
+,,193700
+,,193800
+,,193900
+,,194000
+,,194100
+,,194200
+,,194300
+,,194400
+,,194500
+,,194600
+,,194700
+,,194800
+,,194900
+,,195000
+,,195100
+,,195200
+,,195300
+,,195400
+,,195500
+,,195600
+,,195700
+,,195800
+,,195900
+,,196000
+,,196100
+,,196200
+,,196300
+,,196400
+,,196500
+,,196600
+,,196700
+,,196800
+,,196900
+,,197000
+,,197100
+,,197200
+,,197300
+,,197400
+,,197500
+,,197600
+,,197700
+,,197800
+,,197900
+,,198000
+,,198100
+,,198200
+,,198300
+,,198400
+,,198500
+,,198600
+,,198700
+,,198800
+,,198900
+,,199000
+,,199100
+,,199200
+,,199300
+,,199400
+,,199500
+,,199600
+,,199700
+,,199800
+,,199900
