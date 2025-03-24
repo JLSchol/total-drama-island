@@ -2,6 +2,28 @@ from datamodel import TradingState, Order
 from typing import Dict, List
 import json
 
+def sort_buy_orders(buy_orders):
+    return {int(price): int(volume) for price, volume in sorted(buy_orders.items(), key=lambda x: -int(x[0]))}
+
+def sort_sell_orders(sell_orders):    
+    return {int(price): int(volume) for price, volume in sorted(sell_orders.items(), key=lambda x: int(x[0]))}
+
+def get_sell_order(sell_orders, rank=0):
+    sell_orders = sort_sell_orders(sell_orders)
+    if len(sell_orders.keys())>= rank+1:
+        price, volume = list(sell_orders.items())[rank]
+    else:
+        price, volume = None, None
+    return price, volume
+
+def get_buy_order(buy_orders, rank=0):
+    buy_orders = sort_buy_orders(buy_orders)
+    if len(buy_orders.keys())>= rank+1:
+        price, volume = list(buy_orders.items())[rank]
+    else:
+        price, volume = None, None
+    return price, volume
+
 class TradingData:
     def __init__(self, state: TradingState, position_limits: Dict[str, int]):
         self.position_limits = position_limits
@@ -25,11 +47,8 @@ class TradingData:
             # Sort buy orders from highest to lowest price (best bid to worst bid)
             buy_orders = order_depth.buy_orders
             sell_orders = order_depth.sell_orders
-            buy_orders = {int(price): int(volume) for price, volume in sorted(buy_orders.items(), key=lambda x: -int(x[0]))}
-            sell_orders = {int(price): int(volume) for price, volume in sorted(sell_orders.items(), key=lambda x: int(x[0]))}
-
-            best_bid = max(buy_orders.keys(), default=None)
-            best_ask = min(sell_orders.keys(), default=None)
+            best_bid, _ = get_buy_order(buy_orders,0)
+            best_ask, _ = get_sell_order(sell_orders,0)
             mid_price = (best_bid + best_ask) / 2 if best_bid is not None and best_ask is not None else None
 
             # Ensure data structure is initialized
@@ -201,45 +220,6 @@ def adjust_buy_quantity(proposed_buy_quantity, max_buy_limit, current_position):
 
     return adjusted_buy_quantity, remaining_buy_capacity
 
-# def get_best_ask_buy_order(product, best_ask, best_ask_amount, current_position, max_position, orders) -> List[Order]:
-#     # Step 1: Check if the best ask is available
-#     if not is_available(best_ask, best_ask_amount):
-#         return orders
-
-#     # Step 2: Calculate the buy quantity based on the best ask amount - flip signs: sell/ask is (-) and buy/bid is (+)
-#     buy_quantity = -1*best_ask_amount
-
-#     # Step 3: potentially limit buy_quantity based on current position
-#     buy_quantity, remaining_buy_capacity = adjust_buy_quantity(buy_quantity, max_position, current_position)
-
-#     if buy_quantity <= 0: # 0 = no order, and - numbers are sells
-#         return orders
-
-#     # step 4: append order to list of orders
-#     order = Order(product, best_ask, buy_quantity)
-#     orders.append(order)
-
-#     return orders
-
-# def get_best_bid_sell_order(product, best_bid, best_bid_amount, current_position, max_position, orders) -> List[Order]:
-#     # Step 1: Check if the best bid is available
-#     if not is_available(best_bid, best_bid_amount):
-#         return orders
-
-#     # Step 2: Calculate the sell quantity based on the best bid amount
-#     sell_quantity = -1*best_bid_amount
-
-#     # Step 3: potentially limit sell_quantity based on current position
-#     sell_quantity, remaining_sell_capacity = adjust_sell_quantity(sell_quantity, max_position, current_position)
-
-#     if sell_quantity >= 0: # 0 = no order, and + numbers are buys
-#         return orders
-
-#     # step 4: append order to list of orders
-#     order = Order(product, best_bid, sell_quantity)
-#     orders.append(order)
-
-#     return orders
 
 def get_best_order(order_type: str, product: str, price: float, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
     """
@@ -309,18 +289,11 @@ def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, 
     max_sell_position = trading_data.get_last_product_field(product, "max_sell_position")
 
     asks = trading_data.get_last_product_field(product, "sell_orders")
-    asks = {int(price): int(volume) for price, volume in sorted(asks.items(), key=lambda x: int(x[0]))}
-    if len(asks.keys())>=2:
-        second_best_ask, second_best_ask_volume = list(asks.items())[1]
-    else:
-        second_best_ask, second_best_ask_volume = None, None
-
     bids = trading_data.get_last_product_field(product, "buy_orders")
-    bids = {int(price): int(volume) for price, volume in sorted(bids.items(), key=lambda x: -int(x[0]))}
-    if len(bids.keys())>=2:
-        second_best_bid, second_best_bid_volume = list(bids.items())[1]
-    else:
-        second_best_bid, second_best_bid_volume = None, None
+    
+    second_best_ask, second_best_ask_volume = get_sell_order(asks,1)
+    second_best_bid, second_best_bid_volume = get_buy_order(bids,1)
+
 
     # Place buy order if best ask is lower than the fair price
     reserved = 5 # amount of pisition I want to minimally reserve to be able to get best ask/bid in next iteration
@@ -332,7 +305,7 @@ def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, 
             max_buy_position = max_buy_position - reserved # shrink max buy since we want to have something reserved
             # Now let's try to place a second best order if there's room    bids = trading_data.get_last_product_field(product, "buy_orders")
             orders, _ = get_best_order("buy", product, second_best_ask, second_best_ask_volume, current_position, max_buy_position, orders)
-            # print("buying second best also: {orders}")
+            print("buying second best")
 
         
     # Place sell order if best bid is higher than the fair price
@@ -353,9 +326,6 @@ class Trader:
         position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}
 
         td = TradingData(state, position_limits)
-        # print(state.observations)
-        # print(state.observations.conversionObservations)
-        # print(state.observations.plainValueObservations)
 
         for product in state.order_depths:
             orders: List[Order] = []
