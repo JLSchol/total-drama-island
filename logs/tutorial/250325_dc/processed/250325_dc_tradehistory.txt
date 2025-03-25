@@ -36,24 +36,6 @@
 "quantity": 2
 },
 {
-"timestamp": 1200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 1300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 1700,
 "buyer": "",
 "seller": "",
@@ -74,7 +56,7 @@
 {
 "timestamp": 1800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -91,7 +73,7 @@
 },
 {
 "timestamp": 2000,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -100,7 +82,7 @@
 },
 {
 "timestamp": 2400,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -189,18 +171,9 @@
 "quantity": 1
 },
 {
-"timestamp": 3600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
-},
-{
 "timestamp": 3700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -241,24 +214,6 @@
 "currency": "SEASHELLS",
 "price": 9996,
 "quantity": 2
-},
-{
-"timestamp": 4300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2024,
-"quantity": 5
-},
-{
-"timestamp": 4300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 4300,
@@ -326,7 +281,7 @@
 {
 "timestamp": 5300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
@@ -352,7 +307,7 @@
 },
 {
 "timestamp": 6500,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -398,15 +353,6 @@
 {
 "timestamp": 7000,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2026,
-"quantity": 4
-},
-{
-"timestamp": 7000,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -421,15 +367,6 @@
 "currency": "SEASHELLS",
 "price": 10005,
 "quantity": 2
-},
-{
-"timestamp": 7300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 7300,
@@ -505,7 +442,7 @@
 },
 {
 "timestamp": 8800,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -520,15 +457,6 @@
 "currency": "SEASHELLS",
 "price": 2025,
 "quantity": 1
-},
-{
-"timestamp": 9900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 4
 },
 {
 "timestamp": 10300,
@@ -551,29 +479,11 @@
 {
 "timestamp": 10400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
-},
-{
-"timestamp": 10600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2023,
-"quantity": 4
-},
-{
-"timestamp": 10600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 4
 },
 {
 "timestamp": 10800,
@@ -592,15 +502,6 @@
 "currency": "SEASHELLS",
 "price": 10004,
 "quantity": 10
-},
-{
-"timestamp": 11000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2024,
-"quantity": 7
 },
 {
 "timestamp": 11100,
@@ -658,7 +559,7 @@
 },
 {
 "timestamp": 11700,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -677,7 +578,7 @@
 {
 "timestamp": 12000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -704,7 +605,7 @@
 {
 "timestamp": 13000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
@@ -713,7 +614,7 @@
 {
 "timestamp": 13000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -756,15 +657,6 @@
 "quantity": 1
 },
 {
-"timestamp": 13700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
-},
-{
 "timestamp": 14200,
 "buyer": "",
 "seller": "",
@@ -772,33 +664,6 @@
 "currency": "SEASHELLS",
 "price": 2023,
 "quantity": 1
-},
-{
-"timestamp": 14600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2024,
-"quantity": 2
-},
-{
-"timestamp": 14900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 4
-},
-{
-"timestamp": 15000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2024,
-"quantity": 8
 },
 {
 "timestamp": 15000,
@@ -829,20 +694,11 @@
 },
 {
 "timestamp": 15400,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 15500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -866,15 +722,6 @@
 {
 "timestamp": 15700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
-},
-{
-"timestamp": 15700,
-"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -884,46 +731,10 @@
 {
 "timestamp": 15800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
-"quantity": 1
-},
-{
-"timestamp": 15900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 6
-},
-{
-"timestamp": 16100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2023,
-"quantity": 2
-},
-{
-"timestamp": 16200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2023,
-"quantity": 1
-},
-{
-"timestamp": 16200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
 "quantity": 1
 },
 {
@@ -933,6 +744,24 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2023,
+"quantity": 1
+},
+{
+"timestamp": 16200,
+"buyer": "",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2023,
+"quantity": 1
+},
+{
+"timestamp": 16200,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 9998,
 "quantity": 1
 },
 {
@@ -955,7 +784,7 @@
 },
 {
 "timestamp": 16600,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -965,7 +794,7 @@
 {
 "timestamp": 16700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
@@ -974,7 +803,7 @@
 {
 "timestamp": 16700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -988,15 +817,6 @@
 "currency": "SEASHELLS",
 "price": 9995,
 "quantity": 5
-},
-{
-"timestamp": 17700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 1
 },
 {
 "timestamp": 18200,
@@ -1026,15 +846,6 @@
 "quantity": 1
 },
 {
-"timestamp": 18600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 19000,
 "buyer": "",
 "seller": "",
@@ -1042,15 +853,6 @@
 "currency": "SEASHELLS",
 "price": 2024,
 "quantity": 10
-},
-{
-"timestamp": 19200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 19300,
@@ -1073,15 +875,6 @@
 {
 "timestamp": 19700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 19700,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -1089,18 +882,9 @@
 "quantity": 1
 },
 {
-"timestamp": 20100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 4
-},
-{
-"timestamp": 20100,
+"timestamp": 19700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -1116,8 +900,17 @@
 "quantity": 4
 },
 {
+"timestamp": 20100,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 1
+},
+{
 "timestamp": 20200,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -1154,33 +947,15 @@
 {
 "timestamp": 20700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
 },
 {
-"timestamp": 20700,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 6
-},
-{
-"timestamp": 20900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2026,
-"quantity": 1
-},
-{
 "timestamp": 21200,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -1206,24 +981,6 @@
 "quantity": 7
 },
 {
-"timestamp": 21500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2026,
-"quantity": 4
-},
-{
-"timestamp": 21600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 12
-},
-{
 "timestamp": 21700,
 "buyer": "",
 "seller": "",
@@ -1231,15 +988,6 @@
 "currency": "SEASHELLS",
 "price": 2027,
 "quantity": 8
-},
-{
-"timestamp": 21900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 3
 },
 {
 "timestamp": 22100,
@@ -1261,21 +1009,12 @@
 },
 {
 "timestamp": 22400,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 22400,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10004,
-"quantity": 2
 },
 {
 "timestamp": 22500,
@@ -1297,15 +1036,6 @@
 },
 {
 "timestamp": 22800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 2
-},
-{
-"timestamp": 22800,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -1314,13 +1044,13 @@
 "quantity": 1
 },
 {
-"timestamp": 23200,
-"buyer": "SUBMISSION",
+"timestamp": 22800,
+"buyer": "",
 "seller": "",
-"symbol": "KELP",
+"symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 2024,
-"quantity": 3
+"price": 9998,
+"quantity": 2
 },
 {
 "timestamp": 23200,
@@ -1361,34 +1091,16 @@
 {
 "timestamp": 23700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
 },
 {
-"timestamp": 23700,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9996,
-"quantity": 2
-},
-{
-"timestamp": 23700,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9996,
-"quantity": 6
-},
-{
 "timestamp": 23900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
@@ -1422,33 +1134,6 @@
 "quantity": 7
 },
 {
-"timestamp": 24400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 1
-},
-{
-"timestamp": 24400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 24500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 24500,
 "buyer": "",
 "seller": "",
@@ -1463,26 +1148,8 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9996,
+"price": 10002,
 "quantity": 1
-},
-{
-"timestamp": 24600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2024,
-"quantity": 2
-},
-{
-"timestamp": 24600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 2
 },
 {
 "timestamp": 24600,
@@ -1494,13 +1161,13 @@
 "quantity": 5
 },
 {
-"timestamp": 24900,
+"timestamp": 24600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
+"price": 9998,
+"quantity": 2
 },
 {
 "timestamp": 24900,
@@ -1513,30 +1180,12 @@
 },
 {
 "timestamp": 25100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2024,
-"quantity": 4
-},
-{
-"timestamp": 25100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
-},
-{
-"timestamp": 25200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 5
 },
 {
 "timestamp": 25200,
@@ -1566,26 +1215,8 @@
 "quantity": 3
 },
 {
-"timestamp": 25300,
+"timestamp": 25200,
 "buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2023,
-"quantity": 1
-},
-{
-"timestamp": 25400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 8
-},
-{
-"timestamp": 25500,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -1593,12 +1224,12 @@
 "quantity": 5
 },
 {
-"timestamp": 25500,
-"buyer": "SUBMISSION",
+"timestamp": 25300,
+"buyer": "",
 "seller": "",
-"symbol": "RAINFOREST_RESIN",
+"symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 9998,
+"price": 2023,
 "quantity": 1
 },
 {
@@ -1609,15 +1240,6 @@
 "currency": "SEASHELLS",
 "price": 10004,
 "quantity": 2
-},
-{
-"timestamp": 25800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 4
 },
 {
 "timestamp": 25800,
@@ -1639,7 +1261,7 @@
 },
 {
 "timestamp": 26300,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -1657,29 +1279,11 @@
 },
 {
 "timestamp": 26600,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 26800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 1
-},
-{
-"timestamp": 26900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -1694,7 +1298,7 @@
 {
 "timestamp": 27300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
@@ -1739,20 +1343,11 @@
 {
 "timestamp": 27900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
 "quantity": 1
-},
-{
-"timestamp": 28200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 2
 },
 {
 "timestamp": 28200,
@@ -1764,12 +1359,12 @@
 "quantity": 5
 },
 {
-"timestamp": 28300,
-"buyer": "SUBMISSION",
+"timestamp": 28200,
+"buyer": "",
 "seller": "",
-"symbol": "KELP",
+"symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 2024,
+"price": 9998,
 "quantity": 2
 },
 {
@@ -1779,15 +1374,6 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2023,
-"quantity": 1
-},
-{
-"timestamp": 28600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -1807,15 +1393,6 @@
 "currency": "SEASHELLS",
 "price": 10005,
 "quantity": 8
-},
-{
-"timestamp": 29200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2026,
-"quantity": 1
 },
 {
 "timestamp": 29300,
@@ -1838,15 +1415,6 @@
 {
 "timestamp": 29400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 29400,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -1861,15 +1429,6 @@
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
-},
-{
-"timestamp": 29600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 3
 },
 {
 "timestamp": 29700,
@@ -1944,15 +1503,6 @@
 "quantity": 1
 },
 {
-"timestamp": 30900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 7
-},
-{
 "timestamp": 31300,
 "buyer": "",
 "seller": "",
@@ -1962,31 +1512,13 @@
 "quantity": 13
 },
 {
-"timestamp": 31400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 31600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
 "quantity": 1
-},
-{
-"timestamp": 31800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 6
 },
 {
 "timestamp": 31900,
@@ -2018,15 +1550,6 @@
 {
 "timestamp": 32600,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 32600,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -2043,6 +1566,15 @@
 "quantity": 2
 },
 {
+"timestamp": 32600,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 1
+},
+{
 "timestamp": 32800,
 "buyer": "",
 "seller": "",
@@ -2050,15 +1582,6 @@
 "currency": "SEASHELLS",
 "price": 9996,
 "quantity": 2
-},
-{
-"timestamp": 33000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2025,
-"quantity": 1
 },
 {
 "timestamp": 33000,
@@ -2080,12 +1603,12 @@
 },
 {
 "timestamp": 33200,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2024,
-"quantity": 10
+"price": 2023,
+"quantity": 1
 },
 {
 "timestamp": 33200,
@@ -2093,8 +1616,8 @@
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2023,
-"quantity": 1
+"price": 2024,
+"quantity": 10
 },
 {
 "timestamp": 33500,
@@ -2117,20 +1640,11 @@
 {
 "timestamp": 33600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 6
-},
-{
-"timestamp": 34000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 34000,
@@ -2161,15 +1675,6 @@
 },
 {
 "timestamp": 34200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2024,
-"quantity": 1
-},
-{
-"timestamp": 34200,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -2180,24 +1685,15 @@
 {
 "timestamp": 34300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
 },
 {
-"timestamp": 34500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2023,
-"quantity": 5
-},
-{
 "timestamp": 34600,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -2207,7 +1703,7 @@
 {
 "timestamp": 35000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
@@ -2216,7 +1712,7 @@
 {
 "timestamp": 35000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -2225,7 +1721,7 @@
 {
 "timestamp": 35100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -2252,7 +1748,7 @@
 {
 "timestamp": 35400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2025,
@@ -2261,7 +1757,7 @@
 {
 "timestamp": 35400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -2277,24 +1773,6 @@
 "quantity": 2
 },
 {
-"timestamp": 36000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2024,
-"quantity": 3
-},
-{
-"timestamp": 36100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 8
-},
-{
 "timestamp": 36100,
 "buyer": "",
 "seller": "",
@@ -2305,7 +1783,7 @@
 },
 {
 "timestamp": 36200,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -2315,7 +1793,7 @@
 {
 "timestamp": 36400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2024,
@@ -2323,7 +1801,7 @@
 },
 {
 "timestamp": 36500,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -2332,29 +1810,11 @@
 },
 {
 "timestamp": 37300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 10
-},
-{
-"timestamp": 37300,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2021,
-"quantity": 1
-},
-{
-"timestamp": 37400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -2385,26 +1845,8 @@
 "quantity": 1
 },
 {
-"timestamp": 38000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2021,
-"quantity": 4
-},
-{
-"timestamp": 38000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 38400,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -2414,7 +1856,7 @@
 {
 "timestamp": 38500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -2437,15 +1879,6 @@
 "currency": "SEASHELLS",
 "price": 9996,
 "quantity": 1
-},
-{
-"timestamp": 38800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 2
 },
 {
 "timestamp": 38800,
@@ -2494,29 +1927,11 @@
 },
 {
 "timestamp": 39500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 40300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 40500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 10002,
+"price": 9998,
 "quantity": 1
 },
 {
@@ -2592,24 +2007,6 @@
 "quantity": 1
 },
 {
-"timestamp": 41400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 4
-},
-{
-"timestamp": 41400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 4
-},
-{
 "timestamp": 41500,
 "buyer": "",
 "seller": "",
@@ -2621,29 +2018,11 @@
 {
 "timestamp": 41700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 4
-},
-{
-"timestamp": 41700,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2018,
 "quantity": 1
-},
-{
-"timestamp": 41900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
 },
 {
 "timestamp": 41900,
@@ -2673,17 +2052,8 @@
 "quantity": 5
 },
 {
-"timestamp": 42200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 42300,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -2774,25 +2144,16 @@
 {
 "timestamp": 43900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 4
 },
 {
-"timestamp": 44100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 44500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2021,
@@ -2800,7 +2161,7 @@
 },
 {
 "timestamp": 44800,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -2810,19 +2171,10 @@
 {
 "timestamp": 45000,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 45400,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9998,
+"price": 10002,
 "quantity": 1
 },
 {
@@ -2836,7 +2188,7 @@
 },
 {
 "timestamp": 45500,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -2900,19 +2252,10 @@
 {
 "timestamp": 46900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2021,
-"quantity": 1
-},
-{
-"timestamp": 47100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
 "quantity": 1
 },
 {
@@ -2925,21 +2268,12 @@
 "quantity": 4
 },
 {
-"timestamp": 47200,
+"timestamp": 47100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 47300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
+"price": 9998,
 "quantity": 1
 },
 {
@@ -2950,15 +2284,6 @@
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 4
-},
-{
-"timestamp": 47900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 48100,
@@ -2986,33 +2311,6 @@
 "currency": "SEASHELLS",
 "price": 9995,
 "quantity": 2
-},
-{
-"timestamp": 48300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 5
-},
-{
-"timestamp": 48300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 48500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 48600,
@@ -3071,7 +2369,7 @@
 {
 "timestamp": 49400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2021,
@@ -3089,7 +2387,7 @@
 {
 "timestamp": 49600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2021,
@@ -3097,7 +2395,7 @@
 },
 {
 "timestamp": 49800,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -3142,24 +2440,6 @@
 },
 {
 "timestamp": 50600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 6
-},
-{
-"timestamp": 50600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 50600,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -3180,28 +2460,19 @@
 "timestamp": 50600,
 "buyer": "",
 "seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9996,
-"quantity": 1
-},
-{
-"timestamp": 50800,
-"buyer": "",
-"seller": "SUBMISSION",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2022,
-"quantity": 1
+"price": 2020,
+"quantity": 6
 },
 {
-"timestamp": 50800,
+"timestamp": 50600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 5
+"quantity": 1
 },
 {
 "timestamp": 51300,
@@ -3211,15 +2482,6 @@
 "currency": "SEASHELLS",
 "price": 2020,
 "quantity": 13
-},
-{
-"timestamp": 51500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 1
 },
 {
 "timestamp": 51600,
@@ -3276,15 +2538,6 @@
 "quantity": 1
 },
 {
-"timestamp": 52000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2021,
-"quantity": 6
-},
-{
 "timestamp": 52100,
 "buyer": "",
 "seller": "",
@@ -3296,7 +2549,7 @@
 {
 "timestamp": 52300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2022,
@@ -3305,47 +2558,11 @@
 {
 "timestamp": 52300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
-},
-{
-"timestamp": 52500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 1
-},
-{
-"timestamp": 52500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 52600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2021,
-"quantity": 4
-},
-{
-"timestamp": 52600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 4
 },
 {
 "timestamp": 52700,
@@ -3364,42 +2581,6 @@
 "currency": "SEASHELLS",
 "price": 10005,
 "quantity": 6
-},
-{
-"timestamp": 53000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 53200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 1
-},
-{
-"timestamp": 53600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 9
-},
-{
-"timestamp": 53800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 3
 },
 {
 "timestamp": 53900,
@@ -3440,19 +2621,10 @@
 {
 "timestamp": 54300,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 1
-},
-{
-"timestamp": 54300,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2019,
+"price": 2022,
 "quantity": 1
 },
 {
@@ -3476,7 +2648,7 @@
 {
 "timestamp": 54600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -3484,7 +2656,7 @@
 },
 {
 "timestamp": 54700,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -3520,15 +2692,6 @@
 },
 {
 "timestamp": 55200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 3
-},
-{
-"timestamp": 55200,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -3537,22 +2700,13 @@
 "quantity": 2
 },
 {
-"timestamp": 55300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 55500,
+"timestamp": 55200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2021,
-"quantity": 1
+"price": 2019,
+"quantity": 3
 },
 {
 "timestamp": 55700,
@@ -3573,33 +2727,6 @@
 "quantity": 1
 },
 {
-"timestamp": 56000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 1
-},
-{
-"timestamp": 56300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 56700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 2
-},
-{
 "timestamp": 56700,
 "buyer": "",
 "seller": "",
@@ -3609,24 +2736,6 @@
 "quantity": 2
 },
 {
-"timestamp": 56800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 57200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 2
-},
-{
 "timestamp": 57200,
 "buyer": "",
 "seller": "",
@@ -3636,9 +2745,18 @@
 "quantity": 1
 },
 {
+"timestamp": 57200,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 2
+},
+{
 "timestamp": 57500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2019,
@@ -3655,57 +2773,21 @@
 },
 {
 "timestamp": 57900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 5
-},
-{
-"timestamp": 57900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 57900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 6
-},
-{
-"timestamp": 57900,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2018,
-"quantity": 1
-},
-{
-"timestamp": 57900,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10004,
 "quantity": 2
 },
 {
-"timestamp": 58000,
-"buyer": "SUBMISSION",
+"timestamp": 57900,
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
-"quantity": 4
+"quantity": 1
 },
 {
 "timestamp": 58000,
@@ -3724,6 +2806,15 @@
 "currency": "SEASHELLS",
 "price": 2020,
 "quantity": 11
+},
+{
+"timestamp": 58000,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 9998,
+"quantity": 4
 },
 {
 "timestamp": 58100,
@@ -3746,7 +2837,7 @@
 {
 "timestamp": 58600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -3789,15 +2880,6 @@
 "quantity": 1
 },
 {
-"timestamp": 59500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
-},
-{
 "timestamp": 60000,
 "buyer": "",
 "seller": "",
@@ -3843,15 +2925,6 @@
 "quantity": 8
 },
 {
-"timestamp": 60400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 60700,
 "buyer": "",
 "seller": "",
@@ -3859,15 +2932,6 @@
 "currency": "SEASHELLS",
 "price": 2017,
 "quantity": 1
-},
-{
-"timestamp": 60800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 10
 },
 {
 "timestamp": 60800,
@@ -3907,15 +2971,6 @@
 },
 {
 "timestamp": 61900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 61900,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -3929,13 +2984,13 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 10005,
-"quantity": 2
+"price": 9998,
+"quantity": 1
 },
 {
 "timestamp": 62000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2016,
@@ -3970,7 +3025,7 @@
 },
 {
 "timestamp": 62900,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -3994,15 +3049,6 @@
 "currency": "SEASHELLS",
 "price": 2016,
 "quantity": 1
-},
-{
-"timestamp": 63400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 3
 },
 {
 "timestamp": 63400,
@@ -4096,7 +3142,7 @@
 },
 {
 "timestamp": 65000,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -4122,15 +3168,6 @@
 "quantity": 1
 },
 {
-"timestamp": 65200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 1
-},
-{
 "timestamp": 65300,
 "buyer": "",
 "seller": "",
@@ -4141,7 +3178,7 @@
 },
 {
 "timestamp": 65400,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -4158,54 +3195,18 @@
 "quantity": 1
 },
 {
-"timestamp": 66100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 66200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 66300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2018,
 "quantity": 1
 },
 {
-"timestamp": 66400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 3
-},
-{
-"timestamp": 66600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 3
-},
-{
 "timestamp": 66900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -4228,15 +3229,6 @@
 "currency": "SEASHELLS",
 "price": 2015,
 "quantity": 1
-},
-{
-"timestamp": 67300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 3
 },
 {
 "timestamp": 67300,
@@ -4286,7 +3278,7 @@
 {
 "timestamp": 68200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -4295,7 +3287,7 @@
 {
 "timestamp": 68300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -4311,18 +3303,9 @@
 "quantity": 1
 },
 {
-"timestamp": 68800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 68900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -4358,7 +3341,7 @@
 {
 "timestamp": 69200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -4367,7 +3350,7 @@
 {
 "timestamp": 69200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -4375,29 +3358,20 @@
 },
 {
 "timestamp": 69300,
-"buyer": "SUBMISSION",
+"buyer": "",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2017,
+"quantity": 1
+},
+{
+"timestamp": 69300,
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 69300,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 1
-},
-{
-"timestamp": 69400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -4412,15 +3386,6 @@
 {
 "timestamp": 69700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 69700,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -4433,16 +3398,7 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9996,
-"quantity": 1
-},
-{
-"timestamp": 69700,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9996,
+"price": 10002,
 "quantity": 1
 },
 {
@@ -4456,30 +3412,12 @@
 },
 {
 "timestamp": 70300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 2
-},
-{
-"timestamp": 70300,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 2
-},
-{
-"timestamp": 70500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 3
 },
 {
 "timestamp": 70600,
@@ -4502,28 +3440,10 @@
 {
 "timestamp": 70800,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 70800,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2015,
-"quantity": 1
-},
-{
-"timestamp": 71200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -4536,9 +3456,9 @@
 "quantity": 1
 },
 {
-"timestamp": 71500,
+"timestamp": 71200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -4561,24 +3481,6 @@
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 3
-},
-{
-"timestamp": 71600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 2
-},
-{
-"timestamp": 71600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 71700,
@@ -4590,18 +3492,9 @@
 "quantity": 8
 },
 {
-"timestamp": 71800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 71900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -4619,7 +3512,7 @@
 {
 "timestamp": 72400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -4642,15 +3535,6 @@
 "currency": "SEASHELLS",
 "price": 10004,
 "quantity": 1
-},
-{
-"timestamp": 72600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 4
 },
 {
 "timestamp": 72900,
@@ -4698,15 +3582,6 @@
 "quantity": 1
 },
 {
-"timestamp": 73400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 73900,
 "buyer": "",
 "seller": "",
@@ -4727,7 +3602,7 @@
 {
 "timestamp": 74000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -4743,30 +3618,12 @@
 "quantity": 1
 },
 {
-"timestamp": 74600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 74900,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 75000,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9998,
+"price": 10002,
 "quantity": 1
 },
 {
@@ -4786,6 +3643,15 @@
 "currency": "SEASHELLS",
 "price": 9995,
 "quantity": 9
+},
+{
+"timestamp": 75000,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 9998,
+"quantity": 1
 },
 {
 "timestamp": 75500,
@@ -4808,7 +3674,7 @@
 {
 "timestamp": 75600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -4825,7 +3691,7 @@
 },
 {
 "timestamp": 76100,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -4880,19 +3746,10 @@
 {
 "timestamp": 77100,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 2
-},
-{
-"timestamp": 77200,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2014,
+"price": 2015,
 "quantity": 2
 },
 {
@@ -4934,29 +3791,11 @@
 {
 "timestamp": 77900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 3
-},
-{
-"timestamp": 78000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 11
-},
-{
-"timestamp": 78100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 78100,
@@ -4975,6 +3814,15 @@
 "currency": "SEASHELLS",
 "price": 2014,
 "quantity": 3
+},
+{
+"timestamp": 78100,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 1
 },
 {
 "timestamp": 78500,
@@ -4996,15 +3844,6 @@
 },
 {
 "timestamp": 78700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 78700,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -5015,7 +3854,7 @@
 {
 "timestamp": 78800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -5024,7 +3863,7 @@
 {
 "timestamp": 78900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2015,
@@ -5033,7 +3872,7 @@
 {
 "timestamp": 78900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -5059,30 +3898,21 @@
 },
 {
 "timestamp": 79200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2014,
-"quantity": 1
-},
-{
-"timestamp": 79200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 3
-},
-{
-"timestamp": 79200,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2014,
-"quantity": 4
+"quantity": 5
+},
+{
+"timestamp": 79200,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 9998,
+"quantity": 3
 },
 {
 "timestamp": 79400,
@@ -5103,15 +3933,6 @@
 "quantity": 13
 },
 {
-"timestamp": 79800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 79900,
 "buyer": "",
 "seller": "",
@@ -5130,24 +3951,6 @@
 "quantity": 3
 },
 {
-"timestamp": 80500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 6
-},
-{
-"timestamp": 80800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 1
-},
-{
 "timestamp": 80900,
 "buyer": "",
 "seller": "",
@@ -5159,7 +3962,7 @@
 {
 "timestamp": 81100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2015,
@@ -5177,7 +3980,7 @@
 {
 "timestamp": 81800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -5185,20 +3988,11 @@
 },
 {
 "timestamp": 81900,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 82200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -5212,15 +4006,6 @@
 },
 {
 "timestamp": 82600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 2
-},
-{
-"timestamp": 82600,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -5235,7 +4020,7 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2016,
-"quantity": 1
+"quantity": 3
 },
 {
 "timestamp": 82800,
@@ -5253,24 +4038,6 @@
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 82900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 83100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
 "quantity": 1
 },
 {
@@ -5292,17 +4059,8 @@
 "quantity": 3
 },
 {
-"timestamp": 84000,
+"timestamp": 83100,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 1
-},
-{
-"timestamp": 84000,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -5373,24 +4131,6 @@
 "quantity": 1
 },
 {
-"timestamp": 84600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 85000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 85100,
 "buyer": "",
 "seller": "",
@@ -5409,24 +4149,6 @@
 "quantity": 13
 },
 {
-"timestamp": 85700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 3
-},
-{
-"timestamp": 85800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 1
-},
-{
 "timestamp": 85800,
 "buyer": "",
 "seller": "",
@@ -5437,7 +4159,7 @@
 },
 {
 "timestamp": 85900,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -5447,7 +4169,7 @@
 {
 "timestamp": 86100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -5479,24 +4201,6 @@
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 86800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
-},
-{
-"timestamp": 86900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 2
 },
 {
 "timestamp": 87200,
@@ -5563,30 +4267,12 @@
 },
 {
 "timestamp": 88100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 88100,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
 "quantity": 8
-},
-{
-"timestamp": 88200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
 },
 {
 "timestamp": 88300,
@@ -5600,38 +4286,11 @@
 {
 "timestamp": 88500,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 9
-},
-{
-"timestamp": 88500,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2016,
 "quantity": 1
-},
-{
-"timestamp": 88600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2014,
-"quantity": 2
-},
-{
-"timestamp": 88600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 5
 },
 {
 "timestamp": 88900,
@@ -5760,18 +4419,9 @@
 "quantity": 1
 },
 {
-"timestamp": 90700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 90900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -5780,7 +4430,7 @@
 {
 "timestamp": 91000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -5834,24 +4484,6 @@
 {
 "timestamp": 91700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 4
-},
-{
-"timestamp": 91700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 1
-},
-{
-"timestamp": 91700,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -5859,26 +4491,8 @@
 "quantity": 1
 },
 {
-"timestamp": 91900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 3
-},
-{
-"timestamp": 92000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 1
-},
-{
 "timestamp": 92100,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -5923,39 +4537,12 @@
 },
 {
 "timestamp": 92300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 92300,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2018,
 "quantity": 12
-},
-{
-"timestamp": 92600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 1
-},
-{
-"timestamp": 92700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 92700,
@@ -5990,7 +4577,7 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9996,
+"price": 10002,
 "quantity": 1
 },
 {
@@ -6012,24 +4599,6 @@
 "quantity": 1
 },
 {
-"timestamp": 93100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 3
-},
-{
-"timestamp": 93200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 93200,
 "buyer": "",
 "seller": "",
@@ -6041,7 +4610,7 @@
 {
 "timestamp": 93300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2019,
@@ -6049,66 +4618,12 @@
 },
 {
 "timestamp": 93400,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 3
-},
-{
-"timestamp": 93400,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10004,
-"quantity": 2
-},
-{
-"timestamp": 93400,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10004,
-"quantity": 5
-},
-{
-"timestamp": 93500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 2
-},
-{
-"timestamp": 93600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 4
-},
-{
-"timestamp": 93600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 27
-},
-{
-"timestamp": 93600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 2
 },
 {
 "timestamp": 93600,
@@ -6129,31 +4644,13 @@
 "quantity": 1
 },
 {
-"timestamp": 93700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 93800,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 94000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 4
 },
 {
 "timestamp": 94200,
@@ -6167,7 +4664,7 @@
 {
 "timestamp": 94300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -6194,24 +4691,6 @@
 {
 "timestamp": 94600,
 "buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 94700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 94900,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -6265,17 +4744,8 @@
 },
 {
 "timestamp": 95700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 6
-},
-{
-"timestamp": 95700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -6289,15 +4759,6 @@
 "currency": "SEASHELLS",
 "price": 10005,
 "quantity": 7
-},
-{
-"timestamp": 95900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 8
 },
 {
 "timestamp": 96000,
@@ -6319,21 +4780,21 @@
 },
 {
 "timestamp": 96200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 5
-},
-{
-"timestamp": 96200,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
 "quantity": 1
+},
+{
+"timestamp": 96200,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 9998,
+"quantity": 5
 },
 {
 "timestamp": 96300,
@@ -6347,7 +4808,7 @@
 {
 "timestamp": 96800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -6382,12 +4843,12 @@
 },
 {
 "timestamp": 97200,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2019,
-"quantity": 3
+"price": 2018,
+"quantity": 10
 },
 {
 "timestamp": 97200,
@@ -6395,8 +4856,8 @@
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2018,
-"quantity": 10
+"price": 2019,
+"quantity": 3
 },
 {
 "timestamp": 97300,
@@ -6435,24 +4896,6 @@
 "quantity": 1
 },
 {
-"timestamp": 98100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 98300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 2
-},
-{
 "timestamp": 98400,
 "buyer": "",
 "seller": "",
@@ -6464,7 +4907,7 @@
 {
 "timestamp": 98800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2020,
@@ -6473,7 +4916,7 @@
 {
 "timestamp": 98800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -6498,15 +4941,6 @@
 "quantity": 1
 },
 {
-"timestamp": 99300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 1
-},
-{
 "timestamp": 99400,
 "buyer": "",
 "seller": "",
@@ -6525,15 +4959,6 @@
 "quantity": 2
 },
 {
-"timestamp": 99600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 99800,
 "buyer": "",
 "seller": "",
@@ -6541,15 +4966,6 @@
 "currency": "SEASHELLS",
 "price": 2022,
 "quantity": 4
-},
-{
-"timestamp": 99900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 99900,
@@ -6579,15 +4995,6 @@
 "quantity": 1
 },
 {
-"timestamp": 100100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 100200,
 "buyer": "",
 "seller": "",
@@ -6608,7 +5015,7 @@
 {
 "timestamp": 100700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -6660,15 +5067,6 @@
 "quantity": 2
 },
 {
-"timestamp": 101300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 2
-},
-{
 "timestamp": 101500,
 "buyer": "",
 "seller": "",
@@ -6720,15 +5118,6 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2019,
-"quantity": 1
-},
-{
-"timestamp": 102000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -6805,24 +5194,6 @@
 },
 {
 "timestamp": 103400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 1
-},
-{
-"timestamp": 103400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 4
-},
-{
-"timestamp": 103400,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
@@ -6851,7 +5222,7 @@
 {
 "timestamp": 104700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -6887,20 +5258,11 @@
 {
 "timestamp": 105400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
-},
-{
-"timestamp": 105500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 2
 },
 {
 "timestamp": 105700,
@@ -6910,15 +5272,6 @@
 "currency": "SEASHELLS",
 "price": 2020,
 "quantity": 1
-},
-{
-"timestamp": 105800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 3
 },
 {
 "timestamp": 106000,
@@ -6958,33 +5311,6 @@
 },
 {
 "timestamp": 106300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 4
-},
-{
-"timestamp": 106300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 2
-},
-{
-"timestamp": 106300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 4
-},
-{
-"timestamp": 106300,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -7018,15 +5344,6 @@
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 106400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 6
 },
 {
 "timestamp": 106500,
@@ -7039,66 +5356,12 @@
 },
 {
 "timestamp": 106600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 3
-},
-{
-"timestamp": 106600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 106600,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 2
-},
-{
-"timestamp": 106700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 106800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 107000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 2
-},
-{
-"timestamp": 107100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 107400,
@@ -7128,30 +5391,12 @@
 "quantity": 1
 },
 {
-"timestamp": 108000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 11
-},
-{
 "timestamp": 108100,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 108200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
 "quantity": 1
 },
 {
@@ -7174,7 +5419,7 @@
 },
 {
 "timestamp": 108600,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -7183,7 +5428,7 @@
 },
 {
 "timestamp": 108600,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -7227,39 +5472,12 @@
 "quantity": 11
 },
 {
-"timestamp": 109600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 109700,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2018,
-"quantity": 1
-},
-{
-"timestamp": 109800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 109900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -7299,27 +5517,9 @@
 "quantity": 10
 },
 {
-"timestamp": 110600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 1
-},
-{
-"timestamp": 110600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 8
-},
-{
 "timestamp": 111000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2021,
@@ -7327,39 +5527,12 @@
 },
 {
 "timestamp": 111000,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 111000,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 4
-},
-{
-"timestamp": 111000,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10004,
-"quantity": 2
-},
-{
-"timestamp": 111100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
 },
 {
 "timestamp": 111100,
@@ -7371,13 +5544,13 @@
 "quantity": 15
 },
 {
-"timestamp": 111300,
-"buyer": "SUBMISSION",
+"timestamp": 111100,
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
-"quantity": 3
+"quantity": 4
 },
 {
 "timestamp": 111300,
@@ -7386,15 +5559,6 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2019,
-"quantity": 1
-},
-{
-"timestamp": 111500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2021,
 "quantity": 1
 },
 {
@@ -7407,31 +5571,13 @@
 "quantity": 1
 },
 {
-"timestamp": 112000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 4
-},
-{
 "timestamp": 112100,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 5
-},
-{
-"timestamp": 113000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 4
 },
 {
 "timestamp": 113000,
@@ -7481,15 +5627,6 @@
 {
 "timestamp": 113800,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 113800,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -7511,22 +5648,13 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9996,
-"quantity": 2
-},
-{
-"timestamp": 114000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 11
+"price": 10002,
+"quantity": 1
 },
 {
 "timestamp": 114100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2020,
@@ -7542,15 +5670,6 @@
 "quantity": 2
 },
 {
-"timestamp": 114600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 114800,
 "buyer": "",
 "seller": "",
@@ -7560,17 +5679,8 @@
 "quantity": 15
 },
 {
-"timestamp": 115100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 1
-},
-{
 "timestamp": 115300,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -7623,18 +5733,9 @@
 "quantity": 1
 },
 {
-"timestamp": 116700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 116800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -7677,15 +5778,6 @@
 "quantity": 1
 },
 {
-"timestamp": 117900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 4
-},
-{
 "timestamp": 118100,
 "buyer": "",
 "seller": "",
@@ -7713,15 +5805,6 @@
 "quantity": 1
 },
 {
-"timestamp": 118500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 1
-},
-{
 "timestamp": 118700,
 "buyer": "",
 "seller": "",
@@ -7733,7 +5816,7 @@
 {
 "timestamp": 119100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2019,
@@ -7741,20 +5824,11 @@
 },
 {
 "timestamp": 119300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 119300,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 10002,
+"price": 9998,
 "quantity": 1
 },
 {
@@ -7769,15 +5843,6 @@
 {
 "timestamp": 119800,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 4
-},
-{
-"timestamp": 119800,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -7799,16 +5864,7 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 119900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
+"price": 10000,
 "quantity": 1
 },
 {
@@ -7823,16 +5879,7 @@
 {
 "timestamp": 120000,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 120200,
-"buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -7867,7 +5914,7 @@
 },
 {
 "timestamp": 120500,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -7880,8 +5927,8 @@
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2018,
-"quantity": 8
+"price": 2015,
+"quantity": 5
 },
 {
 "timestamp": 120500,
@@ -7889,17 +5936,17 @@
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2014,
-"quantity": 10
-},
-{
-"timestamp": 120500,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
+"price": 2015,
 "quantity": 1
+},
+{
+"timestamp": 120500,
+"buyer": "",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2015,
+"quantity": 4
 },
 {
 "timestamp": 120500,
@@ -7927,15 +5974,6 @@
 "currency": "SEASHELLS",
 "price": 2013,
 "quantity": 1
-},
-{
-"timestamp": 121400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
 },
 {
 "timestamp": 121500,
@@ -7967,19 +6005,10 @@
 {
 "timestamp": 121900,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 1
-},
-{
-"timestamp": 122000,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2014,
+"price": 2015,
 "quantity": 1
 },
 {
@@ -8021,7 +6050,7 @@
 {
 "timestamp": 122900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2013,
@@ -8084,7 +6113,7 @@
 {
 "timestamp": 123700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -8093,7 +6122,7 @@
 {
 "timestamp": 123800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2013,
@@ -8101,20 +6130,11 @@
 },
 {
 "timestamp": 123800,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 124000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2013,
 "quantity": 1
 },
 {
@@ -8136,24 +6156,6 @@
 "quantity": 2
 },
 {
-"timestamp": 124100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2012,
-"quantity": 3
-},
-{
-"timestamp": 124500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 5
-},
-{
 "timestamp": 124500,
 "buyer": "",
 "seller": "",
@@ -8172,18 +6174,9 @@
 "quantity": 1
 },
 {
-"timestamp": 124700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 125200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -8217,49 +6210,13 @@
 "quantity": 1
 },
 {
-"timestamp": 125700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 2
-},
-{
-"timestamp": 125800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 125900,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2014,
 "quantity": 6
-},
-{
-"timestamp": 126100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 126200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 7
 },
 {
 "timestamp": 126300,
@@ -8309,7 +6266,7 @@
 {
 "timestamp": 126700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -8353,15 +6310,6 @@
 },
 {
 "timestamp": 127500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 3
-},
-{
-"timestamp": 127500,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -8388,31 +6336,13 @@
 "quantity": 7
 },
 {
-"timestamp": 128000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 1
-},
-{
 "timestamp": 128200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
-},
-{
-"timestamp": 128400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2014,
-"quantity": 2
 },
 {
 "timestamp": 128400,
@@ -8422,6 +6352,15 @@
 "currency": "SEASHELLS",
 "price": 2013,
 "quantity": 1
+},
+{
+"timestamp": 128400,
+"buyer": "",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2014,
+"quantity": 2
 },
 {
 "timestamp": 128400,
@@ -8444,7 +6383,7 @@
 {
 "timestamp": 128900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2015,
@@ -8453,7 +6392,7 @@
 {
 "timestamp": 128900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -8470,15 +6409,6 @@
 },
 {
 "timestamp": 129700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 3
-},
-{
-"timestamp": 129700,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -8487,67 +6417,22 @@
 "quantity": 3
 },
 {
-"timestamp": 130100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 1
-},
-{
-"timestamp": 130100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 130200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2014,
-"quantity": 3
-},
-{
 "timestamp": 130300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
 },
 {
-"timestamp": 130400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2014,
-"quantity": 1
-},
-{
 "timestamp": 130700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2016,
 "quantity": 1
-},
-{
-"timestamp": 130900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2014,
-"quantity": 5
 },
 {
 "timestamp": 130900,
@@ -8565,33 +6450,6 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2016,
-"quantity": 1
-},
-{
-"timestamp": 131400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 7
-},
-{
-"timestamp": 131400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 131600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -8651,7 +6509,7 @@
 {
 "timestamp": 132300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -8703,15 +6561,6 @@
 "quantity": 1
 },
 {
-"timestamp": 132900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 133000,
 "buyer": "",
 "seller": "",
@@ -8719,15 +6568,6 @@
 "currency": "SEASHELLS",
 "price": 2013,
 "quantity": 13
-},
-{
-"timestamp": 133100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
 },
 {
 "timestamp": 133100,
@@ -8746,6 +6586,15 @@
 "currency": "SEASHELLS",
 "price": 10004,
 "quantity": 4
+},
+{
+"timestamp": 133100,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 5
 },
 {
 "timestamp": 133200,
@@ -8794,21 +6643,12 @@
 },
 {
 "timestamp": 134000,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2014,
-"quantity": 2
-},
-{
-"timestamp": 134000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 3
+"price": 2015,
+"quantity": 1
 },
 {
 "timestamp": 134000,
@@ -8816,8 +6656,8 @@
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2015,
-"quantity": 1
+"price": 2014,
+"quantity": 2
 },
 {
 "timestamp": 134100,
@@ -8831,7 +6671,7 @@
 {
 "timestamp": 134200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -8840,7 +6680,7 @@
 {
 "timestamp": 134300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -8866,43 +6706,34 @@
 },
 {
 "timestamp": 134700,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
-"symbol": "KELP",
+"symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 2014,
-"quantity": 7
+"price": 10004,
+"quantity": 1
 },
 {
 "timestamp": 134700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10004,
+"quantity": 1
+},
+{
+"timestamp": 134700,
+"buyer": "",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 4
 },
 {
-"timestamp": 134700,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10004,
-"quantity": 1
-},
-{
-"timestamp": 134700,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10004,
-"quantity": 1
-},
-{
 "timestamp": 134900,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -8917,24 +6748,6 @@
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 135100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 1
-},
-{
-"timestamp": 135100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 7
 },
 {
 "timestamp": 135400,
@@ -8957,7 +6770,7 @@
 {
 "timestamp": 135600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -8983,7 +6796,7 @@
 },
 {
 "timestamp": 136000,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -8993,31 +6806,13 @@
 {
 "timestamp": 136300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
 },
 {
-"timestamp": 136300,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
-},
-{
-"timestamp": 136500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2014,
-"quantity": 1
-},
-{
 "timestamp": 136500,
 "buyer": "",
 "seller": "",
@@ -9032,8 +6827,8 @@
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2016,
-"quantity": 2
+"price": 2014,
+"quantity": 1
 },
 {
 "timestamp": 136500,
@@ -9043,15 +6838,6 @@
 "currency": "SEASHELLS",
 "price": 10004,
 "quantity": 2
-},
-{
-"timestamp": 136800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 137000,
@@ -9081,15 +6867,6 @@
 "quantity": 3
 },
 {
-"timestamp": 137500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 137600,
 "buyer": "",
 "seller": "",
@@ -9100,21 +6877,12 @@
 },
 {
 "timestamp": 137700,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2014,
 "quantity": 3
-},
-{
-"timestamp": 137700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 8
 },
 {
 "timestamp": 137700,
@@ -9162,15 +6930,6 @@
 "quantity": 7
 },
 {
-"timestamp": 138200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 138300,
 "buyer": "",
 "seller": "",
@@ -9178,15 +6937,6 @@
 "currency": "SEASHELLS",
 "price": 9995,
 "quantity": 7
-},
-{
-"timestamp": 138400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 138500,
@@ -9245,15 +6995,6 @@
 {
 "timestamp": 139400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
-},
-{
-"timestamp": 139400,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -9288,8 +7029,17 @@
 "quantity": 1
 },
 {
+"timestamp": 139400,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 5
+},
+{
 "timestamp": 139600,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -9298,7 +7048,7 @@
 },
 {
 "timestamp": 139700,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -9307,7 +7057,7 @@
 },
 {
 "timestamp": 139700,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -9322,24 +7072,6 @@
 "currency": "SEASHELLS",
 "price": 2013,
 "quantity": 1
-},
-{
-"timestamp": 140300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 140600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 3
 },
 {
 "timestamp": 140600,
@@ -9360,15 +7092,6 @@
 "quantity": 1
 },
 {
-"timestamp": 142400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 3
-},
-{
 "timestamp": 142600,
 "buyer": "",
 "seller": "",
@@ -9378,15 +7101,6 @@
 "quantity": 1
 },
 {
-"timestamp": 142700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
-},
-{
 "timestamp": 142800,
 "buyer": "",
 "seller": "",
@@ -9394,15 +7108,6 @@
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 2
-},
-{
-"timestamp": 142900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 143100,
@@ -9441,30 +7146,12 @@
 "quantity": 1
 },
 {
-"timestamp": 143900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 144000,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 1
-},
-{
-"timestamp": 144100,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2015,
+"price": 2016,
 "quantity": 1
 },
 {
@@ -9479,7 +7166,7 @@
 {
 "timestamp": 144600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -9504,17 +7191,8 @@
 "quantity": 1
 },
 {
-"timestamp": 145200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 1
-},
-{
 "timestamp": 145300,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -9542,15 +7220,6 @@
 {
 "timestamp": 145500,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 145500,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -9558,22 +7227,13 @@
 "quantity": 1
 },
 {
-"timestamp": 145600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2013,
-"quantity": 1
-},
-{
-"timestamp": 145600,
-"buyer": "SUBMISSION",
+"timestamp": 145500,
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9998,
-"quantity": 8
+"price": 10002,
+"quantity": 1
 },
 {
 "timestamp": 145700,
@@ -9686,7 +7346,7 @@
 {
 "timestamp": 147700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -9747,49 +7407,13 @@
 "quantity": 2
 },
 {
-"timestamp": 149000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 5
-},
-{
-"timestamp": 149200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 2
-},
-{
-"timestamp": 149200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 149500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2015,
 "quantity": 1
-},
-{
-"timestamp": 149700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 6
 },
 {
 "timestamp": 149700,
@@ -9803,7 +7427,7 @@
 {
 "timestamp": 149800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2015,
@@ -9812,29 +7436,11 @@
 {
 "timestamp": 149800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 5
-},
-{
-"timestamp": 149800,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2013,
-"quantity": 1
-},
-{
-"timestamp": 149800,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2013,
-"quantity": 1
+"quantity": 2
 },
 {
 "timestamp": 149800,
@@ -9842,17 +7448,8 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9996,
-"quantity": 1
-},
-{
-"timestamp": 149800,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9996,
-"quantity": 1
+"price": 10002,
+"quantity": 3
 },
 {
 "timestamp": 149900,
@@ -9874,25 +7471,7 @@
 },
 {
 "timestamp": 150200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 150200,
 "buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 150400,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -9911,7 +7490,7 @@
 {
 "timestamp": 150500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -9927,24 +7506,6 @@
 "quantity": 1
 },
 {
-"timestamp": 150800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 151100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 1
-},
-{
 "timestamp": 151500,
 "buyer": "",
 "seller": "",
@@ -9956,56 +7517,11 @@
 {
 "timestamp": 151600,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 3
-},
-{
-"timestamp": 151600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 1
-},
-{
-"timestamp": 151600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 8
-},
-{
-"timestamp": 151600,
-"buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 3
-},
-{
-"timestamp": 151600,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 152000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 11
 },
 {
 "timestamp": 152200,
@@ -10053,15 +7569,6 @@
 "quantity": 1
 },
 {
-"timestamp": 152900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 5
-},
-{
 "timestamp": 153000,
 "buyer": "",
 "seller": "",
@@ -10081,15 +7588,6 @@
 },
 {
 "timestamp": 153500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 153500,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -10103,7 +7601,7 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 10005,
+"price": 9998,
 "quantity": 1
 },
 {
@@ -10154,19 +7652,10 @@
 {
 "timestamp": 154800,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 154900,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9998,
+"price": 10002,
 "quantity": 1
 },
 {
@@ -10190,7 +7679,7 @@
 {
 "timestamp": 155200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -10198,7 +7687,7 @@
 },
 {
 "timestamp": 155500,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -10231,24 +7720,6 @@
 "currency": "SEASHELLS",
 "price": 2014,
 "quantity": 7
-},
-{
-"timestamp": 156300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 3
-},
-{
-"timestamp": 156400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 156500,
@@ -10297,24 +7768,6 @@
 },
 {
 "timestamp": 156900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 4
-},
-{
-"timestamp": 156900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 1
-},
-{
-"timestamp": 156900,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -10332,31 +7785,13 @@
 "quantity": 1
 },
 {
-"timestamp": 157100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 157300,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2015,
 "quantity": 4
-},
-{
-"timestamp": 157400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 157400,
@@ -10386,18 +7821,9 @@
 "quantity": 1
 },
 {
-"timestamp": 157600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 3
-},
-{
 "timestamp": 157700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2016,
@@ -10415,20 +7841,11 @@
 {
 "timestamp": 158200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
-},
-{
-"timestamp": 158300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 5
 },
 {
 "timestamp": 158300,
@@ -10438,33 +7855,6 @@
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 7
-},
-{
-"timestamp": 158400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 1
-},
-{
-"timestamp": 158400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 5
-},
-{
-"timestamp": 158800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 4
 },
 {
 "timestamp": 158800,
@@ -10494,33 +7884,6 @@
 "quantity": 1
 },
 {
-"timestamp": 159400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 6
-},
-{
-"timestamp": 159700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
-},
-{
-"timestamp": 159900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 5
-},
-{
 "timestamp": 160000,
 "buyer": "",
 "seller": "",
@@ -10540,7 +7903,7 @@
 },
 {
 "timestamp": 160300,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -10550,7 +7913,7 @@
 {
 "timestamp": 160400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
@@ -10558,7 +7921,7 @@
 },
 {
 "timestamp": 160400,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -10577,42 +7940,24 @@
 {
 "timestamp": 160600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 1
 },
 {
-"timestamp": 160800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 2
-},
-{
-"timestamp": 161000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2015,
-"quantity": 4
-},
-{
 "timestamp": 161000,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2015,
-"quantity": 4
+"quantity": 8
 },
 {
 "timestamp": 161600,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -10647,58 +7992,31 @@
 "quantity": 4
 },
 {
-"timestamp": 163100,
-"buyer": "SUBMISSION",
+"timestamp": 163500,
+"buyer": "",
 "seller": "",
-"symbol": "RAINFOREST_RESIN",
+"symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
-},
-{
-"timestamp": 163200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
+"price": 2016,
+"quantity": 2
 },
 {
 "timestamp": 163500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2016,
+"quantity": 2
+},
+{
+"timestamp": 163500,
+"buyer": "",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 3
-},
-{
-"timestamp": 163500,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 2
-},
-{
-"timestamp": 163500,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2016,
-"quantity": 2
-},
-{
-"timestamp": 163800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 163800,
@@ -10737,39 +8055,12 @@
 "quantity": 1
 },
 {
-"timestamp": 164000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 164600,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2018,
-"quantity": 1
-},
-{
-"timestamp": 164600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 164600,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
 "quantity": 1
 },
 {
@@ -10791,40 +8082,13 @@
 "quantity": 6
 },
 {
-"timestamp": 164900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 1
-},
-{
-"timestamp": 165000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 1
-},
-{
 "timestamp": 165100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2018,
 "quantity": 1
-},
-{
-"timestamp": 165200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 2
 },
 {
 "timestamp": 165200,
@@ -10833,69 +8097,15 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2017,
-"quantity": 4
-},
-{
-"timestamp": 165500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 4
-},
-{
-"timestamp": 165600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 165700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 1
-},
-{
-"timestamp": 165900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
+"quantity": 6
 },
 {
 "timestamp": 166000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2019,
-"quantity": 1
-},
-{
-"timestamp": 166200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 2
-},
-{
-"timestamp": 166200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
 "quantity": 1
 },
 {
@@ -10935,18 +8145,9 @@
 "quantity": 11
 },
 {
-"timestamp": 167700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
-},
-{
 "timestamp": 167800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2019,
@@ -10954,7 +8155,7 @@
 },
 {
 "timestamp": 167800,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -10962,17 +8163,8 @@
 "quantity": 1
 },
 {
-"timestamp": 167800,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10005,
-"quantity": 11
-},
-{
 "timestamp": 167900,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -10989,24 +8181,6 @@
 "quantity": 8
 },
 {
-"timestamp": 168100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 168500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
 "timestamp": 169000,
 "buyer": "",
 "seller": "",
@@ -11014,15 +8188,6 @@
 "currency": "SEASHELLS",
 "price": 2019,
 "quantity": 3
-},
-{
-"timestamp": 169200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 1
 },
 {
 "timestamp": 169900,
@@ -11052,39 +8217,12 @@
 "quantity": 3
 },
 {
-"timestamp": 170400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 10
-},
-{
-"timestamp": 170400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 11
-},
-{
 "timestamp": 171000,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2019,
-"quantity": 3
-},
-{
-"timestamp": 171100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 3
 },
 {
@@ -11099,38 +8237,11 @@
 {
 "timestamp": 171400,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 5
-},
-{
-"timestamp": 171500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 171600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 171600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 10
 },
 {
 "timestamp": 171600,
@@ -11140,15 +8251,6 @@
 "currency": "SEASHELLS",
 "price": 2018,
 "quantity": 4
-},
-{
-"timestamp": 171900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 171900,
@@ -11165,13 +8267,13 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9996,
+"price": 10002,
 "quantity": 1
 },
 {
 "timestamp": 172100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -11197,21 +8299,12 @@
 },
 {
 "timestamp": 172700,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 3
-},
-{
-"timestamp": 173200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2018,
-"quantity": 1
 },
 {
 "timestamp": 173300,
@@ -11251,7 +8344,7 @@
 },
 {
 "timestamp": 173500,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -11262,15 +8355,6 @@
 "timestamp": 173800,
 "buyer": "",
 "seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 1
-},
-{
-"timestamp": 173900,
-"buyer": "",
-"seller": "SUBMISSION",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2020,
@@ -11322,15 +8406,6 @@
 "quantity": 1
 },
 {
-"timestamp": 174800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 1
-},
-{
 "timestamp": 175800,
 "buyer": "",
 "seller": "",
@@ -11351,37 +8426,28 @@
 {
 "timestamp": 176000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2017,
+"quantity": 1
+},
+{
+"timestamp": 176000,
+"buyer": "",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2017,
+"quantity": 1
+},
+{
+"timestamp": 176000,
+"buyer": "",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 176000,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 1
-},
-{
-"timestamp": 176000,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2017,
-"quantity": 1
-},
-{
-"timestamp": 176000,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9995,
 "quantity": 1
 },
 {
@@ -11440,7 +8506,7 @@
 },
 {
 "timestamp": 177600,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -11467,15 +8533,6 @@
 },
 {
 "timestamp": 177900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 12
-},
-{
-"timestamp": 177900,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -11491,15 +8548,6 @@
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 178700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 8
 },
 {
 "timestamp": 178700,
@@ -11602,7 +8650,7 @@
 },
 {
 "timestamp": 180100,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -11611,21 +8659,12 @@
 },
 {
 "timestamp": 180300,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 4
-},
-{
-"timestamp": 180500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 2
 },
 {
 "timestamp": 180500,
@@ -11755,17 +8794,8 @@
 },
 {
 "timestamp": 181900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 1
-},
-{
-"timestamp": 181900,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -11774,7 +8804,7 @@
 {
 "timestamp": 182000,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -11792,7 +8822,7 @@
 {
 "timestamp": 182200,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2020,
@@ -11810,29 +8840,11 @@
 {
 "timestamp": 182500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 4
-},
-{
-"timestamp": 182800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 1
-},
-{
-"timestamp": 183100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2021,
-"quantity": 1
 },
 {
 "timestamp": 183100,
@@ -11860,15 +8872,6 @@
 "currency": "SEASHELLS",
 "price": 2019,
 "quantity": 9
-},
-{
-"timestamp": 183500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2021,
-"quantity": 3
 },
 {
 "timestamp": 183500,
@@ -11909,7 +8912,7 @@
 {
 "timestamp": 184100,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2022,
@@ -11936,11 +8939,11 @@
 {
 "timestamp": 184800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 5
+"quantity": 3
 },
 {
 "timestamp": 184800,
@@ -11949,25 +8952,7 @@
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 3
-},
-{
-"timestamp": 184900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 185200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
+"quantity": 5
 },
 {
 "timestamp": 185200,
@@ -11997,15 +8982,6 @@
 "quantity": 1
 },
 {
-"timestamp": 185500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
 "timestamp": 185800,
 "buyer": "",
 "seller": "",
@@ -12015,15 +8991,6 @@
 "quantity": 1
 },
 {
-"timestamp": 186000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 4
-},
-{
 "timestamp": 186100,
 "buyer": "",
 "seller": "",
@@ -12070,15 +9037,6 @@
 },
 {
 "timestamp": 186400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 186400,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -12088,21 +9046,12 @@
 },
 {
 "timestamp": 187000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 2
-},
-{
-"timestamp": 187000,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2022,
-"quantity": 1
+"quantity": 3
 },
 {
 "timestamp": 187300,
@@ -12116,19 +9065,10 @@
 {
 "timestamp": 187400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2023,
-"quantity": 1
-},
-{
-"timestamp": 187600,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 2022,
+"price": 2023,
 "quantity": 1
 },
 {
@@ -12152,19 +9092,10 @@
 {
 "timestamp": 188000,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 188400,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 9998,
+"price": 10002,
 "quantity": 1
 },
 {
@@ -12195,15 +9126,6 @@
 "quantity": 1
 },
 {
-"timestamp": 189100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10000,
-"quantity": 5
-},
-{
 "timestamp": 189200,
 "buyer": "",
 "seller": "",
@@ -12211,24 +9133,6 @@
 "currency": "SEASHELLS",
 "price": 2021,
 "quantity": 3
-},
-{
-"timestamp": 189300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 1
-},
-{
-"timestamp": 189500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
 },
 {
 "timestamp": 189500,
@@ -12245,8 +9149,8 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 10005,
-"quantity": 5
+"price": 9998,
+"quantity": 1
 },
 {
 "timestamp": 189500,
@@ -12323,15 +9227,6 @@
 {
 "timestamp": 190700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 2
-},
-{
-"timestamp": 190700,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -12340,30 +9235,12 @@
 },
 {
 "timestamp": 190800,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 5
-},
-{
-"timestamp": 190900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2023,
-"quantity": 1
-},
-{
-"timestamp": 190900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
 },
 {
 "timestamp": 190900,
@@ -12378,9 +9255,27 @@
 "timestamp": 190900,
 "buyer": "",
 "seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2023,
+"quantity": 1
+},
+{
+"timestamp": 190900,
+"buyer": "",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10005,
+"quantity": 1
+},
+{
+"timestamp": 190900,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
 "quantity": 1
 },
 {
@@ -12400,15 +9295,6 @@
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 191500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 4
 },
 {
 "timestamp": 191700,
@@ -12431,7 +9317,7 @@
 {
 "timestamp": 191800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2022,
@@ -12457,7 +9343,7 @@
 },
 {
 "timestamp": 192100,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -12466,7 +9352,16 @@
 },
 {
 "timestamp": 192200,
-"buyer": "SUBMISSION",
+"buyer": "",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2019,
+"quantity": 5
+},
+{
+"timestamp": 192200,
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -12474,15 +9369,6 @@
 "quantity": 2
 },
 {
-"timestamp": 192200,
-"buyer": "",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2019,
-"quantity": 5
-},
-{
 "timestamp": 192400,
 "buyer": "",
 "seller": "",
@@ -12499,42 +9385,6 @@
 "currency": "SEASHELLS",
 "price": 9998,
 "quantity": 1
-},
-{
-"timestamp": 192500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 1
-},
-{
-"timestamp": 192500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 192600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2021,
-"quantity": 4
-},
-{
-"timestamp": 192600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 3
 },
 {
 "timestamp": 192700,
@@ -12557,11 +9407,11 @@
 {
 "timestamp": 193300,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 4
+"quantity": 1
 },
 {
 "timestamp": 193300,
@@ -12570,16 +9420,7 @@
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 193500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
+"quantity": 4
 },
 {
 "timestamp": 193600,
@@ -12592,7 +9433,7 @@
 },
 {
 "timestamp": 193700,
-"buyer": "SUBMISSION",
+"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -12602,7 +9443,7 @@
 {
 "timestamp": 193800,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2020,
@@ -12615,24 +9456,6 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2018,
-"quantity": 1
-},
-{
-"timestamp": 194100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2020,
-"quantity": 1
-},
-{
-"timestamp": 194100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
 "quantity": 1
 },
 {
@@ -12674,15 +9497,6 @@
 {
 "timestamp": 195100,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 195100,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -12708,9 +9522,18 @@
 "quantity": 4
 },
 {
+"timestamp": 195100,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 1
+},
+{
 "timestamp": 195700,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -12735,33 +9558,6 @@
 "quantity": 1
 },
 {
-"timestamp": 195900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 1
-},
-{
-"timestamp": 196000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2021,
-"quantity": 1
-},
-{
-"timestamp": 196000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 2
-},
-{
 "timestamp": 196000,
 "buyer": "",
 "seller": "",
@@ -12773,7 +9569,7 @@
 {
 "timestamp": 196500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2022,
@@ -12804,24 +9600,6 @@
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9996,
-"quantity": 1
-},
-{
-"timestamp": 197400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 1
-},
-{
-"timestamp": 197400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
 "quantity": 1
 },
 {
@@ -12854,24 +9632,6 @@
 {
 "timestamp": 198500,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2023,
-"quantity": 1
-},
-{
-"timestamp": 198500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 9998,
-"quantity": 10
-},
-{
-"timestamp": 198500,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -12884,17 +9644,8 @@
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
-"price": 10005,
+"price": 9998,
 "quantity": 2
-},
-{
-"timestamp": 198700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2022,
-"quantity": 6
 },
 {
 "timestamp": 198800,
@@ -12908,20 +9659,20 @@
 {
 "timestamp": 198900,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10002,
-"quantity": 1
-},
-{
-"timestamp": 198900,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2021,
 "quantity": 5
+},
+{
+"timestamp": 198900,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 1
 },
 {
 "timestamp": 199000,
@@ -13007,7 +9758,7 @@
 {
 "timestamp": 199500,
 "buyer": "",
-"seller": "SUBMISSION",
+"seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,

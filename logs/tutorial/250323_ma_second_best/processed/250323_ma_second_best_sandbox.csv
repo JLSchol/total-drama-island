@@ -578,7 +578,7 @@ sandboxLog,lambdaLog,timestamp
 ,,57600
 ,,57700
 ,,57800
-,,57900
+,buying second best,57900
 ,,58000
 ,,58100
 ,,58200
@@ -935,7 +935,7 @@ sandboxLog,lambdaLog,timestamp
 ,,93300
 ,,93400
 ,,93500
-"{""errorMessage"": ""'>' not supported between instances of 'NoneType' and 'float'"", ""errorType"": ""TypeError"", ""requestId"": ""9ff406b1-1e2d-4567-9ccb-872448f7ea63"", ""stackTrace"": [""  File \""/var/task/app.py\"", line 31, in lambda_handler\n    orders, conversion, traderData = trader.run(trading_state)\n"", ""  File \""/var/task/trader.py\"", line 364, in run\n    orders = sma_midprice_strategy(td, product, 5, orders)\n"", ""  File \""/var/task/trader.py\"", line 342, in sma_midprice_strategy\n    if abs(remaining_capacity) - reserved > 0 and second_best_bid > latest_sma:\n""]}","{""errorMessage"": ""'>' not supported between instances of 'NoneType' and 'float'"", ""errorType"": ""TypeError"", ""requestId"": ""9ff406b1-1e2d-4567-9ccb-872448f7ea63"", ""stackTrace"": [""  File \""/var/task/app.py\"", line 31, in lambda_handler\n    orders, conversion, traderData = trader.run(trading_state)\n"", ""  File \""/var/task/trader.py\"", line 364, in run\n    orders = sma_midprice_strategy(td, product, 5, orders)\n"", ""  File \""/var/task/trader.py\"", line 342, in sma_midprice_strategy\n    if abs(remaining_capacity) - reserved > 0 and second_best_bid > latest_sma:\n""]}",93600
+,,93600
 ,,93700
 ,,93800
 ,,93900
@@ -1062,7 +1062,7 @@ sandboxLog,lambdaLog,timestamp
 ,,106000
 ,,106100
 ,,106200
-,,106300
+,buying second best,106300
 ,,106400
 ,,106500
 ,,106600
@@ -1283,7 +1283,7 @@ sandboxLog,lambdaLog,timestamp
 ,,128100
 ,,128200
 ,,128300
-,,128400
+,buying second best,128400
 ,,128500
 ,,128600
 ,,128700
@@ -1301,7 +1301,7 @@ sandboxLog,lambdaLog,timestamp
 ,,129900
 ,,130000
 ,,130100
-,,130200
+,buying second best,130200
 ,,130300
 ,,130400
 ,,130500
