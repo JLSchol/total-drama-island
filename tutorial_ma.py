@@ -109,7 +109,7 @@ class TradingData:
     def get_product_data(self, product: str) -> Dict:
         return self.data.get(product, {})
 
-    def get_latest_entry(self, product: str) -> Dict[str, any]:
+    def get_latest_fields(self, product: str) -> Dict[str, any]:
         if product not in self.data:
             return {}
 
@@ -121,7 +121,7 @@ class TradingData:
                 latest_entry[key] = values[-1]  
         return latest_entry
 
-    def get_last_product_field(self, product: str, field: str) -> any:
+    def get_last_field(self, product: str, field: str) -> any:
         return self.get_value_by_index(product, field, -1)
     
     def get_values_by_range(self, product: str, field: str, start: int, length: int) -> list:
@@ -186,7 +186,8 @@ class TradingData:
         if indicator_name not in self.data[product]:
             self.data[product][indicator_name] = []  # Initialize as list if missing
 
-        self.data[product][indicator_name].append(value)  # Append new value
+        if value is not None:
+            self.data[product][indicator_name].append(value)  # Append new value
 
     def get_data_as_json(self) -> str:
         return json.dumps(self.data)
@@ -195,6 +196,9 @@ def is_available(best, best_amount):
     return best is not None and best_amount is not None
 
 def adjust_sell_quantity(proposed_sell_quantity, max_sell_limit, current_position):
+    if max_sell_limit >= 0 or proposed_sell_quantity>=0:
+        raise ValueError(
+            f"{proposed_sell_quantity=} or {max_sell_limit=},is supposed to be a negative number indicating sell")
 
     max_allowed_sell_quantity = max_sell_limit - current_position
 
@@ -208,6 +212,9 @@ def adjust_sell_quantity(proposed_sell_quantity, max_sell_limit, current_positio
     return adjusted_sell_quantity, remaining_sell_capacity
 
 def adjust_buy_quantity(proposed_buy_quantity, max_buy_limit, current_position):
+    if max_buy_limit <= 0 or proposed_buy_quantity<=0:
+        raise ValueError(
+            f"{proposed_buy_quantity=} or {max_buy_limit=},is supposed to be a positive number indicating buy")
 
     max_allowed_buy_quantity = max_buy_limit - current_position
 
@@ -219,7 +226,6 @@ def adjust_buy_quantity(proposed_buy_quantity, max_buy_limit, current_position):
         remaining_buy_capacity = max_allowed_buy_quantity - proposed_buy_quantity
 
     return adjusted_buy_quantity, remaining_buy_capacity
-
 
 def get_best_order(order_type: str, product: str, price: float, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
     """
@@ -280,43 +286,39 @@ def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, 
     trading_data.apply_indicator(product, "sma_mid_price", latest_sma)
 
     # Get the latest entries for fields: best ask, best bid, volumes, and position data
-    best_ask = trading_data.get_last_product_field(product, "best_ask")
-    best_ask_volume = trading_data.get_last_product_field(product, "best_ask_volume")
-    best_bid = trading_data.get_last_product_field(product, "best_bid")
-    best_bid_volume = trading_data.get_last_product_field(product, "best_bid_volume")
-    current_position = trading_data.get_last_product_field(product, "current_position")
-    max_buy_position = trading_data.get_last_product_field(product, "max_buy_position")
-    max_sell_position = trading_data.get_last_product_field(product, "max_sell_position")
+    best_ask = trading_data.get_last_field(product, "best_ask")
+    best_ask_volume = trading_data.get_last_field(product, "best_ask_volume")
+    best_bid = trading_data.get_last_field(product, "best_bid")
+    best_bid_volume = trading_data.get_last_field(product, "best_bid_volume")
+    current_position = trading_data.get_last_field(product, "current_position")
+    max_buy_position = trading_data.get_last_field(product, "max_buy_position")
+    max_sell_position = trading_data.get_last_field(product, "max_sell_position")
 
-    asks = trading_data.get_last_product_field(product, "sell_orders")
-    bids = trading_data.get_last_product_field(product, "buy_orders")
+    asks = trading_data.get_last_field(product, "sell_orders")
+    bids = trading_data.get_last_field(product, "buy_orders")
     
     second_best_ask, second_best_ask_volume = get_sell_order(asks,1)
     second_best_bid, second_best_bid_volume = get_buy_order(bids,1)
 
 
     # Place buy order if best ask is lower than the fair price
-    reserved = 5 # amount of pisition I want to minimally reserve to be able to get best ask/bid in next iteration
+    reserved = 5  # Amount of position to reserve for next iteration
+
     if best_ask is not None and best_ask < latest_sma:
         orders, remaining_capacity = get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
-        # print("buying best: {orders}")
-    
 
-        if abs(remaining_capacity) - reserved > 0 and second_best_ask < latest_sma and second_best_ask is not None:
-            max_buy_position = max_buy_position - reserved # shrink max buy since we want to have something reserved
-            # Now let's try to place a second best order if there's room    bids = trading_data.get_last_product_field(product, "buy_orders")
-            orders, _ = get_best_order("buy", product, second_best_ask, second_best_ask_volume, current_position, max_buy_position, orders)
+        if second_best_ask is not None and second_best_ask < latest_sma and abs(remaining_capacity) - reserved > 0:
+            # Try to place a second-best buy order if there's room
+            orders, _ = get_best_order("buy", product, second_best_ask, second_best_ask_volume, current_position, remaining_capacity - reserved, orders)
             print("buying second best")
 
-        
     # Place sell order if best bid is higher than the fair price
     if best_bid is not None and best_bid > latest_sma:
         orders, remaining_capacity = get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
 
-        if abs(remaining_capacity) - reserved > 0 and second_best_bid > latest_sma and second_best_bid is not None:
-            max_sell_position = max_sell_position + reserved # shrink max sell size since we want to have something reserved
-            # Now let's try to place a second best order if there's room    bids = trading_data.get_last_product_field(product, "sell_orders")
-            orders, _ = get_best_order("sell", product, second_best_bid, second_best_bid_volume, current_position, max_sell_position, orders)
+        if second_best_bid is not None and second_best_bid > latest_sma and abs(remaining_capacity) - reserved > 0:
+            # Try to place a second-best sell order if there's room
+            orders, _ = get_best_order("sell", product, second_best_bid, second_best_bid_volume, current_position, remaining_capacity + reserved, orders)
 
     return orders
 
