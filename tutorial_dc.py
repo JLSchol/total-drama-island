@@ -353,11 +353,13 @@ def doncian_channel_breakout_strategy(trading_data: TradingData, product: str, l
         low_bound = mid_price_values[0]
 
     # generate the signal based of the Donchian Channel calculations
+    # assume that if we are at the top of the channel, we sell, thinking it goes down otherwise buy
+    # a sideways market is assumed
     latest_price = mid_price_values[-1]
     if latest_price > high_bound:
-        dc_signal = 1  # Buy signal
+        dc_signal = -1  # sell signal
     elif latest_price < low_bound:
-        dc_signal = -1  # Sell signal
+        dc_signal = 1  # buy signal
 
     # we do not want a trading sign in the beginning of the simiulation because of limitid look_back
     # If our price range is smaller than te minimal_look_back, set signal to 0
