@@ -109,51 +109,52 @@ def plot_product_data(df):
     for product in products:
         product_df = df[df["product"] == product]
 
-        fig, axes = plt.subplots(nrows=5, ncols=1, figsize=(12, 8), sharex=True)
+        fig, axes = plt.subplots(nrows=3, ncols=1, figsize=(12, 8), sharex=True)
 
         # Subplot 1: Price trends
-        axes[0].plot(product_df["timestamp"], product_df["best_bid_price"], label="Best Bid Price", color="blue")
-        axes[0].plot(product_df["timestamp"], product_df["best_ask_price"], label="Best Ask Price", color="red")
-        axes[0].plot(product_df["timestamp"], product_df["mid_price"], label="Mid Price", color="purple", linestyle="dashed")
+        # axes[0].plot(product_df["timestamp"], product_df["best_bid_price"], label="Best Bid Price", color="blue")
+        # axes[0].plot(product_df["timestamp"], product_df["best_ask_price"], label="Best Ask Price", color="red")
+        axes[0].plot(product_df["timestamp"], product_df["mid_price"], label="Mid Price", color="purple")
+        axes[0].plot(product_df["timestamp"], product_df["weighted_ask_price"], label="Weighted Ask Price", color="red")
 
         axes[0].set_ylabel("Price")
-        axes[0].set_title(f"Best Price Trends for {product}")
+        axes[0].set_title(f"Price Trends for {product}")
         axes[0].legend()
         axes[0].grid(True)
 
-        # Subplot 2: weigthed price trend
-        axes[1].plot(product_df["timestamp"], product_df["weighted_bid_price"], label="Weighted Bid Price", color="blue")
-        axes[1].plot(product_df["timestamp"], product_df["weighted_ask_price"], label="Weighted Ask Price", color="red")
-        axes[1].plot(product_df["timestamp"], product_df["weighted_mid_price"], label="Weighted Mid Price", color="purple", linestyle="dashed")
-        axes[1].set_ylabel("Price")
-        axes[1].set_title(f"Weighted Price Trends for {product}")
+        # # Subplot 2: weigthed price trend
+        # axes[1].plot(product_df["timestamp"], product_df["weighted_bid_price"], label="Weighted Bid Price", color="blue")
+        # axes[1].plot(product_df["timestamp"], product_df["weighted_ask_price"], label="Weighted Ask Price", color="red")
+        # axes[1].plot(product_df["timestamp"], product_df["weighted_mid_price"], label="Weighted Mid Price", color="purple", linestyle="dashed")
+        # axes[1].set_ylabel("Price")
+        # axes[1].set_title(f"Weighted Price Trends for {product}")
+        # axes[1].legend()
+        # axes[1].grid(True)
+
+        # Subplot 3: Volume trends
+        axes[1].plot(product_df["timestamp"], product_df["total_bid_volume"], label="Total Bid Volume", color="blue")
+        axes[1].plot(product_df["timestamp"], product_df["total_ask_volume"], label="Total Ask Volume", color="red")
+        axes[1].set_xlabel("Timestamp")
+        axes[1].set_ylabel("Volume")
+        axes[1].set_title(f"Volume Trends for {product}")
         axes[1].legend()
         axes[1].grid(True)
 
-        # Subplot 3: Volume trends
-        axes[2].plot(product_df["timestamp"], product_df["total_bid_volume"], label="Total Bid Volume", color="blue")
-        axes[2].plot(product_df["timestamp"], product_df["total_ask_volume"], label="Total Ask Volume", color="red")
+        # subplot4:  
+        axes[2].plot(product_df["timestamp"], product_df["bid_ask_spread"], label="bid ask spread", color="blue")
         axes[2].set_xlabel("Timestamp")
-        axes[2].set_ylabel("Volume")
-        axes[2].set_title(f"Volume Trends for {product}")
+        axes[2].set_ylabel("spread")
+        axes[2].set_title(f"bid ask spread for {product}")
         axes[2].legend()
         axes[2].grid(True)
-
-        # subplot4:  
-        axes[3].plot(product_df["timestamp"], product_df["bid_ask_spread"], label="bid ask spread", color="blue")
-        axes[3].set_xlabel("Timestamp")
-        axes[3].set_ylabel("spread")
-        axes[3].set_title(f"bid ask spread for {product}")
-        axes[3].legend()
-        axes[3].grid(True)
-        # subplot5:  
-        axes[4].plot(product_df["timestamp"], product_df["liquidity_ratio"], label="liquidity ratio", color="blue")
-        axes[4].set_xlabel("Timestamp")
-        axes[4].set_ylabel("ratio")
-        axes[4].set_ylim(-1,3)
-        axes[4].set_title(f"liquidity ratio for {product}")
-        axes[4].legend()
-        axes[4].grid(True)
+        # # subplot5:  
+        # axes[4].plot(product_df["timestamp"], product_df["liquidity_ratio"], label="liquidity ratio", color="blue")
+        # axes[4].set_xlabel("Timestamp")
+        # axes[4].set_ylabel("ratio")
+        # axes[4].set_ylim(-1,3)
+        # axes[4].set_title(f"liquidity ratio for {product}")
+        # axes[4].legend()
+        # axes[4].grid(True)
 
         plt.tight_layout()
 
@@ -203,6 +204,8 @@ if __name__ == "__main__":
     # activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma\processed\250323_ma_activities.csv"
     activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma_second_best\processed\250323_ma_second_best_activities.csv"
     # activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma\processed\250323_ma_activities.csv"
+    activity_csv = r"/home/jasschol/repos/personal/total-drama-island/logs/tutorial/250325_dc/processed/250325_dc_activities.csv"
+
 
     # activities_dict = get_activities_dict(activity_csv)
     df = get_activities_df(activity_csv)
@@ -214,7 +217,7 @@ if __name__ == "__main__":
 
     plot_product_data(df)
 
-    plot_profit_loss(df)
+    # plot_profit_loss(df)
     plt.show()
     # plot_weighted_prices(df)  # Plot weighted bid/ask prices
 
