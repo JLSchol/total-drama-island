@@ -4,6 +4,7 @@ import json
 
 
 class TradingData:
+
     def __init__(self, state: TradingState, position_limits: Dict[str, int]):
         self.position_limits = position_limits
         self.data = self._initialize_data(state, position_limits)
@@ -294,121 +295,56 @@ def sma_midprice_strategy(td: TradingData, product: str, window: int, orders: Li
     td.apply_indicator(product, "sma_mid_price", latest_sma)
 
     # Get the latest entries for fields: best ask, best bid, volumes, and position data
-    best_ask = td.get_last_field(product, "best_ask")
-    best_ask_volume = td.get_last_field(product, "best_ask_volume")
-    best_bid = td.get_last_field(product, "best_bid")
-    best_bid_volume = td.get_last_field(product, "best_bid_volume")
-    current_position = td.get_last_field(product, "current_position")
-    max_buy_position = td.get_last_field(product, "max_buy_position")
-    max_sell_position = td.get_last_field(product, "max_sell_position")
-
-    asks = td.get_last_field(product, "sell_orders")
-    bids = td.get_last_field(product, "buy_orders")
-    
-    second_best_ask, second_best_ask_volume = td.get_sell_order(asks,1)
-    second_best_bid, second_best_bid_volume = td.get_buy_order(bids,1)
+    latest_data = td.get_latest_fields(product)
+    best_ask = latest_data.get("best_ask")
+    best_ask_volume = latest_data.get("best_ask_volume")
+    best_bid = latest_data.get("best_bid")
+    best_bid_volume = latest_data.get("best_bid_volume")
+    current_position = latest_data.get("current_position")
+    max_buy_position = latest_data.get("max_buy_position")
+    max_sell_position = latest_data.get("max_sell_position")
 
 
-    # Place buy order if best ask is lower than the fair price
-    reserved = 5  # Amount of position to reserve for next iteration
 
-    if best_ask is not None and best_ask < latest_sma:
+    if best_ask and best_ask < latest_sma:
         orders, remaining_capacity = get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
 
-        if second_best_ask is not None and second_best_ask < latest_sma and abs(remaining_capacity) - reserved > 0:
-            # Try to place a second-best buy order if there's room
-            orders, _ = get_best_order("buy", product, second_best_ask, second_best_ask_volume, current_position, remaining_capacity - reserved, orders)
-            # print("buying second best")
 
     # Place sell order if best bid is higher than the fair price
-    if best_bid is not None and best_bid > latest_sma:
+    if best_bid and best_bid > latest_sma:
         orders, remaining_capacity = get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
 
-        if second_best_bid is not None and second_best_bid > latest_sma and abs(remaining_capacity) - reserved > 0:
-            # Try to place a second-best sell order if there's room
-            orders, _ = get_best_order("sell", product, second_best_bid, second_best_bid_volume, current_position, remaining_capacity + reserved, orders)
 
     return orders
 
-def doncian_channel_breakout_strategy(trading_data: TradingData, product: str, look_back: int, orders: List[Order]):
-    # get the previous signal and initialize if not existing
-    dc_signal = trading_data.get_last_field(product, "dc_signal")
+def sma(td, product, field_name, window):
+    # get the last x (window) amount of prices
+    prices = td.get_values_by_range(product, field_name, -window, window)
 
-    if dc_signal is None:
-        # make sure it exest in the trading_data.data (by passing None it is initialized as empty list)
-        trading_data.apply_indicator(product, "dc_signal", None) 
+    # if window is larger than the list, adjust window length
+    window = window if window < len(prices) else len(prices)
 
-    # Retrieve the product's data from the dictionary
-    product_data = trading_data.get_product_data(product)
-    if not product_data:
-        return orders
+    # calculate 
+    sma_mid_price = sum(prices)/window
+
+def market_maker_strategy(td, product, orders):
+    # 1. compute fair price
+    fair_price = sma(td, product, "mid_price", 20)
+
+    # 2. Identify market trend
+        # how is the trend up, down, or neutral?
+        # output string
+
+    # 3. Analyze market pressure
+        #
+
+    # 4. calculate dynamic Spread based on market conditions
+
+    # 5. Define buy and sell conditions
+
     
-    mid_price_values = product_data["mid_price"]
-    if len(mid_price_values) == 0:
-        return orders
-
-    if look_back <=0:
-        raise ValueError("Look-back period must be greater than 0")
-    
-    # Calculate the bounds of the Donchian Channel
-    mid_price_values = trading_data.get_values_by_range(product, "mid_price", -look_back, look_back) 
-    # The first iteration is different, we just use the hig and low bounds as midprice
-    if len(mid_price_values)>1:
-        high_bound = max(mid_price_values[-look_back:-1]) # exclude last sample (-1)
-        low_bound = min(mid_price_values[-look_back:-1])
-    else:   
-        high_bound = mid_price_values[0] # exclude last sample (-1)
-        low_bound = mid_price_values[0]
-
-    # generate the signal based of the Donchian Channel calculations
-    # assume that if we are at the top of the channel, we sell, thinking it goes down otherwise buy
-    # a sideways market is assumed
-    latest_price = mid_price_values[-1]
-    if latest_price > high_bound:
-        dc_signal = -1  # sell signal
-    elif latest_price < low_bound:
-        dc_signal = 1  # buy signal
-
-    # we do not want a trading sign in the beginning of the simiulation because of limitid look_back
-    # If our price range is smaller than te minimal_look_back, set signal to 0
-    minimal_look_back = look_back/2 # arbritary choice
-    if len(mid_price_values) < minimal_look_back:
-        dc_signal = 0
-
-    # Use the apply_indicator method to update the 'sma_mid_price' field in the dictionary
-    trading_data.apply_indicator(product, "high_bound", high_bound)
-    trading_data.apply_indicator(product, "low_bound", low_bound)
-    trading_data.apply_indicator(product, "dc_signal", dc_signal)
-
-    # Best bid and ask and asociated volues
-    best_ask = trading_data.get_last_field(product, "best_ask")
-    best_ask_volume = trading_data.get_last_field(product, "best_ask_volume")
-    best_bid = trading_data.get_last_field(product, "best_bid")
-    best_bid_volume = trading_data.get_last_field(product, "best_bid_volume")
-
-    # position info
-    current_position = trading_data.get_last_field(product, "current_position")
-    max_buy_position = trading_data.get_last_field(product, "max_buy_position")
-    max_sell_position = trading_data.get_last_field(product, "max_sell_position")
-
-    # Place buy order if we have a signal (it keeps the signal as one, to fill to position limit over iterations)
-    if best_ask is not None and dc_signal==1:
-        orders, remaining_capacity = get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
-        # print(trading_data.get_latest_entry(product))
-        
-    # Place sell order if best bid is higher than the fair price
-    if best_bid is not None and dc_signal==-1:
-        orders, remaining_capacity = get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
-        # print(trading_data.get_latest_entry(product))
-
-    if dc_signal==0:
-        # print(trading_data.get_latest_entry(product))
-        pass # use other strategies here (sma f.e.)
-    
-    latest_data = trading_data.get_latest_fields(product)
-    # print(f"{latest_data["timestamp"]}: {latest_price=} -- {high_bound=} -- {low_bound=} -- {dc_signal=}")
-
     return orders
+
 
 class Trader:
     def run(self, state: TradingState):
@@ -422,10 +358,10 @@ class Trader:
             orders: List[Order] = []
 
             if product == "KELP":
-                orders = doncian_channel_breakout_strategy(td, product, 70, orders)
+                orders = market_maker_strategy(td, product, 5, orders)
 
             if product == "RAINFOREST_RESIN":
-                orders = sma_midprice_strategy(td, product, 10, orders)
+                orders = market_maker_strategy(td, product, 10, orders)
             
             result[product] = orders
         
