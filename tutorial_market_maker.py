@@ -276,16 +276,11 @@ def sma(prices, window):
     if len(prices) ==1:
         return prices[0]
     
-    # if window is larger than the list, adjust window length
-    window = window if window < len(prices) else len(prices)
-
-    # get the price subset
-    price_subset = prices[-window:]  # get the last 'window' number of prices
+    # Adjust window size if it's larger than available prices
+    window = min(window, len(prices))
 
     # calculate 
-    sma = sum(price_subset)/window
-
-    # print(f"{prices=} -- {window=}  --{price_subset=} -- {sma=}")
+    sma = sum(prices[-window:])/window
     return sma
 
 def sigmoid(x, alpha):
@@ -293,7 +288,9 @@ def sigmoid(x, alpha):
     return 1 / (1 + np.exp(-alpha * x))
 
 def calculate_trend_score(current_price, sma_small, alpha):
-
+    """
+    Calculate a trend score mapped to [-1, 1] based on price deviation from sma_small.
+    """
     price_diff_small = current_price - sma_small
     
     # Apply the sigmoid function and scale to map to [-1, 1]
@@ -308,6 +305,9 @@ def sma_crossover_score(td, product, prices, window_small, window_large, sigmoid
     if len(prices) == 0 or window_small <= 0 or window_small <= 0:
         raise ValueError("Prices list is empty or window size is invalid")
 
+    # init score (no trend):
+    trend_score = 0
+
     # define names
     sma_small_name = f"sma_cross_{window_small}"
     sma_large_name = f"sma_cross_{window_large}"
@@ -320,8 +320,8 @@ def sma_crossover_score(td, product, prices, window_small, window_large, sigmoid
     if previous_sma_small is None and previous_sma_large is None:
         td.apply_indicator(product, sma_small_name, prices[-1])
         td.apply_indicator(product, sma_large_name, prices[-1])
-        td.apply_indicator(product, "trend_score", 0)
-        return 0
+        td.apply_indicator(product, "trend_score", trend_score)
+        return trend_score
 
     # calculate current step    
     current_price = prices[-1]
@@ -333,60 +333,66 @@ def sma_crossover_score(td, product, prices, window_small, window_large, sigmoid
     td.apply_indicator(product, sma_large_name, current_sma_large)
     if len(prices) > window_large*.8:
         # from .8*the large window we start to make predictions
-        td.apply_indicator(product, "trend_score", 0)
-        return 0
+        td.apply_indicator(product, "trend_score", trend_score)
+        return trend_score
     
+    # calculate the trend score if a crossover happend
     if current_sma_small > current_sma_large and previous_sma_small <= previous_sma_large:
         # bullish cross return value between [0, 1] 
-        trend_score = calculate_trend_score(current_price, current_sma_small, sigmoid_alpha)
-        trend_score = trend_score if trend_score > 0 else 0
-        td.apply_indicator(product, "trend_score", current_sma_small)
+        trend_score = max( calculate_trend_score(current_price, current_sma_small, sigmoid_alpha), 0)
 
     elif current_sma_small < current_sma_large and previous_sma_small >= previous_sma_large:
         # bearish cross return value between [0, 1] 
-        trend_score = calculate_trend_score(current_price, current_sma_small, sigmoid_alpha)
-        trend_score = trend_score if trend_score < 0 else 0
-        td.apply_indicator(product, "trend_score", current_sma_small)
-    else:
-        trend_score = 0
-        td.apply_indicator(product, "trend_score", current_sma_small)
+        trend_score = min( calculate_trend_score(current_price, current_sma_small, sigmoid_alpha), 0)
+
+    td.apply_indicator(product, "trend_score", trend_score)
 
     return trend_score
 
-def order_imbalance_score(td, total_ask_volume, total_bid_volume):
-    # Score ranges from -1 (strong selling) to +1 (strong buying).
-    # 0 means neutral
-    # strong positive (tighter spreads or higher bid prices)
-    # strong negative (widen spreads or lower ask prices)
+def order_imbalance_score(td: TradingData, product, total_ask_volume, total_bid_volume):
+    """
+    Computes an order imbalance score between -1 (selling pressure) and +1 (buying pressure).
+    """
+    imbalance_score = 0
     if total_ask_volume is None or total_bid_volume is None:
-        td.apply_indicator("imbalance_score", 0)        
-        return 0
+        td.apply_indicator(product, "imbalance_score", imbalance_score)        
+        return imbalance_score
+    
+    if total_ask_volume == 0 and total_ask_volume == 0:
+        td.apply_indicator(product, "imbalance_score", imbalance_score)        
+        return imbalance_score
 
     nominator = abs(total_bid_volume) - abs(total_ask_volume)
     denominator = abs(total_bid_volume) + abs(total_ask_volume)
 
     if denominator == 0:
-        td.apply_indicator("imbalance_score", 0)    
-        return 0
+        td.apply_indicator(product, "imbalance_score", imbalance_score)    
+        return imbalance_score
     
     imbalance_score = nominator / denominator
-    td.apply_indicator("imbalance_score", imbalance_score)
+    td.apply_indicator(product, "imbalance_score", imbalance_score)
 
     return imbalance_score
 
-def spread_to_price_ratio(td, best_ask, best_bid, mid_price):
-    # Helps differentiate between stable vs. volatile products.
-    # A higher ratio means a less liquid market → requires wider spreads.
-    # A lower ratio suggests a liquid, competitive market.
-    if best_ask is None or best_bid is None or mid_price is None:
-        td.apply_indicator("liquidity_ratio", 0)    
-        return 0
+def spread_to_price_ratio(td, product, best_ask, best_bid, mid_price):
+    """
+    Computes the spread-to-price ratio, indicating market liquidity.
+    """
+    liquidity_ratio = 0
+    if None in (best_ask, best_bid, mid_price):
+        td.apply_indicator(product, "liquidity_ratio", liquidity_ratio)    
+        return liquidity_ratio
+    
+    if best_bid == 0 and best_ask == 0:
+        td.apply_indicator(product, "liquidity_ratio", liquidity_ratio)    
+        return liquidity_ratio
 
+    # calculate the spread
     spread = best_ask - best_bid
-    ratio = spread / mid_price if mid_price != 0 else 0
-    td.apply_indicator("liquidity_ratio", ratio)    
+    liquidity_ratio = spread / mid_price if mid_price != 0 else 0
+    td.apply_indicator(product, "liquidity_ratio", liquidity_ratio)    
 
-    return ratio
+    return liquidity_ratio
 
 def calculate_dynamic_spread(td, product, spread_ratio):
     pass
@@ -405,12 +411,12 @@ def market_maker_strategy(td, product, orders):
     # 3. Analyze market pressure
     total_ask_volume = td.get_last_field(product, "total_ask_volume")
     total_bid_volume = td.get_last_field(product, "total_bid_volume")
-    pressure_score = order_imbalance_score(td, total_ask_volume, total_bid_volume)
+    pressure_score = order_imbalance_score(td, product, total_ask_volume, total_bid_volume)
 
     # 4 liquidity
     best_bid = td.get_last_field(product, "best_bid")
     best_ask = td.get_last_field(product, "best_ask")
-    liquidity_ratio = spread_to_price_ratio(td, best_ask, best_bid, mid_prices[-1])
+    liquidity_ratio = spread_to_price_ratio(td, product, best_ask, best_bid, mid_prices[-1])
 
     # 4. calculate dynamic Spread based on market conditions
 
@@ -444,25 +450,14 @@ class Trader:
 
         return result, conversions, traderData
 
-# from mock import state, state2
+from mock import state, state2
 if __name__ == "__main__":
-
-    # arrs = [[],[1,2,3,6,6,6],[1],[None],[0]]
-    # for prices in arrs:
-    #     print(sma(prices, 0))
-
-        # print(prices)
-#     trader = Trader()
-#     result,conversions, data = trader.run(state)
-#     print(data)
-#     print("--- NEW STEP ---") 
-#     state2.traderData = data
-#     result,conversions, data = trader.run(state2)
-#     print(data)
+    
+    td = TradingData(state, {"RAINFOREST_RESIN": 50, "KELP": 50})
 
     small = [1000, 1000, 1000, 1000, 1000]
     price = [996, 998, 1000, 1001, 1007]
     asks = [-10,-20,-30,-30,-30,-30]
     bids = [30,20,10,33,1,0]
     for a,b in zip(asks, bids):
-        print(order_imbalance_score(10*a,10*b))
+        print(order_imbalance_score(td,"test", a,b))
