@@ -283,11 +283,11 @@ def sma(prices, window):
     sma = sum(prices[-window:])/window
     return sma
 
-def sigmoid(x, alpha):
+def sigmoid(x: float, alpha: float):
     # alpha is a steepness parameter 2 is steep and 0.5
     return 1 / (1 + np.exp(-alpha * x))
 
-def calculate_trend_score(current_price, sma_small, alpha):
+def calculate_trend_score(current_price: int, sma_small:float, alpha:float):
     """
     Calculate a trend score mapped to [-1, 1] based on price deviation from sma_small.
     """
@@ -298,12 +298,14 @@ def calculate_trend_score(current_price, sma_small, alpha):
 
     return trend_score
 
-def sma_crossover_score(td, product, prices, window_small, window_large, sigmoid_alpha):
+def sma_crossover_score(td: TradingData, product: str, 
+                        prices:list[float], 
+                        window_small: int, window_large: int, sigmoid_alpha: float):
     # returns a trend score between [-1, 1]
     # if there is a crossover, it returns [0, 1] for bullish and [0, -1] for bearish
     # depending on the price action associated with the crossover
     if len(prices) == 0 or window_small <= 0 or window_small <= 0:
-        raise ValueError("Prices list is empty or window size is invalid")
+        raise ValueError("Prices list is empty or window size is invalid value <=0")
 
     # init score (no trend):
     trend_score = 0
@@ -349,7 +351,8 @@ def sma_crossover_score(td, product, prices, window_small, window_large, sigmoid
 
     return trend_score
 
-def order_imbalance_score(td: TradingData, product, total_ask_volume, total_bid_volume):
+def order_imbalance_score(td: TradingData, product: str, 
+                          total_ask_volume: int, total_bid_volume: int):
     """
     Computes an order imbalance score between -1 (selling pressure) and +1 (buying pressure).
     """
@@ -374,39 +377,88 @@ def order_imbalance_score(td: TradingData, product, total_ask_volume, total_bid_
 
     return imbalance_score
 
-def spread_to_price_ratio(td, product, best_ask, best_bid, mid_price):
+def spread_to_price_ratio(td: TradingData, product: str, 
+                          best_ask: int, best_bid: int, mid_price: float):
     """
     Computes the spread-to-price ratio, indicating market liquidity.
     """
-    liquidity_ratio = 0
+    spread_ratio = 0
     if None in (best_ask, best_bid, mid_price):
-        td.apply_indicator(product, "liquidity_ratio", liquidity_ratio)    
-        return liquidity_ratio
+        td.apply_indicator(product, "spread_ratio", spread_ratio)    
+        return spread_ratio
     
     if best_bid == 0 and best_ask == 0:
-        td.apply_indicator(product, "liquidity_ratio", liquidity_ratio)    
-        return liquidity_ratio
+        td.apply_indicator(product, "spread_ratio", spread_ratio)    
+        return spread_ratio
 
     # calculate the spread
     spread = best_ask - best_bid
-    liquidity_ratio = spread / mid_price if mid_price != 0 else 0
-    td.apply_indicator(product, "liquidity_ratio", liquidity_ratio)    
+    spread_ratio = spread / mid_price if mid_price != 0 else 0
+    td.apply_indicator(product, "spread_ratio", spread_ratio)    
 
-    return liquidity_ratio
+    return spread_ratio
 
-def calculate_dynamic_spread(td, product, spread_ratio):
-    pass
+def calculate_dynamic_spread(td: TradingData, product: str, 
+                             spread_ratio: float, trend_score: float, pressure_score:float, 
+                             base_spread):
+    """
+    Computes the dynamic spread based on market conditions.
 
-def market_maker_strategy(td, product, orders):
+    Parameters:
+    - spread_ratio (float): Spread-to-price ratio (higher = less liquidity).
+    - trend_score (float): Trend signal between [-1, 1], where 1 is strongly bullish.
+    - pressure_score (float): Order imbalance score between [-1, 1], where 1 is strong buying pressure.
+    - base_spread (float): The normal market spread. pick a value halfway between the observed spread range
+        - KELP: observed (bid ask) spread [1,4] -> suggested base spread 2
+        - RAINFOREST RESIN: observed (bid ask) spread [2,10] -> suggested base spread 5
+    Returns:
+    - dynamic_spread (float): Adjusted spread based on market conditions.
+    """
+    if base_spread is None or base_spread < 0:
+        raise ValueError("base_spread should be >= 0")
 
+    # Adjust spread based on liquidity (spread ratio)
+    spread_scaling = 1
+    liquidity_adjustment = spread_ratio * spread_scaling * base_spread  # probl small increase or close to 0
+
+    # Adjust spread based on market trend (bullish reduces ask spread, bearish reduces bid spread)
+    trend_scaling = .2 #scale between [0,1]
+    trend_adjustment = -trend_score * trend_scaling * base_spread  # added range [-.2; .2]
+
+    # Adjust spread based on market pressure (more bids → tighten bid, more asks → tighten ask)
+    pressure_scaling = .3 #scale between [0,1]
+    pressure_adjustment = -pressure_score * pressure_scaling * base_spread  # added range [-.3; .3] (sligly more important then trend_adjustment)
+
+    # Compute final dynamic spread
+    dynamic_spread = base_spread + liquidity_adjustment + trend_adjustment + pressure_adjustment  
+
+    # Ensure spread stays within min and max limits
+    def clamp(value, min_value, max_value):
+        """Ensures value stays within defined bounds."""
+        return max(min_value, min(value, max_value))
+    
+    # Define minimum and maximum spread limits to avoid extreme values
+    min_spread = base_spread * 0.5   # Spread shouldn't be too small
+    max_spread = base_spread * 2.0   # Spread shouldn't be too large
+    dynamic_spread = clamp(dynamic_spread, min_spread, max_spread)
+    td.apply_indicator(product, "dynamic_spread", dynamic_spread)
+
+    return dynamic_spread
+
+def market_maker_strategy(td: TradingData, product: str, orders: Order, 
+                          fair_price_window: int, 
+                          sma_small_window: int, sma_large_window: int, sigmoid_alpha: float, 
+                          base_spread: int):
+    # fix inputs this formula
     # get data all mid prices
     mid_prices = td.get_field(product, "mid_price")
 
     # 1. compute fair price
-    fair_price = sma(mid_prices, 5)
+    fair_price = sma(mid_prices, fair_price_window)
+    td.apply_indicator(product, fair_price, "fair_price")
 
     # 2. Identify market trend returns [-1 and 1]
-    trend_score = sma_crossover_score(td, product, mid_prices, window_small=5, window_large=40, sigmoid_alpha=0.4)
+    trend_score = sma_crossover_score(td, product, mid_prices, sma_small_window, sma_large_window, sigmoid_alpha)
 
     # 3. Analyze market pressure
     total_ask_volume = td.get_last_field(product, "total_ask_volume")
@@ -416,13 +468,13 @@ def market_maker_strategy(td, product, orders):
     # 4 liquidity
     best_bid = td.get_last_field(product, "best_bid")
     best_ask = td.get_last_field(product, "best_ask")
-    liquidity_ratio = spread_to_price_ratio(td, product, best_ask, best_bid, mid_prices[-1])
+    spread_ratio = spread_to_price_ratio(td, product, best_ask, best_bid, mid_prices[-1])
 
-    # 4. calculate dynamic Spread based on market conditions
-
-    # 5. Define buy and sell conditions
+    # 5. calculate dynamic Spread based on market conditions
+    spread = calculate_dynamic_spread(spread_ratio, trend_score, pressure_score, base_spread)
 
     # 6 get orders
+    
     
     return orders
 
@@ -439,10 +491,16 @@ class Trader:
             orders: List[Order] = []
 
             if product == "KELP":
-                orders = market_maker_strategy(td, product, 5, orders)
+                orders = market_maker_strategy(td, product, orders,
+                                               fair_price_window=5,
+                                               sma_small_window= 10, sma_large_window=60, sigmoid_alpha=.4,
+                                               base_spread=2)
 
             if product == "RAINFOREST_RESIN":
-                orders = market_maker_strategy(td, product, 10, orders)
+                orders = market_maker_strategy(td, product, orders,
+                                               fair_price_window=10,
+                                               sma_small_window= 5, sma_large_window=10, sigmoid_alpha=.4,
+                                               base_spread=5)
             
             result[product] = orders
         
@@ -459,5 +517,12 @@ if __name__ == "__main__":
     price = [996, 998, 1000, 1001, 1007]
     asks = [-10,-20,-30,-30,-30,-30]
     bids = [30,20,10,33,1,0]
-    for a,b in zip(asks, bids):
-        print(order_imbalance_score(td,"test", a,b))
+    best_asks = [2026,2027,2028,2029,2030,2031]
+    best_bids = [2026,2025,2024,2023,2022,2021]
+    mid_price = [(best_ask + best_bid)/2 for best_ask, best_bid in zip(best_asks,best_bids)]
+
+    for a,b,mp in zip(best_asks,best_bids,mid_price):
+        spread_to_price = spread_to_price_ratio(td, "RAINFOREST_RESIN", a, b, mp)
+        print(spread_to_price)
+
+
