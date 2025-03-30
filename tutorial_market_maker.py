@@ -1,5 +1,5 @@
 from datamodel import TradingState, Order
-from typing import Dict, List
+from typing import Dict, List, Optional
 import json
 import numpy as np
 
@@ -201,39 +201,33 @@ class TradingData:
     def get_data_as_json(self) -> str:
         return json.dumps(self.data)
 
-def is_available(best, best_amount):
+def is_available(best: Optional[float], best_amount: Optional[int]) -> bool:
     return best is not None and best_amount is not None
 
-def adjust_sell_quantity(proposed_sell_quantity, max_sell_limit, current_position):
-    if max_sell_limit >= 0 or proposed_sell_quantity>=0:
-        raise ValueError(
-            f"{proposed_sell_quantity=} or {max_sell_limit=},is supposed to be a negative number indicating sell")
-
+def adjust_sell_quantity(proposed_sell_quantity: int, max_sell_limit: int, current_position: int):
+    if max_sell_limit >= 0 or proposed_sell_quantity >= 0:
+        raise ValueError(f"{proposed_sell_quantity=} or {max_sell_limit=}, should be negative for selling")
+    
     max_allowed_sell_quantity = max_sell_limit - current_position
-
     if proposed_sell_quantity < max_allowed_sell_quantity:
         adjusted_sell_quantity = max(proposed_sell_quantity, max_allowed_sell_quantity)
         remaining_sell_capacity = 0
     else:
         adjusted_sell_quantity = proposed_sell_quantity
         remaining_sell_capacity = max_allowed_sell_quantity - proposed_sell_quantity
-
     return adjusted_sell_quantity, remaining_sell_capacity
 
-def adjust_buy_quantity(proposed_buy_quantity, max_buy_limit, current_position):
-    if max_buy_limit <= 0 or proposed_buy_quantity<=0:
-        raise ValueError(
-            f"{proposed_buy_quantity=} or {max_buy_limit=},is supposed to be a positive number indicating buy")
-
+def adjust_buy_quantity(proposed_buy_quantity: int, max_buy_limit: int, current_position: int):
+    if max_buy_limit <= 0 or proposed_buy_quantity <= 0:
+        raise ValueError(f"{proposed_buy_quantity=} or {max_buy_limit=}, should be positive for buying")
+    
     max_allowed_buy_quantity = max_buy_limit - current_position
-
     if proposed_buy_quantity > max_allowed_buy_quantity:
         adjusted_buy_quantity = min(proposed_buy_quantity, max_allowed_buy_quantity)
         remaining_buy_capacity = 0
     else:
         adjusted_buy_quantity = proposed_buy_quantity
         remaining_buy_capacity = max_allowed_buy_quantity - proposed_buy_quantity
-
     return adjusted_buy_quantity, remaining_buy_capacity
 
 def get_best_order(order_type: str, product: str, price: float, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
@@ -399,8 +393,11 @@ def spread_to_price_ratio(td: TradingData, product: str,
     return spread_ratio
 
 def calculate_dynamic_spread(td: TradingData, product: str, 
-                             spread_ratio: float, trend_score: float, pressure_score:float, 
-                             base_spread):
+                             spread_ratio: float, spread_scaling: float,
+                             trend_score: float, trend_scaling: float,
+                             pressure_score: float, pressure_scaling: float,
+                             base_spread: int, min_spread_factor: float =0.5, max_spread_factor: float =2):
+    # TODO: create dynamic scaling params (spread, trend, pressure, min/max spread)
     """
     Computes the dynamic spread based on market conditions.
 
@@ -412,21 +409,21 @@ def calculate_dynamic_spread(td: TradingData, product: str,
         - KELP: observed (bid ask) spread [1,4] -> suggested base spread 2
         - RAINFOREST RESIN: observed (bid ask) spread [2,10] -> suggested base spread 5
     Returns:
-    - dynamic_spread (float): Adjusted spread based on market conditions.
+    - dynamic_spread (float): Adjusted spread based on market conditions. clamped between half and twice the base spread
     """
     if base_spread is None or base_spread < 0:
         raise ValueError("base_spread should be >= 0")
 
     # Adjust spread based on liquidity (spread ratio)
-    spread_scaling = 1
+    # spread_scaling = 1
     liquidity_adjustment = spread_ratio * spread_scaling * base_spread  # probl small increase or close to 0
 
     # Adjust spread based on market trend (bullish reduces ask spread, bearish reduces bid spread)
-    trend_scaling = .2 #scale between [0,1]
+    # trend_scaling = .2 #trend_scaling is between [-1,1]: 
     trend_adjustment = -trend_score * trend_scaling * base_spread  # added range [-.2; .2]
 
     # Adjust spread based on market pressure (more bids → tighten bid, more asks → tighten ask)
-    pressure_scaling = .3 #scale between [0,1]
+    # pressure_scaling = .3 #pressure_score is between [-1,1]
     pressure_adjustment = -pressure_score * pressure_scaling * base_spread  # added range [-.3; .3] (sligly more important then trend_adjustment)
 
     # Compute final dynamic spread
@@ -438,24 +435,84 @@ def calculate_dynamic_spread(td: TradingData, product: str,
         return max(min_value, min(value, max_value))
     
     # Define minimum and maximum spread limits to avoid extreme values
-    min_spread = base_spread * 0.5   # Spread shouldn't be too small
-    max_spread = base_spread * 2.0   # Spread shouldn't be too large
+    min_spread = base_spread * min_spread_factor   # Spread shouldn't be too small
+    max_spread = base_spread * max_spread_factor   # Spread shouldn't be too large
     dynamic_spread = clamp(dynamic_spread, min_spread, max_spread)
     td.apply_indicator(product, "dynamic_spread", dynamic_spread)
 
     return dynamic_spread
 
-def market_maker_strategy(td: TradingData, product: str, orders: Order, 
-                          fair_price_window: int, 
-                          sma_small_window: int, sma_large_window: int, sigmoid_alpha: float, 
-                          base_spread: int):
-    # fix inputs this formula
-    # get data all mid prices
-    mid_prices = td.get_field(product, "mid_price")
+def calculate_order_prices(fair_price: float, dynamic_spread: float, pressure_score: float, shift_alpha: float = 0.2):
+    """
+    Calculates buy and sell order prices based on fair price, spread, and market pressure.
+    """
+    shift = pressure_score * shift_alpha * dynamic_spread
+    buy_price = round(fair_price - (dynamic_spread / 2) + shift) 
+    sell_price = round(fair_price + (dynamic_spread / 2) + shift)
+    return buy_price, sell_price
 
+def get_orders(product: str, orders: list[Order], 
+               fair_price: float, best_bid: int, best_ask: int, 
+               dynamic_spread: float, pressure_score: float, 
+               best_bid_amount: int, best_ask_amount: int, 
+               current_position: int, max_position: int,
+               position_threshold_factor: float, shift_alpha: float, order_volume_factor: float):
+    # TODO: shift_alpha, position_threshold_coefficient, base_volume_coefficient, 
+    """
+    Places buy and sell orders based on fair price, dynamic spread, trend, and market pressure.
+    """
+    # 1. Ensure required data is available
+    # otherwise just buy best ask en sell best bid
+    if None in (fair_price, best_bid, best_ask, dynamic_spread, pressure_score):
+        orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, max_position, orders)
+        orders, _ = get_best_order("buy", product, best_ask, best_ask_amount, current_position, max_position, orders)
+        return orders  
+
+    # 2. Rebalance if position is near limits
+    position_threshold = position_threshold_factor * max_position
+    if abs(current_position) >= abs(position_threshold):
+        if current_position > 0:
+            orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, max_position, orders)
+        else:
+            orders, _ = get_best_order("buy", product, best_ask, best_ask_amount, current_position, max_position, orders)
+        return orders
+
+    
+    # 3. calculate Buy & Sell Prices (ensure integers)
+    buy_price, sell_price = calculate_order_prices(fair_price, dynamic_spread, pressure_score, shift_alpha)
+
+    # 4. Ensure Orders Stay Competitive
+    buy_price = min(buy_price, best_bid)   # Don't bid above best bid
+    sell_price = max(sell_price, best_ask) # Don't sell below best ask
+
+    # 5. Set Order Volumes
+    base_volume = order_volume_factor*max_position # ideally dynamically calculate (order spikes, order book depth, volatility)
+    buy_volume = round(base_volume * (1 + pressure_score))  # Increase if buy pressure is high
+    sell_volume = round(base_volume * (1 - pressure_score)) # Reduce if sell pressure is high
+
+    # 6. Ensure minimum order size of 1
+    buy_volume = max(1, buy_volume)
+    sell_volume = max(1, sell_volume)
+
+    # 5. Place Orders
+    orders.append(Order(product, buy_price, buy_volume))
+    orders.append(Order(product, sell_price, -sell_volume))
+
+    return orders
+
+def market_maker_strategy(td: TradingData, product: str, orders: list[Order], 
+                          fair_price_window: int, shift_alpha: float,
+                          sma_small_window: int, sma_large_window: int, sigmoid_alpha: float, 
+                          spread_scaling: float, trend_scaling: float, pressure_scaling: float,
+                          base_spread: int, min_spread_factor: float, max_spread_factor: float,
+                          max_position: int, position_threshold_factor: float, order_volume_factor: float):
+    """
+    Market-making strategy that places orders based on fair price, trend, and order imbalance.
+    """
     # 1. compute fair price
+    mid_prices = td.get_field(product, "mid_price")
     fair_price = sma(mid_prices, fair_price_window)
-    td.apply_indicator(product, fair_price, "fair_price")
+    td.apply_indicator(product, "fair_price", fair_price)
 
     # 2. Identify market trend returns [-1 and 1]
     trend_score = sma_crossover_score(td, product, mid_prices, sma_small_window, sma_large_window, sigmoid_alpha)
@@ -471,11 +528,23 @@ def market_maker_strategy(td: TradingData, product: str, orders: Order,
     spread_ratio = spread_to_price_ratio(td, product, best_ask, best_bid, mid_prices[-1])
 
     # 5. calculate dynamic Spread based on market conditions
-    spread = calculate_dynamic_spread(spread_ratio, trend_score, pressure_score, base_spread)
+    dynamic_spread = calculate_dynamic_spread(td, product, 
+                             spread_ratio, spread_scaling,
+                             trend_score, trend_scaling,
+                             pressure_score, pressure_scaling,
+                             base_spread, min_spread_factor, max_spread_factor)
 
     # 6 get orders
-    
-    
+    best_bid_amount = td.get_last_field(product, "best_bid_amount")
+    best_ask_amount = td.get_last_field(product, "best_ask_amount")
+    current_position = td.get_last_field(product, "current_position")
+    orders = get_orders(product, orders, 
+               fair_price, best_bid, best_ask, 
+               dynamic_spread, pressure_score, 
+               best_bid_amount, best_ask_amount, 
+               current_position, max_position,
+               position_threshold_factor, shift_alpha, order_volume_factor)
+
     return orders
 
 
@@ -492,15 +561,21 @@ class Trader:
 
             if product == "KELP":
                 orders = market_maker_strategy(td, product, orders,
-                                               fair_price_window=5,
-                                               sma_small_window= 10, sma_large_window=60, sigmoid_alpha=.4,
-                                               base_spread=2)
+                                    fair_price_window=5, shift_alpha=0.25,
+                                    sma_small_window=8, sma_large_window=50, sigmoid_alpha=0.4,
+                                    spread_scaling=1, trend_scaling=0.3, pressure_scaling=0.4,
+                                    base_spread=2, min_spread_factor=0.5, max_spread_factor=2,
+                                    max_position=position_limits[product], 
+                                    position_threshold_factor=0.75, order_volume_factor=0.15)
 
             if product == "RAINFOREST_RESIN":
                 orders = market_maker_strategy(td, product, orders,
-                                               fair_price_window=10,
-                                               sma_small_window= 5, sma_large_window=10, sigmoid_alpha=.4,
-                                               base_spread=5)
+                                fair_price_window=5, shift_alpha=.25,
+                                sma_small_window= 8, sma_large_window=50, sigmoid_alpha=.4,
+                                spread_scaling=1, trend_scaling=0.2, pressure_scaling=0.3,
+                                base_spread=5, min_spread_factor=0.5, max_spread_factor=2,
+                                    max_position=position_limits[product], 
+                                    position_threshold_factor=0.8, order_volume_factor=0.1)
             
             result[product] = orders
         
@@ -510,19 +585,11 @@ class Trader:
 
 from mock import state, state2
 if __name__ == "__main__":
-    
-    td = TradingData(state, {"RAINFOREST_RESIN": 50, "KELP": 50})
 
-    small = [1000, 1000, 1000, 1000, 1000]
-    price = [996, 998, 1000, 1001, 1007]
-    asks = [-10,-20,-30,-30,-30,-30]
-    bids = [30,20,10,33,1,0]
-    best_asks = [2026,2027,2028,2029,2030,2031]
-    best_bids = [2026,2025,2024,2023,2022,2021]
-    mid_price = [(best_ask + best_bid)/2 for best_ask, best_bid in zip(best_asks,best_bids)]
-
-    for a,b,mp in zip(best_asks,best_bids,mid_price):
-        spread_to_price = spread_to_price_ratio(td, "RAINFOREST_RESIN", a, b, mp)
-        print(spread_to_price)
-
-
+    trader = Trader()
+    result,conversions, data = trader.run(state)
+    print(data)
+    print("--- NEW STEP ---") 
+    state2.traderData = data
+    result,conversions, data = trader.run(state2)
+    print(data)
