@@ -556,7 +556,7 @@ def market_maker_strategy(td: TradingData, product: str, orders: list[Order],
     if sim_step < sma_large_window:
         return get_best_orders(product, fair_price, 
                         best_ask, best_ask_amount, best_bid, best_bid_amount,
-                        current_position, sim_step, max_position, orders)
+                        current_position, max_position, orders)
 
     orders = get_orders(product, orders, 
                fair_price, best_bid, best_ask, 
