@@ -25,11 +25,16 @@ class TradingData:
     def _update_new_state(self, data: Dict[str, Dict[str, List]], state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict[str, List]]:
         for product, order_depth in state.order_depths.items():
             # Sort buy orders from highest to lowest price (best bid to worst bid)
-            buy_orders = order_depth.buy_orders
-            sell_orders = order_depth.sell_orders
-            best_bid, _ = self.get_buy_order(buy_orders,0)
-            best_ask, _ = self.get_sell_order(sell_orders,0)
+            buy_orders = self.sort_buy_orders(order_depth.buy_orders)
+            sell_orders = self.sort_sell_orders(order_depth.sell_orders)
+
+            best_bid, best_bid_volume = next(iter(buy_orders.items()), (None, None))
+            best_ask, best_ask_volume = next(iter(sell_orders.items()), (None, None))
             mid_price = (best_bid + best_ask) / 2 if best_bid is not None and best_ask is not None else None
+
+            position = int(state.position.get(product, 0))
+            max_buy_position = position_limits.get(product, 0)
+            max_sell_position = -max_buy_position
 
             # Ensure data structure is initialized
             if product not in data:
@@ -62,15 +67,15 @@ class TradingData:
             data[product]["buy_orders"].append(dict(buy_orders))
             data[product]["sell_orders"].append(dict(sell_orders))
             data[product]["best_bid"].append(best_bid)
-            data[product]["best_bid_volume"].append(buy_orders.get(best_bid, 0))
+            data[product]["best_bid_volume"].append(best_bid_volume)
             data[product]["best_ask"].append(best_ask)
-            data[product]["best_ask_volume"].append(sell_orders.get(best_ask, 0))
+            data[product]["best_ask_volume"].append(best_ask_volume)
             data[product]["total_ask_volume"].append(sum(sell_orders.values()))
             data[product]["total_bid_volume"].append(sum(buy_orders.values()))
             data[product]["mid_price"].append(mid_price)
-            data[product]["max_sell_position"].append(-position_limits[product])
-            data[product]["max_buy_position"].append(position_limits[product])
-            data[product]["current_position"].append(int(state.position.get(product, 0)))
+            data[product]["max_sell_position"].append(max_sell_position)
+            data[product]["max_buy_position"].append(max_buy_position)
+            data[product]["current_position"].append(position)
 
             if state.observations.plainValueObservations:
                 data[product]["observation_plain_value"].append(state.observations.plainValueObservations[product])
@@ -85,9 +90,12 @@ class TradingData:
                 data[product]["observation_sunlightIndex"].append(state.observations.conversionObservations[product].sunlightIndex)
 
         return data
+    
+    def sort_buy_orders(self, buy_orders):
+        return dict(sorted(buy_orders.items(), key=lambda x: -int(x[0])))
 
-    def get_product_data(self, product: str) -> Dict:
-        return self.data.get(product, {})
+    def sort_sell_orders(self, sell_orders):    
+        return dict(sorted(sell_orders.items(), key=lambda x: int(x[0])))
 
     def get_latest_fields(self, product: str) -> Dict[str, any]:
         if product not in self.data:
@@ -104,29 +112,6 @@ class TradingData:
     def get_last_field(self, product: str, field: str) -> any:
         return self.get_value_by_index(product, field, -1)
     
-    def get_values_by_range(self, product: str, field: str, start: int, length: int) -> list:
-        if product not in self.data:
-            return []  # Return an empty list if the product doesn't exist
-
-        if field not in self.data[product]:
-            return []  # Return an empty list if the field doesn't exist
-
-        values = self.data[product][field]
-
-        # Adjust negative indices correctly
-        if start < 0:
-            start = len(values) + start  # Convert to a positive index if negative
-
-        # Ensure we don't slice out of bounds
-        if start < 0:
-            start = 0  # If the start is still out of bounds, start from 0
-
-        # If length extends beyond the end of the list, limit it to the list size
-        end = min(start + length, len(values))
-
-        # Return the sliced range
-        return values[start:end]
-
     def get_field(self, product:str, field: str) -> any:
         if product not in self.data:
             return None  # Or handle this as needed
@@ -149,23 +134,6 @@ class TradingData:
 
         return None  # Return None if the index is out of bounds
   
-    def get_value_by_timestamp(self, product: str, field: str, timestamp: int) -> any:
-        if product not in self.data:
-            return None  # Or handle this as needed
-
-        if field not in self.data[product]:
-            return None  # Handle missing field gracefully
-
-        timestamps = self.data[product]["timestamp"]
-        values = self.data[product][field]
-
-        # Find the index of the matching timestamp
-        if timestamp in timestamps:
-            index = timestamps.index(timestamp)
-            return values[index]  # Return the value at the matching timestamp index
-
-        return None  # Return None if timestamp is not found
-
     def apply_indicator(self, product: str, indicator_name: str, value):
         if product not in self.data:
             self.data[product] = {}  # Ensure product exists
@@ -176,27 +144,13 @@ class TradingData:
         if value is not None:
             self.data[product][indicator_name].append(value)  # Append new value
 
-    def sort_buy_orders(self, buy_orders):
-        return {int(price): int(volume) for price, volume in sorted(buy_orders.items(), key=lambda x: -int(x[0]))}
-
-    def sort_sell_orders(self, sell_orders):    
-        return {int(price): int(volume) for price, volume in sorted(sell_orders.items(), key=lambda x: int(x[0]))}
-
     def get_sell_order(self, sell_orders, rank=0):
-        sell_orders = self.sort_sell_orders(sell_orders)
-        if len(sell_orders.keys())>= rank+1:
-            price, volume = list(sell_orders.items())[rank]
-        else:
-            price, volume = None, None
-        return price, volume
+        items = list(sell_orders.items())
+        return items[rank] if rank < len(items) else (None, None)
 
     def get_buy_order(self, buy_orders, rank=0):
-        buy_orders = self.sort_buy_orders(buy_orders)
-        if len(buy_orders.keys())>= rank+1:
-            price, volume = list(buy_orders.items())[rank]
-        else:
-            price, volume = None, None
-        return price, volume
+        items = list(buy_orders.items())
+        return items[rank] if rank < len(items) else (None, None)
 
     def get_data_as_json(self) -> str:
         return json.dumps(self.data)
