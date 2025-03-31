@@ -33,7 +33,7 @@ class TradingData:
             mid_price = (best_bid + best_ask) / 2 if best_bid is not None and best_ask is not None else None
 
             position = int(state.position.get(product, 0))
-            max_buy_position = position_limits.get(product, 0)
+            max_buy_position = position_limits[product]
             max_sell_position = -max_buy_position
 
             # Ensure data structure is initialized
@@ -64,8 +64,8 @@ class TradingData:
 
             # Append new values to each field
             data[product]["timestamp"].append(state.timestamp)
-            data[product]["buy_orders"].append(dict(buy_orders))
-            data[product]["sell_orders"].append(dict(sell_orders))
+            data[product]["buy_orders"].append(buy_orders)
+            data[product]["sell_orders"].append(sell_orders)
             data[product]["best_bid"].append(best_bid)
             data[product]["best_bid_volume"].append(best_bid_volume)
             data[product]["best_ask"].append(best_ask)
