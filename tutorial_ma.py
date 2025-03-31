@@ -307,18 +307,18 @@ def sma_midprice_strategy(trading_data: TradingData, product: str, window: int, 
     if best_ask is not None and best_ask < latest_sma:
         orders, remaining_capacity = get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
 
-        if second_best_ask is not None and second_best_ask < latest_sma and abs(remaining_capacity) - reserved > 0:
-            # Try to place a second-best buy order if there's room
-            orders, _ = get_best_order("buy", product, second_best_ask, second_best_ask_volume, current_position, remaining_capacity - reserved, orders)
-            print("buying second best")
+        # if second_best_ask is not None and second_best_ask < latest_sma and abs(remaining_capacity) - reserved > 0:
+        #     # Try to place a second-best buy order if there's room
+        #     orders, _ = get_best_order("buy", product, second_best_ask, second_best_ask_volume, current_position, remaining_capacity - reserved, orders)
+        #     print("buying second best")
 
     # Place sell order if best bid is higher than the fair price
     if best_bid is not None and best_bid > latest_sma:
         orders, remaining_capacity = get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
 
-        if second_best_bid is not None and second_best_bid > latest_sma and abs(remaining_capacity) - reserved > 0:
-            # Try to place a second-best sell order if there's room
-            orders, _ = get_best_order("sell", product, second_best_bid, second_best_bid_volume, current_position, remaining_capacity + reserved, orders)
+        # if second_best_bid is not None and second_best_bid > latest_sma and abs(remaining_capacity) - reserved > 0:
+        #     # Try to place a second-best sell order if there's room
+        #     orders, _ = get_best_order("sell", product, second_best_bid, second_best_bid_volume, current_position, remaining_capacity + reserved, orders)
 
     return orders
 

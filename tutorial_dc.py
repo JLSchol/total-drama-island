@@ -425,7 +425,7 @@ class Trader:
                 orders = doncian_channel_breakout_strategy(td, product, 70, orders)
 
             if product == "RAINFOREST_RESIN":
-                orders = sma_midprice_strategy(td, product, 10, orders)
+                orders = doncian_channel_breakout_strategy(td, product, 10, orders)
             
             result[product] = orders
         

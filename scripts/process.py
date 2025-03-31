@@ -203,8 +203,9 @@ if __name__ == "__main__":
     # activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250320_ma\processed\250320_ma_activities.csv"
     # activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma\processed\250323_ma_activities.csv"
     activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma_second_best\processed\250323_ma_second_best_activities.csv"
+    activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\2503311032_mm\processed\2503311032_mm_activities.csv"
     # activity_csv = r"C:\Users\jasschol\repositories\personal projects\total-drama-island\logs\tutorial\250323_ma\processed\250323_ma_activities.csv"
-    activity_csv = r"/home/jasschol/repos/personal/total-drama-island/logs/tutorial/250325_dc/processed/250325_dc_activities.csv"
+    # activity_csv = r"/home/jasschol/repos/personal/total-drama-island/logs/tutorial/250325_dc/processed/250325_dc_activities.csv"
 
 
     # activities_dict = get_activities_dict(activity_csv)

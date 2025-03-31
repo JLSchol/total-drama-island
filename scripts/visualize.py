@@ -5,7 +5,7 @@ import os
 
 
 
-def plot_profit_loss(df, save_path):
+def plot_profit_loss(df, save_path, title):
     """Plots profit and loss for each product and saves the figure."""
     products = df['product'].unique()
 
@@ -24,7 +24,7 @@ def plot_profit_loss(df, save_path):
 
     plt.xlabel("Timestamp")
     plt.ylabel("Profit and Loss")
-    plt.title("Profit and Loss for Each Product Over Time")
+    plt.title(f"Profit and Loss for {title}")
     plt.legend(title="Product")
     plt.grid(True)
 
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     base_path = os.path.join(script_dir, '..', 'logs', 'tutorial')
 
     # what to visualize and load
-    directories = ["250323_ma_second_best", "250325_dc"]  # Add more directories as needed
+    directories = ["2503311032_market_maker", "2503311105_ma_best", "2503311105_ma_second_best", "2503311120_dc", "2503311120_do_nothing", "2503311120_example"]  # Add more directories as needed
 
     for directory in directories:
         csv_file = os.path.join(base_path, directory, "processed", f"{directory}_activities.csv")
@@ -83,7 +83,7 @@ if __name__ == '__main__':
 
         if os.path.exists(csv_file):
             df = get_activities_df(csv_file)
-            penl = plot_profit_loss(df, plot_path)
+            penl = plot_profit_loss(df, plot_path, directory)
             print(f"Plot saved: {plot_path}")
             print("\n")
             print(f"{directory}: {penl=}")

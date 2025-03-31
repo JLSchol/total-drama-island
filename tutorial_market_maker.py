@@ -263,6 +263,18 @@ def get_best_order(order_type: str, product: str, price: float, amount: int, cur
     orders.append(Order(product, price, order_quantity))
     return orders, remaining_capacity
 
+def get_best_orders(product: str, price: float, 
+                    best_ask: int, best_ask_amount: int, 
+                    best_bid: int, best_bid_amount: int, 
+                    current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
+
+    if best_ask is not None and best_ask < price:
+        orders, _ = get_best_order("buy", product, best_ask, best_ask_amount, current_position, max_position, orders)
+    # Place sell order if best bid is higher than the fair price
+    if best_bid is not None and best_bid > price:
+        orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, -max_position, orders)
+    return orders
+
 def sma(prices, window):
     if len(prices) == 0 or window <= 0:
         raise ValueError("Prices list is empty or window size is invalid")
@@ -464,7 +476,7 @@ def get_orders(product: str, orders: list[Order],
     # 1. Ensure required data is available
     # otherwise just buy best ask en sell best bid
     if None in (fair_price, best_bid, best_ask, dynamic_spread, pressure_score):
-        orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, max_position, orders)
+        orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, -max_position, orders)
         orders, _ = get_best_order("buy", product, best_ask, best_ask_amount, current_position, max_position, orders)
         return orders  
 
@@ -472,7 +484,7 @@ def get_orders(product: str, orders: list[Order],
     position_threshold = position_threshold_factor * max_position
     if abs(current_position) >= abs(position_threshold):
         if current_position > 0:
-            orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, max_position, orders)
+            orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, -max_position, orders)
         else:
             orders, _ = get_best_order("buy", product, best_ask, best_ask_amount, current_position, max_position, orders)
         return orders
@@ -538,6 +550,14 @@ def market_maker_strategy(td: TradingData, product: str, orders: list[Order],
     best_bid_amount = td.get_last_field(product, "best_bid_amount")
     best_ask_amount = td.get_last_field(product, "best_ask_amount")
     current_position = td.get_last_field(product, "current_position")
+    sim_step = td.get_last_field(product, "timestamp")/100
+
+    # if we do not have calculated enough data for our strategy, just buy the best ask and sell best bid
+    if sim_step < sma_large_window:
+        return get_best_orders(product, fair_price, 
+                        best_ask, best_ask_amount, best_bid, best_bid_amount,
+                        current_position, sim_step, max_position, orders)
+
     orders = get_orders(product, orders, 
                fair_price, best_bid, best_ask, 
                dynamic_spread, pressure_score, 
@@ -568,14 +588,14 @@ class Trader:
                                     max_position=position_limits[product], 
                                     position_threshold_factor=0.75, order_volume_factor=0.15)
 
-            if product == "RAINFOREST_RESIN":
-                orders = market_maker_strategy(td, product, orders,
-                                fair_price_window=5, shift_alpha=.25,
-                                sma_small_window= 8, sma_large_window=50, sigmoid_alpha=.4,
-                                spread_scaling=1, trend_scaling=0.2, pressure_scaling=0.3,
-                                base_spread=5, min_spread_factor=0.5, max_spread_factor=2,
-                                    max_position=position_limits[product], 
-                                    position_threshold_factor=0.8, order_volume_factor=0.1)
+            # if product == "RAINFOREST_RESIN":
+            #     orders = market_maker_strategy(td, product, orders,
+            #                     fair_price_window=5, shift_alpha=.25,
+            #                     sma_small_window= 8, sma_large_window=50, sigmoid_alpha=.4,
+            #                     spread_scaling=1, trend_scaling=0.2, pressure_scaling=0.3,
+            #                     base_spread=5, min_spread_factor=0.5, max_spread_factor=2,
+            #                         max_position=position_limits[product], 
+            #                         position_threshold_factor=0.8, order_volume_factor=0.1)
             
             result[product] = orders
         
@@ -583,13 +603,13 @@ class Trader:
 
         return result, conversions, traderData
 
-from mock import state, state2
-if __name__ == "__main__":
+# from mock import state, state2
+# if __name__ == "__main__":
 
-    trader = Trader()
-    result,conversions, data = trader.run(state)
-    print(data)
-    print("--- NEW STEP ---") 
-    state2.traderData = data
-    result,conversions, data = trader.run(state2)
-    print(data)
+#     trader = Trader()
+#     result,conversions, data = trader.run(state)
+#     print(data)
+#     print("--- NEW STEP ---") 
+#     state2.traderData = data
+#     result,conversions, data = trader.run(state2)
+#     print(data)
