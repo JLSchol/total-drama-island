@@ -697,7 +697,7 @@ def market_maker_strategy(td: TradingData, product: str, orders: list[Order],
                         best_ask, best_ask_amount, best_bid, best_bid_amount,
                         current_position, max_position, orders)
 
-    orders = get_orders(product, orders, 
+    orders = get_orders(td, product, orders, 
                fair_price, best_bid, best_ask, 
                dynamic_spread, pressure_score, 
                best_bid_amount, best_ask_amount, 
@@ -713,7 +713,7 @@ class Trader:
         result = {}
         conversions = 0
         position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}
-        max_order_count = 3
+        max_order_count = 4 #  order book depth + 1 = 4
         max_history = 55
 
         td = TradingData(state, position_limits, max_order_count, max_history)
@@ -721,23 +721,23 @@ class Trader:
         for product in state.order_depths:
             orders: List[Order] = []
 
-            if product == "KELP":
-                orders = market_maker_strategy(td, product, orders,
-                                    fair_price_window=5, shift_alpha=0.25,
-                                    sma_small_window=8, sma_large_window=50, sigmoid_alpha=0.4,
-                                    spread_scaling=1, trend_scaling=0.3, pressure_scaling=0.4,
-                                    base_spread=2, min_spread_factor=0.5, max_spread_factor=2,
-                                    max_position=position_limits[product], 
-                                    position_threshold_factor=0.75, order_volume_factor=0.15)
+            # if product == "KELP":
+            #     orders = market_maker_strategy(td, product, orders,
+            #                         fair_price_window=5, shift_alpha=0.25,
+            #                         sma_small_window=8, sma_large_window=50, sigmoid_alpha=0.4,
+            #                         spread_scaling=1, trend_scaling=0.3, pressure_scaling=0.4,
+            #                         base_spread=2, min_spread_factor=0.5, max_spread_factor=2,
+            #                         max_position=position_limits[product], 
+            #                         position_threshold_factor=0.75, order_volume_factor=0.15)
 
-            if product == "RAINFOREST_RESIN":
-                orders = market_maker_strategy(td, product, orders,
-                                fair_price_window=5, shift_alpha=.25,
-                                sma_small_window= 8, sma_large_window=50, sigmoid_alpha=.4,
-                                spread_scaling=1, trend_scaling=0.2, pressure_scaling=0.3,
-                                base_spread=5, min_spread_factor=0.5, max_spread_factor=2,
-                                    max_position=position_limits[product], 
-                                    position_threshold_factor=0.8, order_volume_factor=0.1)
+            # if product == "RAINFOREST_RESIN":
+            #     orders = market_maker_strategy(td, product, orders,
+            #                     fair_price_window=5, shift_alpha=.25,
+            #                     sma_small_window= 8, sma_large_window=50, sigmoid_alpha=.4,
+            #                     spread_scaling=1, trend_scaling=0.2, pressure_scaling=0.3,
+            #                     base_spread=5, min_spread_factor=0.5, max_spread_factor=2,
+            #                         max_position=position_limits[product], 
+            #                         position_threshold_factor=0.8, order_volume_factor=0.1)
             
             result[product] = orders
 
