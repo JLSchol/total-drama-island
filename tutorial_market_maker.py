@@ -24,14 +24,25 @@ class TradingData:
 
     def _update_new_state(self, data: Dict[str, Dict[str, np.ndarray]], state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict[str, np.ndarray]]:
         for product, order_depth in state.order_depths.items():
-            # Sort buy orders from highest to lowest price (best bid to worst bid)
-            buy_orders = self.sort_buy_orders(order_depth.buy_orders)
-            sell_orders = self.sort_sell_orders(order_depth.sell_orders)
+            # get sorted np arrays
+            buy_prices, buy_volumes = self.sort_buy_orders(order_depth.buy_orders)
+            sell_prices, sell_volumes = self.sort_sell_orders(order_depth.sell_orders)
 
-            best_bid, best_bid_volume = next(iter(buy_orders.items()), (None, None))
-            best_ask, best_ask_volume = next(iter(sell_orders.items()), (None, None))
-            mid_price = (best_bid + best_ask) / 2 if best_bid is not None and best_ask is not None else None
+            total_bid_volume = np.sum(buy_volumes)
+            total_ask_volume = np.sum(sell_volumes)
+            total_volume = total_bid_volume + np.abs(total_ask_volume)
 
+            # best bid/asks
+            best_bid, best_bid_volume = (buy_prices[0], buy_volumes[0]) if buy_prices.size > 0 else (None, None)
+            best_ask, best_ask_volume = (sell_prices[0], sell_volumes[0]) if sell_prices.size > 0 else (None, None)
+
+            # mid_price
+            mid_price = np.mean([best_bid, best_ask]) if best_bid is not None and best_ask is not None else None
+
+            # volume weigted mid price
+            weighted_mid_price = np.average(np.concatenate((buy_prices, sell_prices)), weights=np.concatenate((buy_volumes, np.abs(sell_volumes)))) 
+
+            # positions
             position = int(state.position.get(product, 0))
             max_buy_position = position_limits[product]
             max_sell_position = -max_buy_position
@@ -40,15 +51,25 @@ class TradingData:
             if product not in data:
                 data[product] = {
                     "timestamp": np.array([]),
-                    "buy_orders": [],
-                    "sell_orders": [],
+
+                    "buy_prices": np.array([]), #
+                    "buy_volumes": np.array([]),
+                    "sell_prices": np.array([]),
+                    "sell_volumes": np.array([]),
+
                     "best_bid": np.array([]),
                     "best_bid_volume": np.array([]),
                     "best_ask": np.array([]),
                     "best_ask_volume": np.array([]),
                     "total_ask_volume": np.array([]),
                     "total_bid_volume": np.array([]),
+
+                    "total_volume": np.array([]),
+
                     "mid_price": np.array([]),
+
+                    "weighted_mid_price": np.array([]),
+
                     "max_sell_position": np.array([]),
                     "max_buy_position": np.array([]),
                     "current_position": np.array([]),
@@ -64,15 +85,23 @@ class TradingData:
 
             # Append new values to each field
             data[product]["timestamp"] = np.append(data[product]["timestamp"], state.timestamp)
-            data[product]["buy_orders"].append(buy_orders) 
-            data[product]["sell_orders"].append(sell_orders)
+
+            data[product]["buy_prices"] = np.append(data[product]["buy_prices"], buy_prices) #2d array
+            data[product]["buy_volumes"] = np.append(data[product]["buy_volumes"], buy_volumes) #2d array
+            data[product]["sell_prices"] = np.append(data[product]["sell_prices"], sell_prices) #2d array
+            data[product]["sell_volumes"] = np.append(data[product]["sell_volumes"], sell_volumes) #2d array
+
             data[product]["best_bid"] = np.append(data[product]["best_bid"], best_bid)
             data[product]["best_bid_volume"] = np.append(data[product]["best_bid_volume"], best_bid_volume)
             data[product]["best_ask"] = np.append(data[product]["best_ask"], best_ask)
             data[product]["best_ask_volume"] = np.append(data[product]["best_ask_volume"], best_ask_volume)
-            data[product]["total_ask_volume"] = np.append(data[product]["total_ask_volume"], sum(sell_orders.values()))
-            data[product]["total_bid_volume"] = np.append(data[product]["total_bid_volume"], sum(buy_orders.values()))
+            data[product]["total_ask_volume"] = np.append(data[product]["total_ask_volume"], total_ask_volume)
+            data[product]["total_bid_volume"] = np.append(data[product]["total_bid_volume"], total_bid_volume)
+            data[product]["total_volume"] = np.append(data[product]["total_volume"], total_volume)
             data[product]["mid_price"] = np.append(data[product]["mid_price"], mid_price)
+
+            data[product]["weighted_mid_price"] = np.append(data[product]["weighted_mid_price"], weighted_mid_price)
+
             data[product]["max_sell_position"] = np.append(data[product]["max_sell_position"], max_sell_position)
             data[product]["max_buy_position"] = np.append(data[product]["max_buy_position"], max_buy_position)
             data[product]["current_position"] = np.append(data[product]["current_position"], position)
@@ -94,11 +123,16 @@ class TradingData:
         return data
     
     def sort_buy_orders(self, buy_orders):
-        return dict(sorted(buy_orders.items(), key=lambda x: -int(x[0])))
+        sorted_items = sorted(buy_orders.items(), key=lambda x: -int(x[0]))
+        prices, volumes = zip(*sorted_items) if sorted_items else ([], [])
+        return np.array(prices, dtype=int), np.array(volumes, dtype=int)
 
-    def sort_sell_orders(self, sell_orders):    
-        return dict(sorted(sell_orders.items(), key=lambda x: int(x[0])))
+    def sort_sell_orders(self, sell_orders):
+        sorted_items = sorted(sell_orders.items(), key=lambda x: int(x[0]))
+        prices, volumes = zip(*sorted_items) if sorted_items else ([], [])
+        return np.array(prices, dtype=int), np.array(volumes, dtype=int)
 
+#TODO: eed to update get last field functions THAT GET PROPERTIE FOR LIST IN LIST STUFFIES
     def get_latest_fields(self, product: str) -> Dict[str, any]:
         if product not in self.data:
             return {}
@@ -157,6 +191,8 @@ class TradingData:
     def get_data_as_json(self) -> str:
         return json.dumps(self.data)
 
+
+#TODO: CONVERT TO NUMPY ARRAY STUFFIES
 def is_available(best: Optional[float], best_amount: Optional[int]) -> bool:
     return best is not None and best_amount is not None
 
