@@ -3,18 +3,49 @@ from typing import Dict, List, Optional
 import json
 import numpy as np
 
+import time
+# Helper function to serialize numpy arrays
+def numpy_array_default(obj):
+    """Custom default function for serializing numpy arrays (including 2D arrays)."""
+    if isinstance(obj, np.ndarray):
+        # For 2D arrays, ensure it's serialized as a list of lists
+        return obj.tolist()  # Convert 1D arrays to lists
+    raise TypeError(f"Type {type(obj)} not serializable")
+
+def convert_lists_to_numpy(data: Dict[str, Dict]):
+    """Convert lists in JSON back to numpy arrays (including 2D arrays)."""
+    for product, product_data in data.items():
+        for key, value in product_data.items():
+            if isinstance(value, list):
+                # Convert lists back to numpy arrays
+                arr = np.array(value, dtype=np.float64)
+                data[product][key] = arr
+    return data
+
 class TradingData:
 
-    def __init__(self, state: TradingState, position_limits: Dict[str, int]):
+    def __init__(self, state: TradingState, position_limits: Dict[str, int], max_order_count: int, max_history_len: int):
         self.position_limits = position_limits
+        self.max_order_count = max_order_count
+        self.max_history_len = max_history_len
         self.data = self._initialize_data(state, position_limits)
+
+    def _truncate_array(self, array: np.ndarray) -> np.ndarray:
+        """Helper method to pop the first element of the array and keep the last max_history_len elements."""
+        if array.ndim == 1:
+            if array.shape[0] > self.max_history_len:
+                return array[1:]  # Remove the first element of a 1D array
+        elif array.ndim == 2:
+            if array.shape[0] > self.max_history_len:
+                return array[1:, :]  # Remove the first row of a 2D array (keeping all columns)
+        return array
 
     def _initialize_data(self, state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict]:
         if state.traderData:
             try:
                 data = json.loads(state.traderData)
                 if data:
-                    return self._update_new_state(data, state, position_limits)
+                    return self._update_new_state(convert_lists_to_numpy(data), state, position_limits)
             except json.JSONDecodeError:
                 pass  
         return self._from_empty_data(state, position_limits)
@@ -22,75 +53,83 @@ class TradingData:
     def _from_empty_data(self, state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict]:
         return self._update_new_state({}, state, position_limits)
 
+    def _ensure_product_data(self, data: Dict[str, Dict], product: str) -> None:
+        if product not in data:
+            data[product] = {
+                "timestamp": np.array([]),
+                "bid_prices": np.empty((0, self.max_order_count), dtype=np.float64),
+                "bid_volumes": np.empty((0, self.max_order_count), dtype=np.float64),
+                "ask_prices": np.empty((0, self.max_order_count), dtype=np.float64),
+                "ask_volumes": np.empty((0, self.max_order_count), dtype=np.float64),
+                "best_bid": np.array([]),
+                "best_bid_volume": np.array([]),
+                "best_ask": np.array([]),
+                "best_ask_volume": np.array([]),
+                "total_ask_volume": np.array([]),
+                "total_bid_volume": np.array([]),
+                "total_volume": np.array([]),
+                "mid_price": np.array([]),
+                "weighted_mid_price": np.array([]),
+                "max_sell_position": np.array([]),
+                "max_buy_position": np.array([]),
+                "current_position": np.array([]),
+                "observation_plain_value": np.array([]),
+                "observation_bidPrice": np.array([]),
+                "observation_askPrice": np.array([]),
+                "observation_transportFees": np.array([]),
+                "observation_exportTariff": np.array([]),
+                "observation_importTariff": np.array([]),
+                "observation_sugarPrice": np.array([]),
+                "observation_sunlightIndex": np.array([]),
+            }
+
     def _update_new_state(self, data: Dict[str, Dict[str, np.ndarray]], state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict[str, np.ndarray]]:
         for product, order_depth in state.order_depths.items():
             # get sorted np arrays
-            buy_prices, buy_volumes = self.sort_buy_orders(order_depth.buy_orders)
-            sell_prices, sell_volumes = self.sort_sell_orders(order_depth.sell_orders)
+            bid_prices, bid_volumes = self.sort_bid_orders(order_depth.buy_orders, self.max_order_count)
+            ask_prices, ask_volumes = self.sort_ask_orders(order_depth.sell_orders, self.max_order_count)
 
-            total_bid_volume = np.sum(buy_volumes)
-            total_ask_volume = np.sum(sell_volumes)
+            total_bid_volume = np.sum(bid_volumes, where=~np.isnan(bid_volumes))
+            total_ask_volume = np.sum(ask_volumes, where=~np.isnan(ask_volumes))
             total_volume = total_bid_volume + np.abs(total_ask_volume)
 
             # best bid/asks
-            best_bid, best_bid_volume = (buy_prices[0], buy_volumes[0]) if buy_prices.size > 0 else (None, None)
-            best_ask, best_ask_volume = (sell_prices[0], sell_volumes[0]) if sell_prices.size > 0 else (None, None)
+            best_bid, best_bid_volume = (bid_prices[0], bid_volumes[0]) if bid_prices.size > 0 else (np.nan, np.nan)
+            best_ask, best_ask_volume = (ask_prices[0], ask_volumes[0]) if ask_prices.size > 0 else (np.nan, np.nan)
 
             # mid_price
-            mid_price = np.mean([best_bid, best_ask]) if best_bid is not None and best_ask is not None else None
+            if best_bid is not None and best_ask is not None:
+                mid_price = np.mean(np.array([best_bid, best_ask], dtype=np.float64))
+            else:
+                mid_price = np.nan
 
-            # volume weigted mid price
-            weighted_mid_price = np.average(np.concatenate((buy_prices, sell_prices)), weights=np.concatenate((buy_volumes, np.abs(sell_volumes)))) 
+            # Calculate the volume weighted mid-price
+            # Create a mask that identifies valid (non-nan) values for both prices and volumes
+            valid_bid_mask = ~np.isnan(bid_prices)
+            valid_ask_mask = ~np.isnan(ask_prices)
+            # Concatenate only the valid values (non-nan) for prices and volumes
+            all_prices = np.concatenate((bid_prices[valid_bid_mask], ask_prices[valid_ask_mask]))
+            all_volumes = np.concatenate((bid_volumes[valid_bid_mask], np.abs(ask_volumes[valid_ask_mask])))  # Absolute volumes for asks
+            # Calculate the weighted mid-price
+            if all_prices.size > 0:
+                weighted_mid_price = np.average(all_prices, weights=all_volumes)
+            else:
+                weighted_mid_price = np.nan  # Return NaN if there are no valid prices
 
             # positions
             position = int(state.position.get(product, 0))
             max_buy_position = position_limits[product]
             max_sell_position = -max_buy_position
 
-            # Ensure data structure is initialized
-            if product not in data:
-                data[product] = {
-                    "timestamp": np.array([]),
-
-                    "buy_prices": np.array([]), #
-                    "buy_volumes": np.array([]),
-                    "sell_prices": np.array([]),
-                    "sell_volumes": np.array([]),
-
-                    "best_bid": np.array([]),
-                    "best_bid_volume": np.array([]),
-                    "best_ask": np.array([]),
-                    "best_ask_volume": np.array([]),
-                    "total_ask_volume": np.array([]),
-                    "total_bid_volume": np.array([]),
-
-                    "total_volume": np.array([]),
-
-                    "mid_price": np.array([]),
-
-                    "weighted_mid_price": np.array([]),
-
-                    "max_sell_position": np.array([]),
-                    "max_buy_position": np.array([]),
-                    "current_position": np.array([]),
-                    "observation_plain_value": np.array([]),
-                    "observation_bidPrice": np.array([]),
-                    "observation_askPrice": np.array([]),
-                    "observation_transportFees": np.array([]),
-                    "observation_exportTariff": np.array([]),
-                    "observation_importTariff": np.array([]),
-                    "observation_sugarPrice": np.array([]),
-                    "observation_sunlightIndex": np.array([]),
-                }
+            # ensure product data (if data is {})
+            self._ensure_product_data(data, product)
 
             # Append new values to each field
             data[product]["timestamp"] = np.append(data[product]["timestamp"], state.timestamp)
-
-            data[product]["buy_prices"] = np.append(data[product]["buy_prices"], buy_prices) #2d array
-            data[product]["buy_volumes"] = np.append(data[product]["buy_volumes"], buy_volumes) #2d array
-            data[product]["sell_prices"] = np.append(data[product]["sell_prices"], sell_prices) #2d array
-            data[product]["sell_volumes"] = np.append(data[product]["sell_volumes"], sell_volumes) #2d array
-
+            data[product]["bid_prices"] = np.vstack([data[product]["bid_prices"], bid_prices]) #2d array
+            data[product]["bid_volumes"] = np.vstack([data[product]["bid_volumes"], bid_volumes]) #2d array
+            data[product]["ask_prices"] = np.vstack([data[product]["ask_prices"], ask_prices]) #2d array
+            data[product]["ask_volumes"] = np.vstack([data[product]["ask_volumes"], ask_volumes]) #2d array
             data[product]["best_bid"] = np.append(data[product]["best_bid"], best_bid)
             data[product]["best_bid_volume"] = np.append(data[product]["best_bid_volume"], best_bid_volume)
             data[product]["best_ask"] = np.append(data[product]["best_ask"], best_ask)
@@ -99,9 +138,7 @@ class TradingData:
             data[product]["total_bid_volume"] = np.append(data[product]["total_bid_volume"], total_bid_volume)
             data[product]["total_volume"] = np.append(data[product]["total_volume"], total_volume)
             data[product]["mid_price"] = np.append(data[product]["mid_price"], mid_price)
-
             data[product]["weighted_mid_price"] = np.append(data[product]["weighted_mid_price"], weighted_mid_price)
-
             data[product]["max_sell_position"] = np.append(data[product]["max_sell_position"], max_sell_position)
             data[product]["max_buy_position"] = np.append(data[product]["max_buy_position"], max_buy_position)
             data[product]["current_position"] = np.append(data[product]["current_position"], position)
@@ -120,35 +157,99 @@ class TradingData:
                     data[product]["observation_sugarPrice"] = np.append(data[product]["observation_sugarPrice"], obs.sugarPrice)
                     data[product]["observation_sunlightIndex"] = np.append(data[product]["observation_sunlightIndex"], obs.sunlightIndex)
 
+            # Apply truncation for all arrays
+            for key, value in data[product].items():
+                if isinstance(value, np.ndarray):  # Check if the value is a numpy array
+                    data[product][key] = self._truncate_array(value)
+
         return data
     
-    def sort_buy_orders(self, buy_orders):
-        sorted_items = sorted(buy_orders.items(), key=lambda x: -int(x[0]))
-        prices, volumes = zip(*sorted_items) if sorted_items else ([], [])
-        return np.array(prices, dtype=int), np.array(volumes, dtype=int)
+    def sort_bid_orders(self, buy_orders, max_order_count: int):
+        """
+        Sorts buy orders in descending price order and pads with np.nan if necessary.
+        
+        Args:
+            buy_orders (dict): Dictionary of {price: volume}.
+            max_order_count (int): Maximum expected number of buy orders.
 
-    def sort_sell_orders(self, sell_orders):
-        sorted_items = sorted(sell_orders.items(), key=lambda x: int(x[0]))
-        prices, volumes = zip(*sorted_items) if sorted_items else ([], [])
-        return np.array(prices, dtype=int), np.array(volumes, dtype=int)
+        Returns:
+            Tuple[np.ndarray, np.ndarray]: Sorted and padded price and volume arrays.
+        """
+        if not buy_orders:
+            # Return padded arrays if no orders exist
+            return np.full(max_order_count, np.nan, dtype=np.float64), np.full(max_order_count, np.nan, dtype=np.float64)
+        
+        # Convert the dictionary to numpy arrays
+        prices = np.array(list(buy_orders.keys()), dtype=np.float64)  # Prices as a numpy array
+        volumes = np.array(list(buy_orders.values()), dtype=np.float64)  # Volumes as a numpy array
 
-#TODO: eed to update get last field functions THAT GET PROPERTIE FOR LIST IN LIST STUFFIES
-    def get_latest_fields(self, product: str) -> Dict[str, any]:
+        # Sort prices in descending order and reorder volumes accordingly
+        sorted_indices = np.argsort(prices)[::-1]  # Sorted indices in descending order
+        sorted_prices = prices[sorted_indices]
+        sorted_volumes = volumes[sorted_indices]
+
+        # Pad the arrays with np.nan if fewer than max_order_count
+        prices_padded = np.full(max_order_count, np.nan, dtype=np.float64)
+        volumes_padded = np.full(max_order_count, np.nan, dtype=np.float64)
+
+        # Efficiently copy the sorted values into the pre-allocated arrays
+        prices_padded[:len(sorted_prices)] = sorted_prices
+        volumes_padded[:len(sorted_volumes)] = sorted_volumes
+
+        return prices_padded, volumes_padded
+    
+    def sort_ask_orders(self, sell_orders, max_order_count: int):
+        """
+        Sorts sell orders in ascending price order and pads with np.nan if necessary.
+        
+        Args:
+            sell_orders (dict): Dictionary of {price: volume}.
+            max_order_count (int): Maximum expected number of sell orders.
+            
+        Returns:
+            Tuple[np.ndarray, np.ndarray]: Sorted and padded price and volume arrays.
+        """
+        if not sell_orders:
+            # Return padded arrays if no orders exist
+            return np.full(max_order_count, np.nan, dtype=np.float64), np.full(max_order_count, np.nan, dtype=np.float64)
+        
+        # Convert the dictionary to numpy arrays for faster sorting
+        prices = np.array(list(sell_orders.keys()), dtype=np.float64)  # Prices as a numpy array
+        volumes = np.array(list(sell_orders.values()), dtype=np.float64)  # Volumes as a numpy array
+
+        # Sort prices in ascending order and reorder volumes accordingly
+        sorted_indices = np.argsort(prices)  # Sorted indices in ascending order
+        sorted_prices = prices[sorted_indices]
+        sorted_volumes = volumes[sorted_indices]
+
+        # Pad the arrays with np.nan if fewer than max_order_count
+        prices_padded = np.full(max_order_count, np.nan, dtype=np.float64)
+        volumes_padded = np.full(max_order_count, np.nan, dtype=np.float64)
+
+        # Efficiently copy the sorted values into the pre-allocated arrays
+        prices_padded[:len(sorted_prices)] = sorted_prices
+        volumes_padded[:len(sorted_volumes)] = sorted_volumes
+
+        return prices_padded, volumes_padded
+
+    def get_latest_fields(self, product: str) -> Dict[str, np.ndarray]:
         if product not in self.data:
             return {}
 
         latest_entry = {}
         for key, values in self.data[product].items():
-            if values:  # Ensure there's data
-                # Get the most recent entry, This does not guarantee matching timestamp, 
-                # with data, it just grabs the latest from whatever iteraction that is..
-                latest_entry[key] = values[-1]  
+            if isinstance(values, np.ndarray):
+                if values.size == 0:
+                    latest_entry[key] = np.nan  # Return NaN if empty
+                elif values.ndim == 2 and values.shape[0]>0: # and values.shape[0]>0:
+                    latest_entry[key] = values[-1, :]  # Get the last row for 2D arrays
+                else:
+                    latest_entry[key] = values[-1]  # Get the last element for 1D arrays
+            else:
+                raise ValueError(f"was expecting a np.array but got {values} of type {type(values)}")
         return latest_entry
 
-    def get_last_field(self, product: str, field: str) -> any:
-        return self.get_value_by_index(product, field, -1)
-    
-    def get_field(self, product:str, field: str) -> any:
+    def get_field(self, product:str, field: str) -> Optional[np.ndarray]:
         if product not in self.data:
             return None  # Or handle this as needed
 
@@ -156,7 +257,7 @@ class TradingData:
             return None  # Handle missing field gracefully
 
         return self.data[product][field]
-
+    
     def get_value_by_index(self, product: str, field: str, index: int) -> any:
 
         values = self.get_field(product, field)
@@ -164,33 +265,61 @@ class TradingData:
         if values is None:
             return None  
 
-        # Check if the index is valid (both positive and negative indices)
-        if -len(values) <= index < len(values):
-            return values[index]  # Return the value at the specified index (positive or negative)
-
-        return None  # Return None if the index is out of bounds
+        if isinstance(values, np.ndarray):
+            if values.ndim == 1:
+                return values[index]
+            elif values.ndim == 2 and values.shape[0]>0: # and values.shape[0]>0:
+                return values[index, :]
+            else:
+                raise ValueError(f"was expecting a np.array of ndim 1 or 2") 
+        else:
+            raise ValueError(f"was expecting a np.array but got {values} of type {type(values)}")
   
-    def apply_indicator(self, product: str, indicator_name: str, value):
+    def get_last_field(self, product: str, field: str) -> Optional[np.ndarray]:
+        return self.get_value_by_index(product, field, -1)  
+  
+    def apply_indicator(self, product: str, indicator_name: str, value: np.float64):    
+        if indicator_name in ["bid_prices","bid_volumes","ask_prices","ask_volumes"]:
+            self.apply_2d_indicator(product, indicator_name, value)
+
         if product not in self.data:
             self.data[product] = {}
         
         if indicator_name not in self.data[product]:
             self.data[product][indicator_name] = np.array([])
-        
+
         if value is not None:
             self.data[product][indicator_name] = np.append(self.data[product][indicator_name], value)
+            self.data[product][indicator_name] = self._truncate_array(self.data[product][indicator_name])
 
-    def get_sell_order(self, sell_orders, rank=0):
-        items = list(sell_orders.items())
-        return items[rank] if rank < len(items) else (None, None)
+    def apply_2d_indicator(self, product: str, indicator_name: str, values: np.ndarray):
+        if product not in self.data:
+            self.data[product] = {}
+        
+        if indicator_name not in self.data[product]:
+            self.data[product][indicator_name] = np.array([])
 
-    def get_buy_order(self, buy_orders, rank=0):
-        items = list(buy_orders.items())
-        return items[rank] if rank < len(items) else (None, None)
+        if values:
+            # Check if the 2D array already has data, then append the new row
+            if self.data[product][indicator_name].size == 0:
+                # If the array is empty, initialize it with the new values as a single row
+                self.data[product][indicator_name] = np.array([values])
+            else:
+                # If the array has data, append the new values as a new row
+                self.data[product][indicator_name] = np.vstack([self.data[product][indicator_name], values])
+                self.data[product][indicator_name] = self._truncate_array(self.data[product][indicator_name])
 
     def get_data_as_json(self) -> str:
-        return json.dumps(self.data)
+        # Serialize the data to JSON
+        return json.dumps(self.data, default=numpy_array_default)
 
+    def print_sim_step_data(self):
+        data = {}
+        for product in self.data.keys():
+            product_data = self.get_latest_fields(product)
+            data[product] = product_data
+        # convert to json string, such that it can be loaded easily later
+        print(json.dumps(data, default=numpy_array_default))
 
 #TODO: CONVERT TO NUMPY ARRAY STUFFIES
 def is_available(best: Optional[float], best_amount: Optional[int]) -> bool:
@@ -267,18 +396,23 @@ def get_best_orders(product: str, price: float,
         orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, -max_position, orders)
     return orders
 
-def sma(prices, window):
-    if len(prices) == 0 or window <= 0:
-        raise ValueError("Prices list is empty or window size is invalid")
+def sma(prices: np.ndarray, window: int) -> float:
+    # Check for valid input
+    if prices.size == 0 or window <= 0:
+        raise ValueError("Prices array is empty or window size is invalid")
     
-    if len(prices) ==1:
+    if prices.size == 1:
         return prices[0]
-    
-    # Adjust window size if it's larger than available prices
-    window = min(window, len(prices))
 
-    # calculate 
-    sma = sum(prices[-window:])/window
+    # Adjust window size if it's larger than available prices
+    window = min(window, prices.size)
+
+    # Get the last `window` prices, ignoring NaNs
+    valid_prices = prices[-window:]
+    
+    # Calculate the simple moving average, ignoring NaNs
+    sma = np.nanmean(valid_prices)  # This will ignore NaN values when calculating the mean
+    
     return sma
 
 def sigmoid(x: float, alpha: float):
@@ -363,8 +497,8 @@ def order_imbalance_score(td: TradingData, product: str,
         td.apply_indicator(product, "imbalance_score", imbalance_score)        
         return imbalance_score
 
-    nominator = abs(total_bid_volume) - abs(total_ask_volume)
-    denominator = abs(total_bid_volume) + abs(total_ask_volume)
+    nominator = np.abs(total_bid_volume) - np.abs(total_ask_volume)
+    denominator = np.abs(total_bid_volume) + np.abs(total_ask_volume)
 
     if denominator == 0:
         td.apply_indicator(product, "imbalance_score", imbalance_score)    
@@ -446,22 +580,26 @@ def calculate_dynamic_spread(td: TradingData, product: str,
 
     return dynamic_spread
 
-def calculate_order_prices(fair_price: float, dynamic_spread: float, pressure_score: float, shift_alpha: float = 0.2):
+def calculate_order_prices(td: TradingData, product: str, fair_price: float, dynamic_spread: float, pressure_score: float, shift_alpha: float = 0.2):
     """
     Calculates buy and sell order prices based on fair price, spread, and market pressure.
     """
     shift = pressure_score * shift_alpha * dynamic_spread
     buy_price = round(fair_price - (dynamic_spread / 2) + shift) 
     sell_price = round(fair_price + (dynamic_spread / 2) + shift)
+
+    td.apply_indicator(product, "calculated_shift", shift)
+    td.apply_indicator(product, "calculated_buy", buy_price)
+    td.apply_indicator(product, "calculated_sell", sell_price)
+    
     return buy_price, sell_price
 
-def get_orders(product: str, orders: list[Order], 
+def get_orders(td: TradingData, product: str, orders: list[Order], 
                fair_price: float, best_bid: int, best_ask: int, 
                dynamic_spread: float, pressure_score: float, 
                best_bid_amount: int, best_ask_amount: int, 
                current_position: int, max_position: int,
                position_threshold_factor: float, shift_alpha: float, order_volume_factor: float):
-    # TODO: shift_alpha, position_threshold_coefficient, base_volume_coefficient, 
     """
     Places buy and sell orders based on fair price, dynamic spread, trend, and market pressure.
     """
@@ -483,7 +621,7 @@ def get_orders(product: str, orders: list[Order],
 
     
     # 3. calculate Buy & Sell Prices (ensure integers)
-    buy_price, sell_price = calculate_order_prices(fair_price, dynamic_spread, pressure_score, shift_alpha)
+    buy_price, sell_price = calculate_order_prices(td, product, fair_price, dynamic_spread, pressure_score, shift_alpha)
 
     # 4. Ensure Orders Stay Competitive
     buy_price = min(buy_price, best_bid)   # Don't bid above best bid
@@ -493,10 +631,19 @@ def get_orders(product: str, orders: list[Order],
     base_volume = order_volume_factor*max_position # ideally dynamically calculate (order spikes, order book depth, volatility)
     buy_volume = round(base_volume * (1 + pressure_score))  # Increase if buy pressure is high
     sell_volume = round(base_volume * (1 - pressure_score)) # Reduce if sell pressure is high
+    td.apply_indicator(product, "calculated_base_volume", base_volume)
+    td.apply_indicator(product, "calculated_buy_volume", buy_volume)
+    td.apply_indicator(product, "calculated_sell_volume", sell_volume)
 
     # 6. Ensure minimum order size of 1
     buy_volume = max(1, buy_volume)
     sell_volume = max(1, sell_volume)
+
+    td.apply_indicator(product, "market_order_buy_price", buy_price)
+    td.apply_indicator(product, "market_order_buy_volume", buy_volume)
+    td.apply_indicator(product, "market_order_sell_price", sell_price)
+    td.apply_indicator(product, "market_order_sell_volume", -sell_volume)
+    td.apply_indicator(product, "market_order_buy_price", buy_price)
 
     # 5. Place Orders
     orders.append(Order(product, buy_price, buy_volume))
@@ -562,11 +709,14 @@ def market_maker_strategy(td: TradingData, product: str, orders: list[Order],
 
 class Trader:
     def run(self, state: TradingState):
+        # start_time = time.time()  # Start the timer
         result = {}
         conversions = 0
         position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}
+        max_order_count = 3
+        max_history = 55
 
-        td = TradingData(state, position_limits)
+        td = TradingData(state, position_limits, max_order_count, max_history)
 
         for product in state.order_depths:
             orders: List[Order] = []
@@ -580,28 +730,53 @@ class Trader:
                                     max_position=position_limits[product], 
                                     position_threshold_factor=0.75, order_volume_factor=0.15)
 
-            # if product == "RAINFOREST_RESIN":
-            #     orders = market_maker_strategy(td, product, orders,
-            #                     fair_price_window=5, shift_alpha=.25,
-            #                     sma_small_window= 8, sma_large_window=50, sigmoid_alpha=.4,
-            #                     spread_scaling=1, trend_scaling=0.2, pressure_scaling=0.3,
-            #                     base_spread=5, min_spread_factor=0.5, max_spread_factor=2,
-            #                         max_position=position_limits[product], 
-            #                         position_threshold_factor=0.8, order_volume_factor=0.1)
+            if product == "RAINFOREST_RESIN":
+                orders = market_maker_strategy(td, product, orders,
+                                fair_price_window=5, shift_alpha=.25,
+                                sma_small_window= 8, sma_large_window=50, sigmoid_alpha=.4,
+                                spread_scaling=1, trend_scaling=0.2, pressure_scaling=0.3,
+                                base_spread=5, min_spread_factor=0.5, max_spread_factor=2,
+                                    max_position=position_limits[product], 
+                                    position_threshold_factor=0.8, order_volume_factor=0.1)
             
             result[product] = orders
-        
+
+        td.print_sim_step_data()
+
         traderData = td.get_data_as_json()
+
+        # end_time = time.time()  # End the timer
+        # execution_time = end_time - start_time  # Calculate the elapsed time
+        # print(f"Execution Time: {execution_time:.4f} seconds")
 
         return result, conversions, traderData
 
 # from mock import state, state2
 # if __name__ == "__main__":
-
 #     trader = Trader()
-#     result,conversions, data = trader.run(state)
-#     print(data)
-#     print("--- NEW STEP ---") 
-#     state2.traderData = data
-#     result,conversions, data = trader.run(state2)
-#     print(data)
+#     newstate = state
+#     for i in range(2000):
+        
+#         result,conversions, data = trader.run(newstate)
+#         newstate.traderData = data
+
+
+
+    # max_order_count = 5  # Define maximum expected order depth
+    # position_limits = {"RAINFOREST_RESIN":50,"KELP":50}
+
+    # td = TradingData(state, position_limits, max_order_count)
+
+    # trader = Trader()
+    # result,conversions, data = trader.run(state)
+    # # print(data)
+    # print()
+    # print()
+    # print()
+    # print("--- NEW STEP ---") 
+    # print()
+    # print()
+    # print()
+    # state2.traderData = data
+    # result,conversions, data = trader.run(state2)
+    # print(data)
