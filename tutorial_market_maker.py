@@ -22,7 +22,7 @@ class TradingData:
     def _from_empty_data(self, state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict]:
         return self._update_new_state({}, state, position_limits)
 
-    def _update_new_state(self, data: Dict[str, Dict[str, List]], state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict[str, List]]:
+    def _update_new_state(self, data: Dict[str, Dict[str, np.ndarray]], state: TradingState, position_limits: Dict[str, int]) -> Dict[str, Dict[str, np.ndarray]]:
         for product, order_depth in state.order_depths.items():
             # Sort buy orders from highest to lowest price (best bid to worst bid)
             buy_orders = self.sort_buy_orders(order_depth.buy_orders)
@@ -39,55 +39,57 @@ class TradingData:
             # Ensure data structure is initialized
             if product not in data:
                 data[product] = {
-                    "timestamp": [],
+                    "timestamp": np.array([]),
                     "buy_orders": [],
                     "sell_orders": [],
-                    "best_bid": [],
-                    "best_bid_volume": [],
-                    "best_ask": [],
-                    "best_ask_volume": [],
-                    "total_ask_volume": [],
-                    "total_bid_volume": [],
-                    "mid_price": [],
-                    "max_sell_position": [],
-                    "max_buy_position": [],
-                    "current_position": [],
-                    "observation_plain_value": [],
-                    "observation_bidPrice": [],
-                    "observation_askPrice": [],
-                    "observation_transportFees": [],
-                    "observation_exportTariff": [],
-                    "observation_importTariff": [],
-                    "observation_sugarPrice": [],
-                    "observation_sunlightIndex": [],
+                    "best_bid": np.array([]),
+                    "best_bid_volume": np.array([]),
+                    "best_ask": np.array([]),
+                    "best_ask_volume": np.array([]),
+                    "total_ask_volume": np.array([]),
+                    "total_bid_volume": np.array([]),
+                    "mid_price": np.array([]),
+                    "max_sell_position": np.array([]),
+                    "max_buy_position": np.array([]),
+                    "current_position": np.array([]),
+                    "observation_plain_value": np.array([]),
+                    "observation_bidPrice": np.array([]),
+                    "observation_askPrice": np.array([]),
+                    "observation_transportFees": np.array([]),
+                    "observation_exportTariff": np.array([]),
+                    "observation_importTariff": np.array([]),
+                    "observation_sugarPrice": np.array([]),
+                    "observation_sunlightIndex": np.array([]),
                 }
 
             # Append new values to each field
-            data[product]["timestamp"].append(state.timestamp)
-            data[product]["buy_orders"].append(buy_orders)
+            data[product]["timestamp"] = np.append(data[product]["timestamp"], state.timestamp)
+            data[product]["buy_orders"].append(buy_orders) 
             data[product]["sell_orders"].append(sell_orders)
-            data[product]["best_bid"].append(best_bid)
-            data[product]["best_bid_volume"].append(best_bid_volume)
-            data[product]["best_ask"].append(best_ask)
-            data[product]["best_ask_volume"].append(best_ask_volume)
-            data[product]["total_ask_volume"].append(sum(sell_orders.values()))
-            data[product]["total_bid_volume"].append(sum(buy_orders.values()))
-            data[product]["mid_price"].append(mid_price)
-            data[product]["max_sell_position"].append(max_sell_position)
-            data[product]["max_buy_position"].append(max_buy_position)
-            data[product]["current_position"].append(position)
+            data[product]["best_bid"] = np.append(data[product]["best_bid"], best_bid)
+            data[product]["best_bid_volume"] = np.append(data[product]["best_bid_volume"], best_bid_volume)
+            data[product]["best_ask"] = np.append(data[product]["best_ask"], best_ask)
+            data[product]["best_ask_volume"] = np.append(data[product]["best_ask_volume"], best_ask_volume)
+            data[product]["total_ask_volume"] = np.append(data[product]["total_ask_volume"], sum(sell_orders.values()))
+            data[product]["total_bid_volume"] = np.append(data[product]["total_bid_volume"], sum(buy_orders.values()))
+            data[product]["mid_price"] = np.append(data[product]["mid_price"], mid_price)
+            data[product]["max_sell_position"] = np.append(data[product]["max_sell_position"], max_sell_position)
+            data[product]["max_buy_position"] = np.append(data[product]["max_buy_position"], max_buy_position)
+            data[product]["current_position"] = np.append(data[product]["current_position"], position)
 
             if state.observations.plainValueObservations:
-                data[product]["observation_plain_value"].append(state.observations.plainValueObservations[product])
+                data[product]["observation_plain_value"] = np.append(data[product]["observation_plain_value"], state.observations.plainValueObservations.get(product))
 
             if state.observations.conversionObservations:
-                data[product]["observation_bidPrice"].append(state.observations.conversionObservations[product].bidPrice)
-                data[product]["observation_askPrice"].append(state.observations.conversionObservations[product].askPrice)
-                data[product]["observation_transportFees"].append(state.observations.conversionObservations[product].transportFees)
-                data[product]["observation_exportTariff"].append(state.observations.conversionObservations[product].exportTariff)
-                data[product]["observation_importTariff"].append(state.observations.conversionObservations[product].importTariff)
-                data[product]["observation_sugarPrice"].append(state.observations.conversionObservations[product].sugarPrice)
-                data[product]["observation_sunlightIndex"].append(state.observations.conversionObservations[product].sunlightIndex)
+                obs = state.observations.conversionObservations.get(product)
+                if obs:
+                    data[product]["observation_bidPrice"] = np.append(data[product]["observation_bidPrice"], obs.bidPrice)
+                    data[product]["observation_askPrice"] = np.append(data[product]["observation_askPrice"], obs.askPrice)
+                    data[product]["observation_transportFees"] = np.append(data[product]["observation_transportFees"], obs.transportFees)
+                    data[product]["observation_exportTariff"] = np.append(data[product]["observation_exportTariff"], obs.exportTariff)
+                    data[product]["observation_importTariff"] = np.append(data[product]["observation_importTariff"], obs.importTariff)
+                    data[product]["observation_sugarPrice"] = np.append(data[product]["observation_sugarPrice"], obs.sugarPrice)
+                    data[product]["observation_sunlightIndex"] = np.append(data[product]["observation_sunlightIndex"], obs.sunlightIndex)
 
         return data
     
@@ -136,13 +138,13 @@ class TradingData:
   
     def apply_indicator(self, product: str, indicator_name: str, value):
         if product not in self.data:
-            self.data[product] = {}  # Ensure product exists
-
+            self.data[product] = {}
+        
         if indicator_name not in self.data[product]:
-            self.data[product][indicator_name] = []  # Initialize as list if missing
-
+            self.data[product][indicator_name] = np.array([])
+        
         if value is not None:
-            self.data[product][indicator_name].append(value)  # Append new value
+            self.data[product][indicator_name] = np.append(self.data[product][indicator_name], value)
 
     def get_sell_order(self, sell_orders, rank=0):
         items = list(sell_orders.items())
