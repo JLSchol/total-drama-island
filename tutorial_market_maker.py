@@ -23,7 +23,6 @@ def convert_lists_to_numpy(data: Dict[str, Dict]):
     return data
 
 class TradingData:
-
     def __init__(self, state: TradingState, position_limits: Dict[str, int], max_order_count: int, max_history_len: int):
         self.position_limits = position_limits
         self.max_order_count = max_order_count
@@ -89,13 +88,13 @@ class TradingData:
             bid_prices, bid_volumes = self.sort_bid_orders(order_depth.buy_orders, self.max_order_count)
             ask_prices, ask_volumes = self.sort_ask_orders(order_depth.sell_orders, self.max_order_count)
 
-            total_bid_volume = np.sum(bid_volumes, where=~np.isnan(bid_volumes))
-            total_ask_volume = np.sum(ask_volumes, where=~np.isnan(ask_volumes))
-            total_volume = total_bid_volume + np.abs(total_ask_volume)
+            total_bid_volume = int(np.sum(bid_volumes, where=~np.isnan(bid_volumes)))
+            total_ask_volume = int(np.sum(ask_volumes, where=~np.isnan(ask_volumes)))
+            total_volume = int(total_bid_volume + np.abs(total_ask_volume))
 
             # best bid/asks
-            best_bid, best_bid_volume = (bid_prices[0], bid_volumes[0]) if bid_prices.size > 0 else (np.nan, np.nan)
-            best_ask, best_ask_volume = (ask_prices[0], ask_volumes[0]) if ask_prices.size > 0 else (np.nan, np.nan)
+            best_bid, best_bid_volume = (int(bid_prices[0]), int(bid_volumes[0])) if bid_prices.size > 0 else (np.nan, np.nan)
+            best_ask, best_ask_volume = (int(ask_prices[0]), int(ask_volumes[0])) if ask_prices.size > 0 else (np.nan, np.nan)
 
             # mid_price
             if best_bid is not None and best_ask is not None:
@@ -118,8 +117,8 @@ class TradingData:
 
             # positions
             position = int(state.position.get(product, 0))
-            max_buy_position = position_limits[product]
-            max_sell_position = -max_buy_position
+            max_buy_position = int(position_limits[product])
+            max_sell_position = int(-max_buy_position)
 
             # ensure product data (if data is {})
             self._ensure_product_data(data, product)
@@ -351,7 +350,7 @@ def adjust_buy_quantity(proposed_buy_quantity: int, max_buy_limit: int, current_
         remaining_buy_capacity = max_allowed_buy_quantity - proposed_buy_quantity
     return adjusted_buy_quantity, remaining_buy_capacity
 
-def get_best_order(order_type: str, product: str, price: float, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
+def get_best_order(order_type: str, product: str, price: int, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
     """
     Creates a buy or sell order based on the best available price and quantity.
     
@@ -365,6 +364,7 @@ def get_best_order(order_type: str, product: str, price: float, amount: int, cur
     :return: The updated list of orders
     """
     if not is_available(price, amount):
+        print(f"Invalid price or amount for {product=}: {price=}, {amount=}")
         return orders, None  # No valid price or quantity available
 
     # Flip sign: ask/sell is negative, bid/buy is positive
@@ -374,14 +374,16 @@ def get_best_order(order_type: str, product: str, price: float, amount: int, cur
     if order_type == "buy":
         order_quantity, remaining_capacity = adjust_buy_quantity(order_quantity, max_position, current_position)
         if order_quantity <= 0:
+            print(f"Invalid buy order for {product=}: {order_quantity=}, {remaining_capacity=}")
             return orders, remaining_capacity  # No valid buy order
     else:  # Sell order
         order_quantity, remaining_capacity = adjust_sell_quantity(order_quantity, max_position, current_position)
         if order_quantity >= 0:
+            print(f"Invalid sell order for {product=}: {order_quantity=}, {remaining_capacity=}")
             return orders, remaining_capacity  # No valid sell order
 
     # Append the order
-    orders.append(Order(product, price, order_quantity))
+    orders.append(Order(product, int(price), int(order_quantity)))
     return orders, remaining_capacity
 
 def get_best_orders(product: str, price: float, 

@@ -87,13 +87,13 @@ class TradingData:
             bid_prices, bid_volumes = self.sort_bid_orders(order_depth.buy_orders, self.max_order_count)
             ask_prices, ask_volumes = self.sort_ask_orders(order_depth.sell_orders, self.max_order_count)
 
-            total_bid_volume = np.sum(bid_volumes, where=~np.isnan(bid_volumes))
-            total_ask_volume = np.sum(ask_volumes, where=~np.isnan(ask_volumes))
-            total_volume = total_bid_volume + np.abs(total_ask_volume)
+            total_bid_volume = int(np.sum(bid_volumes, where=~np.isnan(bid_volumes)))
+            total_ask_volume = int(np.sum(ask_volumes, where=~np.isnan(ask_volumes)))
+            total_volume = int(total_bid_volume + np.abs(total_ask_volume))
 
             # best bid/asks
-            best_bid, best_bid_volume = (bid_prices[0], bid_volumes[0]) if bid_prices.size > 0 else (np.nan, np.nan)
-            best_ask, best_ask_volume = (ask_prices[0], ask_volumes[0]) if ask_prices.size > 0 else (np.nan, np.nan)
+            best_bid, best_bid_volume = (int(bid_prices[0]), int(bid_volumes[0])) if bid_prices.size > 0 else (np.nan, np.nan)
+            best_ask, best_ask_volume = (int(ask_prices[0]), int(ask_volumes[0])) if ask_prices.size > 0 else (np.nan, np.nan)
 
             # mid_price
             if best_bid is not None and best_ask is not None:
@@ -116,8 +116,8 @@ class TradingData:
 
             # positions
             position = int(state.position.get(product, 0))
-            max_buy_position = position_limits[product]
-            max_sell_position = -max_buy_position
+            max_buy_position = int(position_limits[product])
+            max_sell_position = int(-max_buy_position)
 
             # ensure product data (if data is {})
             self._ensure_product_data(data, product)
@@ -183,8 +183,8 @@ class TradingData:
 
         # Sort prices in descending order and reorder volumes accordingly
         sorted_indices = np.argsort(prices)[::-1]  # Sorted indices in descending order
-        sorted_prices = prices[sorted_indices]
-        sorted_volumes = volumes[sorted_indices]
+        sorted_prices = prices[sorted_indices][:max_order_count]
+        sorted_volumes = volumes[sorted_indices][:max_order_count]
 
         # Pad the arrays with np.nan if fewer than max_order_count
         prices_padded = np.full(max_order_count, np.nan, dtype=np.float64)
@@ -217,8 +217,8 @@ class TradingData:
 
         # Sort prices in ascending order and reorder volumes accordingly
         sorted_indices = np.argsort(prices)  # Sorted indices in ascending order
-        sorted_prices = prices[sorted_indices]
-        sorted_volumes = volumes[sorted_indices]
+        sorted_prices = prices[sorted_indices][:max_order_count]
+        sorted_volumes = volumes[sorted_indices][:max_order_count]
 
         # Pad the arrays with np.nan if fewer than max_order_count
         prices_padded = np.full(max_order_count, np.nan, dtype=np.float64)
@@ -348,7 +348,7 @@ def adjust_buy_quantity(proposed_buy_quantity: int, max_buy_limit: int, current_
         remaining_buy_capacity = max_allowed_buy_quantity - proposed_buy_quantity
     return adjusted_buy_quantity, remaining_buy_capacity
 
-def get_best_order(order_type: str, product: str, price: float, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
+def get_best_order(order_type: str, product: str, price: int, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
     """
     Creates a buy or sell order based on the best available price and quantity.
     
@@ -362,6 +362,7 @@ def get_best_order(order_type: str, product: str, price: float, amount: int, cur
     :return: The updated list of orders
     """
     if not is_available(price, amount):
+        print(f"Invalid price or amount for {product=}: {price=}, {amount=}")
         return orders, None  # No valid price or quantity available
 
     # Flip sign: ask/sell is negative, bid/buy is positive
@@ -371,26 +372,29 @@ def get_best_order(order_type: str, product: str, price: float, amount: int, cur
     if order_type == "buy":
         order_quantity, remaining_capacity = adjust_buy_quantity(order_quantity, max_position, current_position)
         if order_quantity <= 0:
+            print(f"Invalid buy order for {product=}: {order_quantity=}, {remaining_capacity=}")
             return orders, remaining_capacity  # No valid buy order
     else:  # Sell order
         order_quantity, remaining_capacity = adjust_sell_quantity(order_quantity, max_position, current_position)
         if order_quantity >= 0:
+            print(f"Invalid sell order for {product=}: {order_quantity=}, {remaining_capacity=}")
             return orders, remaining_capacity  # No valid sell order
 
     # Append the order
-    orders.append(Order(product, price, order_quantity))
+    orders.append(Order(product, int(price), int(order_quantity)))
     return orders, remaining_capacity
 
 def get_best_orders(product: str, fair_price: float, 
-                    best_ask: int, best_ask_amount: int, 
-                    best_bid: int, best_bid_amount: int, 
-                    current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
+                    best_ask: int, best_ask_volume: int, 
+                    best_bid: int, best_bid_volume: int, 
+                    current_position: int, max_buy_position: int, max_sell_position: int, 
+                    orders: List[Order]) -> List[Order]:
 
     if best_ask is not None and best_ask < fair_price:
-        orders, _ = get_best_order("buy", product, best_ask, best_ask_amount, current_position, max_position, orders)
+        orders, _ = get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
     # Place sell order if best bid is higher than the fair price
     if best_bid is not None and best_bid > fair_price:
-        orders, _ = get_best_order("sell", product, best_bid, best_bid_amount, current_position, -max_position, orders)
+        orders, _ = get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
     return orders
 
 def sma(prices: np.ndarray, window: int) -> float:
@@ -412,7 +416,7 @@ def sma(prices: np.ndarray, window: int) -> float:
     
     return sma
 
-def sma_strategy(td: TradingData, product: str, max_position: int, orders: list[Order], 
+def sma_strategy(td: TradingData, product: str, orders: list[Order], 
                  price_type: str, sma_window: int):
     allowed_types = ["mid_price", "weighted_mid_price"]
     if price_type not in allowed_types:
@@ -425,14 +429,27 @@ def sma_strategy(td: TradingData, product: str, max_position: int, orders: list[
 
     # 2 get the orders
     best_ask = td.get_last_field(product, "best_ask")
-    best_ask_amount = td.get_last_field(product, "best_ask_amount")
+    best_ask_volume = td.get_last_field(product, "best_ask_volume")
     best_bid = td.get_last_field(product, "best_bid")
-    best_bid_amount = td.get_last_field(product, "best_bid_amount")
+    best_bid_volume = td.get_last_field(product, "best_bid_volume")
     current_position = td.get_last_field(product, "current_position")
+    max_buy_position = td.get_last_field(product, "max_buy_position")
+    max_sell_position = td.get_last_field(product, "max_sell_position")
+
+    # if best_ask is not None and best_ask < fair_price:
+    #     print("trying to buy")
+    #     orders, remaining_capacity = get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
+
+    # if best_bid is not None and best_bid > fair_price:
+    #     print("trying to sell")
+    #     orders, remaining_capacity = get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
+
+
+    # return orders
 
     return get_best_orders(product, fair_price, 
-                        best_ask, best_ask_amount, best_bid, best_bid_amount,
-                        current_position, max_position, orders)
+                        best_ask, best_ask_volume, best_bid, best_bid_volume,
+                        current_position, max_buy_position, max_sell_position, orders)
 
 
 class Trader:
@@ -441,7 +458,7 @@ class Trader:
         conversions = 0
         position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}
         max_order_count = 4 #  order book depth + 1 = 4 (need the +1 to be able to pop from list)
-        max_history = 55
+        max_history = 15
 
         td = TradingData(state, position_limits, max_order_count, max_history)
 
@@ -449,10 +466,12 @@ class Trader:
             orders: List[Order] = []
 
             if product == "KELP":
-                orders = sma_strategy(td, product, position_limits[product], orders, "mid_price", 5)
+                # orders = sma_strategy(td, product, orders, "mid_price", 5)
+                orders = sma_strategy(td, product, orders, "weighted_mid_price", 5)
 
             if product == "RAINFOREST_RESIN":
-                orders = sma_strategy(td, product, position_limits[product], orders, "mid_price", 5)
+                # orders = sma_strategy(td, product, orders, "mid_price", 5)
+                orders = sma_strategy(td, product, orders, "weighted_mid_price", 5)
             
             result[product] = orders
 
@@ -464,12 +483,12 @@ class Trader:
 
 # from mock import state, state2
 # if __name__ == "__main__":
-    # trader = Trader()
-    # newstate = state
-    # for i in range(3):
+#     trader = Trader()
+#     newstate = state
+#     for i in range(3):
         
-    #     result,conversions, data = trader.run(newstate)
-    #     newstate.traderData = data
+#         result,conversions, data = trader.run(newstate)
+#         newstate.traderData = data
 
 
     # trader = Trader()

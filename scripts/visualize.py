@@ -75,7 +75,7 @@ if __name__ == '__main__':
     base_path = os.path.join(script_dir, '..', 'logs', 'tutorial')
 
     # what to visualize and load
-    directories = ["2503311032_market_maker", "2503311105_ma_best", "2503311105_ma_second_best", "2503311120_dc", "2503311120_do_nothing", "2503311120_example"]  # Add more directories as needed
+    directories = ["2503311105_ma_best", "2504061236_ma_midprice_5", "2504061237_ma_weighted_midprice_5"]  # Add more directories as needed
 
     for directory in directories:
         csv_file = os.path.join(base_path, directory, "processed", f"{directory}_activities.csv")
