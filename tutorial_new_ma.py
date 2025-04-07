@@ -466,13 +466,14 @@ class Trader:
             orders: List[Order] = []
 
             if product == "KELP":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+                orders = sma_strategy(td, product, orders, "mid_price", 20)
 
             if product == "RAINFOREST_RESIN":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+                orders = sma_strategy(td, product, orders, "mid_price", 20)
 
             if product == "SQUID_INK":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+                pass
+                # orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
             
             result[product] = orders
 
