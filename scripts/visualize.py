@@ -72,10 +72,11 @@ if __name__ == '__main__':
     script_dir = os.path.dirname(os.path.abspath(__file__))
     
     # Define the base path relative to the script's location
-    base_path = os.path.join(script_dir, '..', 'logs', 'tutorial')
+    # base_path = os.path.join(script_dir, '..', 'logs', 'tutorial')
+    base_path = os.path.join(script_dir, '..', 'logs', 'round1')
 
     # what to visualize and load
-    directories = ["2503311105_ma_best", "2504061236_ma_midprice_5", "2504061237_ma_weighted_midprice_5"]  # Add more directories as needed
+    directories = ["2504071725_sma5_sma5_sma5", "2504071725_sma10_sma10_sma10", "2504071725_sma20_sma20_sma20", "2504071725_sma40_sma40_sma40", "2504071725_sma80_sma80_sma80", "2504071725_wsma20_wsma20_wsma20"]  # Add more directories as needed
 
     for directory in directories:
         csv_file = os.path.join(base_path, directory, "processed", f"{directory}_activities.csv")

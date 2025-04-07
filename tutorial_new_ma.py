@@ -456,9 +456,9 @@ class Trader:
     def run(self, state: TradingState):
         result = {}
         conversions = 0
-        position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50}
+        position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50, "SQUID_INK": 50}
         max_order_count = 4 #  order book depth + 1 = 4 (need the +1 to be able to pop from list)
-        max_history = 15
+        max_history = 25
 
         td = TradingData(state, position_limits, max_order_count, max_history)
 
@@ -466,12 +466,13 @@ class Trader:
             orders: List[Order] = []
 
             if product == "KELP":
-                # orders = sma_strategy(td, product, orders, "mid_price", 5)
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 5)
+                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
 
             if product == "RAINFOREST_RESIN":
-                # orders = sma_strategy(td, product, orders, "mid_price", 5)
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 5)
+                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+
+            if product == "SQUID_INK":
+                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
             
             result[product] = orders
 

@@ -1,0 +1,24 @@
+sma findings profit los:
+- rainforest: 
+    - sma_5: 814
+    - sma_10: 858
+    - **sma_20: 862**
+    - *wsma_20*: 810
+    - sma_40: 816
+    - sma_80: 850
+- kelp: 
+    - sma_5: 212.8  
+    - sma_10: 210.8
+    - sma_20: **216.8**
+    - *wsma_20*: 215.4
+    - sma_40: 213.4
+    - sma_80: 208.6
+- squid_ink: 
+    - **sma not profitable (for weighted and unweigted midprice values)
+    - **higher values better since price is steadily decreasing**
+    - sma_5: -5852.73
+    - sma_10: -6544.47
+    - sma_20: -4703.49
+    - *wsma_20*: -4499.49
+    - sma_40: -3365.13
+    - sma_80: -2620.94
