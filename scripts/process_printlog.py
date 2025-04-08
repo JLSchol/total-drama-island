@@ -53,9 +53,6 @@ def add_sma_crossover_signal(df, sma_fast_col, sma_slow_col, id_base_name):
 
     return df, signal_name
 
-import pandas as pd
-import numpy as np
-
 def add_sma_crossover_signal_with_spike_filter(df, sma_fast_col, sma_slow_col, price_col, id_base_name, spike_threshold=0.02, validation_period=3):
     """
     Adds a signal column based on SMA crossover strategy, with a price spike filter.
@@ -303,6 +300,7 @@ def analyze_crossover(df, sma_fast, sma_slow, strat_name, price_col_name, df_sim
         pd.DataFrame: Updated df_metrics with performance metrics.
     """
     df, signal_name = add_sma_crossover_signal(df, sma_fast, sma_slow, strat_name)
+    # df, signal_name = add_sma_crossover_signal_with_spike_filter(df, sma_fast, sma_slow, price_col_name, strat_name)
     df_simulation = simulate_trades_from_signals(df, signal_name, strat_name, price_col_name, df_simulation)
     df_metrics = add_profit_factor(df_metrics, df_simulation)
     df_metrics = add_sharpe_ratio(df_metrics, df_simulation)
