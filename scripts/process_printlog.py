@@ -48,10 +48,61 @@ def add_sma_crossover_signal(df, sma_fast_col, sma_slow_col, id_base_name):
     signal_name = f"{id_base_name}_signal"
     df[signal_name] = 0  # Default hold
 
-    df.loc[df[sma_fast_col] > df[sma_slow_col], signal_name] = 1   # Buy
-    df.loc[df[sma_fast_col] < df[sma_slow_col], signal_name] = -1  # Sell
+    df.loc[df[sma_fast_col] > df[sma_slow_col], signal_name] = 1   
+    df.loc[df[sma_fast_col] < df[sma_slow_col], signal_name] = -1  
 
     return df, signal_name
+
+import pandas as pd
+import numpy as np
+
+def add_sma_crossover_signal_with_spike_filter(df, sma_fast_col, sma_slow_col, price_col, id_base_name, spike_threshold=0.02, validation_period=3):
+    """
+    Adds a signal column based on SMA crossover strategy, with a price spike filter.
+
+    Parameters:
+        df (pd.DataFrame): DataFrame containing the fast and slow SMA columns, and price data.
+        sma_fast_col (str): Column name of the fast SMA.
+        sma_slow_col (str): Column name of the slow SMA.
+        price_col (str): Column name of the price data.
+        id_base_name (str): Base name for the signal column.
+        spike_threshold (float): Threshold for detecting price spikes (as a percentage).
+        validation_period (int): Number of periods to wait for confirmation after a crossover.
+
+    Returns:
+        pd.DataFrame: DataFrame with added 'sma_signal' column, incorporating spike filtering.
+    """
+    # Step 1: Calculate the baseline SMA crossover signal
+    signal_name = f"{id_base_name}_signal"
+    df[signal_name] = 0  # Default hold (no position)
+    
+    df.loc[df[sma_fast_col] > df[sma_slow_col], signal_name] = 1  # Long signal
+    df.loc[df[sma_fast_col] < df[sma_slow_col], signal_name] = -1  # Short signal
+
+    # Step 2: Identify significant price spikes
+    price_change = df[price_col].pct_change()  # Calculate percentage price change
+    df['price_spike'] = np.abs(price_change) > spike_threshold  # Flag rows where price spike occurs
+    
+    # Step 3: Suppress signal during spikes
+    in_spike = False
+    for i in range(1, len(df)):
+        # If a spike is detected, suppress the signal for the current period
+        if df['price_spike'].iloc[i]:
+            in_spike = True
+            df[signal_name].iloc[i] = 0  # Set the signal to neutral during a spike
+        elif in_spike:
+            # After the spike, check if price stabilizes
+            if i - last_spike >= validation_period:
+                in_spike = False  # Reset the spike state once the validation period passes
+            df[signal_name].iloc[i] = 0  # Continue suppressing signal until validation period is over
+        
+        # Save the index of the last spike
+        if df['price_spike'].iloc[i]:
+            last_spike = i
+
+    # Step 4: Return the DataFrame with the modified signal
+    return df, signal_name
+
 
 def simulate_trades_from_signals(df, signal_col, strategy_name, price_col='mid_price', df_simulation=None):
     """
@@ -357,7 +408,7 @@ def plot_crossover(df, df_simulation, df_metrics, plot_info):
             ax.grid(True)
 
         plt.tight_layout()
-        plt.subplots_adjust(top=0.9)  # Adjust top margin to make room for suptitle
+        # plt.subplots_adjust(top=0.9)  # Adjust top margin to make room for suptitle
         plt.suptitle(f'Product: {product}', fontsize=16, y=1.02)
 
 def plot_df_columns(df, columns, products, kind='line', titles=None, figsize=(12, 4)):
@@ -406,46 +457,100 @@ def plot_df_columns(df, columns, products, kind='line', titles=None, figsize=(12
     plt.xlabel("Index")
     plt.tight_layout()
 
+def single_crossover_analyse(df, product, fast_l, slow_l, price_col='mid_price'):
+    # calculated sma's
+    df, sma_name_fast = add_simpel_moving_average(df, price_col, fast_l)
+    df, sma_name_slow = add_simpel_moving_average(df, price_col, slow_l)
 
-if __name__ == "__main__":
+    # analyse crossover
+    name = f"sma{fast_l}x{slow_l}"
+    sma_strat_params = {"name":name, "price": price_col, "fast": sma_name_fast, "slow": sma_name_slow}
+    df, df_simulation, df_metrics = analyze_crossover(df, 
+                                        sma_strat_params["fast"], sma_strat_params["slow"], sma_strat_params["name"], sma_strat_params["price"], 
+                                        None, None)
 
+    # plot
+    plot_info = { 
+                "products": [product],
+                "strategies": [sma_strat_params]}
+    plot_crossover(df, df_simulation, df_metrics, plot_info)
+
+    # print
+    df_product_metric = df_metrics.loc[df_metrics['product'] == 'SQUID_INK']
+    print(df_product_metric.head(10))
+
+def all_crossover_in_sample_analysis(df):
     # Load the DataFrame and append some sma's
-    df = load_df("round1", "2504071725_sma20_sma20_sma20")
     df, sma_name_5 = add_simpel_moving_average(df, "mid_price", 5)
     df, sma_name_10 = add_simpel_moving_average(df, "mid_price", 10)
+    df, sma_name_15 = add_simpel_moving_average(df, "mid_price", 15)
     df, sma_name_20 = add_simpel_moving_average(df, "mid_price", 20)
+    df, sma_name_30 = add_simpel_moving_average(df, "mid_price", 30)
     df, sma_name_40 = add_simpel_moving_average(df, "mid_price", 40)
 
     # define what to plot
-    # products = ['RAINFOREST_RESIN', 'KELP', 'SQUID_INK']
-    products = ['SQUID_INK']
     sma5x20_strat = {"name":"sma5x20", "price": "mid_price", "fast": sma_name_5, "slow": sma_name_20}
+    sma10x30_strat = {"name":"sma10x30", "price": "mid_price", "fast": sma_name_10, "slow": sma_name_30}
+    sma15x30_strat = {"name":"sma15x30", "price": "mid_price", "fast": sma_name_15, "slow": sma_name_30}
     sma10x40_strat = {"name":"sma10x40", "price": "mid_price", "fast": sma_name_10, "slow": sma_name_40}
-    plot_info = { 
-                "products": products,
-                "strategies": [sma5x20_strat, sma10x40_strat]}
+    sma15x40_strat = {"name":"sma15x40", "price": "mid_price", "fast": sma_name_15, "slow": sma_name_40}
+    sma20x40_strat = {"name":"sma20x40", "price": "mid_price", "fast": sma_name_20, "slow": sma_name_40}
 
     # simulate trades and calculate metrics
     df, df_simulation, df_metrics = analyze_crossover(df, 
                                         sma5x20_strat["fast"], sma5x20_strat["slow"], sma5x20_strat["name"], sma5x20_strat["price"], 
                                         None, None)
     df, df_simulation, df_metrics = analyze_crossover(df, 
+                                        sma10x30_strat["fast"], sma10x30_strat["slow"], sma10x30_strat["name"], sma10x30_strat["price"],
+                                        df_simulation, df_metrics)
+    df, df_simulation, df_metrics = analyze_crossover(df, 
+                                        sma15x30_strat["fast"], sma15x30_strat["slow"], sma15x30_strat["name"], sma15x30_strat["price"],
+                                        df_simulation, df_metrics)
+    df, df_simulation, df_metrics = analyze_crossover(df, 
                                         sma10x40_strat["fast"], sma10x40_strat["slow"], sma10x40_strat["name"], sma10x40_strat["price"],
+                                        df_simulation, df_metrics)
+    df, df_simulation, df_metrics = analyze_crossover(df, 
+                                        sma15x40_strat["fast"], sma15x40_strat["slow"], sma15x40_strat["name"], sma15x40_strat["price"],
+                                        df_simulation, df_metrics)
+    df, df_simulation, df_metrics = analyze_crossover(df, 
+                                        sma20x40_strat["fast"], sma20x40_strat["slow"], sma20x40_strat["name"], sma20x40_strat["price"],
                                         df_simulation, df_metrics)
 
     # plot/print trades, metrics, and strategies
+    products = ['RAINFOREST_RESIN', 'KELP', 'SQUID_INK']
+    # products = ['SQUID_INK']
+
+    # split in two plots otherwise to big
+    plot_info = { 
+                "products": products,
+                "strategies": [sma5x20_strat, sma10x30_strat, sma15x30_strat]}
     plot_crossover(df, df_simulation, df_metrics, plot_info)
 
-    print(df.head(10))
+    plot_info = { 
+                "products": products,
+                "strategies": [sma10x40_strat, sma15x40_strat, sma20x40_strat]}
+    plot_crossover(df, df_simulation, df_metrics, plot_info)
+
+    print(df.head(5))
     print()
-    print(df_simulation.head(10))
+    print(df_simulation.head(5))
     print()
-    print(df_metrics.head(10))
+    print(df_metrics.head(6*3))
 
     # save to csv ()
     save_df(df, "round1", "2504071725_sma20_sma20_sma20","df_cross.csv")
     save_df(df_simulation, "round1", "2504071725_sma20_sma20_sma20","df_cross_sim.csv")
     save_df(df_metrics, "round1", "2504071725_sma20_sma20_sma20","df_cross_metric.csv")
+    # call show last
+
+if __name__ == "__main__":
+    df = load_df("round1", "2504071725_sma20_sma20_sma20")
+
+    # # analyse everything crossover 
+    # all_crossover_in_sample_analysis(df)
+
+    # analyse one
+    single_crossover_analyse(df, "SQUID_INK", 15, 30)
 
     # # usefull quick plotting of columns
     # plot_df_columns(
@@ -455,5 +560,4 @@ if __name__ == "__main__":
     # kind="line",
     # titles=None)    
    
-    # call show last
     plt.show()

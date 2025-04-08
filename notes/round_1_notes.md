@@ -22,3 +22,17 @@ sma findings profit los:
     - *wsma_20*: -4499.49
     - sma_40: -3365.13
     - sma_80: -2620.94
+
+
+**simple moving average crossover tactic**
+            product strategy_name  profit_factor  sharpe_ratio
+0              KELP      sma10x30       0.006289    -11.150626
+1  RAINFOREST_RESIN      sma10x30       0.033333    -11.988106
+2         SQUID_INK      sma10x30       0.615385     -1.100875
+3              KELP      sma15x30       0.038095     -8.149885
+4  RAINFOREST_RESIN      sma15x30       0.240106     -5.738601
+5         SQUID_INK      sma15x30       1.010471      0.020503
+6              KELP      sma10x40       0.000000    -13.152894
+7  RAINFOREST_RESIN      sma10x40       0.036913    -12.798961
+8         SQUID_INK      sma10x40       0.907514     -0.179364
+9              KELP      sma15x40       0.120690     -6.263926
