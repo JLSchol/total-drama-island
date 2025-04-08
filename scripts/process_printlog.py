@@ -309,24 +309,36 @@ def plot_crossover(df, df_simulation, df_metrics, plot_info):
                 exit_added = True
 
             # Shade background between entry and exit
-            active_trades = df_strat.dropna(subset=['entry_price', 'exit_price'])
-            for _, trade in active_trades.iterrows():
-                start = trade['timestamp']
-                end = trade['timestamp']  # default fallback if exit missing (shouldn't happen if both present)
-                # Look ahead to find the matching exit
-                subsequent_rows = df_strat[df_strat['timestamp'] > start]
-                exit_row = subsequent_rows[subsequent_rows['exit_price'].notna()].head(1)
-                if not exit_row.empty:
-                    end = exit_row['timestamp'].values[0]
-                    pnl = trade['pnl']
-                    # Color for the background: light green for long, light red for short
-                    color = 'lightgreen' if trade['position'] == 1 else 'lightcoral'
-                    ax.axvspan(start, end, color=color, alpha=0.2)
-                    # Annotate PnL on the chart (display at the midpoint of entry/exit)
-                    mid_point = start + (end - start) / 2
-                    ax.text(mid_point, df_plot[price_col].iloc[df_plot['timestamp'].searchsorted(mid_point)],
-                            f'PnL: {pnl:.2f}', ha='center', va='center', fontsize=9,
-                            color='black', bbox=dict(facecolor='white', alpha=0.7))
+            in_position = False
+            entry_time, position = None, None
+
+            for _, row in df_strat.iterrows():
+                # 🟥 Exit logic comes first
+                if in_position and pd.notna(row['exit_price']):
+                    exit_time = row['timestamp']
+                    pnl = row['pnl']
+                    color = 'lightgreen' if position == 1 else 'lightcoral'
+                    ax.axvspan(entry_time, exit_time, color=color, alpha=0.2)
+
+                    # Midpoint label
+                    midpoint_time = entry_time + (exit_time - entry_time) / 2
+                    price_mid_idx = df_plot['timestamp'].searchsorted(midpoint_time)
+                    if 0 <= price_mid_idx < len(df_plot):
+                        price_mid = df_plot.iloc[price_mid_idx][price_col]
+                        ax.text(midpoint_time, price_mid, f'PnL: {pnl:.2f}',
+                                ha='center', va='center', fontsize=9,
+                                color='black', bbox=dict(facecolor='white', alpha=0.7))
+
+                    in_position = False
+                    entry_time, position = None, None  # reset
+
+                # 🟩 Entry logic comes second
+                if pd.notna(row['entry_price']):
+                    in_position = True
+                    entry_time = row['timestamp']
+                    position = row['position']
+
+
                     
             # Fetch performance metrics from df_metrics
             metric_row = df_metrics[(df_metrics['product'] == product) & (df_metrics['strategy_name'] == strategy_name)]
