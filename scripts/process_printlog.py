@@ -494,6 +494,7 @@ def single_crossover_analyse(df, product, fast_l, slow_l, mom_period, mom_thresh
                                         None, None)
 
     # plot
+    # cross_strat_params["name"] = cross_mom_strat_name #update name for plot title
     plot_info = { 
                 "products": [product],
                 "strategies": [cross_strat_params]}
@@ -588,17 +589,83 @@ def all_crossover_in_sample_analysis(df):
     save_df(df_metrics, round, directory,"df_cross_metric.csv")
     # call show last
 
+def analyse_cross_momentum_params(df, params, price_col='mid_price'):
+
+    df_original = df.copy()
+    df_simulation = None
+    df_metrics = None
+    for f,s,m,t in params:
+       
+        # calculated columns needed for signal (sma's)
+        df, sma_name_fast = add_simpel_moving_average(df, price_col, f)
+        df, sma_name_slow = add_simpel_moving_average(df, price_col, s)
+
+        # define name strategy and params
+        cross_strat_name = f"sma{f}x{s}"
+        cross_strat_params = {"name":cross_strat_name, "price": price_col, "fast": sma_name_fast, "slow": sma_name_slow}
+
+        # create the actual signal
+        df, crossover_signal_name = add_sma_crossover_signal(df, sma_name_fast, sma_name_slow, cross_strat_params["name"])
+        # add the momentum filter -df, crossover_signal_name, id_base_name, momentum_period=30, momentum_threshold=0.0-
+        cross_mom_strat_name = f"{cross_strat_name}xmom{m}x{t}"
+        df, signal_momentum_name = add_momentum_crossover_filter_signal(df, crossover_signal_name, 
+                                                                        cross_mom_strat_name, m, t)
+
+        # analyse crossover
+        df, df_simulation, df_metrics = analyze_signal(df, 
+                                            signal_momentum_name, cross_mom_strat_name, cross_strat_params["price"], 
+                                            df_simulation, df_metrics)
+        # reset
+        df = df_original.copy()
+        df_simulation = None
+
+    return df_metrics
+
+def analyse_and_inspect_cross_momentum():
+    grid = generate_param_grid(16, 31, 32, 0.0035, 2, 4, 4, 0.001)
+    df_metrics = analyse_cross_momentum_params(df, grid)
+    df_squid = df_metrics.loc[df_metrics['product'] == 'SQUID_INK']
+    df_squid = df_squid.sort_values(by=['profit_factor'], ascending=False)
+    df_squid.to_csv("squid_metrics.csv", index=False)
+    print(df_squid.head(100))
+
+def generate_param_grid(
+    fast_l_base=16, slow_l_base=31, 
+    mom_period_base=31, mom_threshold_base=0.0035,
+    delta_fast=2, delta_slow=4, 
+    delta_mom_period=4, delta_mom_thresh=0.001):
+
+    fast_ls = range(fast_l_base - delta_fast, fast_l_base + delta_fast + 1, 1)
+    slow_ls = range(slow_l_base - delta_slow, slow_l_base + delta_slow + 1, 2)
+    mom_periods = range(mom_period_base - delta_mom_period, mom_period_base + delta_mom_period + 1, 1)
+    mom_thresholds = np.arange(
+        mom_threshold_base - delta_mom_thresh, 
+        mom_threshold_base + delta_mom_thresh + 0.0005, 
+        0.0005
+    )
+
+    print(f"fast: {list(fast_ls)}, slow: {list(slow_ls)}, mom_periods: {list(mom_periods)}, mom_thresholds: {mom_thresholds}")
+
+    grid = []
+    for f in fast_ls:
+        for s in slow_ls:
+            if s > f:  # ensure slow > fast
+                for m in mom_periods:
+                    if m >= s:  # ensure momentum period > slow period
+                        for t in mom_thresholds:
+                            grid.append([f, s, m, round(t, 5)])
+    
+    return grid
 
 if __name__ == "__main__":
     df = load_df("round1", "2504071725_sma20_sma20_sma20")
 
-    # all_crossover_in_sample_analysis(df)
-    all_crossover_in_sample_analysis(df)
+    single_crossover_analyse(df, "SQUID_INK", 16, 27, 28, 0.0045)
 
-    # # analyse one
+    # analyse one
     # product = "SQUID_INK"
     # fast_l, slow_l = 15, 30
-    # mom_period, mom_threshold = 30, 0.0035
+    # mom_period, mom_threshold = 31, 0.0035
     # single_crossover_analyse(df, "SQUID_INK", 
     #                          fast_l, slow_l,
     #                          mom_period, mom_threshold)
