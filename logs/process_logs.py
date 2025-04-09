@@ -218,7 +218,7 @@ def printlogs_from_sandox_cxv(file_path, root, name):
 if __name__ == "__main__":
     log_dir = os.path.dirname(__file__)
     # round_1_dir = os.path.join(log_dir, "round1")
-    specific_dir = os.path.join(log_dir, "round1", "2504071725_wsma20_wsma20_wsma20")
+    specific_dir = os.path.join(log_dir, "round1", "2504091450_sma20_sma20_pass")
     split_all_logs(specific_dir)
     print("splitting complete")
     process_all_tradehistory(specific_dir)

@@ -76,7 +76,8 @@ if __name__ == '__main__':
     base_path = os.path.join(script_dir, '..', 'logs', 'round1')
 
     # what to visualize and load
-    directories = ["2504071725_sma5_sma5_sma5", "2504071725_sma10_sma10_sma10", "2504071725_sma20_sma20_sma20", "2504071725_sma40_sma40_sma40", "2504071725_sma80_sma80_sma80", "2504071725_wsma20_wsma20_wsma20"]  # Add more directories as needed
+    # directories = ["2504071725_sma5_sma5_sma5", "2504071725_sma10_sma10_sma10", "2504071725_sma20_sma20_sma20", "2504071725_sma40_sma40_sma40", "2504071725_sma80_sma80_sma80", "2504071725_wsma20_wsma20_wsma20"]  # Add more directories as needed
+    directories = ["2504091450_sma20_sma20_pass","2504091447_cross_mom_best", "2504091447_cross_mom_best_fp"]
 
     for directory in directories:
         csv_file = os.path.join(base_path, directory, "processed", f"{directory}_activities.csv")
