@@ -73,18 +73,36 @@ if __name__ == '__main__':
     
     # Define the base path relative to the script's location
     # base_path = os.path.join(script_dir, '..', 'logs', 'tutorial')
-    base_path = os.path.join(script_dir, '..', 'logs', 'round1')
+    # base_path = os.path.join(script_dir, '..', 'logs', 'round1')
+    base_path = os.path.join(script_dir, '..', 'logs', 'round2')
 
     # what to visualize and load
     # directories = ["2504071725_sma5_sma5_sma5", "2504071725_sma10_sma10_sma10", "2504071725_sma20_sma20_sma20", "2504071725_sma40_sma40_sma40", "2504071725_sma80_sma80_sma80", "2504071725_wsma20_wsma20_wsma20"]  # Add more directories as needed
-    directories = ["2504091450_sma20_sma20_pass","2504101120_sma20_sma20_new"]
+    # directories = ["2504091450_sma20_sma20_pass","2504101120_sma20_sma20_new"]
+    directories = ["do_nothing", "sma_5", "sma_10", "sma_20", "sma_30", "wsma_5", "wsma_20"]
 
+    all_dfs = []
     for directory in directories:
         csv_file = os.path.join(base_path, directory, "processed", f"{directory}_activities.csv")
         plot_path = os.path.join(base_path, directory, "plots", "profit_and_loss.png")
 
         if os.path.exists(csv_file):
             df = get_activities_df(csv_file)
+            df.columns = df.columns.str.strip()
+            
+            df["strategy"] = directory
+
+            # Sort to make sure the last entry per product is the actual last
+            df = df.sort_values(by='timestamp')  # replace 'timestamp' with your actual time column
+
+            # Group and take last row per product
+            grouped = df.groupby('product', as_index=False).last()
+
+            # Keep only necessary columns
+            grouped = grouped[['strategy', 'product', 'profit_and_loss']]
+            all_dfs.append(grouped)
+            
+
             penl = plot_profit_loss(df, plot_path, directory)
             print(f"Plot saved: {plot_path}")
             print("\n")
@@ -92,4 +110,9 @@ if __name__ == '__main__':
             print("---\n")
         else:
             print(f"File not found: {csv_file}")
+    
+    summary_df = pd.concat(all_dfs, ignore_index=True)
+    print(summary_df)
+    print(summary_df.loc[summary_df.groupby('product')['profit_and_loss'].idxmax()])
+
     plt.show()
