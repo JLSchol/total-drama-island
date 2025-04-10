@@ -440,6 +440,55 @@ def sma_strategy(td: TradingData, product: str, orders: list[Order],
                         best_ask, best_ask_volume, best_bid, best_bid_volume,
                         current_position, max_buy_position, max_sell_position, orders)
 
+def squid_ink_strategy(td: TradingData, product: str, orders: list[Order],
+                       sma_window, base_spread_threshold, weight_fp=0.7, weigth_mid=0.3) -> list[Order]:
+    sma_window = 20
+    base_spread_threshold = 2  # Typical spread trigger
+
+    # 1. Fair price = SMA of weighted mid price
+    weighted_mid_prices = td.get_field(product, "weighted_mid_price")
+    fair_price_sma = sma(weighted_mid_prices, sma_window)
+
+    # Get current best prices
+    best_ask = td.get_last_field(product, "best_ask")
+    best_ask_volume = td.get_last_field(product, "best_ask_volume")
+    best_bid = td.get_last_field(product, "best_bid")
+    best_bid_volume = td.get_last_field(product, "best_bid_volume")
+
+    # 2. Calculate real-time mid price for more reactive fair price (if available)
+    if best_ask is not None and best_bid is not None:
+        real_time_mid = (best_ask + best_bid) / 2
+        # Weighted fair price: lean 70% on SMA, 30% on real-time mid
+        fair_price = weight_fp * fair_price_sma + weigth_mid * real_time_mid
+    else:
+        fair_price = fair_price_sma  # Fallback
+
+    td.apply_indicator(product, "fair_price", fair_price)
+
+    # 3. Get positions
+    current_position = td.get_last_field(product, "current_position")
+    max_buy_position = td.get_last_field(product, "max_buy_position")
+    max_sell_position = td.get_last_field(product, "max_sell_position")
+
+    # 4. Adaptive spread logic
+    if best_ask is not None and best_bid is not None:
+        spread = best_ask - best_bid
+
+        # Only act if spread is reasonable
+        if spread >= base_spread_threshold:
+
+            # Buy if price is favorable
+            if best_ask < fair_price:
+                orders, _ = get_best_order("buy", product, best_ask, best_ask_volume,
+                                           current_position, max_buy_position, orders)
+
+            # Sell if price is favorable
+            if best_bid > fair_price:
+                orders, _ = get_best_order("sell", product, best_bid, best_bid_volume,
+                                           current_position, max_sell_position, orders)
+
+    return orders
+
 
 class Trader:
     def run(self, state: TradingState):
@@ -461,7 +510,8 @@ class Trader:
                 orders = sma_strategy(td, product, orders, "mid_price", 20)
 
             if product == "SQUID_INK":
-                pass
+                orders = squid_ink_strategy(td, product, orders, 20, 5)
+                # pass
                 # orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
             
             result[product] = orders
