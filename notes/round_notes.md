@@ -92,3 +92,49 @@ container nr, multiplier, inhabitants, nr other participants
 8,20,2,?
 9,73,4,?
 10,89,8,?
+
+
+If simulation runs out the price is closed (close to the midprice, with a factor of around 1.14)
+Unrealized Loss=(Entry Price−Mid Price)×Adjustment Factor(1.14)
+they actually calculator pnl by buy-sell =
+
+buy99600 and sell99900 squid ink
+99600,SUBMISSION,,SQUID_INK,SEASHELLS,1895,1
+99800,,SUBMISSION,SQUID_INK,SEASHELLS,1892,1
+1;99600;SQUID_INK;1893;7;1892;29;;;1895;29;;;;;1894.0;0.0
+1;99700;SQUID_INK;1893;26;;;;;1896;25;;;;;1894.5;-0.5721435546875
+1;99800;SQUID_INK;1892;7;1891;26;;;1894;26;;;;;1893.0;-2.1895751953125
+1;99900;SQUID_INK;1891;28;;;;;1895;28;;;;;1893.0;-3.0
+
+
+buy99600 and do not sell
+99600,SUBMISSION,,SQUID_INK,SEASHELLS,1895,1
+1;99600;SQUID_INK;1893;7;1892;29;;;1895;29;;;;;1894.0;0.0
+1;99700;SQUID_INK;1893;26;;;;;1896;25;;;;;1894.5;-0.5721435546875
+1;99800;SQUID_INK;1892;7;1891;26;;;1894;26;;;;;1893.0;-2.1895751953125
+1;99900;SQUID_INK;1891;28;;;;;1895;28;;;;;1893.0;-1.929931640625
+
+
+new ideas squidink: 
+- track average price of holdings Price=∑(Quantity×Price)​/∑Quantity
+    - to not sell the spike of squidink
+- QUID_INK is volatile with large short-term swings and mean-reversion tendencies
+    - simple reversion-based strategy
+    - dont hold large position across time
+    - exploit price overreactions (when moving away from mean buy/sell )
+
+
+use ema?
+The first EMAt is the sma
+EMA_t​=(Price​×α)+(EMA_t−1​×(1−α)) with α= 2/(n+1), n is nr of periods
+EMA: More sensitive to sharp price movements or spikes, as it gives more weight to recent data points.
+α controls the degree of smoothing (exponential decay). Highervalue is more weight to current price. n=1 is only current price, n = inf is only previous price.
+Day	Closing Price	SMA (5-day)	EMA (5-day)
+1	20	None	None
+2	22	None	None
+3	24	None	None
+4	23	None	None
+5	25	22.8	22.8
+6	26	24.0	24.5334
+7	28	26.0	26.0222
+8	30	27.0	27.3472
