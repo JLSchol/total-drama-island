@@ -219,7 +219,7 @@ if __name__ == "__main__":
     log_dir = os.path.dirname(__file__)
     # round_1_dir = os.path.join(log_dir, "round1")
     # round_2_dir = os.path.join(log_dir, "round2")
-    specific_dir = os.path.join(log_dir, "round2", "buy_one_sell_one")
+    specific_dir = os.path.join(log_dir, "round2", "tryout_squid_tactics")
     split_all_logs(specific_dir)
     print("splitting complete")
     process_all_tradehistory(specific_dir)

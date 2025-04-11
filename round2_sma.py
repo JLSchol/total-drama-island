@@ -441,48 +441,93 @@ def sma_strategy(td: TradingData, product: str, orders: list[Order],
                         current_position, max_buy_position, max_sell_position, orders)
 
 def squid_ink_strategy(td: TradingData, product: str, orders: list[Order],
-                       sma_window: int, threshold: float) -> list[Order]:
-    """
-    A mean-reversion strategy for SQUID_INK based on short-term SMA and deviation threshold.
+                       price_type: str,
+                       lookback, max_lookback) -> list[Order]:
+    
+    def calc_dynamic_momentum_diff(prices, lookback, max_lookback):
+        if lookback <1:
+            raise ValueError(f"{lookback=} and should be larger than 1")
+        if lookback > max_lookback:
+            raise ValueError(f"{lookback=} is not allowed to bigger than {max_lookback=}")
 
-    Args:
-        td: TradingData object for accessing market data.
-        product: Name of the product (should be "SQUID_INK").
-        orders: List of current orders.
-        sma_window: Number of ticks to use for SMA calculation.
-        threshold: Price deviation from SMA to trigger trades.
+        if len(prices) == 1:
+            return 0
+        
+        # if the array is not big enough to reach max lookback, return earlier with max length of array
+        if len(prices)-1 <= lookback:  
+            return prices[-1] - prices[0]
+        
+        # if the max lookback is reached recursively
+        if lookback == max_lookback:
+            return prices[-1] - prices[-(max_lookback+1)]
 
-    Returns:
-        Updated list of orders.
-    """
+        # calculate a momentum metric (sort of difference) metric (we use this as +/- change to identify a recent peak.
+        diff = prices[-1] - prices[-(lookback+1)]
 
-    # 1. Calculate SMA of mid_price
-    mid_prices = td.get_field(product, "mid_price")
-    mean_price = sma(mid_prices, sma_window)
-    td.apply_indicator(product, "fair_price", mean_price)
+        # if the difference is the same, it can be a flat line and we want to look further back
+        # call recursevly
+        if diff == 0:
+            return calc_dynamic_momentum_diff(prices, lookback+1, max_lookback)
 
-    # 2. Get market/book data
+        return diff
+    
+    allowed_types = ["mid_price", "weighted_mid_price"]
+    if price_type not in allowed_types:
+        raise ValueError(f"price_type must be one of {allowed_types}")
+    
+    # 1. Get the latest price and SMA
+    prices = td.get_field(product, price_type)
+    fair_price = sma(prices, 3)
+    td.apply_indicator(product, "fair_price", fair_price)
+
+    prices = td.get_field(product, price_type)
+
+    # 2. get previous momentum diff
+    previous_momentum_diff = td.get_last_field(product,"momentum_diff")
+
+    # 3. calculate dynamic momentum diff
+    momentum_diff = calc_dynamic_momentum_diff(prices, lookback, max_lookback)
+    td.apply_indicator(product, "momentum_diff", momentum_diff)
+    
+    # 4. create buy/sell signal by noticing momentum shift.
+    if previous_momentum_diff is None:
+        return orders
+    
+    if previous_momentum_diff<0 and momentum_diff>0:
+        # down to up
+        momentum_signal = 1
+    elif previous_momentum_diff>0 and momentum_diff<0:
+        # up to down
+        momentum_signal = -1
+    else:
+        momentum_signal = 0
+
+    td.apply_indicator(product, "momentum_signal", momentum_signal)
+
+    # 2 get the orders
     best_ask = td.get_last_field(product, "best_ask")
-    best_ask_volume = td.get_last_field(product, "best_ask_volume")
+    # best_ask_volume = td.get_last_field(product, "best_ask_volume")
     best_bid = td.get_last_field(product, "best_bid")
-    best_bid_volume = td.get_last_field(product, "best_bid_volume")
+    # best_bid_volume = td.get_last_field(product, "best_bid_volume")
     current_position = td.get_last_field(product, "current_position")
     max_buy_position = td.get_last_field(product, "max_buy_position")
     max_sell_position = td.get_last_field(product, "max_sell_position")
 
-    # 3. Reversion logic — Fade large moves from the mean
-    if best_bid is not None and best_bid < mean_price - threshold:
-        # Too cheap → Buy
-        orders, _ = get_best_order("buy", product, best_bid, best_bid_volume,
-                                   current_position, max_buy_position, orders)
+    latest_order = td.get_last_field(product, "latest_order")
 
-    if best_ask is not None and best_ask > mean_price + threshold:
-        # Too expensive → Sell
-        orders, _ = get_best_order("sell", product, best_ask, best_ask_volume,
-                                   current_position, max_sell_position, orders)
+    # TODO:
+    # track avg cost of position
+
+    if momentum_signal ==1 and best_ask < fair_price:
+        # buy
+        
+        orders.append(Order(product, int(best_ask), int(1)))
+
+    if momentum_signal ==-1 and best_bid > fair_price:
+        # sell
+        orders.append(Order(product, int(best_bid), int(-1)))
 
     return orders
-
 
 
 class Trader:
@@ -499,33 +544,34 @@ class Trader:
                          "PICNIC_BASKET2": {"CROISSANTS": 4, "JAMS": 2 }}
         
         max_order_count = 3 #  order book depth + 1 = 4 (need the +1 to be able to pop from list)
-        max_history = 21
+        max_history = 8
 
         td = TradingData(state, position_limits, max_order_count, max_history)
 
         for product in state.order_depths:
             orders: List[Order] = []
             # tutorial
-            if product == "KELP":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            if product == "RAINFOREST_RESIN":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+            # if product == "KELP":
+            #     orders = sma_strategy(td, product, orders, "mid_price", 20)
+            # if product == "RAINFOREST_RESIN":
+            #     orders = sma_strategy(td, product, orders, "mid_price", 20)
 
             # round 1
             if product == "SQUID_INK":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+                orders = squid_ink_strategy(td, product, orders, "mid_price", 1,6)
+                
 
             # round 2
-            if product == "CROISSANTS":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            if product == "JAMS":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            if product == "DJEMBES":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            if product == "PICNIC_BASKET1":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            if product == "PICNIC_BASKET2":
-                orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+            # if product == "CROISSANTS":
+            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+            # if product == "JAMS":
+            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+            # if product == "DJEMBES":
+            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+            # if product == "PICNIC_BASKET1":
+            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+            # if product == "PICNIC_BASKET2":
+            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
 
             
             result[product] = orders
@@ -536,26 +582,31 @@ class Trader:
 
         return result, conversions, traderData
 
+
 # from mock import state, state2
 # if __name__ == "__main__":
-#     trader = Trader()
-#     newstate = state
-#     for i in range(3):
+
+
+    # trader = Trader()
+    # result,conversions, data = trader.run(state)
+    # # print(data)
+    # print()
+    # print()
+    # print()
+    # print("--- NEW STEP ---") 
+    # print()
+    # print()
+    # print()
+    # state2.traderData = data
+    # result,conversions, data = trader.run(state2)
+    # print(data)
+
+
+    # trader = Trader()
+    # newstate = state
+    # for i in range(3):
         
-#         result,conversions, data = trader.run(newstate)
-#         newstate.traderData = data
+    #     result,conversions, data = trader.run(newstate)
+    #     newstate.traderData = data
 
 
-#     trader = Trader()
-#     result,conversions, data = trader.run(state)
-#     # print(data)
-#     print()
-#     print()
-#     print()
-#     print("--- NEW STEP ---") 
-#     print()
-#     print()
-#     print()
-#     state2.traderData = data
-#     result,conversions, data = trader.run(state2)
-#     print(data)

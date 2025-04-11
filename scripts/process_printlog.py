@@ -660,7 +660,7 @@ def generate_param_grid(
 if __name__ == "__main__":
     df = load_df("round1", "2504071725_sma20_sma20_sma20")
 
-    single_crossover_analyse(df, "SQUID_INK", 16, 27, 28, 0.0045)
+    single_crossover_analyse(df, "SQUID_INK", 5, 10, 11, 0.0045)
 
     # analyse one
     # product = "SQUID_INK"
