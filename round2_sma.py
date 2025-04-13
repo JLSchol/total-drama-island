@@ -1,4 +1,4 @@
-from datamodel import TradingState, Order
+from datamodel import TradingState, Order, Trade
 from typing import Dict, List, Optional
 import json
 import numpy as np
@@ -311,11 +311,13 @@ class TradingData:
         # Serialize the data to JSON
         return json.dumps(self.data, default=numpy_array_default)
 
-    def print_sim_step_data(self):
+    def print_sim_step_data(self, print_list: list[str]):
         data = {}
         for product in self.data.keys():
             product_data = self.get_latest_fields(product)
-            data[product] = product_data
+            # filter product data based on print list
+            filtered = {k: product_data[k] for k in product_data.keys() & print_list}
+            data[product] = filtered
         # convert to json string, such that it can be loaded easily later
         print(json.dumps(data, default=numpy_array_default))
 
@@ -516,19 +518,69 @@ def squid_ink_strategy(td: TradingData, product: str, orders: list[Order],
     latest_order = td.get_last_field(product, "latest_order")
 
     # TODO:
+    
     # track avg cost of position
 
     if momentum_signal ==1 and best_ask < fair_price:
         # buy
         
         orders.append(Order(product, int(best_ask), int(1)))
+        print(f"bought")
 
     if momentum_signal ==-1 and best_bid > fair_price:
         # sell
         orders.append(Order(product, int(best_bid), int(-1)))
+        print("sold")
 
     return orders
 
+def track_trades(trades: Dict[str, List[Trade]], td: TradingData):
+    # get this from state (one timestamp after it is submitted)
+
+    def calc_new_trade_stats(total_count, total_price, quantity, price):
+        total_count += quantity
+        total_price += (price*quantity)
+        average_price = total_price/total_count
+        return total_count, total_price, average_price
+    
+    def update_trade_stats(type: str, product: str, td: TradingData,
+                           quantity: int, price: int):
+        if type == "buy":
+            id = "buy"
+        
+        elif type == "sell":
+            id = "sell"
+        else:
+            raise ValueError("first arg {type=} is not correct, must be 'buy' or 'sell'")
+    
+        # define names based on buy/sell
+        total_count_name = f"total_{id}_count"
+        total_price_name = f"total_{id}_price"
+        average_name = f"{id}_average"
+
+        # get old values
+        total_count = td.get_last_field(product, total_count_name)
+        total_price = td.get_last_field(product, total_price_name)
+
+        if total_count is None and total_price is None:
+            total_count, total_price = 0,0
+
+        # calculate new values
+        total_count, total_price, average = calc_new_trade_stats(total_count, total_price, 
+                                                                    quantity,price)
+        # update in class
+        td.apply_indicator(product, total_count_name, total_count)
+        td.apply_indicator(product, total_price_name, total_price)
+        td.apply_indicator(product, average_name, average)
+
+    for product, trades in trades.items():       
+        for trade in trades: 
+            # determine buy or sell
+            if trade.buyer == "SUBMISSION":
+                update_trade_stats("buy", product, td, trade.quantity, trade.price)
+
+            if trade.seller == "SUBMISSION":
+                update_trade_stats("sell", product, td, trade.quantity, trade.price)
 
 class Trader:
     def run(self, state: TradingState):
@@ -548,13 +600,15 @@ class Trader:
 
         td = TradingData(state, position_limits, max_order_count, max_history)
 
+        track_trades(state.own_trades, td)
+
         for product in state.order_depths:
             orders: List[Order] = []
             # tutorial
-            # if product == "KELP":
-            #     orders = sma_strategy(td, product, orders, "mid_price", 20)
-            # if product == "RAINFOREST_RESIN":
-            #     orders = sma_strategy(td, product, orders, "mid_price", 20)
+            if product == "KELP":
+                orders = sma_strategy(td, product, orders, "mid_price", 20)
+            if product == "RAINFOREST_RESIN":
+                orders = sma_strategy(td, product, orders, "mid_price", 20)
 
             # round 1
             if product == "SQUID_INK":
@@ -576,7 +630,12 @@ class Trader:
             
             result[product] = orders
 
-        td.print_sim_step_data()
+
+        td.print_sim_step_data(["timestamp", "bid_prices", "bid_volumes", "ask_prices", "ask_volumes", 
+                        "mid_price", "max_sell_position", "max_buy_position", "current_position", 
+                        "fair_price", "momentum_diff", 
+                        "total_buy_count", "total_buy_price", "buy_average",
+                        "total_sell_count", "total_sell_price", "sell_average"])
 
         traderData = td.get_data_as_json()
 
