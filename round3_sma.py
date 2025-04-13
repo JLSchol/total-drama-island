@@ -1,5 +1,5 @@
 from datamodel import TradingState, Order, Trade
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 import json
 import numpy as np
 
@@ -88,14 +88,13 @@ class TradingData:
             bid_prices, bid_volumes = self.sort_bid_orders(order_depth.buy_orders, self.max_order_count)
             ask_prices, ask_volumes = self.sort_ask_orders(order_depth.sell_orders, self.max_order_count)
 
-            total_bid_volume = int(np.sum(bid_volumes, where=~np.isnan(bid_volumes)))
-            total_ask_volume = int(np.sum(ask_volumes, where=~np.isnan(ask_volumes)))
-            total_volume = int(total_bid_volume + np.abs(total_ask_volume))
+            total_bid_volume = np.sum(bid_volumes, where=~np.isnan(bid_volumes))
+            total_ask_volume = np.sum(ask_volumes, where=~np.isnan(ask_volumes))
+            total_volume = total_bid_volume + np.abs(total_ask_volume)
 
             # best bid/asks
-            best_bid, best_bid_volume = (int(bid_prices[0]), int(bid_volumes[0])) if bid_prices.size > 0 else (np.nan, np.nan)
-            best_ask, best_ask_volume = (int(ask_prices[0]), int(ask_volumes[0])) if ask_prices.size > 0 else (np.nan, np.nan)
-
+            best_bid, best_bid_volume = (bid_prices[0], bid_volumes[0]) if bid_prices.size > 0 else (np.nan, np.nan)
+            best_ask, best_ask_volume = (ask_prices[0], ask_volumes[0]) if ask_prices.size > 0 else (np.nan, np.nan)
             # mid_price
             if best_bid is not None and best_ask is not None:
                 mid_price = np.mean(np.array([best_bid, best_ask], dtype=np.float64))
@@ -329,86 +328,133 @@ class OrderHelper:
     def _is_available(self, best: Optional[float], best_amount: Optional[int]) -> bool:
         return best is not None and best_amount is not None
 
-    def _adjust_sell_quantity(self, proposed_sell_quantity: int, max_sell_limit: int, current_position: int):
+    def _adjust_sell_quantity(self, proposed_sell_quantity: int, max_sell_limit: int, current_position: int) -> Tuple[int, int]:
         if max_sell_limit >= 0 or proposed_sell_quantity >= 0:
             raise ValueError(f"{proposed_sell_quantity=} or {max_sell_limit=}, should be negative for selling")
         
         max_allowed_sell_quantity = max_sell_limit - current_position
         if proposed_sell_quantity < max_allowed_sell_quantity:
             adjusted_sell_quantity = max(proposed_sell_quantity, max_allowed_sell_quantity)
-            remaining_sell_capacity = 0
+            new_position = max_sell_limit
         else:
             adjusted_sell_quantity = proposed_sell_quantity
-            remaining_sell_capacity = max_allowed_sell_quantity - proposed_sell_quantity
-        return adjusted_sell_quantity, remaining_sell_capacity
+            new_position = current_position + proposed_sell_quantity
 
-    def _adjust_buy_quantity(self, proposed_buy_quantity: int, max_buy_limit: int, current_position: int):
+        return adjusted_sell_quantity, new_position
+
+    def _adjust_buy_quantity(self, proposed_buy_quantity: int, max_buy_limit: int, current_position: int) -> Tuple[int, int]:
         if max_buy_limit <= 0 or proposed_buy_quantity <= 0:
             raise ValueError(f"{proposed_buy_quantity=} or {max_buy_limit=}, should be positive for buying")
         
         max_allowed_buy_quantity = max_buy_limit - current_position
         if proposed_buy_quantity > max_allowed_buy_quantity:
             adjusted_buy_quantity = min(proposed_buy_quantity, max_allowed_buy_quantity)
-            remaining_buy_capacity = 0
+            new_position = max_buy_limit
         else:
             adjusted_buy_quantity = proposed_buy_quantity
-            remaining_buy_capacity = max_allowed_buy_quantity - proposed_buy_quantity
-        return adjusted_buy_quantity, remaining_buy_capacity
+            new_position = current_position + proposed_buy_quantity
+        return adjusted_buy_quantity, new_position
     
-    def get_best_order(self, order_type: str, product: str, price: int, amount: int, current_position: int, max_position: int, orders: List[Order]) -> List[Order]:
-        """
-        Creates a buy or sell order based on the best available price and quantity.
+    def _adjust_quantity(self, order_type: str, product: str, proposed_buy_quantity: int, max_buy_limit: int, current_position: int) -> Tuple[int, int]:
         
-        :param order_type: "buy" for buying, "sell" for selling
-        :param product: The product being traded
-        :param price: The best price available
-        :param amount: The quantity available (negative for sell, positive for buy)
-        :param current_position: The trader's current position
-        :param max_position: The trader's maximum allowable position
-        :param orders: The list of existing orders to append to
-        :return: The updated list of orders
-        """
-        
-        # get price
-        # get amount
-        # get current_position
-        # get max position
+        try:
+            if order_type == "buy":
+                order_quantity, new_position = self._adjust_buy_quantity(proposed_buy_quantity, max_buy_limit, current_position)
+                if order_quantity <= 0:
+                    print(f"Skipped 0-qty or invalid buy: {product=} {order_type=} {current_position=} {max_buy_limit=}")
+                    return 0, current_position
+            elif order_type == "sell":
+                order_quantity, new_position = self._adjust_sell_quantity(proposed_buy_quantity, max_buy_limit, current_position)
+                if order_quantity >= 0:
+                    print(f"Skipped 0-qty or invalid sell: {product=} {order_type=} {current_position=} {max_buy_limit=}")
+                    return 0, current_position
+            else:
+                raise ValueError(f"Invalid order type: {order_type}")
+        except ValueError as e:
+            print(f"Adjustment failed for {product=} {order_type=}: {e}")
+            return 0, current_position
+
+        return order_quantity, new_position
+
+    def _get_best_order(self, order_type: str, product: str, price: int, amount: int, current_position: int, max_position: int, orders: List[Order]) -> Tuple[List[Order], int]:
         
         if not self._is_available(price, amount):
             print(f"Invalid price or amount for {product=}: {price=}, {amount=}")
             return orders, None  # No valid price or quantity available
 
-        # Flip sign: ask/sell is negative, bid/buy is positive
-        order_quantity = -amount
-
         # Adjust based on position limits
-        if order_type == "buy":
-            order_quantity, remaining_capacity = self._adjust_buy_quantity(order_quantity, max_position, current_position)
-            if order_quantity <= 0:
-                print(f"Invalid buy order for {product=}: {order_quantity=}, {remaining_capacity=}")
-                return orders, remaining_capacity  # No valid buy order
-        else:  # Sell order
-            order_quantity, remaining_capacity = self._adjust_sell_quantity(order_quantity, max_position, current_position)
-            if order_quantity >= 0:
-                print(f"Invalid sell order for {product=}: {order_quantity=}, {remaining_capacity=}")
-                return orders, remaining_capacity  # No valid sell order
+        order_quantity, new_position = self._adjust_quantity(order_type, product, amount, max_position, current_position)
+
+        if order_quantity == 0:
+            return orders, new_position
 
         # Append the order
         orders.append(Order(product, int(price), int(order_quantity)))
-        return orders, remaining_capacity
+        return orders, new_position
 
-    def get_best_orders(self, product: str, fair_price: float, 
-                        best_ask: int, best_ask_volume: int, 
-                        best_bid: int, best_bid_volume: int, 
-                        current_position: int, max_buy_position: int, max_sell_position: int, 
-                        orders: List[Order]) -> List[Order]:
+    def get_order(self, order_type: str, product: str, price: int, amount: int, current_position:int, max_position: int):
+        
+        if not self._is_available(price, amount):
+            print(f"invalid order: {product=}: {price=}, {amount=}")
+            return None, None  # No valid price or quantity available
+        
+        # Adjust based on position limits
+        order_quantity, new_position = self._adjust_quantity(order_type, product, amount, max_position, current_position)
 
-        if best_ask is not None and best_ask < fair_price:
-            orders, _ = self.get_best_order("buy", product, best_ask, best_ask_volume, current_position, max_buy_position, orders)
-        # Place sell order if best bid is higher than the fair price
-        if best_bid is not None and best_bid > fair_price:
-            orders, _ = self.get_best_order("sell", product, best_bid, best_bid_volume, current_position, max_sell_position, orders)
-        return orders
+        if order_quantity == 0:
+            return None, new_position
+        
+        return Order(product, int(price), int(order_quantity)), new_position
+
+    def get_best_order(self, order_type: str, product: str, orders: List[Order]) -> Tuple[List[Order], int]:
+
+        if order_type == "buy":
+            price = self.td.get_last_field(product, "best_ask")
+            amount = self.td.get_last_field(product, "best_ask_volume")
+            max_position = self.td.get_last_field(product, "max_buy_position")
+        elif order_type == "sell":
+            price = self.td.get_last_field(product, "best_bid")
+            amount = self.td.get_last_field(product, "best_bid_volume")
+            max_position = self.td.get_last_field(product, "max_sell_position")
+        else:
+            raise ValueError(f"first argument should be 'buy' or 'sell' and is {order_type=}")
+
+        current_position = self.td.get_last_field(product, "current_position")
+
+        orders, new_position = self._get_best_order(order_type, product, price, -amount, current_position, max_position, orders)
+        return orders, new_position
+        
+    def get_all_order(self, order_type: str, product: str, orders: List[Order]) -> Tuple[List[Order], int]:
+
+        if order_type == "buy":
+            prices = self.td.get_last_field(product, "ask_prices")
+            amounts = self.td.get_last_field(product, "ask_volumes")
+            max_position = self.td.get_last_field(product, "max_buy_position")
+        elif order_type == "sell":
+            prices = self.td.get_last_field(product, "best_bid")
+            amounts = self.td.get_last_field(product, "best_bid_volume")
+            max_position = self.td.get_last_field(product, "max_sell_position")
+
+        position = self.td.get_last_field(product, "current_position")
+        for price, amount in zip(prices,amounts):
+            if price is None or (isinstance(price, float) and np.isnan(price)): # check for numpy and normal None
+                return orders
+            
+            if amount is None or (isinstance(price, float) and np.isnan(price)): # check for numpy and normal None
+                return orders
+
+            if position == max_position:
+                return orders
+            
+            order, position = self.get_order(order_type, product, price, amount, position, max_position, orders)
+            if order is not None:
+                orders.append(order)
+
+    def get_all_orders_for_price(self):
+        pass
+
+    def get_all_orders_to_position(self):
+        pass
 
 
 def sma(prices: np.ndarray, window: int) -> float:
@@ -430,7 +476,7 @@ def sma(prices: np.ndarray, window: int) -> float:
     
     return sma
 
-def sma_strategy(td: TradingData, product: str, orders: list[Order], 
+def sma_strategy(td: TradingData, oh: OrderHelper, product: str, orders: list[Order], 
                  price_type: str, sma_window: int):
     allowed_types = ["mid_price", "weighted_mid_price"]
     if price_type not in allowed_types:
@@ -443,18 +489,17 @@ def sma_strategy(td: TradingData, product: str, orders: list[Order],
 
     # 2 get the orders
     best_ask = td.get_last_field(product, "best_ask")
-    best_ask_volume = td.get_last_field(product, "best_ask_volume")
     best_bid = td.get_last_field(product, "best_bid")
-    best_bid_volume = td.get_last_field(product, "best_bid_volume")
-    current_position = td.get_last_field(product, "current_position")
-    max_buy_position = td.get_last_field(product, "max_buy_position")
-    max_sell_position = td.get_last_field(product, "max_sell_position")
 
-    return self.get_best_orders(product, fair_price, 
-                        best_ask, best_ask_volume, best_bid, best_bid_volume,
-                        current_position, max_buy_position, max_sell_position, orders)
+    if best_ask is not None and best_ask < fair_price:
+        orders, _ = oh.get_best_order("buy", product, orders)
 
-def squid_ink_strategy(td: TradingData, product: str, orders: list[Order],
+    if best_bid is not None and best_bid > fair_price:
+        orders, _ = oh.get_best_order("sell", product, orders)
+
+    return orders
+
+def squid_ink_strategy(td: TradingData, oh: OrderHelper, product: str, orders: list[Order],
                        price_type: str,
                        lookback, max_lookback) -> list[Order]:
     
@@ -520,29 +565,29 @@ def squid_ink_strategy(td: TradingData, product: str, orders: list[Order],
 
     # 2 get the orders
     best_ask = td.get_last_field(product, "best_ask")
-    # best_ask_volume = td.get_last_field(product, "best_ask_volume")
     best_bid = td.get_last_field(product, "best_bid")
-    # best_bid_volume = td.get_last_field(product, "best_bid_volume")
-    current_position = td.get_last_field(product, "current_position")
-    max_buy_position = td.get_last_field(product, "max_buy_position")
-    max_sell_position = td.get_last_field(product, "max_sell_position")
 
-    latest_order = td.get_last_field(product, "latest_order")
 
-    # TODO:
+    # TODO: 
+    # strat idea:
+        # trade with momentum (e.g. up)
+        # if momentum is up, enter long position.
+        # track buy order cost.
+        # do not wait for momentum signal to flip, instead buy when sell price above buy order.
     
-    # track avg cost of position
+    # strat idea:
+        # predict fair price based on slope sma (future price because of lagging signal)
+
+    # strat idea:
+        # something with tracking average buy/sell?
 
     if momentum_signal ==1 and best_ask < fair_price:
         # buy
-        
         orders.append(Order(product, int(best_ask), int(1)))
-        print(f"bought")
 
     if momentum_signal ==-1 and best_bid > fair_price:
         # sell
         orders.append(Order(product, int(best_bid), int(-1)))
-        print("sold")
 
     return orders
 
@@ -598,19 +643,35 @@ class Trader:
     def run(self, state: TradingState):
         result = {}
         conversions = 0
-        position_limits = {"RAINFOREST_RESIN": 50, "KELP": 50, 
-                           "SQUID_INK": 50,
-                           "CROISSANTS": 250, "JAMS": 350, "DJEMBES": 60,
-                           "PICNIC_BASKET1": 60, "PICNIC_BASKET2": 100
+        position_limits = { "RAINFOREST_RESIN": 50, "KELP": 50, 
+                            "SQUID_INK": 50,
+                            "CROISSANTS": 250, "JAMS": 350, "DJEMBES": 60,
+                            "PICNIC_BASKET1": 60, "PICNIC_BASKET2": 100,
+                            "VOLCANIC_ROCK": 400,
+                            "VOLCANIC_ROCK_VOUCHER_9500": 200,
+                            "VOLCANIC_ROCK_VOUCHER_9750": 200,
+                            "VOLCANIC_ROCK_VOUCHER_10000": 200,
+                            "VOLCANIC_ROCK_VOUCHER_10250": 200,
+                            "VOLCANIC_ROCK_VOUCHER_10500": 200
                            }
         
         picic_content = {"PICNIC_BASKET1": {"CROISSANTS": 6, "JAMS": 3, "DJEMBES": 1},
                          "PICNIC_BASKET2": {"CROISSANTS": 4, "JAMS": 2 }}
         
+        volcanic_voucher = {
+                        "VOLCANIC_ROCK_VOUCHER_9500": 9500,
+                        "VOLCANIC_ROCK_VOUCHER_9750": 9750,
+                        "VOLCANIC_ROCK_VOUCHER_10000": 10000,
+                        "VOLCANIC_ROCK_VOUCHER_10250": 10250,
+                        "VOLCANIC_ROCK_VOUCHER_10500": 10500
+        }
+        
         max_order_count = 3 #  order book depth + 1 = 4 (need the +1 to be able to pop from list)
-        max_history = 8
+        max_history = 6
 
         td = TradingData(state, position_limits, max_order_count, max_history)
+        oh = OrderHelper(td)
+
 
         track_trades(state.own_trades, td)
 
@@ -618,36 +679,56 @@ class Trader:
             orders: List[Order] = []
             # tutorial
             if product == "KELP":
-                orders = sma_strategy(td, product, orders, "mid_price", 20)
+                orders = sma_strategy(td, oh, product, orders, "mid_price", 5)
             if product == "RAINFOREST_RESIN":
-                orders = sma_strategy(td, product, orders, "mid_price", 20)
+                orders = sma_strategy(td, oh, product, orders, "mid_price", 5)
 
             # round 1
             if product == "SQUID_INK":
-                orders = squid_ink_strategy(td, product, orders, "mid_price", 1,6)
+                orders = squid_ink_strategy(td, oh, product, orders, "mid_price", 1,6)
                 
 
             # round 2
-            # if product == "CROISSANTS":
-            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            # if product == "JAMS":
-            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            # if product == "DJEMBES":
-            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            # if product == "PICNIC_BASKET1":
-            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
-            # if product == "PICNIC_BASKET2":
-            #     orders = sma_strategy(td, product, orders, "weighted_mid_price", 20)
+            if product == "CROISSANTS":
+                pass
+            if product == "JAMS":
+                pass
+            if product == "DJEMBES":
+                pass
+            if product == "PICNIC_BASKET1":
+                pass
+            if product == "PICNIC_BASKET2":
+                pass
+
+            # round 3
+            if product == "VOLCANIC_ROCK":
+                pass
+
+            if product == "VOLCANIC_ROCK_VOUCHER_9500":
+                pass
+
+            if product == "VOLCANIC_ROCK_VOUCHER_9750":
+                pass
+
+            if product == "VOLCANIC_ROCK_VOUCHER_10000":
+                pass
+
+            if product == "VOLCANIC_ROCK_VOUCHER_10250":
+                pass
+
+            if product == "VOLCANIC_ROCK_VOUCHER_10500":
+                pass
+
 
             
             result[product] = orders
 
 
-        td.print_sim_step_data(["timestamp", "bid_prices", "bid_volumes", "ask_prices", "ask_volumes", 
-                        "mid_price", "max_sell_position", "max_buy_position", "current_position", 
-                        "fair_price", "momentum_diff", 
-                        "total_buy_count", "total_buy_price", "buy_average",
-                        "total_sell_count", "total_sell_price", "sell_average"])
+        # td.print_sim_step_data(["timestamp", "bid_prices", "bid_volumes", "ask_prices", "ask_volumes", 
+        #                 "mid_price", "max_sell_position", "max_buy_position", "current_position", 
+        #                 "fair_price", "momentum_diff", 
+        #                 "total_buy_count", "total_buy_price", "buy_average",
+        #                 "total_sell_count", "total_sell_price", "sell_average"])
 
         traderData = td.get_data_as_json()
 
@@ -658,26 +739,26 @@ class Trader:
 # if __name__ == "__main__":
 
 
-    # trader = Trader()
-    # result,conversions, data = trader.run(state)
-    # # print(data)
-    # print()
-    # print()
-    # print()
-    # print("--- NEW STEP ---") 
-    # print()
-    # print()
-    # print()
-    # state2.traderData = data
-    # result,conversions, data = trader.run(state2)
-    # print(data)
+#     trader = Trader()
+#     result,conversions, data = trader.run(state)
+#     # print(data)
+#     print()
+#     print()
+#     print()
+#     print("--- NEW STEP ---") 
+#     print()
+#     print()
+#     print()
+#     state2.traderData = data
+#     result,conversions, data = trader.run(state2)
+#     print(data)
 
 
-    # trader = Trader()
-    # newstate = state
-    # for i in range(3):
+#     trader = Trader()
+#     newstate = state
+#     for i in range(3):
         
-    #     result,conversions, data = trader.run(newstate)
-    #     newstate.traderData = data
+#         result,conversions, data = trader.run(newstate)
+#         newstate.traderData = data
 
 
