@@ -1,5 +1,5 @@
 from datamodel import TradingState, Order, Trade
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Callable
 import json
 import numpy as np
 
@@ -424,37 +424,61 @@ class OrderHelper:
         orders, new_position = self._get_best_order(order_type, product, price, -amount, current_position, max_position, orders)
         return orders, new_position
         
-    def get_all_order(self, order_type: str, product: str, orders: List[Order]) -> Tuple[List[Order], int]:
+    def get_all_orders_given_conditions(self, order_type: str, product: str, orders: List[Order],
+                        price_condition: Optional[Callable[[float], bool]] = None,
+                        quantity_condition: Optional[Callable[[int], bool]] = None,
+                        position_condition: Optional[Callable[[int], bool]] = None) -> Tuple[List[Order], int]:
+
+        # Default conditions: accept everything
+        price_condition = price_condition or (lambda price: True)
+        quantity_condition = quantity_condition or (lambda amount: True)
+        position_condition = position_condition or (lambda position: True)
 
         if order_type == "buy":
             prices = self.td.get_last_field(product, "ask_prices")
             amounts = self.td.get_last_field(product, "ask_volumes")
             max_position = self.td.get_last_field(product, "max_buy_position")
+
         elif order_type == "sell":
-            prices = self.td.get_last_field(product, "best_bid")
-            amounts = self.td.get_last_field(product, "best_bid_volume")
+            prices = self.td.get_last_field(product, "bid_prices")
+            amounts = self.td.get_last_field(product, "bid_volumes")
             max_position = self.td.get_last_field(product, "max_sell_position")
+        else:
+            raise ValueError(f"first argument should be 'buy' or 'sell' and is {order_type=}")
 
         position = self.td.get_last_field(product, "current_position")
+
         for price, amount in zip(prices,amounts):
             if price is None or (isinstance(price, float) and np.isnan(price)): # check for numpy and normal None
-                return orders
+                return orders, position
+            if amount is None or (isinstance(price, float) and np.isnan(amount)): # check for numpy and normal None
+                return orders, position
+            if position == max_position: # do not create order with quantity 0
+                return orders, position
             
-            if amount is None or (isinstance(price, float) and np.isnan(price)): # check for numpy and normal None
-                return orders
+            # flip because we want to do the opposite in our order 
+            # (ask quantity is negative, so if we buy, we need to flip sign to positive to indicate buy)
+            amount = -amount 
 
-            if position == max_position:
-                return orders
-            
-            order, position = self.get_order(order_type, product, price, amount, position, max_position, orders)
-            if order is not None:
+            if price_condition(price) and quantity_condition(amount) and position_condition(position):
+                order, position = self.get_order(order_type, product, price, amount, position, max_position)
+
+                if order is None:
+                    return orders, position
+
                 orders.append(order)
 
-    def get_all_orders_for_price(self):
-        pass
+        return orders, position
 
-    def get_all_orders_to_position(self):
-        pass
+    def get_all_order(self, order_type: str, product: str, orders: List[Order]) -> Tuple[List[Order], int]:
+        orders, position = self.get_all_orders_given_conditions(order_type, product, orders, None, None, None)
+        return orders, position
+
+    def get_all_buy_orders_below_fairprice(self, product: str, fairprice: float, orders: List[Order]) -> Tuple[List[Order], int]:
+        orders, position = self.get_all_orders_given_conditions("buy", product, orders, 
+                                                                price_condition=lambda price: price < fairprice,
+                                                                quantity_condition=None,
+                                                                position_condition=None)
 
 
 def sma(prices: np.ndarray, window: int) -> float:
@@ -498,6 +522,35 @@ def sma_strategy(td: TradingData, oh: OrderHelper, product: str, orders: list[Or
         orders, _ = oh.get_best_order("sell", product, orders)
 
     return orders
+
+def sma_strategy_get_all(td: TradingData, oh: OrderHelper, product: str, orders: list[Order], 
+                 price_type: str, sma_window: int):
+    allowed_types = ["mid_price", "weighted_mid_price"]
+    if price_type not in allowed_types:
+        raise ValueError(f"price_type must be one of {allowed_types}")
+    
+    # 1. Get the latest price and SMA
+    prices = td.get_field(product, price_type)
+    fair_price = sma(prices, sma_window)
+    td.apply_indicator(product, "fair_price", fair_price)
+
+    # get all buy orders of which 
+    #   the ask price is below the fair price 
+    #   check for all asks, (not only best ask)
+    #   buy maximum available quantity for each.  
+    orders, _ = oh.get_all_orders_given_conditions("buy", product, orders, 
+                                                                price_condition=lambda price: price < fair_price,
+                                                                quantity_condition=None,
+                                                                position_condition=None)
+    # same idea for sell
+    orders, _ = oh.get_all_orders_given_conditions("sell", product, orders, 
+                                                                price_condition=lambda price: price > fair_price,
+                                                                quantity_condition=None,
+                                                                position_condition=None)
+
+    return orders
+
+
 
 def squid_ink_strategy(td: TradingData, oh: OrderHelper, product: str, orders: list[Order],
                        price_type: str,
@@ -679,45 +732,46 @@ class Trader:
             orders: List[Order] = []
             # tutorial
             if product == "KELP":
-                orders = sma_strategy(td, oh, product, orders, "mid_price", 5)
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
             if product == "RAINFOREST_RESIN":
-                orders = sma_strategy(td, oh, product, orders, "mid_price", 5)
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
             # round 1
             if product == "SQUID_INK":
-                orders = squid_ink_strategy(td, oh, product, orders, "mid_price", 1,6)
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+                # orders = squid_ink_strategy(td, oh, product, orders, "mid_price", 1,6)
                 
 
             # round 2
             if product == "CROISSANTS":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
             if product == "JAMS":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
             if product == "DJEMBES":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
             if product == "PICNIC_BASKET1":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
             if product == "PICNIC_BASKET2":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
             # round 3
             if product == "VOLCANIC_ROCK":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
             if product == "VOLCANIC_ROCK_VOUCHER_9500":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
             if product == "VOLCANIC_ROCK_VOUCHER_9750":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
             if product == "VOLCANIC_ROCK_VOUCHER_10000":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
             if product == "VOLCANIC_ROCK_VOUCHER_10250":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
             if product == "VOLCANIC_ROCK_VOUCHER_10500":
-                pass
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
 
             

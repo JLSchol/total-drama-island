@@ -496,6 +496,15 @@
 },
 {
 "timestamp": 2600,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "KELP",
+"currency": "SEASHELLS",
+"price": 2045,
+"quantity": 7
+},
+{
+"timestamp": 2600,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -9452,6 +9461,15 @@
 {
 "timestamp": 52000,
 "buyer": "",
+"seller": "SUBMISSION",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10001,
+"quantity": 1
+},
+{
+"timestamp": 52000,
+"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -9466,15 +9484,6 @@
 "currency": "SEASHELLS",
 "price": 2046,
 "quantity": 3
-},
-{
-"timestamp": 52000,
-"buyer": "",
-"seller": "",
-"symbol": "RAINFOREST_RESIN",
-"currency": "SEASHELLS",
-"price": 10001,
-"quantity": 1
 },
 {
 "timestamp": 52000,
@@ -9699,7 +9708,7 @@
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2047,
-"quantity": 5
+"quantity": 1
 },
 {
 "timestamp": 52900,
@@ -9901,15 +9910,6 @@
 },
 {
 "timestamp": 53900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "KELP",
-"currency": "SEASHELLS",
-"price": 2046,
-"quantity": 3
-},
-{
-"timestamp": 53900,
 "buyer": "",
 "seller": "",
 "symbol": "JAMS",
@@ -10086,7 +10086,7 @@
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 4
+"quantity": 3
 },
 {
 "timestamp": 55100,
@@ -11297,7 +11297,7 @@
 {
 "timestamp": 61700,
 "buyer": "",
-"seller": "",
+"seller": "SUBMISSION",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
@@ -11400,7 +11400,16 @@
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
-"quantity": 3
+"quantity": 2
+},
+{
+"timestamp": 62700,
+"buyer": "",
+"seller": "",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10002,
+"quantity": 1
 },
 {
 "timestamp": 62800,
@@ -11491,6 +11500,15 @@
 "currency": "SEASHELLS",
 "price": 10001,
 "quantity": 1
+},
+{
+"timestamp": 63200,
+"buyer": "",
+"seller": "SUBMISSION",
+"symbol": "RAINFOREST_RESIN",
+"currency": "SEASHELLS",
+"price": 10000,
+"quantity": 4
 },
 {
 "timestamp": 63300,

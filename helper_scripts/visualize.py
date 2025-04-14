@@ -80,7 +80,7 @@ if __name__ == '__main__':
     # directories = ["2504071725_sma5_sma5_sma5", "2504071725_sma10_sma10_sma10", "2504071725_sma20_sma20_sma20", "2504071725_sma40_sma40_sma40", "2504071725_sma80_sma80_sma80", "2504071725_wsma20_wsma20_wsma20"]  # Add more directories as needed
     # directories = ["2504091450_sma20_sma20_pass","2504101120_sma20_sma20_new"]
     # directories = ["do_nothing", "sma_5", "sma_10", "sma_20", "sma_30", "wsma_5", "wsma_20"]
-    directories = ["test"]
+    directories = ["sma5_get_all"]
 
     all_dfs = []
     for directory in directories:
