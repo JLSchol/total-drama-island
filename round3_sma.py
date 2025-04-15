@@ -673,7 +673,9 @@ def sma_strategy(td: TradingData, oh: OrderHelper, product: str, orders: list[Or
     
     # 1. Get the latest price and SMA
     prices = td.get_field(product, price_type)
-    fair_price = sma(prices, sma_window)
+    # fair_price = sma(prices, sma_window)
+    fair_price = extended_kalman_filter_live_3D(prices, product, td)
+    
     td.apply_indicator(product, "fair_price", fair_price)
 
     # 2 get the orders
@@ -882,28 +884,41 @@ def squid_ink_strategy2(td: TradingData, oh: OrderHelper, product: str, orders: 
 
     td.apply_indicator(product, "mom_shift_signal", mom_shift_signal)
 
-    buy_averages = td.get_field(product, "buy_average")
-    buy_counts = td.get_field(product, "buy_count")
-    sell_averages = td.get_field(product, "sell_average")
-    sell_counts = td.get_field(product, "sell_count")
+    # buy_averages = td.get_field(product, "buy_average")
+    # buy_counts = td.get_field(product, "buy_count")
+    # sell_averages = td.get_field(product, "sell_average")
+    # sell_counts = td.get_field(product, "sell_count")
 
     
-    # Determine slice lengths
-    buy_averages_l = min(len(buy_averages), 5)
-    sell_averages_l = min(len(sell_averages), 5)
+    # # Handle None values safely
+    # buy_averages_l = min(len(buy_averages), 5) if buy_averages is not None else 0
+    # sell_averages_l = min(len(sell_averages), 5) if sell_averages is not None else 0
 
-    # Guard for empty or None data
-    if buy_averages_l == 0 or buy_counts is None or any(v is None for v in buy_averages[-buy_averages_l:]) or any(c is None for c in buy_counts[-buy_averages_l:]):
-        buy_average = None
-    else:
-        buy_count_sum = sum(buy_counts[-buy_averages_l:])
-        buy_average = sum(buy_averages[-buy_averages_l:]) / buy_count_sum if buy_count_sum != 0 else None
+    # # Compute safe buy_average
+    # if (
+    #     buy_averages_l == 0 or 
+    #     buy_counts is None or 
+    #     len(buy_counts) < buy_averages_l or 
+    #     any(v is None for v in buy_averages[-buy_averages_l:]) or 
+    #     any(c is None for c in buy_counts[-buy_averages_l:])
+    # ):
+    #     buy_average = None
+    # else:
+    #     buy_count_sum = sum(buy_counts[-buy_averages_l:])
+    #     buy_average = sum(buy_averages[-buy_averages_l:]) / buy_count_sum if buy_count_sum != 0 else None
 
-    if sell_averages_l == 0 or sell_counts is None or any(v is None for v in sell_averages[-sell_averages_l:]) or any(c is None for c in sell_counts[-sell_averages_l:]):
-        sell_average = None
-    else:
-        sell_count_sum = sum(sell_counts[-sell_averages_l:])
-        sell_average = sum(sell_averages[-sell_averages_l:]) / sell_count_sum if sell_count_sum != 0 else None
+    # # Compute safe sell_average
+    # if (
+    #     sell_averages_l == 0 or 
+    #     sell_counts is None or 
+    #     len(sell_counts) < sell_averages_l or 
+    #     any(v is None for v in sell_averages[-sell_averages_l:]) or 
+    #     any(c is None for c in sell_counts[-sell_averages_l:])
+    # ):
+    #     sell_average = None
+    # else:
+    #     sell_count_sum = sum(sell_counts[-sell_averages_l:])
+    #     sell_average = sum(sell_averages[-sell_averages_l:]) / sell_count_sum if sell_count_sum != 0 else None
 
     
     
@@ -912,32 +927,36 @@ def squid_ink_strategy2(td: TradingData, oh: OrderHelper, product: str, orders: 
         if mom_shift_signal == 1:
             # buy all ask orders (trend is up so no restrictino on buying)     
             orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
-                                                                    price_condition=None,
+                                                                    price_condition=lambda price: price < fair_price + 1,
+                                                                    # price_condition=None,
                                                                     quantity_condition=None,
                                                                     position_condition=None)
             
             # sell if price is above fair_price
             # when selling, never let position be < 0 since the trend is going up
         
-        # if mom_shift_signal == 1:
-        orders, position = oh.get_all_orders_given_conditions("sell", product, orders, 
-                                                                price_condition=lambda price: price > buy_average if buy_average is not None else None,
-                                                                quantity_condition=None,
-                                                                position_condition=lambda position: position >= 0)
+        if mom_shift_signal == -1:
+            orders, position = oh.get_all_orders_given_conditions("sell", product, orders, 
+                                                                    # price_condition=lambda price: price > buy_average if buy_average is not None else None,
+                                                                    price_condition=lambda price: price > fair_price,
+                                                                    quantity_condition=None,
+                                                                    position_condition=lambda position: position >= 0)
 
     if trend == -1:
         # short directly after peak, based on mom_shift_signal (neglect fair_price condition?)
         if mom_shift_signal == -1:
             orders, position = oh.get_all_orders_given_conditions("sell", product, orders, 
-                                                                    price_condition=None,
+                                                                    price_condition=lambda price: price > fair_price -1,
+                                                                    # price_condition=None,
                                                                     quantity_condition=None,
                                                                     position_condition=None)
     
         # buy if price is above fair price
         # when buying, never let position be > 0 since the rend is going down
-        # if mom_shift_signal == 1:
-        orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
-                                                                price_condition=lambda price: price < sell_average if sell_average is not None else None,
+        if mom_shift_signal == 1:
+            orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
+                                                                    # price_condition=lambda price: price < sell_average if sell_average is not None else None,
+                                                                    price_condition=lambda price: price < fair_price,
                                                                     quantity_condition=None,
                                                                     position_condition=lambda position: position <= 0)
 
@@ -1056,11 +1075,10 @@ class Trader:
         for product in state.order_depths:
             orders: List[Order] = []
             # tutorial
-            # if product == "KELP":
-                # orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
-                # orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
-            # if product == "RAINFOREST_RESIN":
-            #     orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
+            if product == "KELP":
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            if product == "RAINFOREST_RESIN":
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
             # round 1
             if product == "SQUID_INK":

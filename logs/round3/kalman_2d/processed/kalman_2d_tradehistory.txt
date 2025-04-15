@@ -63,15 +63,6 @@
 "quantity": 5
 },
 {
-"timestamp": 500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1804,
-"quantity": 22
-},
-{
 "timestamp": 800,
 "buyer": "",
 "seller": "",
@@ -151,24 +142,6 @@
 "currency": "SEASHELLS",
 "price": 6523,
 "quantity": 5
-},
-{
-"timestamp": 1200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1807,
-"quantity": 22
-},
-{
-"timestamp": 1200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1807,
-"quantity": 2
 },
 {
 "timestamp": 1200,
@@ -286,15 +259,6 @@
 "currency": "SEASHELLS",
 "price": 1805,
 "quantity": 2
-},
-{
-"timestamp": 1500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1807,
-"quantity": 4
 },
 {
 "timestamp": 1500,
@@ -576,24 +540,6 @@
 "quantity": 9
 },
 {
-"timestamp": 2800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1803,
-"quantity": 30
-},
-{
-"timestamp": 2800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1803,
-"quantity": 2
-},
-{
 "timestamp": 2900,
 "buyer": "",
 "seller": "",
@@ -619,51 +565,6 @@
 "currency": "SEASHELLS",
 "price": 13419,
 "quantity": 4
-},
-{
-"timestamp": 3500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1806,
-"quantity": 29
-},
-{
-"timestamp": 3600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 3
-},
-{
-"timestamp": 3600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1809,
-"quantity": 25
-},
-{
-"timestamp": 3700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1806,
-"quantity": 2
-},
-{
-"timestamp": 3700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1806,
-"quantity": 20
 },
 {
 "timestamp": 3700,
@@ -720,24 +621,6 @@
 "quantity": 1
 },
 {
-"timestamp": 4000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 22
-},
-{
-"timestamp": 4000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 1
-},
-{
 "timestamp": 4100,
 "buyer": "",
 "seller": "",
@@ -867,24 +750,6 @@
 "timestamp": 4300,
 "buyer": "",
 "seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1801,
-"quantity": 1
-},
-{
-"timestamp": 4500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1801,
-"quantity": 24
-},
-{
-"timestamp": 4500,
-"buyer": "",
-"seller": "SUBMISSION",
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
 "price": 1801,
@@ -964,15 +829,6 @@
 },
 {
 "timestamp": 5200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1807,
-"quantity": 30
-},
-{
-"timestamp": 5200,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
@@ -1006,15 +862,6 @@
 "currency": "SEASHELLS",
 "price": 1804,
 "quantity": 7
-},
-{
-"timestamp": 5500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1807,
-"quantity": 27
 },
 {
 "timestamp": 5700,
@@ -1199,56 +1046,11 @@
 {
 "timestamp": 7300,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1807,
-"quantity": 23
-},
-{
-"timestamp": 7300,
-"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 4
-},
-{
-"timestamp": 7400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1807,
-"quantity": 22
-},
-{
-"timestamp": 7400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1807,
-"quantity": 1
-},
-{
-"timestamp": 7500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 30
-},
-{
-"timestamp": 7500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 2
 },
 {
 "timestamp": 7500,
@@ -1411,15 +1213,6 @@
 "currency": "SEASHELLS",
 "price": 9992,
 "quantity": 1
-},
-{
-"timestamp": 9000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1812,
-"quantity": 22
 },
 {
 "timestamp": 9100,
@@ -1622,24 +1415,6 @@
 {
 "timestamp": 9900,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1805,
-"quantity": 21
-},
-{
-"timestamp": 9900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1805,
-"quantity": 1
-},
-{
-"timestamp": 9900,
-"buyer": "",
 "seller": "",
 "symbol": "DJEMBES",
 "currency": "SEASHELLS",
@@ -1701,24 +1476,6 @@
 "quantity": 11
 },
 {
-"timestamp": 10100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1805,
-"quantity": 1
-},
-{
-"timestamp": 10100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1804,
-"quantity": 21
-},
-{
 "timestamp": 10200,
 "buyer": "",
 "seller": "",
@@ -1773,60 +1530,6 @@
 "quantity": 2
 },
 {
-"timestamp": 10600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1805,
-"quantity": 23
-},
-{
-"timestamp": 10600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1805,
-"quantity": 1
-},
-{
-"timestamp": 10700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1804,
-"quantity": 21
-},
-{
-"timestamp": 10700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1804,
-"quantity": 1
-},
-{
-"timestamp": 10800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1802,
-"quantity": 1
-},
-{
-"timestamp": 10800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1804,
-"quantity": 23
-},
-{
 "timestamp": 10800,
 "buyer": "",
 "seller": "",
@@ -1843,6 +1546,15 @@
 "currency": "SEASHELLS",
 "price": 10008,
 "quantity": 8
+},
+{
+"timestamp": 10800,
+"buyer": "",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1802,
+"quantity": 1
 },
 {
 "timestamp": 10900,
@@ -1863,33 +1575,6 @@
 "quantity": 4
 },
 {
-"timestamp": 11000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1799,
-"quantity": 21
-},
-{
-"timestamp": 11000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1799,
-"quantity": 1
-},
-{
-"timestamp": 11100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1803,
-"quantity": 5
-},
-{
 "timestamp": 11200,
 "buyer": "",
 "seller": "SUBMISSION",
@@ -1906,24 +1591,6 @@
 "currency": "SEASHELLS",
 "price": 1800,
 "quantity": 1
-},
-{
-"timestamp": 11300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1800,
-"quantity": 4
-},
-{
-"timestamp": 11300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1801,
-"quantity": 26
 },
 {
 "timestamp": 11300,
@@ -2000,28 +1667,19 @@
 {
 "timestamp": 11800,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
+"seller": "",
+"symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 1798,
-"quantity": 8
-},
-{
-"timestamp": 11800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1797,
-"quantity": 22
+"price": 2044,
+"quantity": 1
 },
 {
 "timestamp": 11800,
 "buyer": "",
 "seller": "",
-"symbol": "KELP",
+"symbol": "SQUID_INK",
 "currency": "SEASHELLS",
-"price": 2044,
+"price": 1798,
 "quantity": 1
 },
 {
@@ -2431,24 +2089,6 @@
 },
 {
 "timestamp": 13700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 29
-},
-{
-"timestamp": 13700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 2
-},
-{
-"timestamp": 13700,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -2518,24 +2158,6 @@
 "currency": "SEASHELLS",
 "price": 10002,
 "quantity": 5
-},
-{
-"timestamp": 14200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 24
-},
-{
-"timestamp": 14200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 2
 },
 {
 "timestamp": 14200,
@@ -2855,15 +2477,6 @@
 {
 "timestamp": 15500,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1803,
-"quantity": 2
-},
-{
-"timestamp": 15500,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -2950,24 +2563,6 @@
 "currency": "SEASHELLS",
 "price": 442,
 "quantity": 6
-},
-{
-"timestamp": 15900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1804,
-"quantity": 2
-},
-{
-"timestamp": 15900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1803,
-"quantity": 23
 },
 {
 "timestamp": 15900,
@@ -3061,38 +2656,11 @@
 },
 {
 "timestamp": 16500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 29
-},
-{
-"timestamp": 16500,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9999,
-"quantity": 1
-},
-{
-"timestamp": 16800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
-"quantity": 22
-},
-{
-"timestamp": 16800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1808,
 "quantity": 1
 },
 {
@@ -3393,66 +2961,12 @@
 "quantity": 4
 },
 {
-"timestamp": 18600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 27
-},
-{
 "timestamp": 18700,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10001,
-"quantity": 1
-},
-{
-"timestamp": 18900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 28
-},
-{
-"timestamp": 19000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1800,
-"quantity": 21
-},
-{
-"timestamp": 19000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1800,
-"quantity": 1
-},
-{
-"timestamp": 19100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1796,
-"quantity": 24
-},
-{
-"timestamp": 19100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1796,
 "quantity": 1
 },
 {
@@ -3472,24 +2986,6 @@
 "currency": "SEASHELLS",
 "price": 6533,
 "quantity": 5
-},
-{
-"timestamp": 19200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1797,
-"quantity": 5
-},
-{
-"timestamp": 19200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1798,
-"quantity": 21
 },
 {
 "timestamp": 19200,
@@ -3591,60 +3087,6 @@
 "quantity": 11
 },
 {
-"timestamp": 19800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 24
-},
-{
-"timestamp": 19800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 1
-},
-{
-"timestamp": 19900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1798,
-"quantity": 21
-},
-{
-"timestamp": 19900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1798,
-"quantity": 1
-},
-{
-"timestamp": 20000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1797,
-"quantity": 29
-},
-{
-"timestamp": 20000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1797,
-"quantity": 2
-},
-{
 "timestamp": 20200,
 "buyer": "",
 "seller": "",
@@ -3670,15 +3112,6 @@
 "currency": "SEASHELLS",
 "price": 6533,
 "quantity": 10
-},
-{
-"timestamp": 20600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 26
 },
 {
 "timestamp": 20600,
@@ -3845,24 +3278,6 @@
 {
 "timestamp": 21800,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1796,
-"quantity": 20
-},
-{
-"timestamp": 21800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1796,
-"quantity": 2
-},
-{
-"timestamp": 21800,
-"buyer": "",
 "seller": "",
 "symbol": "DJEMBES",
 "currency": "SEASHELLS",
@@ -3890,24 +3305,6 @@
 {
 "timestamp": 22100,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 26
-},
-{
-"timestamp": 22100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 1
-},
-{
-"timestamp": 22100,
-"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -3916,29 +3313,20 @@
 },
 {
 "timestamp": 22200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1798,
-"quantity": 21
-},
-{
-"timestamp": 22200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1798,
-"quantity": 1
-},
-{
-"timestamp": 22200,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2048,
+"quantity": 8
+},
+{
+"timestamp": 22200,
+"buyer": "",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1798,
 "quantity": 8
 },
 {
@@ -4007,24 +3395,6 @@
 {
 "timestamp": 22600,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1793,
-"quantity": 6
-},
-{
-"timestamp": 22600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1793,
-"quantity": 28
-},
-{
-"timestamp": 22600,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -4039,33 +3409,6 @@
 "currency": "SEASHELLS",
 "price": 1796,
 "quantity": 10
-},
-{
-"timestamp": 22700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1793,
-"quantity": 5
-},
-{
-"timestamp": 22700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1794,
-"quantity": 28
-},
-{
-"timestamp": 22700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1794,
-"quantity": 2
 },
 {
 "timestamp": 22700,
@@ -4196,24 +3539,6 @@
 {
 "timestamp": 23000,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 27
-},
-{
-"timestamp": 23000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 1
-},
-{
-"timestamp": 23000,
-"buyer": "",
 "seller": "",
 "symbol": "PICNIC_BASKET1",
 "currency": "SEASHELLS",
@@ -4320,24 +3645,6 @@
 "quantity": 1
 },
 {
-"timestamp": 23100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 20
-},
-{
-"timestamp": 23100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 2
-},
-{
 "timestamp": 23200,
 "buyer": "",
 "seller": "SUBMISSION",
@@ -4357,39 +3664,12 @@
 },
 {
 "timestamp": 23200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1794,
-"quantity": 4
-},
-{
-"timestamp": 23200,
 "buyer": "",
 "seller": "",
 "symbol": "CROISSANTS",
 "currency": "SEASHELLS",
 "price": 4265,
 "quantity": 7
-},
-{
-"timestamp": 23300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 24
-},
-{
-"timestamp": 23300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 1
 },
 {
 "timestamp": 23400,
@@ -4673,15 +3953,6 @@
 {
 "timestamp": 25200,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 25
-},
-{
-"timestamp": 25200,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -4725,24 +3996,6 @@
 "quantity": 8
 },
 {
-"timestamp": 25400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 25
-},
-{
-"timestamp": 25400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 1
-},
-{
 "timestamp": 25500,
 "buyer": "",
 "seller": "",
@@ -4777,24 +4030,6 @@
 "currency": "SEASHELLS",
 "price": 10192,
 "quantity": 10
-},
-{
-"timestamp": 25600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 27
-},
-{
-"timestamp": 25600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 2
 },
 {
 "timestamp": 25600,
@@ -4903,15 +4138,6 @@
 "currency": "SEASHELLS",
 "price": 6533,
 "quantity": 12
-},
-{
-"timestamp": 26400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 18
 },
 {
 "timestamp": 26500,
@@ -5193,24 +4419,6 @@
 "quantity": 1
 },
 {
-"timestamp": 27600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 28
-},
-{
-"timestamp": 27600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 2
-},
-{
 "timestamp": 27700,
 "buyer": "",
 "seller": "",
@@ -5254,51 +4462,6 @@
 "currency": "SEASHELLS",
 "price": 451,
 "quantity": 13
-},
-{
-"timestamp": 27800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 6
-},
-{
-"timestamp": 27800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 1
-},
-{
-"timestamp": 27800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 0
-},
-{
-"timestamp": 27800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 25
-},
-{
-"timestamp": 27900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 29
 },
 {
 "timestamp": 28000,
@@ -5497,51 +4660,6 @@
 "currency": "SEASHELLS",
 "price": 1783,
 "quantity": 1
-},
-{
-"timestamp": 29000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 24
-},
-{
-"timestamp": 29000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 2
-},
-{
-"timestamp": 29100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 8
-},
-{
-"timestamp": 29100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 1
-},
-{
-"timestamp": 29100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 24
 },
 {
 "timestamp": 29100,
@@ -5769,78 +4887,6 @@
 "quantity": 8
 },
 {
-"timestamp": 30000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1782,
-"quantity": 4
-},
-{
-"timestamp": 30000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1782,
-"quantity": 1
-},
-{
-"timestamp": 30000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1782,
-"quantity": 0
-},
-{
-"timestamp": 30000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 29
-},
-{
-"timestamp": 30100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 26
-},
-{
-"timestamp": 30100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 1
-},
-{
-"timestamp": 30200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 29
-},
-{
-"timestamp": 30200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 1
-},
-{
 "timestamp": 30200,
 "buyer": "",
 "seller": "",
@@ -5850,21 +4896,12 @@
 "quantity": 2
 },
 {
-"timestamp": 30300,
-"buyer": "SUBMISSION",
+"timestamp": 30200,
+"buyer": "",
 "seller": "",
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
-"price": 1782,
-"quantity": 24
-},
-{
-"timestamp": 30300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1782,
+"price": 1781,
 "quantity": 2
 },
 {
@@ -5906,24 +4943,6 @@
 {
 "timestamp": 30500,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 28
-},
-{
-"timestamp": 30500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 2
-},
-{
-"timestamp": 30500,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -5938,24 +4957,6 @@
 "currency": "SEASHELLS",
 "price": 1780,
 "quantity": 1
-},
-{
-"timestamp": 30600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 27
-},
-{
-"timestamp": 30600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 2
 },
 {
 "timestamp": 30600,
@@ -5978,56 +4979,11 @@
 {
 "timestamp": 30700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 1
-},
-{
-"timestamp": 30700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 28
-},
-{
-"timestamp": 30700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 2
-},
-{
-"timestamp": 30700,
-"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10003,
 "quantity": 2
-},
-{
-"timestamp": 30800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 28
-},
-{
-"timestamp": 30800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 1
 },
 {
 "timestamp": 30800,
@@ -6237,51 +5193,6 @@
 "quantity": 2
 },
 {
-"timestamp": 31300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1774,
-"quantity": 27
-},
-{
-"timestamp": 31300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1774,
-"quantity": 2
-},
-{
-"timestamp": 31400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1775,
-"quantity": 1
-},
-{
-"timestamp": 31400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1776,
-"quantity": 2
-},
-{
-"timestamp": 31400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 27
-},
-{
 "timestamp": 31400,
 "buyer": "",
 "seller": "",
@@ -6306,6 +5217,15 @@
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 10001,
+"quantity": 1
+},
+{
+"timestamp": 31400,
+"buyer": "",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1775,
 "quantity": 1
 },
 {
@@ -6454,24 +5374,6 @@
 },
 {
 "timestamp": 32400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 28
-},
-{
-"timestamp": 32400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 2
-},
-{
-"timestamp": 32400,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -6487,15 +5389,6 @@
 "currency": "SEASHELLS",
 "price": 1780,
 "quantity": 1
-},
-{
-"timestamp": 32600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 9
 },
 {
 "timestamp": 32600,
@@ -7381,6 +6274,24 @@
 },
 {
 "timestamp": 37500,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1792,
+"quantity": 25
+},
+{
+"timestamp": 37500,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1792,
+"quantity": 2
+},
+{
+"timestamp": 37500,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
@@ -7526,15 +6437,6 @@
 {
 "timestamp": 37900,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 28
-},
-{
-"timestamp": 37900,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -7641,33 +6543,6 @@
 "quantity": 7
 },
 {
-"timestamp": 38700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 28
-},
-{
-"timestamp": 38800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 30
-},
-{
-"timestamp": 38800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 1
-},
-{
 "timestamp": 39000,
 "buyer": "",
 "seller": "",
@@ -7723,15 +6598,6 @@
 },
 {
 "timestamp": 39500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1792,
-"quantity": 20
-},
-{
-"timestamp": 39500,
 "buyer": "",
 "seller": "",
 "symbol": "DJEMBES",
@@ -7773,7 +6639,7 @@
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
 "price": 1790,
-"quantity": 6
+"quantity": 27
 },
 {
 "timestamp": 39800,
@@ -7848,24 +6714,6 @@
 "quantity": 1
 },
 {
-"timestamp": 40200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 21
-},
-{
-"timestamp": 40200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 2
-},
-{
 "timestamp": 40400,
 "buyer": "",
 "seller": "",
@@ -7882,24 +6730,6 @@
 "currency": "SEASHELLS",
 "price": 10001,
 "quantity": 1
-},
-{
-"timestamp": 40600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1785,
-"quantity": 1
-},
-{
-"timestamp": 40600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 20
 },
 {
 "timestamp": 40600,
@@ -8056,15 +6886,6 @@
 },
 {
 "timestamp": 41300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 23
-},
-{
-"timestamp": 41300,
 "buyer": "",
 "seller": "",
 "symbol": "CROISSANTS",
@@ -8082,15 +6903,6 @@
 "quantity": 1
 },
 {
-"timestamp": 41500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 21
-},
-{
 "timestamp": 41800,
 "buyer": "",
 "seller": "",
@@ -8098,6 +6910,15 @@
 "currency": "SEASHELLS",
 "price": 9992,
 "quantity": 10
+},
+{
+"timestamp": 41900,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1792,
+"quantity": 4
 },
 {
 "timestamp": 42000,
@@ -8435,24 +7256,6 @@
 {
 "timestamp": 43200,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 25
-},
-{
-"timestamp": 43200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 1
-},
-{
-"timestamp": 43200,
-"buyer": "",
 "seller": "",
 "symbol": "VOLCANIC_ROCK",
 "currency": "SEASHELLS",
@@ -8467,24 +7270,6 @@
 "currency": "SEASHELLS",
 "price": 4266,
 "quantity": 9
-},
-{
-"timestamp": 43400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1792,
-"quantity": 22
-},
-{
-"timestamp": 43400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1792,
-"quantity": 2
 },
 {
 "timestamp": 43400,
@@ -8587,24 +7372,6 @@
 },
 {
 "timestamp": 43700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1796,
-"quantity": 20
-},
-{
-"timestamp": 43700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1796,
-"quantity": 2
-},
-{
-"timestamp": 43700,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -8692,24 +7459,6 @@
 "currency": "SEASHELLS",
 "price": 10184,
 "quantity": 9
-},
-{
-"timestamp": 44100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 22
-},
-{
-"timestamp": 44100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 2
 },
 {
 "timestamp": 44400,
@@ -8894,24 +7643,6 @@
 {
 "timestamp": 44700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 30
-},
-{
-"timestamp": 44700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 2
-},
-{
-"timestamp": 44700,
-"buyer": "",
 "seller": "",
 "symbol": "JAMS",
 "currency": "SEASHELLS",
@@ -9018,33 +7749,6 @@
 "quantity": 2
 },
 {
-"timestamp": 44900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 30
-},
-{
-"timestamp": 44900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 2
-},
-{
-"timestamp": 45000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1792,
-"quantity": 22
-},
-{
 "timestamp": 45000,
 "buyer": "",
 "seller": "",
@@ -9101,33 +7805,6 @@
 {
 "timestamp": 45400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 0
-},
-{
-"timestamp": 45400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 30
-},
-{
-"timestamp": 45400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 2
-},
-{
-"timestamp": 45400,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -9135,21 +7812,12 @@
 "quantity": 2
 },
 {
-"timestamp": 45500,
-"buyer": "SUBMISSION",
+"timestamp": 45400,
+"buyer": "",
 "seller": "",
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
-"price": 1789,
-"quantity": 27
-},
-{
-"timestamp": 45500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
+"price": 1790,
 "quantity": 2
 },
 {
@@ -9199,24 +7867,6 @@
 },
 {
 "timestamp": 45600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 24
-},
-{
-"timestamp": 45600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 1
-},
-{
-"timestamp": 45600,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -9236,24 +7886,6 @@
 {
 "timestamp": 45700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1785,
-"quantity": 30
-},
-{
-"timestamp": 45700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1785,
-"quantity": 1
-},
-{
-"timestamp": 45700,
-"buyer": "",
 "seller": "",
 "symbol": "VOLCANIC_ROCK_VOUCHER_10000",
 "currency": "SEASHELLS",
@@ -9340,24 +7972,6 @@
 "currency": "SEASHELLS",
 "price": 437,
 "quantity": 1
-},
-{
-"timestamp": 45800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 29
-},
-{
-"timestamp": 45800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 2
 },
 {
 "timestamp": 45900,
@@ -9506,15 +8120,6 @@
 {
 "timestamp": 46400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1785,
-"quantity": 30
-},
-{
-"timestamp": 46400,
-"buyer": "",
 "seller": "",
 "symbol": "VOLCANIC_ROCK_VOUCHER_10000",
 "currency": "SEASHELLS",
@@ -9547,24 +8152,6 @@
 "currency": "SEASHELLS",
 "price": 436,
 "quantity": 12
-},
-{
-"timestamp": 46500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 26
-},
-{
-"timestamp": 46500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 1
 },
 {
 "timestamp": 46500,
@@ -9637,33 +8224,6 @@
 "currency": "SEASHELLS",
 "price": 433,
 "quantity": 16
-},
-{
-"timestamp": 46700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 25
-},
-{
-"timestamp": 46700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 2
-},
-{
-"timestamp": 47000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 6
 },
 {
 "timestamp": 47300,
@@ -9875,24 +8435,6 @@
 {
 "timestamp": 48900,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1776,
-"quantity": 24
-},
-{
-"timestamp": 48900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1776,
-"quantity": 1
-},
-{
-"timestamp": 48900,
-"buyer": "",
 "seller": "",
 "symbol": "CROISSANTS",
 "currency": "SEASHELLS",
@@ -10081,15 +8623,6 @@
 },
 {
 "timestamp": 49900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1785,
-"quantity": 25
-},
-{
-"timestamp": 49900,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -10132,6 +8665,24 @@
 "currency": "SEASHELLS",
 "price": 10168,
 "quantity": 6
+},
+{
+"timestamp": 50400,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1785,
+"quantity": 25
+},
+{
+"timestamp": 50400,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1785,
+"quantity": 2
 },
 {
 "timestamp": 50400,
@@ -10296,24 +8847,6 @@
 "quantity": 1
 },
 {
-"timestamp": 51500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 21
-},
-{
-"timestamp": 51500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 1
-},
-{
 "timestamp": 51700,
 "buyer": "",
 "seller": "",
@@ -10413,24 +8946,6 @@
 "quantity": 3
 },
 {
-"timestamp": 52100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 21
-},
-{
-"timestamp": 52100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 1
-},
-{
 "timestamp": 52300,
 "buyer": "",
 "seller": "",
@@ -10469,15 +8984,6 @@
 {
 "timestamp": 52400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 24
-},
-{
-"timestamp": 52400,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -10492,24 +8998,6 @@
 "currency": "SEASHELLS",
 "price": 1781,
 "quantity": 3
-},
-{
-"timestamp": 52500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 2
-},
-{
-"timestamp": 52500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 21
 },
 {
 "timestamp": 52500,
@@ -10702,24 +9190,6 @@
 },
 {
 "timestamp": 53200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 25
-},
-{
-"timestamp": 53200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 2
-},
-{
-"timestamp": 53200,
 "buyer": "",
 "seller": "",
 "symbol": "VOLCANIC_ROCK_VOUCHER_10000",
@@ -10827,15 +9297,6 @@
 "quantity": 5
 },
 {
-"timestamp": 53500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 13
-},
-{
 "timestamp": 53800,
 "buyer": "",
 "seller": "",
@@ -10879,6 +9340,15 @@
 "currency": "SEASHELLS",
 "price": 1788,
 "quantity": 1
+},
+{
+"timestamp": 54000,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1789,
+"quantity": 3
 },
 {
 "timestamp": 54000,
@@ -11333,24 +9803,6 @@
 {
 "timestamp": 56500,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 29
-},
-{
-"timestamp": 56500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 1
-},
-{
-"timestamp": 56500,
-"buyer": "",
 "seller": "",
 "symbol": "JAMS",
 "currency": "SEASHELLS",
@@ -11464,24 +9916,6 @@
 "currency": "SEASHELLS",
 "price": 6532,
 "quantity": 8
-},
-{
-"timestamp": 57100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 23
-},
-{
-"timestamp": 57100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 2
 },
 {
 "timestamp": 57500,
@@ -11673,30 +10107,21 @@
 "quantity": 2
 },
 {
-"timestamp": 57900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1796,
-"quantity": 5
-},
-{
-"timestamp": 58000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 1
-},
-{
 "timestamp": 58000,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
 "price": 2047,
+"quantity": 1
+},
+{
+"timestamp": 58000,
+"buyer": "",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1795,
 "quantity": 1
 },
 {
@@ -11765,15 +10190,6 @@
 {
 "timestamp": 58700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 20
-},
-{
-"timestamp": 58700,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -11788,24 +10204,6 @@
 "currency": "SEASHELLS",
 "price": 1790,
 "quantity": 3
-},
-{
-"timestamp": 58900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 23
-},
-{
-"timestamp": 58900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 2
 },
 {
 "timestamp": 58900,
@@ -11828,24 +10226,6 @@
 {
 "timestamp": 59200,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 7
-},
-{
-"timestamp": 59200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 25
-},
-{
-"timestamp": 59200,
-"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -11860,15 +10240,6 @@
 "currency": "SEASHELLS",
 "price": 10001,
 "quantity": 1
-},
-{
-"timestamp": 59300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 26
 },
 {
 "timestamp": 59300,
@@ -11896,24 +10267,6 @@
 "currency": "SEASHELLS",
 "price": 10159,
 "quantity": 5
-},
-{
-"timestamp": 59400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 23
-},
-{
-"timestamp": 59400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 1
 },
 {
 "timestamp": 59600,
@@ -11995,24 +10348,6 @@
 "currency": "SEASHELLS",
 "price": 10008,
 "quantity": 7
-},
-{
-"timestamp": 60100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 23
-},
-{
-"timestamp": 60100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 1
 },
 {
 "timestamp": 60100,
@@ -12276,24 +10611,6 @@
 "quantity": 1
 },
 {
-"timestamp": 61600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 22
-},
-{
-"timestamp": 61700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 26
-},
-{
 "timestamp": 61700,
 "buyer": "",
 "seller": "",
@@ -12366,15 +10683,6 @@
 "quantity": 2
 },
 {
-"timestamp": 62200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 26
-},
-{
 "timestamp": 62400,
 "buyer": "",
 "seller": "",
@@ -12382,24 +10690,6 @@
 "currency": "SEASHELLS",
 "price": 4264,
 "quantity": 6
-},
-{
-"timestamp": 62500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 30
-},
-{
-"timestamp": 62500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 2
 },
 {
 "timestamp": 62500,
@@ -12503,24 +10793,6 @@
 {
 "timestamp": 63300,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1774,
-"quantity": 30
-},
-{
-"timestamp": 63300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1774,
-"quantity": 1
-},
-{
-"timestamp": 63300,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -12528,13 +10800,13 @@
 "quantity": 9
 },
 {
-"timestamp": 63400,
-"buyer": "SUBMISSION",
+"timestamp": 63300,
+"buyer": "",
 "seller": "",
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
-"price": 1777,
-"quantity": 27
+"price": 1774,
+"quantity": 9
 },
 {
 "timestamp": 63700,
@@ -12672,24 +10944,6 @@
 "quantity": 6
 },
 {
-"timestamp": 64300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 24
-},
-{
-"timestamp": 64300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 2
-},
-{
 "timestamp": 64400,
 "buyer": "",
 "seller": "",
@@ -12706,15 +10960,6 @@
 "currency": "SEASHELLS",
 "price": 6535,
 "quantity": 5
-},
-{
-"timestamp": 64500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 10
 },
 {
 "timestamp": 64500,
@@ -12908,15 +11153,6 @@
 {
 "timestamp": 65600,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1774,
-"quantity": 27
-},
-{
-"timestamp": 65600,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -12958,15 +11194,6 @@
 "currency": "SEASHELLS",
 "price": 13454,
 "quantity": 4
-},
-{
-"timestamp": 65900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1777,
-"quantity": 27
 },
 {
 "timestamp": 66000,
@@ -13401,24 +11628,6 @@
 "quantity": 8
 },
 {
-"timestamp": 67600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 22
-},
-{
-"timestamp": 67600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 1
-},
-{
 "timestamp": 67700,
 "buyer": "",
 "seller": "",
@@ -13506,7 +11715,16 @@
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
 "price": 1784,
-"quantity": 3
+"quantity": 21
+},
+{
+"timestamp": 68900,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1784,
+"quantity": 2
 },
 {
 "timestamp": 68900,
@@ -13646,24 +11864,6 @@
 {
 "timestamp": 70000,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 20
-},
-{
-"timestamp": 70000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 1
-},
-{
-"timestamp": 70000,
-"buyer": "",
 "seller": "",
 "symbol": "DJEMBES",
 "currency": "SEASHELLS",
@@ -13696,6 +11896,15 @@
 "currency": "SEASHELLS",
 "price": 1779,
 "quantity": 8
+},
+{
+"timestamp": 70000,
+"buyer": "",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1779,
+"quantity": 9
 },
 {
 "timestamp": 70100,
@@ -13745,24 +11954,6 @@
 {
 "timestamp": 70400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 28
-},
-{
-"timestamp": 70400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 2
-},
-{
-"timestamp": 70400,
-"buyer": "",
 "seller": "",
 "symbol": "VOLCANIC_ROCK_VOUCHER_10000",
 "currency": "SEASHELLS",
@@ -13830,24 +12021,6 @@
 "symbol": "VOLCANIC_ROCK_VOUCHER_9750",
 "currency": "SEASHELLS",
 "price": 441,
-"quantity": 2
-},
-{
-"timestamp": 70500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 26
-},
-{
-"timestamp": 70500,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
 "quantity": 2
 },
 {
@@ -13957,15 +12130,6 @@
 "currency": "SEASHELLS",
 "price": 13466,
 "quantity": 1
-},
-{
-"timestamp": 71100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 23
 },
 {
 "timestamp": 71100,
@@ -14463,15 +12627,6 @@
 "quantity": 2
 },
 {
-"timestamp": 74000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 28
-},
-{
 "timestamp": 74200,
 "buyer": "",
 "seller": "",
@@ -14501,15 +12656,6 @@
 {
 "timestamp": 74400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1785,
-"quantity": 21
-},
-{
-"timestamp": 74400,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -14524,6 +12670,15 @@
 "currency": "SEASHELLS",
 "price": 10008,
 "quantity": 5
+},
+{
+"timestamp": 74400,
+"buyer": "",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1785,
+"quantity": 8
 },
 {
 "timestamp": 74600,
@@ -14652,15 +12807,6 @@
 "quantity": 2
 },
 {
-"timestamp": 75700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 24
-},
-{
 "timestamp": 75800,
 "buyer": "",
 "seller": "",
@@ -14708,38 +12854,11 @@
 {
 "timestamp": 76800,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 25
-},
-{
-"timestamp": 76800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 1
-},
-{
-"timestamp": 76800,
-"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9992,
 "quantity": 5
-},
-{
-"timestamp": 76900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 27
 },
 {
 "timestamp": 76900,
@@ -14785,24 +12904,6 @@
 "currency": "SEASHELLS",
 "price": 1785,
 "quantity": 5
-},
-{
-"timestamp": 77200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 26
-},
-{
-"timestamp": 77200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 2
 },
 {
 "timestamp": 77400,
@@ -14865,7 +12966,7 @@
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
 "price": 1788,
-"quantity": 18
+"quantity": 29
 },
 {
 "timestamp": 78200,
@@ -14879,29 +12980,20 @@
 {
 "timestamp": 78200,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
+"seller": "",
+"symbol": "KELP",
 "currency": "SEASHELLS",
-"price": 1785,
-"quantity": 29
-},
-{
-"timestamp": 78200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1785,
+"price": 2048,
 "quantity": 1
 },
 {
 "timestamp": 78200,
 "buyer": "",
 "seller": "",
-"symbol": "KELP",
+"symbol": "SQUID_INK",
 "currency": "SEASHELLS",
-"price": 2048,
-"quantity": 1
+"price": 1785,
+"quantity": 2
 },
 {
 "timestamp": 78300,
@@ -14924,15 +13016,6 @@
 {
 "timestamp": 78600,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 25
-},
-{
-"timestamp": 78600,
-"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -14949,15 +13032,6 @@
 "quantity": 2
 },
 {
-"timestamp": 78700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 29
-},
-{
 "timestamp": 78800,
 "buyer": "",
 "seller": "",
@@ -14965,15 +13039,6 @@
 "currency": "SEASHELLS",
 "price": 6540,
 "quantity": 11
-},
-{
-"timestamp": 79000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1785,
-"quantity": 28
 },
 {
 "timestamp": 79200,
@@ -15014,24 +13079,6 @@
 {
 "timestamp": 79200,
 "buyer": "",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 2
-},
-{
-"timestamp": 79300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1784,
-"quantity": 22
-},
-{
-"timestamp": 79300,
-"buyer": "SUBMISSION",
 "seller": "",
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
@@ -15113,15 +13160,6 @@
 {
 "timestamp": 79800,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 23
-},
-{
-"timestamp": 79800,
-"buyer": "",
 "seller": "",
 "symbol": "VOLCANIC_ROCK_VOUCHER_10000",
 "currency": "SEASHELLS",
@@ -15163,33 +13201,6 @@
 "currency": "SEASHELLS",
 "price": 431,
 "quantity": 16
-},
-{
-"timestamp": 79900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1782,
-"quantity": 4
-},
-{
-"timestamp": 79900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 21
-},
-{
-"timestamp": 79900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 1
 },
 {
 "timestamp": 79900,
@@ -15356,38 +13367,11 @@
 {
 "timestamp": 80200,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 28
-},
-{
-"timestamp": 80200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 2
-},
-{
-"timestamp": 80200,
-"buyer": "",
 "seller": "",
 "symbol": "CROISSANTS",
 "currency": "SEASHELLS",
 "price": 4263,
 "quantity": 6
-},
-{
-"timestamp": 80300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1782,
-"quantity": 26
 },
 {
 "timestamp": 80300,
@@ -15496,42 +13480,6 @@
 "currency": "SEASHELLS",
 "price": 1780,
 "quantity": 8
-},
-{
-"timestamp": 80500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 29
-},
-{
-"timestamp": 80500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 2
-},
-{
-"timestamp": 80600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 21
-},
-{
-"timestamp": 80600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 1
 },
 {
 "timestamp": 80600,
@@ -15652,24 +13600,6 @@
 },
 {
 "timestamp": 81400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 26
-},
-{
-"timestamp": 81400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1783,
-"quantity": 2
-},
-{
-"timestamp": 81400,
 "buyer": "",
 "seller": "",
 "symbol": "VOLCANIC_ROCK",
@@ -15696,33 +13626,6 @@
 "quantity": 1
 },
 {
-"timestamp": 81900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1777,
-"quantity": 30
-},
-{
-"timestamp": 82000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 7
-},
-{
-"timestamp": 82000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 21
-},
-{
 "timestamp": 82000,
 "buyer": "",
 "seller": "",
@@ -15734,56 +13637,11 @@
 {
 "timestamp": 82100,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1777,
-"quantity": 3
-},
-{
-"timestamp": 82100,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1777,
-"quantity": 29
-},
-{
-"timestamp": 82100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 5
-},
-{
-"timestamp": 82100,
-"buyer": "",
 "seller": "",
 "symbol": "DJEMBES",
 "currency": "SEASHELLS",
 "price": 13482,
 "quantity": 5
-},
-{
-"timestamp": 82200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 27
-},
-{
-"timestamp": 82200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 1
 },
 {
 "timestamp": 82200,
@@ -15831,24 +13689,6 @@
 "quantity": 2
 },
 {
-"timestamp": 82300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 21
-},
-{
-"timestamp": 82300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1778,
-"quantity": 2
-},
-{
 "timestamp": 82600,
 "buyer": "",
 "seller": "",
@@ -15878,47 +13718,11 @@
 {
 "timestamp": 82700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1775,
-"quantity": 26
-},
-{
-"timestamp": 82700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1775,
-"quantity": 1
-},
-{
-"timestamp": 82700,
-"buyer": "",
 "seller": "",
 "symbol": "DJEMBES",
 "currency": "SEASHELLS",
 "price": 13485,
 "quantity": 4
-},
-{
-"timestamp": 82800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 22
-},
-{
-"timestamp": 82800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 2
 },
 {
 "timestamp": 82900,
@@ -15928,33 +13732,6 @@
 "currency": "SEASHELLS",
 "price": 1776,
 "quantity": 5
-},
-{
-"timestamp": 82900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1775,
-"quantity": 24
-},
-{
-"timestamp": 82900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1775,
-"quantity": 2
-},
-{
-"timestamp": 83000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1777,
-"quantity": 29
 },
 {
 "timestamp": 83100,
@@ -16245,24 +14022,6 @@
 "quantity": 6
 },
 {
-"timestamp": 83800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 28
-},
-{
-"timestamp": 83800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1779,
-"quantity": 1
-},
-{
 "timestamp": 84000,
 "buyer": "",
 "seller": "",
@@ -16371,15 +14130,6 @@
 "quantity": 1
 },
 {
-"timestamp": 84400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1776,
-"quantity": 30
-},
-{
 "timestamp": 84500,
 "buyer": "",
 "seller": "",
@@ -16399,30 +14149,12 @@
 },
 {
 "timestamp": 84800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 28
-},
-{
-"timestamp": 84800,
 "buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
 "price": 9997,
 "quantity": 6
-},
-{
-"timestamp": 85000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1780,
-"quantity": 5
 },
 {
 "timestamp": 85200,
@@ -16468,6 +14200,15 @@
 "currency": "SEASHELLS",
 "price": 10181,
 "quantity": 9
+},
+{
+"timestamp": 85500,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1781,
+"quantity": 30
 },
 {
 "timestamp": 85500,
@@ -16522,6 +14263,15 @@
 "currency": "SEASHELLS",
 "price": 434,
 "quantity": 16
+},
+{
+"timestamp": 85700,
+"buyer": "SUBMISSION",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1779,
+"quantity": 21
 },
 {
 "timestamp": 85700,
@@ -16742,24 +14492,6 @@
 {
 "timestamp": 87400,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 21
-},
-{
-"timestamp": 87400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1781,
-"quantity": 2
-},
-{
-"timestamp": 87400,
-"buyer": "",
 "seller": "",
 "symbol": "CROISSANTS",
 "currency": "SEASHELLS",
@@ -16792,33 +14524,6 @@
 "currency": "SEASHELLS",
 "price": 9992,
 "quantity": 5
-},
-{
-"timestamp": 87800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1777,
-"quantity": 29
-},
-{
-"timestamp": 87800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1777,
-"quantity": 1
-},
-{
-"timestamp": 87900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1782,
-"quantity": 22
 },
 {
 "timestamp": 88100,
@@ -16909,33 +14614,6 @@
 "currency": "SEASHELLS",
 "price": 13490,
 "quantity": 1
-},
-{
-"timestamp": 88800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 21
-},
-{
-"timestamp": 88800,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 2
-},
-{
-"timestamp": 89000,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1786,
-"quantity": 8
 },
 {
 "timestamp": 89000,
@@ -17442,15 +15120,6 @@
 "quantity": 1
 },
 {
-"timestamp": 91000,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 2
-},
-{
 "timestamp": 91100,
 "buyer": "",
 "seller": "",
@@ -17511,15 +15180,15 @@
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
 "price": 1792,
-"quantity": 2
+"quantity": 24
 },
 {
 "timestamp": 91300,
-"buyer": "",
-"seller": "SUBMISSION",
+"buyer": "SUBMISSION",
+"seller": "",
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
-"price": 1791,
+"price": 1792,
 "quantity": 1
 },
 {
@@ -17530,24 +15199,6 @@
 "currency": "SEASHELLS",
 "price": 10177,
 "quantity": 10
-},
-{
-"timestamp": 91400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 29
-},
-{
-"timestamp": 91400,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 1
 },
 {
 "timestamp": 91400,
@@ -17566,24 +15217,6 @@
 "currency": "SEASHELLS",
 "price": 4267,
 "quantity": 8
-},
-{
-"timestamp": 91600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 23
-},
-{
-"timestamp": 91600,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 1
 },
 {
 "timestamp": 91600,
@@ -17793,51 +15426,6 @@
 "quantity": 2
 },
 {
-"timestamp": 92100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 26
-},
-{
-"timestamp": 92100,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 1
-},
-{
-"timestamp": 92200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1793,
-"quantity": 2
-},
-{
-"timestamp": 92200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1793,
-"quantity": 30
-},
-{
-"timestamp": 92200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1793,
-"quantity": 1
-},
-{
 "timestamp": 92200,
 "buyer": "",
 "seller": "",
@@ -17938,15 +15526,6 @@
 },
 {
 "timestamp": 92400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1796,
-"quantity": 22
-},
-{
-"timestamp": 92400,
 "buyer": "",
 "seller": "",
 "symbol": "KELP",
@@ -17958,37 +15537,19 @@
 "timestamp": 92400,
 "buyer": "",
 "seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1796,
+"quantity": 2
+},
+{
+"timestamp": 92400,
+"buyer": "",
+"seller": "",
 "symbol": "VOLCANIC_ROCK",
 "currency": "SEASHELLS",
 "price": 10186,
 "quantity": 10
-},
-{
-"timestamp": 92500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1792,
-"quantity": 21
-},
-{
-"timestamp": 92600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 24
-},
-{
-"timestamp": 92600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 1
 },
 {
 "timestamp": 92600,
@@ -18006,24 +15567,6 @@
 "symbol": "DJEMBES",
 "currency": "SEASHELLS",
 "price": 13496,
-"quantity": 1
-},
-{
-"timestamp": 92700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
-"quantity": 25
-},
-{
-"timestamp": 92700,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1791,
 "quantity": 1
 },
 {
@@ -18064,39 +15607,12 @@
 },
 {
 "timestamp": 93200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1798,
-"quantity": 24
-},
-{
-"timestamp": 93200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1798,
-"quantity": 1
-},
-{
-"timestamp": 93200,
 "buyer": "",
 "seller": "",
 "symbol": "DJEMBES",
 "currency": "SEASHELLS",
 "price": 13497,
 "quantity": 3
-},
-{
-"timestamp": 93300,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1794,
-"quantity": 26
 },
 {
 "timestamp": 93300,
@@ -18126,13 +15642,13 @@
 "quantity": 2
 },
 {
-"timestamp": 93400,
-"buyer": "SUBMISSION",
+"timestamp": 93300,
+"buyer": "",
 "seller": "",
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
-"price": 1797,
-"quantity": 28
+"price": 1794,
+"quantity": 2
 },
 {
 "timestamp": 93400,
@@ -18162,42 +15678,6 @@
 "quantity": 5
 },
 {
-"timestamp": 93500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1795,
-"quantity": 2
-},
-{
-"timestamp": 93500,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1794,
-"quantity": 24
-},
-{
-"timestamp": 93700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1797,
-"quantity": 29
-},
-{
-"timestamp": 93700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1797,
-"quantity": 2
-},
-{
 "timestamp": 93700,
 "buyer": "",
 "seller": "",
@@ -18214,15 +15694,6 @@
 "currency": "SEASHELLS",
 "price": 1794,
 "quantity": 1
-},
-{
-"timestamp": 93800,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1794,
-"quantity": 22
 },
 {
 "timestamp": 93900,
@@ -18488,15 +15959,6 @@
 {
 "timestamp": 96100,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1794,
-"quantity": 28
-},
-{
-"timestamp": 96100,
-"buyer": "",
 "seller": "",
 "symbol": "RAINFOREST_RESIN",
 "currency": "SEASHELLS",
@@ -18538,6 +16000,15 @@
 "currency": "SEASHELLS",
 "price": 1794,
 "quantity": 1
+},
+{
+"timestamp": 97000,
+"buyer": "",
+"seller": "SUBMISSION",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1791,
+"quantity": 28
 },
 {
 "timestamp": 97100,
@@ -18676,15 +16147,6 @@
 },
 {
 "timestamp": 97600,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 26
-},
-{
-"timestamp": 97600,
 "buyer": "",
 "seller": "",
 "symbol": "DJEMBES",
@@ -18740,24 +16202,6 @@
 {
 "timestamp": 97700,
 "buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1787,
-"quantity": 24
-},
-{
-"timestamp": 97700,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 25
-},
-{
-"timestamp": 97700,
-"buyer": "",
 "seller": "",
 "symbol": "KELP",
 "currency": "SEASHELLS",
@@ -18792,6 +16236,24 @@
 "quantity": 1
 },
 {
+"timestamp": 97700,
+"buyer": "",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1790,
+"quantity": 12
+},
+{
+"timestamp": 97700,
+"buyer": "",
+"seller": "",
+"symbol": "SQUID_INK",
+"currency": "SEASHELLS",
+"price": 1790,
+"quantity": 1
+},
+{
 "timestamp": 97800,
 "buyer": "",
 "seller": "",
@@ -18799,24 +16261,6 @@
 "currency": "SEASHELLS",
 "price": 13485,
 "quantity": 1
-},
-{
-"timestamp": 97900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 21
-},
-{
-"timestamp": 97900,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 2
 },
 {
 "timestamp": 98000,
@@ -18853,15 +16297,6 @@
 "currency": "SEASHELLS",
 "price": 13482,
 "quantity": 7
-},
-{
-"timestamp": 98200,
-"buyer": "",
-"seller": "SUBMISSION",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1788,
-"quantity": 4
 },
 {
 "timestamp": 98300,
@@ -19053,33 +16488,6 @@
 "quantity": 1
 },
 {
-"timestamp": 99200,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 20
-},
-{
-"timestamp": 99300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 23
-},
-{
-"timestamp": 99300,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 1
-},
-{
 "timestamp": 99300,
 "buyer": "",
 "seller": "",
@@ -19098,22 +16506,13 @@
 "quantity": 8
 },
 {
-"timestamp": 99400,
-"buyer": "SUBMISSION",
+"timestamp": 99300,
+"buyer": "",
 "seller": "",
 "symbol": "SQUID_INK",
 "currency": "SEASHELLS",
-"price": 1788,
-"quantity": 2
-},
-{
-"timestamp": 99400,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1789,
-"quantity": 27
+"price": 1790,
+"quantity": 9
 },
 {
 "timestamp": 99400,
@@ -19231,24 +16630,6 @@
 "currency": "SEASHELLS",
 "price": 10155,
 "quantity": 8
-},
-{
-"timestamp": 99900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 20
-},
-{
-"timestamp": 99900,
-"buyer": "SUBMISSION",
-"seller": "",
-"symbol": "SQUID_INK",
-"currency": "SEASHELLS",
-"price": 1790,
-"quantity": 1
 },
 {
 "timestamp": 99900,
