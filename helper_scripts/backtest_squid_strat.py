@@ -5,6 +5,182 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
+import numpy as np
+
+class ExtendedKalmanFilter:
+    def __init__(self, initial_state: np.ndarray, initial_covariance: np.ndarray,
+                 process_noise: np.ndarray, measurement_noise: np.ndarray,
+                 transition_function, transition_jacobian,
+                 measurement_function, measurement_jacobian):
+        """
+        Generalized Extended Kalman Filter.
+        
+        - initial_state: np.array shape (n,)
+        - initial_covariance: np.array shape (n, n)
+        - process_noise: Q matrix (n, n)
+        - measurement_noise: R matrix (m, m)
+        - transition_function: f(x)
+        - transition_jacobian: df/dx
+        - measurement_function: h(x)
+        - measurement_jacobian: dh/dx
+        """
+        self.x = initial_state
+        self.P = initial_covariance
+        self.Q = process_noise
+        self.R = measurement_noise
+        self.f = transition_function
+        self.F = transition_jacobian
+        self.h = measurement_function
+        self.H = measurement_jacobian
+
+    def update(self, z: np.ndarray):
+        # Predict
+        x_pred = self.f(self.x)
+        F_jac = self.F(self.x)
+        P_pred = F_jac @ self.P @ F_jac.T + self.Q
+
+        # Update
+        H_jac = self.H(x_pred)
+        y = z - self.h(x_pred)                              # Innovation
+        S = H_jac @ P_pred @ H_jac.T + self.R               # Innovation covariance
+        K = P_pred @ H_jac.T @ np.linalg.inv(S)             # Kalman gain
+
+        self.x = x_pred + K @ y                             # Update state
+        self.P = (np.eye(len(self.x)) - K @ H_jac) @ P_pred # Update covariance
+
+        return self.x
+
+def get_kalman_acceleration_params(dt: float = 1.0):
+
+    # # Initial state: [price, velocity, acceleration]
+    initial_state = np.array([0.0, 0.0, 0.0])
+    initial_covariance = np.eye(3)
+
+    # Process noise: [price, velocity, acceleration]
+    process_noise = np.diag([1e-3, 1e-4, 1e-5])
+    measurement_noise = np.array([[1e-2]])  # Measurement noise for price
+
+    # Transition function
+    def f(x):
+        return np.array([
+            x[0] + x[1]*dt + 0.5*x[2]*dt**2,
+            x[1] + x[2]*dt,
+            x[2]
+        ])
+
+    # Jacobian of f
+    def F(x):
+        return np.array([
+            [1, dt, 0.5*dt**2],
+            [0, 1, dt],
+            [0, 0, 1]
+        ])
+
+    # Measurement function: observe price only
+    def h(x):
+        return np.array([x[0]])
+
+    # Jacobian of h
+    def H(x):
+        return np.array([[1, 0, 0]])
+
+    return initial_state, initial_covariance, process_noise, measurement_noise, f, F, h, H
+
+def get_kalman_velocity_params(dt: float = 1.0):
+
+    # Initial state: [price, velocity]
+    initial_state = np.array([0.0, 0.0])
+    initial_covariance = np.eye(2)
+
+    # Process noise: [price, velocity]
+    process_noise = np.diag([1e-3, 1e-4])
+    measurement_noise = np.array([[1e-2]])  # Measurement noise for price
+
+    # Transition function
+    def f(x):
+        return np.array([
+            x[0] + x[1] * dt,
+            x[1]
+        ])
+
+    # Jacobian of f
+    def F(x):
+        return np.array([
+            [1, dt],
+            [0, 1]
+        ])
+
+    # Measurement function: observe price only
+    def h(x):
+        return np.array([x[0]])
+
+    # Jacobian of h
+    def H(x):
+        return np.array([[1, 0]])
+
+    return initial_state, initial_covariance, process_noise, measurement_noise, f, F, h, H
+
+def kalman_filter_smoothing(df: pd.DataFrame, column_name: str, product_col: str = 'product', filter: str = "2D", smoothing_type="EMA", window=2) -> pd.DataFrame:
+    """
+    Applies an Extended Kalman Filter to smooth a time series using a [price, velocity] model, ensuring no look-ahead bias.
+
+    Parameters:
+    - df: DataFrame containing time series data
+    - column_name: column to smooth (e.g., "mid_price")
+    - product_col: column indicating product identity (default: 'product')
+
+    Returns:
+    - DataFrame with new column "<column_name>_kalman_smooth"
+    """
+
+    if filter == "2D":
+        initial_state, initial_covariance, Q, R, f, F, h, H = get_kalman_velocity_params()
+        kalman_col = f"{column_name}_kalman_2D"
+        
+    elif filter == "3D":
+        initial_state, initial_covariance, Q, R, f, F, h, H = get_kalman_acceleration_params()
+        kalman_col = f"{column_name}_kalman_smooth_3D"
+
+
+    df[kalman_col] = np.nan
+
+    for product in df[product_col].unique():
+        sub_df = df[df[product_col] == product]
+        measurements = sub_df[column_name].values
+
+        # Initial state and covariance
+        initial_state[0] = measurements[0]
+
+        ekf = ExtendedKalmanFilter(
+            initial_state=initial_state,
+            initial_covariance=initial_covariance,
+            process_noise=Q,
+            measurement_noise=R,
+            transition_function=f,
+            transition_jacobian=F,
+            measurement_function=h,
+            measurement_jacobian=H
+        )
+
+        smoothed_values = []
+        
+        # Process each measurement, starting from the first to avoid using future information
+        for z in measurements:
+            z_vec = np.array([z])  # Measurement as vector
+            
+            # Update the filter with the current measurement
+            x_est = ekf.update(z_vec)
+            smoothed_values.append(x_est[0])  # Only append the smoothed price (first element)
+
+        # Save the smoothed values to the DataFrame
+        df.loc[df[product_col] == product, kalman_col] = smoothed_values
+
+        smoothed_kalman_col = f"{kalman_col}_smoothed"
+        if smoothing_type == "EMA":
+            df[smoothed_kalman_col] = df.groupby(product_col)[kalman_col].transform(lambda x: x.ewm(span=window, adjust=False).mean())
+
+    return df, kalman_col, smoothed_kalman_col
+
 def load_df(round_name, log_name):
     analyze_dir = log_name
 
@@ -26,14 +202,47 @@ def save_df(df, round_name, analyze_dir, csv_name):
 def add_simpel_moving_average(df, column_name, window):
     ma_column_name = f"{column_name}_sma_{window}"
     
-    # Group by product and apply rolling mean
-    df[ma_column_name] = df.groupby('product')[column_name] \
-                            .transform(lambda x: x.rolling(window=window).mean())
-    
-    df[ma_column_name] = df.groupby('product')[column_name].shift(1)
-    
+    # Compute rolling mean and shift to avoid lookahead bias
+    df[ma_column_name] = (
+        df.groupby('product')[column_name]
+          .transform(lambda x: x.rolling(window=window).mean().shift(1))
+    )
     
     return df, ma_column_name
+
+def momentum_adjusted_sma(df, column_name, window, alpha, k=1.0):
+    """
+    Computes a momentum-adjusted simple moving average (SMA) for each product in the DataFrame.
+    
+    Parameters:
+    - df: pd.DataFrame with at least ['product', column_name]
+    - column_name: the column to apply the SMA on (e.g., 'mid_price')
+    - window: the SMA window size
+    - k: the momentum scaling constant (default=1.0)
+    
+    Returns:
+    - df: DataFrame with new column added
+    - adjusted_column_name: the name of the adjusted SMA column
+    """
+
+    # Step 1: Add base SMA
+    df, sma_column_name = add_simpel_moving_average(df, column_name, window)
+
+    # Step 2: Calculate slope (momentum) of SMA
+    slope_column_name = f"{sma_column_name}_slope"
+    df[slope_column_name] = (
+        df.groupby('product')[sma_column_name]
+          .transform(lambda x: x.diff())
+    )
+
+    # Step 3: Calculate alpha
+    # alpha = k / window
+
+    # Step 4: Compute adjusted SMA
+    adjusted_sma_column_name = f"{sma_column_name}_adj"
+    df[adjusted_sma_column_name] = df[sma_column_name] + alpha * df[slope_column_name]
+
+    return df, sma_column_name, adjusted_sma_column_name
 
 def add_exponential_moving_average(df, column_name, window, alpha=None):
     """
@@ -56,12 +265,10 @@ def add_exponential_moving_average(df, column_name, window, alpha=None):
 
     # Calculate the EMA using the provided alpha or window size
     df[column_name_ema] = df.groupby("product")[column_name].transform(
-        lambda x: x.ewm(span=window, adjust=False).mean()
+        lambda x: x.ewm(span=window, adjust=False).mean().shift(1)
     )
-    df[column_name_ema] = df.groupby('product')[column_name].shift(1)
     
     return df, column_name_ema
-
 
 def add_momentum_signal(df, column_name, window):
     """
@@ -105,8 +312,6 @@ def add_momentum_signal(df, column_name, window):
     df.drop(columns=['price_diff'], inplace=True)
 
     return df
-
-
 
 def add_sma_crossover_signal(df, sma_fast_col, sma_slow_col, id_base_name):
     """
@@ -738,11 +943,16 @@ if __name__ == "__main__":
 
     # single_crossover_analyse(df, "SQUID_INK", 5, 10, 11, 0.0045)
 
-    df, sma = add_simpel_moving_average(df,"mid_price",10)
+    df, sma3 = add_simpel_moving_average(df,"mid_price",3)
+    # df, sma_10, a_sma10 = momentum_adjusted_sma(df, "mid_price", 10, 2)
+    df, sma10 = add_simpel_moving_average(df,"mid_price",10)
+    # df, km2 =  kalman_filter_smoothing(df, column_name="mid_price", product_col="product", filter="2D")
+    df, km3, km3s =  kalman_filter_smoothing(df, column_name="mid_price", product_col="product", filter="3D", smoothing_type="EMA", window=3)
+    # df, sma20 = add_simpel_moving_average(df,"mid_price",20)
     # df, shl = add_swing_high_low_average(df,"mid_price", 10)
-    df, ema = add_exponential_moving_average(df,"mid_price", 10)
+    # df, ema = add_exponential_moving_average(df,"mid_price", 3)
 
-    plot_df_columns(df, ["mid_price",sma,ema],"SQUID_INK","line")
+    plot_df_columns(df, ["mid_price", km3, km3s],"SQUID_INK","line")
 
     # analyse one
     # product = "SQUID_INK"

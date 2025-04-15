@@ -2,7 +2,7 @@ from datamodel import TradingState, Order, Trade
 from typing import Dict, List, Optional, Tuple, Callable
 import json
 import numpy as np
-
+from numpy import eye
 
 class TradingData:
     def __init__(self, state: TradingState, position_limits: Dict[str, int], max_order_count: int, max_history_len: int):
@@ -297,7 +297,7 @@ class TradingData:
         if indicator_name not in self.data[product]:
             self.data[product][indicator_name] = np.array([])
 
-        if values:
+        if values is not None and values.size > 0:  # Check if values is a non-empty array
             # Check if the 2D array already has data, then append the new row
             if self.data[product][indicator_name].size == 0:
                 # If the array is empty, initialize it with the new values as a single row
@@ -307,6 +307,32 @@ class TradingData:
                 self.data[product][indicator_name] = np.vstack([self.data[product][indicator_name], values])
                 self.data[product][indicator_name] = self._truncate_array(self.data[product][indicator_name])
 
+    def apply_3d_indicator(self, product: str, indicator_name: str, values: np.ndarray):
+        if product not in self.data:
+            self.data[product] = {}
+
+        if indicator_name not in self.data[product]:
+            self.data[product][indicator_name] = np.array([])
+
+        if values is not None:
+            # Check if the 3D array already has data, then append the new slice (2D array)
+            if self.data[product][indicator_name].size == 0:
+                # If the array is empty, initialize it with the new values as a single slice (2D array)
+                self.data[product][indicator_name] = np.array([values])
+            else:
+                # If the array has data, append the new slice as a new entry along the first axis
+                self.data[product][indicator_name] = np.concatenate([self.data[product][indicator_name], [values]], axis=0)
+                self.data[product][indicator_name] = self._truncate_array(self.data[product][indicator_name])
+
+    def get_last_field_3d_indicator(self, product: str, field: str) -> Optional[np.ndarray]:
+        values = self.get_field(product, field)
+        if values is None:
+            return None
+        if values.ndim == 3:
+            return values[-1]  # Return the last slice (2D array) from the 3D array
+        else:
+            raise ValueError(f"Field {field} is not a 3D array but of type {values.ndim}-dimensional.")
+    
     def get_data_as_json(self) -> str:
         # Serialize the data to JSON
         return json.dumps(self.data, default=self._numpy_array_default)
@@ -480,6 +506,86 @@ class OrderHelper:
                                                                 quantity_condition=None,
                                                                 position_condition=None)
 
+def get_kalman_acceleration_params(dt: float = 1.0):
+
+    # # Initial state: [price, velocity, acceleration]
+    initial_state = np.array([0.0, 0.0, 0.0])
+    initial_covariance = np.eye(3)
+
+    # Process noise: [price, velocity, acceleration]
+    process_noise = np.diag([1e-3, 1e-4, 1e-5])
+    measurement_noise = np.array([[1e-2]])  # Measurement noise for price
+
+    # Transition function
+    def f(x):
+        return np.array([
+            x[0] + x[1]*dt + 0.5*x[2]*dt**2,
+            x[1] + x[2]*dt,
+            x[2]
+        ])
+
+    # Jacobian of f
+    def F(x):
+        return np.array([
+            [1, dt, 0.5*dt**2],
+            [0, 1, dt],
+            [0, 0, 1]
+        ])
+
+    # Measurement function: observe price only
+    def h(x):
+        return np.array([x[0]])
+
+    # Jacobian of h
+    def H(x):
+        return np.array([[1, 0, 0]])
+
+    return initial_state, initial_covariance, process_noise, measurement_noise, f, F, h, H
+
+def extended_kalman_filter_live_3D(prices: list[float], product: str, td: TradingData) -> float:
+
+    # Get model
+    initial_state, initial_covariance, Q, R, f, F, h, H = get_kalman_acceleration_params()
+
+    # Restore previous state or init
+    x = td.get_last_field(product, "kf_x")
+    P = td.get_last_field_3d_indicator(product, "kf_P")
+
+    if x is None or P is None:
+        print("non")
+        x = initial_state.copy()
+        x[0] = prices[0]  # Set initial price
+        P = initial_covariance.copy()
+    else:
+        print(x)
+        x = np.array(x, dtype=np.float64).flatten()
+        P = np.array(P, dtype=np.float64)
+
+        # Defensive check
+        if x.ndim != 1 or x.shape[0] != 3:
+            raise ValueError(f"Invalid state shape for x: {x.shape}, expected (3,) — got: {x}")
+
+
+    # === Kalman update ===
+    z = np.array([prices[-1]])  # latest price
+    x_pred = f(x)
+    F_jac = F(x)
+    P_pred = F_jac @ P @ F_jac.T + Q
+
+    H_jac = H(x_pred)
+    y = z - h(x_pred)
+    S = H_jac @ P_pred @ H_jac.T + R
+    K = P_pred @ H_jac.T @ np.linalg.inv(S)
+
+    x_upd = x_pred + K @ y
+    P_upd = (np.eye(len(x)) - K @ H_jac) @ P_pred
+
+    # === Store state ===
+    td.apply_2d_indicator(product, "kf_x", x_upd)
+    td.apply_3d_indicator(product, "kf_P", P_upd)
+
+    # Return fair price
+    return x_upd[0]
 
 def sma(prices: np.ndarray, window: int) -> float:
     # Check for valid input
@@ -549,8 +655,6 @@ def sma_strategy_get_all(td: TradingData, oh: OrderHelper, product: str, orders:
                                                                 position_condition=None)
 
     return orders
-
-
 
 def squid_ink_strategy(td: TradingData, oh: OrderHelper, product: str, orders: list[Order],
                        price_type: str,
@@ -623,10 +727,10 @@ def squid_ink_strategy(td: TradingData, oh: OrderHelper, product: str, orders: l
 
     # TODO: 
     # strat idea:
-        # trade with momentum (e.g. up)
+        # trade with momentum (e.g. difference of longer sma is positive)
         # if momentum is up, enter long position.
-        # track buy order cost.
-        # do not wait for momentum signal to flip, instead buy when sell price above buy order.
+        # track buy orders and cost cost.
+        # do not wait for momentum signal to flip, instead buy when sell price above buy order and try to close all positions before the longer sma switches
     
     # strat idea:
         # predict fair price based on slope sma (future price because of lagging signal)
@@ -642,6 +746,92 @@ def squid_ink_strategy(td: TradingData, oh: OrderHelper, product: str, orders: l
         # sell
         orders.append(Order(product, int(best_bid), int(-1)))
 
+    return orders
+
+def squid_ink_strategy2(td: TradingData, oh: OrderHelper, product: str, orders: list[Order],
+                       price_type: str,
+                       lookback, max_lookback) -> list[Order]:
+    
+    def calc_dynamic_momentum_diff(prices, lookback, max_lookback):
+        if lookback <1:
+            raise ValueError(f"{lookback=} and should be larger than 1")
+        if lookback > max_lookback:
+            raise ValueError(f"{lookback=} is not allowed to bigger than {max_lookback=}")
+
+        if len(prices) == 1:
+            return 0
+        
+        # if the array is not big enough to reach max lookback, return earlier with max length of array
+        if len(prices)-1 <= lookback:  
+            return prices[-1] - prices[0]
+        
+        # if the max lookback is reached recursively
+        if lookback == max_lookback:
+            return prices[-1] - prices[-(max_lookback+1)]
+
+        # calculate a momentum metric (sort of difference) metric (we use this as +/- change to identify a recent peak.
+        diff = prices[-1] - prices[-(lookback+1)]
+
+        # if the difference is the same, it can be a flat line and we want to look further back
+        # call recursevly
+        if diff == 0:
+            return calc_dynamic_momentum_diff(prices, lookback+1, max_lookback)
+
+        return diff
+    
+    allowed_types = ["mid_price", "weighted_mid_price"]
+    if price_type not in allowed_types:
+        raise ValueError(f"price_type must be one of {allowed_types}")
+    
+    # 1. Get the latest price
+    prices = td.get_field(product, price_type)
+    
+    # 2. calc fair price (kalman)
+    fair_price = extended_kalman_filter_live_3D(prices, product, td)
+    td.apply_indicator(product, "fair_price", fair_price)
+
+    # 3. get previous momentum diff 
+    previous_momentum_diff = td.get_last_field(product,"momentum_diff")
+
+    # 4. calculate dynamic momentum diff
+    momentum_diff = calc_dynamic_momentum_diff(prices, lookback, max_lookback)
+    td.apply_indicator(product, "momentum_diff", momentum_diff)
+    
+    # 4. create buy/sell signal by noticing momentum shift.
+    # (to know if previous timestep was a, peak or valley)
+    if previous_momentum_diff is None:
+        return orders
+    
+    if previous_momentum_diff<0 and momentum_diff>0:
+        # down to up
+        mom_shift_signal = 1
+    elif previous_momentum_diff>0 and momentum_diff<0:
+        # up to down
+        mom_shift_signal = -1
+    else:
+        mom_shift_signal = 0
+
+    td.apply_indicator(product, "mom_shift_signal", mom_shift_signal)
+
+    # TODO: 
+    # determine overal the over trend of the mid price
+    # if overal trend is up make add a position condition that position always >= 0
+    # if overal trend is dow, add a position condition that position always <= 0
+
+    # get the orders
+    if mom_shift_signal == 1:
+        # buy all ask orders thats below fair price        
+        orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
+                                                                price_condition=lambda price: price < fair_price,
+                                                                quantity_condition=None,
+                                                                position_condition=None)
+
+    if mom_shift_signal == -1:
+        orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
+                                                                price_condition=lambda price: price > fair_price,
+                                                                quantity_condition=None,
+                                                                position_condition=None)
+    
     return orders
 
 def track_trades(trades: Dict[str, List[Trade]], td: TradingData):
@@ -732,46 +922,48 @@ class Trader:
             orders: List[Order] = []
             # tutorial
             if product == "KELP":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+                # orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+                orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
             if product == "RAINFOREST_RESIN":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+                orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
 
             # round 1
             if product == "SQUID_INK":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
-                # orders = squid_ink_strategy(td, oh, product, orders, "mid_price", 1,6)
+                orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
+                # orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+                # orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
                 
 
             # round 2
-            if product == "CROISSANTS":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
-            if product == "JAMS":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
-            if product == "DJEMBES":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
-            if product == "PICNIC_BASKET1":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
-            if product == "PICNIC_BASKET2":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "CROISSANTS":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "JAMS":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "DJEMBES":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "PICNIC_BASKET1":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "PICNIC_BASKET2":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
-            # round 3
-            if product == "VOLCANIC_ROCK":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # # round 3
+            # if product == "VOLCANIC_ROCK":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
-            if product == "VOLCANIC_ROCK_VOUCHER_9500":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "VOLCANIC_ROCK_VOUCHER_9500":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
-            if product == "VOLCANIC_ROCK_VOUCHER_9750":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "VOLCANIC_ROCK_VOUCHER_9750":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
-            if product == "VOLCANIC_ROCK_VOUCHER_10000":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "VOLCANIC_ROCK_VOUCHER_10000":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
-            if product == "VOLCANIC_ROCK_VOUCHER_10250":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "VOLCANIC_ROCK_VOUCHER_10250":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
-            if product == "VOLCANIC_ROCK_VOUCHER_10500":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            # if product == "VOLCANIC_ROCK_VOUCHER_10500":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
 
 
             
