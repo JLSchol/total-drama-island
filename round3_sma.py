@@ -2,7 +2,6 @@ from datamodel import TradingState, Order, Trade
 from typing import Dict, List, Optional, Tuple, Callable
 import json
 import numpy as np
-from numpy import eye
 
 class TradingData:
     def __init__(self, state: TradingState, position_limits: Dict[str, int], max_order_count: int, max_history_len: int):
@@ -542,28 +541,63 @@ def get_kalman_acceleration_params(dt: float = 1.0):
 
     return initial_state, initial_covariance, process_noise, measurement_noise, f, F, h, H
 
+def get_kalman_velocity_params(dt: float = 1.0):
+
+    # Initial state: [price, velocity]
+    initial_state = np.array([0.0, 0.0])
+    initial_covariance = np.eye(2)
+
+    # Process noise: [price, velocity]
+    process_noise = np.diag([1e-3, 1e-4])
+    measurement_noise = np.array([[1e-2]])  # Measurement noise for price
+
+    # Transition function
+    def f(x):
+        return np.array([
+            x[0] + x[1] * dt,
+            x[1]
+        ])
+
+    # Jacobian of f
+    def F(x):
+        return np.array([
+            [1, dt],
+            [0, 1]
+        ])
+
+    # Measurement function: observe price only
+    def h(x):
+        return np.array([x[0]])
+
+    # Jacobian of h
+    def H(x):
+        return np.array([[1, 0]])
+
+    return initial_state, initial_covariance, process_noise, measurement_noise, f, F, h, H
+
 def extended_kalman_filter_live_3D(prices: list[float], product: str, td: TradingData) -> float:
 
     # Get model
-    initial_state, initial_covariance, Q, R, f, F, h, H = get_kalman_acceleration_params()
+    # initial_state, initial_covariance, Q, R, f, F, h, H = get_kalman_acceleration_params()
+    initial_state, initial_covariance, Q, R, f, F, h, H = get_kalman_velocity_params()
 
     # Restore previous state or init
     x = td.get_last_field(product, "kf_x")
     P = td.get_last_field_3d_indicator(product, "kf_P")
 
     if x is None or P is None:
-        print("non")
+        # print("non")
         x = initial_state.copy()
         x[0] = prices[0]  # Set initial price
         P = initial_covariance.copy()
     else:
-        print(x)
+        # print(x)
         x = np.array(x, dtype=np.float64).flatten()
         P = np.array(P, dtype=np.float64)
 
-        # Defensive check
-        if x.ndim != 1 or x.shape[0] != 3:
-            raise ValueError(f"Invalid state shape for x: {x.shape}, expected (3,) — got: {x}")
+        # # Defensive check
+        # if x.ndim != 1 or (x.shape[0] != 3 or x.shape[0] != 2):
+        #     raise ValueError(f"Invalid state shape for x: {x.shape}, expected (3 or 2,) — got: {x}")
 
 
     # === Kalman update ===
@@ -586,6 +620,31 @@ def extended_kalman_filter_live_3D(prices: list[float], product: str, td: Tradin
 
     # Return fair price
     return x_upd[0]
+
+def linear_trend(prices, window=10):
+    actual_window = min(len(prices), window)
+    if actual_window < 2:
+        return 0  # Still not enough data to form a trend
+
+    y = np.array(prices[-actual_window:], dtype=np.float64)
+    x = np.arange(actual_window)
+
+    x_mean = np.mean(x)
+    y_mean = np.mean(y)
+
+    numerator = np.sum((x - x_mean) * (y - y_mean))
+    denominator = np.sum((x - x_mean) ** 2)
+
+    if denominator == 0:
+        return 0
+
+    slope = numerator / denominator
+
+    # Normalize the slope by dividing by the standard deviation of the y values
+    std_dev = np.std(y) if np.std(y) > 0 else 1  # Avoid division by zero
+    normalized_slope = slope / std_dev
+
+    return normalized_slope
 
 def sma(prices: np.ndarray, window: int) -> float:
     # Check for valid input
@@ -786,14 +845,24 @@ def squid_ink_strategy2(td: TradingData, oh: OrderHelper, product: str, orders: 
     # 1. Get the latest price
     prices = td.get_field(product, price_type)
     
-    # 2. calc fair price (kalman)
+    # 2. calc fair price (extende kalman filter)
     fair_price = extended_kalman_filter_live_3D(prices, product, td)
     td.apply_indicator(product, "fair_price", fair_price)
 
-    # 3. get previous momentum diff 
-    previous_momentum_diff = td.get_last_field(product,"momentum_diff")
+    # 3. calc trend (linear regression)
+    fair_prices = td.get_field(product, "fair_price")
+    trend_strength_normalized  = linear_trend(fair_prices, window=10)
+    td.apply_indicator(product, "trend_strength_normalized", trend_strength_normalized)
 
-    # 4. calculate dynamic momentum diff
+    if trend_strength_normalized > 0.1:
+        trend = 1
+    elif trend_strength_normalized < -0.1:
+        trend = -1
+    else:
+        trend = 0
+
+    # 4. signal if recent peak or valley (mom_shift_signal)
+    previous_momentum_diff = td.get_last_field(product,"momentum_diff")
     momentum_diff = calc_dynamic_momentum_diff(prices, lookback, max_lookback)
     td.apply_indicator(product, "momentum_diff", momentum_diff)
     
@@ -813,38 +882,91 @@ def squid_ink_strategy2(td: TradingData, oh: OrderHelper, product: str, orders: 
 
     td.apply_indicator(product, "mom_shift_signal", mom_shift_signal)
 
-    # TODO: 
-    # determine overal the over trend of the mid price
-    # if overal trend is up make add a position condition that position always >= 0
-    # if overal trend is dow, add a position condition that position always <= 0
+    buy_averages = td.get_field(product, "buy_average")
+    buy_counts = td.get_field(product, "buy_count")
+    sell_averages = td.get_field(product, "sell_average")
+    sell_counts = td.get_field(product, "sell_count")
 
-    # get the orders
-    if mom_shift_signal == 1:
-        # buy all ask orders thats below fair price        
-        orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
-                                                                price_condition=lambda price: price < fair_price,
-                                                                quantity_condition=None,
-                                                                position_condition=None)
+    
+    # Determine slice lengths
+    buy_averages_l = min(len(buy_averages), 5)
+    sell_averages_l = min(len(sell_averages), 5)
 
-    if mom_shift_signal == -1:
-        orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
-                                                                price_condition=lambda price: price > fair_price,
+    # Guard for empty or None data
+    if buy_averages_l == 0 or buy_counts is None or any(v is None for v in buy_averages[-buy_averages_l:]) or any(c is None for c in buy_counts[-buy_averages_l:]):
+        buy_average = None
+    else:
+        buy_count_sum = sum(buy_counts[-buy_averages_l:])
+        buy_average = sum(buy_averages[-buy_averages_l:]) / buy_count_sum if buy_count_sum != 0 else None
+
+    if sell_averages_l == 0 or sell_counts is None or any(v is None for v in sell_averages[-sell_averages_l:]) or any(c is None for c in sell_counts[-sell_averages_l:]):
+        sell_average = None
+    else:
+        sell_count_sum = sum(sell_counts[-sell_averages_l:])
+        sell_average = sum(sell_averages[-sell_averages_l:]) / sell_count_sum if sell_count_sum != 0 else None
+
+    
+    
+    if trend == 1:
+        # buy directly after dip based on mom_shift_signal
+        if mom_shift_signal == 1:
+            # buy all ask orders (trend is up so no restrictino on buying)     
+            orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
+                                                                    price_condition=None,
+                                                                    quantity_condition=None,
+                                                                    position_condition=None)
+            
+            # sell if price is above fair_price
+            # when selling, never let position be < 0 since the trend is going up
+        
+        # if mom_shift_signal == 1:
+        orders, position = oh.get_all_orders_given_conditions("sell", product, orders, 
+                                                                price_condition=lambda price: price > buy_average if buy_average is not None else None,
                                                                 quantity_condition=None,
-                                                                position_condition=None)
+                                                                position_condition=lambda position: position >= 0)
+
+    if trend == -1:
+        # short directly after peak, based on mom_shift_signal (neglect fair_price condition?)
+        if mom_shift_signal == -1:
+            orders, position = oh.get_all_orders_given_conditions("sell", product, orders, 
+                                                                    price_condition=None,
+                                                                    quantity_condition=None,
+                                                                    position_condition=None)
+    
+        # buy if price is above fair price
+        # when buying, never let position be > 0 since the rend is going down
+        # if mom_shift_signal == 1:
+        orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
+                                                                price_condition=lambda price: price < sell_average if sell_average is not None else None,
+                                                                    quantity_condition=None,
+                                                                    position_condition=lambda position: position <= 0)
+
+    if trend == 0:
+        # get the orders
+        if mom_shift_signal == 1:
+            # buy all ask orders thats below fair price        
+            orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
+                                                                    price_condition=lambda price: price < fair_price,
+                                                                    quantity_condition=None,
+                                                                    position_condition=None)
+
+        # sell all bid orders thats below fair price      
+        if mom_shift_signal == -1:
+            orders, position = oh.get_all_orders_given_conditions("sell", product, orders, 
+                                                                    price_condition=lambda price: price > fair_price,
+                                                                    quantity_condition=None,
+                                                                    position_condition=None)
     
     return orders
 
 def track_trades(trades: Dict[str, List[Trade]], td: TradingData):
     # get this from state (one timestamp after it is submitted)
-
-    def calc_new_trade_stats(total_count, total_price, quantity, price):
-        total_count += quantity
-        total_price += (price*quantity)
-        average_price = total_price/total_count
-        return total_count, total_price, average_price
     
     def update_trade_stats(type: str, product: str, td: TradingData,
-                           quantity: int, price: int):
+                           quantities: int, prices: int):
+        if len(quantities) ==0 or len(prices)==0:
+            return
+
         if type == "buy":
             id = "buy"
         
@@ -854,33 +976,46 @@ def track_trades(trades: Dict[str, List[Trade]], td: TradingData):
             raise ValueError("first arg {type=} is not correct, must be 'buy' or 'sell'")
     
         # define names based on buy/sell
-        total_count_name = f"total_{id}_count"
-        total_price_name = f"total_{id}_price"
+        # total_count_name = f"total_{id}_count"
+        # total_price_name = f"total_{id}_price"
+        # total_average_name = f"total_{id}_average"
+        count_name = f"{id}_count"
+        price_name = f"{id}_price"
         average_name = f"{id}_average"
 
-        # get old values
-        total_count = td.get_last_field(product, total_count_name)
-        total_price = td.get_last_field(product, total_price_name)
-
-        if total_count is None and total_price is None:
-            total_count, total_price = 0,0
+        # combine orders of different prices and quantities in one
+        total_q, total_r, avarage = 0,0,0
+        for q, p in zip(quantities, prices):
+            total_q += q
+            total_r += q*p
+            avarage = total_r/total_q
 
         # calculate new values
-        total_count, total_price, average = calc_new_trade_stats(total_count, total_price, 
-                                                                    quantity,price)
+        # total_count, total_price, total_average = calc_new_trade_stats(total_count, total_price, 
+        #                                                             quantity,price)
         # update in class
-        td.apply_indicator(product, total_count_name, total_count)
-        td.apply_indicator(product, total_price_name, total_price)
-        td.apply_indicator(product, average_name, average)
+        td.apply_indicator(product, count_name, total_q)
+        td.apply_indicator(product, price_name, total_r)
+        td.apply_indicator(product, average_name, avarage)
+
 
     for product, trades in trades.items():       
+        quantities_bought, prices_bought = [], []
+        quantities_sold, prices_sold = [], []
         for trade in trades: 
             # determine buy or sell
             if trade.buyer == "SUBMISSION":
-                update_trade_stats("buy", product, td, trade.quantity, trade.price)
+                quantities_bought.append(trade.quantity)
+                prices_bought.append(trade.price)
+                
 
             if trade.seller == "SUBMISSION":
-                update_trade_stats("sell", product, td, trade.quantity, trade.price)
+                quantities_sold.append(trade.quantity)
+                prices_sold.append(trade.price)
+        
+        
+        update_trade_stats("buy", product, td, quantities_bought, prices_bought)
+        update_trade_stats("buy", product, td, quantities_sold, prices_sold)
 
 class Trader:
     def run(self, state: TradingState):
@@ -910,7 +1045,7 @@ class Trader:
         }
         
         max_order_count = 3 #  order book depth + 1 = 4 (need the +1 to be able to pop from list)
-        max_history = 6
+        max_history = 11
 
         td = TradingData(state, position_limits, max_order_count, max_history)
         oh = OrderHelper(td)
@@ -921,17 +1056,16 @@ class Trader:
         for product in state.order_depths:
             orders: List[Order] = []
             # tutorial
-            if product == "KELP":
+            # if product == "KELP":
                 # orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
-                orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
-            if product == "RAINFOREST_RESIN":
-                orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
+                # orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
+            # if product == "RAINFOREST_RESIN":
+            #     orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
 
             # round 1
             if product == "SQUID_INK":
                 orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
-                # orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
-                # orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
+
                 
 
             # round 2
@@ -971,8 +1105,8 @@ class Trader:
 
 
         # td.print_sim_step_data(["timestamp", "bid_prices", "bid_volumes", "ask_prices", "ask_volumes", 
-        #                 "mid_price", "max_sell_position", "max_buy_position", "current_position", 
-        #                 "fair_price", "momentum_diff", 
+        #                 "mid_price", "current_position", 
+        #                 "fair_price", "momentum_diff", "mom_shift_signal"
         #                 "total_buy_count", "total_buy_price", "buy_average",
         #                 "total_sell_count", "total_sell_price", "sell_average"])
 

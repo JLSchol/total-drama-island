@@ -80,7 +80,7 @@ if __name__ == '__main__':
     # directories = ["2504071725_sma5_sma5_sma5", "2504071725_sma10_sma10_sma10", "2504071725_sma20_sma20_sma20", "2504071725_sma40_sma40_sma40", "2504071725_sma80_sma80_sma80", "2504071725_wsma20_wsma20_wsma20"]  # Add more directories as needed
     # directories = ["2504091450_sma20_sma20_pass","2504101120_sma20_sma20_new"]
     # directories = ["do_nothing", "sma_5", "sma_10", "sma_20", "sma_30", "wsma_5", "wsma_20"]
-    directories = ["sma5_get_all"]
+    directories = ["sma5_get_all", "kalman_2d"]
 
     all_dfs = []
     for directory in directories:
@@ -115,5 +115,8 @@ if __name__ == '__main__':
     summary_df = pd.concat(all_dfs, ignore_index=True)
     print(summary_df)
     print(summary_df.loc[summary_df.groupby('product')['profit_and_loss'].idxmax()])
+
+    plot_mid_price(df[df['product'] == "SQUID_INK"])
+    plot_mid_price(df[df['product'] == "KELP"])
 
     plt.show()

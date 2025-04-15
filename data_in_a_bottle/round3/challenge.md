@@ -42,6 +42,32 @@ Position limits for the newly introduced products:
 - Strike Price: 10,500 SeaShells
 - Expiration deadline: 7 days (1 round = 1 day) starting from round 1
 
+
+### Hint for Algorithmic Challenge
+
+Hello everyone, hope you're enjoying the VOLCANIC_ROCK vouchers and a variety of trading strategies these new products introduce. While digging for the rock, Archipelago residents found some ancient mathematics sharing insights into VOLCANIC_ROCK voucher trading. Here's what the message with obscure and advanced mathematics read,
+
+Message begins,
+
+I have discovered a strategy which will make ArchiCapital the biggest trading company ever. Here's how my thesis goes,
+
+t: Timestamp
+St: Voucher Underlying Price at t
+K: Strike
+TTE: Remaining Time till expiry at t
+Vt: Voucher price of strike K at t
+
+Compute,
+
+m_t = log(K/St)/ sqrt(TTE)
+v_t = BlackScholes ImpliedVol(St, Vt, K, TTE)
+
+for each t, plot v_t vs m_t and fit a parabolic curve to filter random noise.
+
+This fitted v_t(m_t) allows me to evaluate opportunities between different strikes. I also call fitted v_t(m_t=0) the base IV and I have identified interesting patterns in timeseries of base IV.
+
+Message ends.
+
 ## Manual challenge
 
 A big group of Sea Turtles is visiting our shores, bringing with them an opportunity to acquire some top grade `FLIPPERS`. You only have two chances to offer a good price. Each one of the Sea Turtles will accept the lowest bid that is over their reserve price. 
