@@ -217,17 +217,14 @@ def printlogs_from_sandox_cxv(file_path, root, name):
 
 if __name__ == "__main__":
     log_dir = os.path.dirname(__file__)
-    # round_1_dir = os.path.join(log_dir, "round1")
-    # round_2_dir = os.path.join(log_dir, "round2")
-    # specific_dir = os.path.join(log_dir, "round2", "tryout_squid_tactics")
-    # specific_dir = os.path.join(log_dir, "round3", "test")
-    specific_dir = os.path.join(log_dir, "round3", "kalman_2d")
-    split_all_logs(specific_dir)
+    # dirr = os.path.join(log_dir, "round5")
+    dirr = os.path.join(log_dir, "round5", "mid_price_5_20")
+    split_all_logs(dirr)
     print("splitting complete")
-    process_all_tradehistory(specific_dir)
+    process_all_tradehistory(dirr)
     print("processing tradehistory complete")
-    process_all_sandbox(specific_dir)
+    process_all_sandbox(dirr)
     print("processing all sandbox files complete")
-    get_all_printlogs_from_sandbox(specific_dir)
+    get_all_printlogs_from_sandbox(dirr)
     print("converted prints dicts from sanbox logs to data frame csv")
 

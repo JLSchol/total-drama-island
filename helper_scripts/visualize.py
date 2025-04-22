@@ -74,13 +74,17 @@ if __name__ == '__main__':
     # Define the base path relative to the script's location
     # base_path = os.path.join(script_dir, '..', 'logs', 'tutorial')
     # base_path = os.path.join(script_dir, '..', 'logs', 'round1')
-    base_path = os.path.join(script_dir, '..', 'logs', 'round3')
+    base_path = os.path.join(script_dir, '..', 'logs', 'round5')
 
     # what to visualize and load
     # directories = ["2504071725_sma5_sma5_sma5", "2504071725_sma10_sma10_sma10", "2504071725_sma20_sma20_sma20", "2504071725_sma40_sma40_sma40", "2504071725_sma80_sma80_sma80", "2504071725_wsma20_wsma20_wsma20"]  # Add more directories as needed
     # directories = ["2504091450_sma20_sma20_pass","2504101120_sma20_sma20_new"]
     # directories = ["do_nothing", "sma_5", "sma_10", "sma_20", "sma_30", "wsma_5", "wsma_20"]
-    directories = ["sma5_get_all", "kalman_2d"]
+    # directories = ["sma5_get_all", "sma10_get_all", "sma_20_get_all", 
+    #                "wsma_5_get_all", "wsma_10_get_all", "wsma_20_get_all",
+    #                "kalman_2d"]
+    # directories = ["kalman_2d", "kalman_2d_tight_take_position", "kalman_2d_neutral_position", "kalman_2d_tight_out_position", "kalman_2d_loose_take_tight_out_position"]
+    directories = ["weighted_mid_price_5_20", "mid_price_5_20"]
 
     all_dfs = []
     for directory in directories:
@@ -116,7 +120,7 @@ if __name__ == '__main__':
     print(summary_df)
     print(summary_df.loc[summary_df.groupby('product')['profit_and_loss'].idxmax()])
 
-    plot_mid_price(df[df['product'] == "SQUID_INK"])
-    plot_mid_price(df[df['product'] == "KELP"])
+    # plot_mid_price(df[df['product'] == "SQUID_INK"])
+    # plot_mid_price(df[df['product'] == "KELP"])
 
     plt.show()

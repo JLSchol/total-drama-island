@@ -673,8 +673,8 @@ def sma_strategy(td: TradingData, oh: OrderHelper, product: str, orders: list[Or
     
     # 1. Get the latest price and SMA
     prices = td.get_field(product, price_type)
-    # fair_price = sma(prices, sma_window)
-    fair_price = extended_kalman_filter_live_3D(prices, product, td)
+    fair_price = sma(prices, sma_window)
+    # fair_price = extended_kalman_filter_live_3D(prices, product, td)
     
     td.apply_indicator(product, "fair_price", fair_price)
 
@@ -691,14 +691,18 @@ def sma_strategy(td: TradingData, oh: OrderHelper, product: str, orders: list[Or
     return orders
 
 def sma_strategy_get_all(td: TradingData, oh: OrderHelper, product: str, orders: list[Order], 
-                 price_type: str, sma_window: int):
+                 price_type: str, sma_window: int, kalman=False):
     allowed_types = ["mid_price", "weighted_mid_price"]
     if price_type not in allowed_types:
         raise ValueError(f"price_type must be one of {allowed_types}")
     
     # 1. Get the latest price and SMA
     prices = td.get_field(product, price_type)
-    fair_price = sma(prices, sma_window)
+    if kalman:
+        fair_price = extended_kalman_filter_live_3D(prices, product, td)
+    else:
+        fair_price = sma(prices, sma_window)
+
     td.apply_indicator(product, "fair_price", fair_price)
 
     # get all buy orders of which 
@@ -920,14 +924,23 @@ def squid_ink_strategy2(td: TradingData, oh: OrderHelper, product: str, orders: 
     #     sell_count_sum = sum(sell_counts[-sell_averages_l:])
     #     sell_average = sum(sell_averages[-sell_averages_l:]) / sell_count_sum if sell_count_sum != 0 else None
 
-    
-    
+    # tusing the mom_shift_signal in all situations (keep trend == 0 constnt), 
+    # [x] neutral --> mwah
+    # [x] tight out (sell, price > fp +1) --> worse
+    # [ ] loose take(buy, price < fp +1 ) -- tight out(sell, price > fp +1 
+    # [ ] loose take(buy, price < fp +1 ) -- neutral out(sell, price > fp
+    # Vary within trend == 0  with loose/tight values, (keep trend -1/1 best of above)
+    # [ ]
+
+    # # see what is best
+    # experiment with trend signal
+    # next test with tracking most recent buy (to sell higher)
     if trend == 1:
         # buy directly after dip based on mom_shift_signal
         if mom_shift_signal == 1:
             # buy all ask orders (trend is up so no restrictino on buying)     
             orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
-                                                                    price_condition=lambda price: price < fair_price + 1,
+                                                                    price_condition=lambda price: price < fair_price +1,
                                                                     # price_condition=None,
                                                                     quantity_condition=None,
                                                                     position_condition=None)
@@ -938,7 +951,7 @@ def squid_ink_strategy2(td: TradingData, oh: OrderHelper, product: str, orders: 
         if mom_shift_signal == -1:
             orders, position = oh.get_all_orders_given_conditions("sell", product, orders, 
                                                                     # price_condition=lambda price: price > buy_average if buy_average is not None else None,
-                                                                    price_condition=lambda price: price > fair_price,
+                                                                    price_condition=lambda price: price > fair_price +1,
                                                                     quantity_condition=None,
                                                                     position_condition=lambda position: position >= 0)
 
@@ -956,7 +969,7 @@ def squid_ink_strategy2(td: TradingData, oh: OrderHelper, product: str, orders: 
         if mom_shift_signal == 1:
             orders, position = oh.get_all_orders_given_conditions("buy", product, orders, 
                                                                     # price_condition=lambda price: price < sell_average if sell_average is not None else None,
-                                                                    price_condition=lambda price: price < fair_price,
+                                                                    price_condition=lambda price: price < fair_price -1,
                                                                     quantity_condition=None,
                                                                     position_condition=lambda position: position <= 0)
 
@@ -1049,8 +1062,11 @@ class Trader:
                             "VOLCANIC_ROCK_VOUCHER_9750": 200,
                             "VOLCANIC_ROCK_VOUCHER_10000": 200,
                             "VOLCANIC_ROCK_VOUCHER_10250": 200,
-                            "VOLCANIC_ROCK_VOUCHER_10500": 200
+                            "VOLCANIC_ROCK_VOUCHER_10500": 200,
+                            "MAGNIFICENT_MACARONS": 75
                            }
+        
+        conversion_limits = {"MAGNIFICENT_MACARONS": 10}
         
         picic_content = {"PICNIC_BASKET1": {"CROISSANTS": 6, "JAMS": 3, "DJEMBES": 1},
                          "PICNIC_BASKET2": {"CROISSANTS": 4, "JAMS": 2 }}
@@ -1064,60 +1080,61 @@ class Trader:
         }
         
         max_order_count = 3 #  order book depth + 1 = 4 (need the +1 to be able to pop from list)
-        max_history = 11
+        max_history = 21
 
         td = TradingData(state, position_limits, max_order_count, max_history)
         oh = OrderHelper(td)
 
 
-        track_trades(state.own_trades, td)
+        # track_trades(state.own_trades, td)
 
         for product in state.order_depths:
             orders: List[Order] = []
             # tutorial
             if product == "KELP":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5, kalman=False)
             if product == "RAINFOREST_RESIN":
-                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+                orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 20, kalman=False)
 
             # round 1
-            if product == "SQUID_INK":
-                orders = squid_ink_strategy2(td, oh, product, orders, "mid_price", 1,6)
+            # if product == "SQUID_INK":
+                # orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
+                # orders = squid_ink_strategy2(td, oh, product, orders, "weighted_mid_price", 1,6)
 
-                
-
-            # round 2
+            # # round 2
             # if product == "CROISSANTS":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
             # if product == "JAMS":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
             # if product == "DJEMBES":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
             # if product == "PICNIC_BASKET1":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
             # if product == "PICNIC_BASKET2":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
 
             # # round 3
             # if product == "VOLCANIC_ROCK":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
 
             # if product == "VOLCANIC_ROCK_VOUCHER_9500":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
 
             # if product == "VOLCANIC_ROCK_VOUCHER_9750":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
 
             # if product == "VOLCANIC_ROCK_VOUCHER_10000":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5, kalman=False)
 
             # if product == "VOLCANIC_ROCK_VOUCHER_10250":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
 
             # if product == "VOLCANIC_ROCK_VOUCHER_10500":
-            #     orders = sma_strategy_get_all(td, oh, product, orders, "mid_price", 5)
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
 
-
+            # round 4
+            # if product == "MAGNIFICENT_MACARONS":
+            #     orders = sma_strategy_get_all(td, oh, product, orders, "weighted_mid_price", 20, kalman=False)
             
             result[product] = orders
 

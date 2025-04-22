@@ -14,6 +14,20 @@ container_data = [
     {"Container": 10, "Multiplier": 89, "Inhabitants": 8}
 ]
 
+# # ACTUAL RESULTS!   
+# default_pct_traders = {
+#     1: 0.998,
+#     2: 18.178,
+#     3: 5.118,
+#     4: 11.807,
+#     5: 6.987,
+#     6: 7.539,
+#     7: 8.516,
+#     8: 1.614,
+#     9: 24.06,
+#     10: 15.184
+# }
+
 # Create DataFrame
 df = pd.DataFrame(container_data)
 
@@ -30,6 +44,7 @@ default_pct_traders = {
     9: 32.0,
     10: 10.2
 }
+
 
 def calculate_shares(df, pct_traders=None, total_traders=3000):
     """
@@ -60,18 +75,20 @@ result_df = calculate_shares(df)
 print(result_df[['Container', 'Multiplier', 'Inhabitants', '% of Traders', 'My Share']].round(2))
 
 # Example of modifying trader distribution
+# ACTUAL RESULTS!   
 custom_pct = {
-    1: 1.0,
-    2: 10.0,
-    3: 9.0,
-    4: 5.0,
-    5: 9.0,
-    6: 5.0,
-    7: 18.0,
-    8: 5.0,
-    9: 30.0,
-    10: 6.0
+    1: 0.998,
+    2: 18.178,
+    3: 5.118,
+    4: 11.807,
+    5: 6.987,
+    6: 7.539,
+    7: 8.516,
+    8: 1.614,
+    9: 24.06,
+    10: 15.184
 }
+
 print("\nWith custom trader distribution:")
 custom_df = calculate_shares(df, custom_pct)
 print(custom_df[['Container', 'Multiplier', 'Inhabitants', '% of Traders', 'My Share']].round(2))

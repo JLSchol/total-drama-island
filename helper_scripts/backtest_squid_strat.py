@@ -3,7 +3,7 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
+# import matplotlib.dates as mdate
 
 import numpy as np
 
@@ -949,7 +949,7 @@ if __name__ == "__main__":
     # df, sma_10, a_sma10 = momentum_adjusted_sma(df, "mid_price", 10, 2)
     df, sma10 = add_simpel_moving_average(df,"mid_price",10)
     # df, km2 =  kalman_filter_smoothing(df, column_name="mid_price", product_col="product", filter="2D")
-    df, km3, km3s =  kalman_filter_smoothing(df, column_name="mid_price", product_col="product", filter="2D", smoothing_type="EMA", window=3)
+    df, km3, km3s =  kalman_filter_smoothing(df, column_name="mid_price", product_col="product", filter="2D", smoothing_type="SMA", window=2)
     # df, sma20 = add_simpel_moving_average(df,"mid_price",20)
     # df, shl = add_swing_high_low_average(df,"mid_price", 10)
     # df, ema = add_exponential_moving_average(df,"mid_price", 3)

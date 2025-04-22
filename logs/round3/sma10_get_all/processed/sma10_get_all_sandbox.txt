@@ -1,0 +1,5000 @@
+[{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 0
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 1900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 2900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 3900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 4900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 5900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 6900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 7900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 8900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 9900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 10900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 11900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 12900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 13900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 14900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 15900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 16900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 17900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 18900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 19900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 20900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 21900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 22900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 23900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 24900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 25900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 26900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 27900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 28900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 29900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 30900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 31900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 32900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 33900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 34900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 35900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 36900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 37900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 38900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 39900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 40900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 41900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 42900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 43900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 44900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 45900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 46900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 47900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 48900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 49900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 50900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 51900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 52900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 53900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 54900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 55900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 56900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 57900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 58900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 59900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 60900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 61900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 62900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 63900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 64900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 65900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 66900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 67900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 68900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 69900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 70900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 71900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 72900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 73900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 74900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 75900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 76900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 77900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 78900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 79900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 80900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 81900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 82900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 83900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 84900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 85900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 86900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 87900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 88900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 89900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90700
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90800
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 90900
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 91000
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 91100
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 91200
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 91300
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 91400
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 91500
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 91600
+},
+{
+"sandboxLog": "",
+"lambdaLog": "",
+"timestamp": 91700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"c7fe4b57-5577-4ed7-9baf-42bfcf1357b6\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"c7fe4b57-5577-4ed7-9baf-42bfcf1357b6\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 91800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e73befbc-5bf4-4112-8947-c8e64583e0d0\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e73befbc-5bf4-4112-8947-c8e64583e0d0\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 91900
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"cc8cfd4a-e074-40ca-886e-524b1c96c720\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"cc8cfd4a-e074-40ca-886e-524b1c96c720\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92000
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3caf6839-b715-49cb-98f1-333e63530978\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3caf6839-b715-49cb-98f1-333e63530978\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92100
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"9f4ebdf2-0483-4f7e-a759-01b6f2e21871\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"9f4ebdf2-0483-4f7e-a759-01b6f2e21871\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92200
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e81cb077-d289-47c2-bb49-d947a746e53e\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e81cb077-d289-47c2-bb49-d947a746e53e\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92300
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"480abca9-7141-4b3d-9c8e-8be64158df0a\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"480abca9-7141-4b3d-9c8e-8be64158df0a\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92400
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"1ebc4a35-7b2a-4ba0-a7d0-0b6e6a3903f0\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"1ebc4a35-7b2a-4ba0-a7d0-0b6e6a3903f0\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92500
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"820483a8-fb7e-46b5-bdaf-5b1e167cecab\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"820483a8-fb7e-46b5-bdaf-5b1e167cecab\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92600
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b0bdf162-0147-4bed-9340-a2e7ab850d40\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b0bdf162-0147-4bed-9340-a2e7ab850d40\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"9f5e42c7-de5f-4f79-93b4-1a2b01d19c45\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"9f5e42c7-de5f-4f79-93b4-1a2b01d19c45\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"1d3ed139-591e-4dab-ad15-ab05c8c181bb\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"1d3ed139-591e-4dab-ad15-ab05c8c181bb\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 92900
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f1e94579-e704-44e4-b64d-aa267870ee74\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f1e94579-e704-44e4-b64d-aa267870ee74\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93000
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f1feeee4-4782-4ca4-a961-7c23de1dc344\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f1feeee4-4782-4ca4-a961-7c23de1dc344\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93100
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"fd9d3c11-ef5e-47f3-8f20-c8fd30c8e77e\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"fd9d3c11-ef5e-47f3-8f20-c8fd30c8e77e\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93200
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f6bdbe43-6501-4ccd-895f-c9124701075e\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f6bdbe43-6501-4ccd-895f-c9124701075e\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93300
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"671f02ee-b880-453e-8023-3ded391dcd3c\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"671f02ee-b880-453e-8023-3ded391dcd3c\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93400
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"92477a02-1431-48f1-b3b3-a3b5b4236e17\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"92477a02-1431-48f1-b3b3-a3b5b4236e17\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93500
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"6b46a747-a0b0-49a0-89a4-ad69ee1130da\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"6b46a747-a0b0-49a0-89a4-ad69ee1130da\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93600
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"df66870f-8afc-4f85-b1be-be1fb616e333\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"df66870f-8afc-4f85-b1be-be1fb616e333\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f96df873-ee78-414f-a504-aa80d04990f9\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f96df873-ee78-414f-a504-aa80d04990f9\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"90356ac7-6ef4-43ce-9071-cebebe6da03a\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"90356ac7-6ef4-43ce-9071-cebebe6da03a\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 93900
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"a932e9e4-09d7-41ba-877d-c73aaab10db6\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"a932e9e4-09d7-41ba-877d-c73aaab10db6\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94000
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3a0c54e6-61e5-4ddd-9140-804aa09f63ac\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3a0c54e6-61e5-4ddd-9140-804aa09f63ac\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94100
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3013a247-3870-4762-8691-f68ad80dd654\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3013a247-3870-4762-8691-f68ad80dd654\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94200
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"d67bb58b-499f-4188-9e8b-680bd12ebe4d\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"d67bb58b-499f-4188-9e8b-680bd12ebe4d\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94300
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"cd69a197-31af-4228-aa88-4ac4a9f7489a\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"cd69a197-31af-4228-aa88-4ac4a9f7489a\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94400
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"7da3ef9f-9453-4a0d-b33c-7319f5a03521\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"7da3ef9f-9453-4a0d-b33c-7319f5a03521\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94500
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"c15aa3d6-4e18-4f22-bd8d-421e2e962946\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"c15aa3d6-4e18-4f22-bd8d-421e2e962946\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94600
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"234dee67-8eda-41dd-a46a-d3901d783c4c\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"234dee67-8eda-41dd-a46a-d3901d783c4c\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"8aa68349-abde-428f-accb-19f87677a8d7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"8aa68349-abde-428f-accb-19f87677a8d7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3bef62bd-4377-4f15-84f1-01558ffbf6b4\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3bef62bd-4377-4f15-84f1-01558ffbf6b4\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 94900
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"298ee6b0-c4ab-4290-804f-986efabeae0b\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"298ee6b0-c4ab-4290-804f-986efabeae0b\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95000
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"fb3573e6-4e97-49ed-9644-ff8661ca94a2\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"fb3573e6-4e97-49ed-9644-ff8661ca94a2\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95100
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"86aff3b7-76f1-4c31-a486-a47b9722b700\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"86aff3b7-76f1-4c31-a486-a47b9722b700\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95200
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3246c508-038a-4cf2-9009-6ce4576cef3d\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3246c508-038a-4cf2-9009-6ce4576cef3d\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95300
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"11ce63ca-ed48-4b6a-80a3-7510d250602c\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"11ce63ca-ed48-4b6a-80a3-7510d250602c\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95400
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"18f1f5cb-2a17-454a-a0a3-b7704c0bbc34\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"18f1f5cb-2a17-454a-a0a3-b7704c0bbc34\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95500
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b1ab21a8-b45a-4ada-af56-51bbeba96ad4\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b1ab21a8-b45a-4ada-af56-51bbeba96ad4\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95600
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"d2d88008-f18b-45b1-a266-e235597e6674\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"d2d88008-f18b-45b1-a266-e235597e6674\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"d4264397-3b8b-4813-abcc-b86f6c48a7d7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"d4264397-3b8b-4813-abcc-b86f6c48a7d7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"4741d5fa-dd35-4aeb-a222-9ae5aabb8b4e\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"4741d5fa-dd35-4aeb-a222-9ae5aabb8b4e\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 95900
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3e967ebe-b22b-4c60-8843-45d285573f86\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"3e967ebe-b22b-4c60-8843-45d285573f86\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96000
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e9b07f85-59e4-4578-a69a-daa6f3de76f0\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e9b07f85-59e4-4578-a69a-daa6f3de76f0\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96100
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"fa478bd5-4eb4-411f-8e84-c510f2f24fca\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"fa478bd5-4eb4-411f-8e84-c510f2f24fca\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96200
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"4a980963-c206-47e5-a7ad-5320cf3702ee\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"4a980963-c206-47e5-a7ad-5320cf3702ee\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96300
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b8016bce-8597-4218-9b51-0bb27410431b\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b8016bce-8597-4218-9b51-0bb27410431b\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96400
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e6a52eb9-c24d-4b77-890c-3f97dced4691\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e6a52eb9-c24d-4b77-890c-3f97dced4691\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96500
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"bf832389-49d4-443d-be01-e381f99cecc3\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"bf832389-49d4-443d-be01-e381f99cecc3\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96600
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"57fd4c7d-aab7-4146-b23d-98c8daec9880\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"57fd4c7d-aab7-4146-b23d-98c8daec9880\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"4a4b31e2-c43c-419b-8357-25bd0e5256e8\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"4a4b31e2-c43c-419b-8357-25bd0e5256e8\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"101a3967-5791-4a30-8432-9f7d6b82527b\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"101a3967-5791-4a30-8432-9f7d6b82527b\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 96900
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"5412f8eb-2dde-42fa-b8df-f9a77bebe3f7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"5412f8eb-2dde-42fa-b8df-f9a77bebe3f7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97000
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"99b947e5-93b3-444b-a807-598c7f80484f\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"99b947e5-93b3-444b-a807-598c7f80484f\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97100
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"7b203a5a-b5f5-4281-9ab0-7c73c43daaa4\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"7b203a5a-b5f5-4281-9ab0-7c73c43daaa4\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97200
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"1845f6c0-66cc-4add-84fe-9b656788d099\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"1845f6c0-66cc-4add-84fe-9b656788d099\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97300
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"bc3d64d0-3691-4c22-8068-3f95a27333c2\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"bc3d64d0-3691-4c22-8068-3f95a27333c2\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97400
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f3848fad-0f22-41ed-8cf3-5a7416ba39c8\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"f3848fad-0f22-41ed-8cf3-5a7416ba39c8\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97500
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"a2a457ed-38fa-4293-b8b5-e0dfd496c533\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"a2a457ed-38fa-4293-b8b5-e0dfd496c533\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97600
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"a145e133-c0c5-439e-92d6-0d6c1a02be55\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"a145e133-c0c5-439e-92d6-0d6c1a02be55\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"100ae381-1335-4e71-9c41-aeb72bb9d965\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"100ae381-1335-4e71-9c41-aeb72bb9d965\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"208d4483-5362-42d1-94e2-4c89ebc1ae49\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"208d4483-5362-42d1-94e2-4c89ebc1ae49\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 97900
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e00beffb-5b23-462a-aa9d-ada473791168\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"e00beffb-5b23-462a-aa9d-ada473791168\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98000
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"85e2f37e-4bc2-4467-af8a-2050da19003f\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"85e2f37e-4bc2-4467-af8a-2050da19003f\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98100
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"da5837a9-2730-49cc-8575-e158d0758346\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"da5837a9-2730-49cc-8575-e158d0758346\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98200
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"6ea2396d-7bf4-45f1-a36d-16743d86ff71\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"6ea2396d-7bf4-45f1-a36d-16743d86ff71\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98300
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"9b75e76c-1967-4efc-9c10-6e670ea192c0\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"9b75e76c-1967-4efc-9c10-6e670ea192c0\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98400
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"69aa4229-217f-47e5-992a-49aff8058cc2\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"69aa4229-217f-47e5-992a-49aff8058cc2\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98500
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"499645b1-c9f2-4f7c-8e57-b704760d1831\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"499645b1-c9f2-4f7c-8e57-b704760d1831\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98600
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"9dc70918-61b4-431a-a9df-0a4a959def41\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"9dc70918-61b4-431a-a9df-0a4a959def41\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"0dc92e64-7ae9-488f-9f3f-f4a01b820be5\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"0dc92e64-7ae9-488f-9f3f-f4a01b820be5\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"2d4257b9-f0aa-46eb-8cfa-511e0c509d3d\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"2d4257b9-f0aa-46eb-8cfa-511e0c509d3d\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 98900
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"181bc743-fbfa-480c-818f-7dec4b1312ab\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"181bc743-fbfa-480c-818f-7dec4b1312ab\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99000
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"88fe75f1-2b01-4e53-ac15-60a577dfae30\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"88fe75f1-2b01-4e53-ac15-60a577dfae30\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99100
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"aa4b1f79-51dc-4170-9d98-3eea774fbbb7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"aa4b1f79-51dc-4170-9d98-3eea774fbbb7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99200
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b313bada-6afb-4ee9-bb9e-796185e5f3ed\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b313bada-6afb-4ee9-bb9e-796185e5f3ed\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99300
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"c00abe32-d77e-441f-be0f-9dd7826d8da4\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"c00abe32-d77e-441f-be0f-9dd7826d8da4\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99400
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"d5f0b7fd-2018-4d92-afc1-7e8d3884d4d7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"d5f0b7fd-2018-4d92-afc1-7e8d3884d4d7\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99500
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"347c2f1e-243d-4868-94d0-cab143fd4299\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"347c2f1e-243d-4868-94d0-cab143fd4299\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99600
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"99588b1e-bb33-4d80-91a6-8024523fdcaf\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"99588b1e-bb33-4d80-91a6-8024523fdcaf\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99700
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"bb9853f9-1f8d-44a1-88fa-83b1e7aef170\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"bb9853f9-1f8d-44a1-88fa-83b1e7aef170\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99800
+},
+{
+"sandboxLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b41634d5-d492-4cb7-acf1-63234564e9ff\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"lambdaLog": "[ERROR] ZeroDivisionError: float division by zero\\n{\"errorMessage\": \"float division by zero\", \"errorType\": \"ZeroDivisionError\", \"requestId\": \"b41634d5-d492-4cb7-acf1-63234564e9ff\", \"stackTrace\": [\"  File \\\"/var/task/app.py\\\", line 31, in lambda_handler\\n    orders, conversion, traderData = trader.run(trading_state)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1077, in run\\n    track_trades(state.own_trades, td)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1041, in track_trades\\n    update_trade_stats(\\\"buy\\\", product, td, quantities_sold, prices_sold)\\n\", \"  File \\\"/var/task/trader.py\\\", line 1014, in update_trade_stats\\n    avarage = total_r/total_q\\n\"]}",
+"timestamp": 99900
+}]
